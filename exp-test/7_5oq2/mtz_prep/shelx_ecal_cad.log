@@ -1,0 +1,321 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: CAD              version 8.0.012 :         ##
+ ###############################################################
+ User: fuxingke  Run date: 20/ 9/2023 Run time: 11:35:37 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- VALM NaN NOOUTPUT
+  Missing observations flagged as NAN
+    Indices not output if all data items flagged "missing"
+ Data line--- LABI FILE_NUMBER 1 E1=FA E2=SIGFA E3=EA E4=SIGEA E5=ALPHA
+ Data line--- LABO  FILE_NUMBER 1 E1=FA E2=SIGFA E3=EA E4=SIGEA E5=ALPHA
+ No CTYP lines input for file:  1
+  Missing observations flagged as    Nan
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: shelx_ecal.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown200923
+            112.6970  112.6970  341.5010   90.0000   90.0000   90.0000
+             0.00000
+
+ * Number of Columns = 11
+
+ * Number of Reflections = 25093
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA ALPHA FECALC EA SIGEA F2OR E2OR
+
+ * Column Types :
+
+ H H H F Q P F E Q J J
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  112.6970  112.6970  341.5010   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00116    0.09731     (     29.351 -      3.206 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 41 21 2' (number     92)
+
+Reciprocal space symmetry: 
+Space group: "P 41 21 2" Point group: "PG422" Laue group: "4/mmm" 
+Reference asymmetric unit: "h>=k and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 92 "P 41 21 2" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -k,+h,+l       5  -h,-k,+l       7  +k,-h,+l    
+  ISYM   9  +h,-k,-l      11  +k,+h,-l      13  -h,+k,-l      15  -k,-h,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +k,-h,-l       6  +h,+k,-l       8  -k,+h,-l    
+  ISYM  10  -h,+k,+l      12  -k,-h,+l      14  +h,-k,+l      16  +k,+h,+l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [4/mmm] hkl:h>=0, k>=0, l>=0 and h>=k
+
+
+ ** "Missing" flag set to program input value: Nan
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=FA E2=SIGFA E3=EA E4=SIGEA E5=ALPHA
+ Data line--- LABOUT E1=FA E2=SIGFA E3=EA E4=SIGEA E5=ALPHA
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :   8
+ Accumulated Out_Put_MTZ_labels are:
+  E11=FA  E21=SIGFA  E31=EA  E41=SIGEA
+  E51=ALPHA 
+
+
+ MTZOUT_LABELS are H K L and -
+  FA  SIGFA  EA  SIGEA
+  ALPHA 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=FA E2=SIGFA E3=EA E4=SIGEA E5=ALPHA
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: shelx_ecal.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown200923
+            112.6970  112.6970  341.5010   90.0000   90.0000   90.0000
+             0.00000
+
+ * Number of Columns = 11
+
+ * Number of Reflections = 25093
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA ALPHA FECALC EA SIGEA F2OR E2OR
+
+ * Column Types :
+
+ H H H F Q P F E Q J J
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  112.6970  112.6970  341.5010   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00116    0.09731     (     29.351 -      3.206 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 41 21 2' (number     92)
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of     11 Columns
+ and a total of      25093 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  h00 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   3
+  Reflections of type  00l 
+  Multiplicity   4
+
+  EPSILON Zone   4
+  Reflections of type  hh0 
+  Multiplicity   2
+
+  EPSILON Zone   5
+  Reflections of type  h -h0 
+  Multiplicity   2
+
+  EPSILON Zone   6
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+  CENTRIC Zone   4
+  Reflections of type  hhl 
+
+  CENTRIC Zone   5
+  Reflections of type  h -hl 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =      25093
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      25093
+
+
+ Total number read for all files    =      25093
+ Total passed to sort for all files =      25093
+ Total number systematic absent     =          0
+ Total number rejected outside resol=          0
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =     5
+
+ Data line--- LABOUT E11=FA E21=SIGFA E31=EA E41=SIGEA E51=ALPHA
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: shelx_ecal_cad.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown200923
+            112.6970  112.6970  341.5010   90.0000   90.0000   90.0000
+             0.00000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 25093
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA EA SIGEA ALPHA
+
+ * Column Types :
+
+ H H H F Q E Q P
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  112.6970  112.6970  341.5010   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00116    0.09731     (     29.351 -      3.206 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 41 21 2' (number     92)
+
+
+
+ Total number from Sorting Routine =      25093
+ Final Total of Unique records to HKLOUT =      25093
+ Final Total of Missing records to HKLOUT =          0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>

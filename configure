@@ -1,0 +1,9 @@
+#!/bin/sh
+gfortran ./src/randgen.f ./src/functions.f90 ./src/gen-hkl.f90 -o ./bin/gen-hkl -L$CCP4/lib -lccp4c -lccp4f -lmmdb2 -lstdc++ \
+-lm -lccif -L/usr/lib -lfftw3 -fopenmp -L/home/fuxingke/software/fgsl/lib -lfgsl -I/home/fuxingke/software/fgsl/include/fgsl \
+-L/home/fuxingke/software/gsl-1.16/lib -lgsl -lgslcblas -J ./include
+
+gfortran ./src/randgen.f ./src/functions.f90 ./src/chargeflip.f90 -o ./bin/CF -L$CCP4/lib -lccp4c -lccp4f -lmmdb2 -lstdc++ \
+-lm -lccif -L/usr/lib -lfftw3 -fopenmp -L/home/fuxingke/software/fgsl/lib -lfgsl -I/home/fuxingke/software/fgsl/include/fgsl \
+-L/home/fuxingke/software/gsl-1.16/lib -lgsl -lgslcblas -J ./include
+
