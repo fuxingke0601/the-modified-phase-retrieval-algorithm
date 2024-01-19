@@ -17,7 +17,7 @@ Edit the [configure](configure) file and update the paths for  **fgsl/gsl**, **F
 2. A test case, 5OQ2  
 There are two inputing parameters for the modified phase-retrieval algorithm:  
 &ensp;&ensp;&ensp;&ensp;(1) **mtz file**. This should contain the anomalous information (F+/F- or I+/I-);  
-&ensp;&ensp;&ensp;&ensp;(2) **1 or 0**. "1" indicates refining phases in the dual-space iterative cycle; "0" indicate no refinement.
+&ensp;&ensp;&ensp;&ensp;(2) **1 or 0**. "1" indicates refining phases in the dual-space iterative cycle; "0" indicate no refinement.  
 The following is a case for protein with PDB entry 5OQ2:    
 ```bash
 cd exp-test/7_5oq2
