@@ -13,7 +13,7 @@
 Edit the [configure](configure) file and update the paths for  fgsl/gsl, FFTW3 and CCP4 subroutine libraries in the file. Then, run:
 
 ```
-    ./congfigure
+./congfigure
 ```
 
 ## The dual-space iterative framework of the  Modified Phase-retrieval Algorithm
