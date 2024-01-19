@@ -10,3 +10,6 @@
 
 ## The dual-space iterative framework of the  Modified Phase-retrieval Algorithm
 ![image](fig/the_iterative_framework.png)
+![image](fig/the_iterative_framework3-2-50-50.png)
+
+![image](fig/the_iterative_framework3-2-40-40.png)
