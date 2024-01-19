@@ -16,8 +16,8 @@ Edit the [configure](configure) file and update the paths for  **fgsl/gsl**, **F
 ```
 2. A test case, 5OQ2  
 There are two inputing parameters for the modified phase-retrieval algorithm:
-	- **mtz file**. This should contain the conventional (CCP4) asymmetric unit of data with anomalous information (including F+/F- or I+/I-);  
-	- **1 or 0**. "1" indicates refining phases in the dual-space iterative cycle; "0" indicate no refinement./<br>
+	(1) **mtz file**. This should contain the conventional (CCP4) asymmetric unit of data with anomalous information (including F+/F- or I+/I-);  
+	(2) **1 or 0**. "1" indicates refining phases in the dual-space iterative cycle; "0" indicate no refinement./<br>
 
 The following is a case for protein with PDB entry 5OQ2:    
 ```bash
