@@ -3,6 +3,9 @@
 
 ## Requirement
 - Fortran90
+- Linux operating system
 - [fgsl/gsl](http://www.gnu.org/software/gsl/) for random number generation
 - [FFTW3](http://www.fftw.org) library for the fast Fourier transform
 - CCP4 subroutine libraries for basic crystallographic operations
+
+## The dual-space iterative framework of the  Modified Phase-retrieval Algorithm
