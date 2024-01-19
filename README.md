@@ -26,7 +26,7 @@ cd exp-test/7_5oq2
 ```
 
 ## The dual-space iterative framework of the Modified Phase-retrieval Algorithm
-The modified phase-retrieval algorithm performs iterative dual-space recycling.The different stages are highlighted with different colors: The yellow segment signifies the algorithm’s initialization, involving the use of the random phases and experimental amplitudes to construct the initial electronic density; the blue segment encompasses reciprocal-space constraints, such as amplitude constraint, the π-half variant of charge fliping algorithm and direct-methods tangent formula; the green segment represents the direct-space constraints, including the standard RAAR algorithm and positivity constraint.
+The modified phase-retrieval algorithm performs iterative dual-space recycling.The different stages are highlighted with different colors: the yellow segment signifies the algorithm’s initialization, involving the use of the random phases and experimental amplitudes to construct the initial electronic density; the blue segment encompasses reciprocal-space constraints, such as amplitude constraint, the π-half variant of charge fliping algorithm and direct-methods tangent formula; the green segment represents the direct-space constraints, including the standard RAAR algorithm and positivity constraint.
 <p align="center">
 <img align="middle" src="fig/the_iterative_framework.png" width="500" alt="trg"/>
 </p>
