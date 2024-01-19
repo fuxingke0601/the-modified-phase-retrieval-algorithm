@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sayr=1
+sayr=0
 mtz_rel="prasa_5oq2_2.61_unique.mtz"
 if [ $# == 2 ];then
    mtz_rel=$1
