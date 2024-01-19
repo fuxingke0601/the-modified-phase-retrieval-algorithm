@@ -10,11 +10,16 @@
 
 ## testting
 1. Compiling  
-Edit the [configure](configure) file and update the paths for  fgsl/gsl, FFTW3 and CCP4 subroutine libraries in the file. Then, run:
+Edit the [configure](configure) file and update the paths for  **fgsl/gsl**, **FFTW3** and **CCP4 subroutine libraries** in the file. Then, run:
 ```bash
 ./congfigure
 ```
-
+2. A test case, 5OQ2
+```bash
+cd exp-test/7_5oq2
+./run.sh 5oq2-sf.mtz 1
+```
+3. 
 ## The dual-space iterative framework of the  Modified Phase-retrieval Algorithm
 <p align="center">
 <img align="middle" src="fig/the_iterative_framework.png" width="500" alt="trg"/>
