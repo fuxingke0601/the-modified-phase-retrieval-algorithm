@@ -12,7 +12,7 @@
 1. Compiling  
 Edit the [configure](configure) file and update the paths for  **fgsl/gsl**, **FFTW3** and **CCP4 subroutine libraries** in the file. Then, run:
 ```bash
-./conafigure
+./configure
 ```
 2. A test case, 5OQ2  
 There are two inputing parameters for the modified phase-retrieval algorithm:  
