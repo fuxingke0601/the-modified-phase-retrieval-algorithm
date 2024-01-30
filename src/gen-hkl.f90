@@ -7,6 +7,15 @@
 ! email: gengz@ihep.ac.cn
 !======================================================================================
 
+!=====================================================================================
+! (b) IOP 2023. All rights reserved.
+! Author: Fu Xingke
+! Institute of  Physics, Chinese Academy of Sciences (IOP, CAS). 
+! If you have any problem with the program, please contact author with the
+! following 
+! email: fuxingke0601@163.com
+!======================================================================================
+
 program main
    use functions
    implicit none

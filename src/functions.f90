@@ -1,11 +1,21 @@
 !=====================================================================================
-! (c) IHEP 2023. All rights reserved.
+! (a) IHEP 2023. All rights reserved.
 ! Author: Geng Zhi
-! Institute of High Energy Physics, Chinese Academy of Science (IHEP, CAS). 
+! Institute of High Energy Physics, Chinese Academy of Sciences (IHEP, CAS). 
 ! If you have any problem with the program, please contact author with the
 ! following 
 ! email: gengz@ihep.ac.cn
 !======================================================================================
+
+!=====================================================================================
+! (b) IOP 2023. All rights reserved.
+! Author: Fu Xingke
+! Institute of  Physics, Chinese Academy of Sciences (IOP, CAS). 
+! If you have any problem with the program, please contact author with the
+! following 
+! email: fuxingke0601@163.com
+!======================================================================================
+
 !function_1.f90, 加入sayre等式，使用修正后的相位做简单的替换
 !function_2.f90，加入sayre等式，使用没有丢失的E0计算sayre等式，修正所有not missing的衍射点的相位
 !function_3.f90，加入sayre等式，使用没有丢失的E0计算sayre等式，修正部分not missing中强衍射点的相位,，这里正空间中，先计算cutoff,abs,raar,abs
