@@ -32,8 +32,8 @@ The modified phase-retrieval algorithm performs iterative dual-space recycling.T
 </p>
 
 ## Author
-(1) Geng Zhi 
+1. Geng Zhi   
 Institute of High Energy Physics, Chinese Academy of Sciences (IHEP, CAS)   
-(2) Fu Xingke  
+2. Fu Xingke  
 Institute of  Physics, Chinese Academy of Sciences (IOP, CAS)   
 Email: gengz@ihep.ac.cn; fuxingke0601@163.com
