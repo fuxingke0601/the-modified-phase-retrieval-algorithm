@@ -1,0 +1,903 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: UNIQUE           version 8.0.012 :         ##
+ ###############################################################
+ User: fuxingke  Run date:  7/12/2023 Run time: 23:31:54 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- CELL    47.7600  188.1280   47.7730   90.0000  102.6590   90.0000  
+ Data line--- RESOLUTION 2.000 
+ Data line--- LABOUT F=FUNI SIGF=SIGFUNI
+ Data line--- SYMMETRY 'P 1 21 1'
+Reciprocal space symmetry: 
+Space group: "P 1 21 1" Point group: "PG2" Laue group: "2/m" 
+Reference asymmetric unit: "k>=0 and (l>0 or (l=0 and h>=0))" 
+  (change of basis may be applied) 
+
+ Spacegroup 4 "P 1 21 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,-k,+l    
+
+ Maximum and minimum Bragg spacings     2.000 10000.000 Angstroms
+
+
+ Limits on H,K,L.. -23 to  23      0 to  94      0 to  23
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: /tmp/fuxingke/uniq2035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+
+
+     107160 reflections tested
+      55247 reflections within resolution limits written to output file
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ UNIQUE:  Normal Termination
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: FREERFLAG            version 2.2 : 26/03/20##
+ ###############################################################
+ User: fuxingke  Run date:  7/12/2023 Run time: 23:31:54 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- FREERFRAC 0.05
+ Data line--- END
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: /tmp/fuxingke/uniq2035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  hkl 
+  Multiplicity   1
+
+ Grid of reflections initialized:
+ H K L min   -25 -96 -25
+ H K L max    25  96  25
+ H K L inc    51 193  51
+ ngrid       501993
+
+ lookup =           -1          -1          -1           0
+ lsprgi = H                             K                             L                             FREE                          
+***** COMPLETE keyword was not used.
+*****   All Reflections binned into  20 segments
+ *** labelled 0 through to  19 ***** 
+
+ Number of symmetry operations in the composition point group:  4
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: /tmp/fuxingke/uniq22035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI FreeR_flag
+
+ * Column Types :
+
+ H H H F Q I
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+ Number of reflections:   55247
+ Number for flagged reflections for each bin: 
+ Reflection flag =:      Number:
+                     0              2753       0
+                     1              2731       0
+                     2              2758       0
+                     3              2805       0
+                     4              2807       0
+                     5              2787       0
+                     6              2716       0
+                     7              2672       0
+                     8              2760       0
+                     9              2654       0
+                    10              2764       0
+                    11              2768       0
+                    12              2726       0
+                    13              2828       0
+                    14              2733       0
+                    15              2799       0
+                    16              2778       0
+                    17              2858       0
+                    18              2777       0
+                    19              2773       0
+Averages:     9.526    2762       0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ FREERFLAG:  Normal termination
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: CAD              version 8.0.012 :         ##
+ ###############################################################
+ User: fuxingke  Run date:  7/12/2023 Run time: 23:31:54 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Comment line---  
+ Data line--- LABI FILE 1  ALLIN
+ Data line--- LABI FILE 2  E1=FreeR_flag
+ Data line--- XNAME FILE 2  E1=unknown
+ Data line--- DNAME FILE 2  E1=unknown071223
+ Data line--- END
+ No CTYP lines input for file:  1
+ No CTYP lines input for file:  2
+    Indices output even if all data items flagged "missing"
+ Warning, NOT all LABOUT data lines given
+ Warning, NOT all LABOUT data lines given
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: shelx_ecal_cad.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown071223
+             47.7600  188.1280   47.7730   90.0000  102.6590   90.0000
+             0.00000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 25321
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA EA SIGEA ALPHA
+
+ * Column Types :
+
+ H H H F Q E Q P
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00049    0.24990     (     45.244 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+Reciprocal space symmetry: 
+Space group: "P 1 21 1" Point group: "PG2" Laue group: "2/m" 
+Reference asymmetric unit: "k>=0 and (l>0 or (l=0 and h>=0))" 
+  (change of basis may be applied) 
+
+ Spacegroup 4 "P 1 21 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  -h,+k,-l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  +h,-k,+l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [2/m] hkl:k>=0, l>=0  hk0:h>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=FA  E2=SIGFA  E3=EA  E4=SIGEA  E5=ALPHA
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :   8
+ Accumulated Out_Put_MTZ_labels are:
+  E11=FA  E21=SIGFA  E31=EA  E41=SIGEA
+  E51=ALPHA 
+
+
+ MTZOUT_LABELS are H K L and -
+  FA  SIGFA  EA  SIGEA
+  ALPHA 
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: /tmp/fuxingke/uniq22035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI FreeR_flag
+
+ * Column Types :
+
+ H H H F Q I
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+ Data line--- LABIN  E1=FreeR_flag
+
+
+ After Processing File_Number:  2
+ Number of columns so far    :   9
+ Accumulated Out_Put_MTZ_labels are:
+  E11=FA  E21=SIGFA  E31=EA  E41=SIGEA
+  E51=ALPHA  E12=FreeR_flag 
+
+
+ MTZOUT_LABELS are H K L and -
+  FA  SIGFA  EA  SIGEA
+  ALPHA  FreeR_flag 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=FA  E2=SIGFA  E3=EA  E4=SIGEA  E5=ALPHA
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: shelx_ecal_cad.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown071223
+             47.7600  188.1280   47.7730   90.0000  102.6590   90.0000
+             0.00000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 25321
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA EA SIGEA ALPHA
+
+ * Column Types :
+
+ H H H F Q E Q P
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00049    0.24990     (     45.244 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of      8 Columns
+ and a total of      25321 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  h0l 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =      25321
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      25328
+ Data line--- LABIN  E1=FreeR_flag
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: /tmp/fuxingke/uniq22035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI FreeR_flag
+
+ * Column Types :
+
+ H H H F Q I
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+ Data line--- XNAME  E1=unknown
+ Data line--- DNAME  E1=unknown071223
+
+ Reading from HKLIN mtz file_Number = :2
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN2 contains a total of      6 Columns
+ and a total of      55247 Reflections
+
+
+ For file HKLIN2
+ Total Number of HKL read                         =      55247
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      56164
+
+
+ Total number read for all files    =      80568
+ Total passed to sort for all files =      81492
+ Total number systematic absent     =          0
+ Total number rejected outside resol=          0
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =     5
+
+ File_Number =    2 Number_Columns_Selected =     1
+
+ Data line--- LABOUT E11=FA E21=SIGFA E31=EA E41=SIGEA E51=ALPHA E12=FreeR_flag
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: /tmp/fuxingke/uniq32035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown071223
+             47.7600  188.1280   47.7730   90.0000  102.6590   90.0000
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA EA SIGEA ALPHA FreeR_flag
+
+ * Column Types :
+
+ H H H F Q E Q P I
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+
+
+ Total number from Sorting Routine =      81492
+ Final Total of Unique records to HKLOUT =      55247
+ Final Total of Missing records to HKLOUT =          0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.3s System:    0.0s Elapsed:     0:01  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: FREERFLAG            version 2.2 : 26/03/20##
+ ###############################################################
+ User: fuxingke  Run date:  7/12/2023 Run time: 23:31:55 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- COMPLETE FREE=FreeR_flag
+ Data line--- END
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: /tmp/fuxingke/uniq32035289.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown071223
+             47.7600  188.1280   47.7730   90.0000  102.6590   90.0000
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA EA SIGEA ALPHA FreeR_flag
+
+ * Column Types :
+
+ H H H F Q E Q P I
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  0k0 
+  Multiplicity   2
+
+  EPSILON Zone   2
+  Reflections of type  hkl 
+  Multiplicity   1
+
+ Grid of reflections initialized:
+ H K L min   -25 -96 -25
+ H K L max    25  96  25
+ H K L inc    51 193  51
+ ngrid       501993
+
+***** Twin laws are not used but reflections that are symmetry equivalent in the crystal 
+point group acquire the same flag.
+ lookup =            1           2           3           9
+ lsprgi = H                             K                             L                             FREE                          
+***** COMPLETE keyword was used.
+The number of missing flags =          0
+*****   All Reflections binned into  20 segments
+ *** labelled 0 through to  19 ***** 
+
+ Number of symmetry operations in the composition point group:  2
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: shelx_7aov-sf_ecal_cad_unique.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown071223
+             47.7600  188.1280   47.7730   90.0000  102.6590   90.0000
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 55247
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA EA SIGEA ALPHA FreeR_flag
+
+ * Column Types :
+
+ H H H F Q E Q P I
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.7600  188.1280   47.7730   90.0000  102.6590   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.25000     (     94.064 -      2.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1 21 1' (number     4)
+
+ Number of reflections:   55247
+ Number for flagged reflections for each bin: 
+ Reflection flag =:      Number:
+                     0              2711    2711
+                     1              2769    2769
+                     2              2785    2785
+                     3              2783    2783
+                     4              2763    2763
+                     5              2793    2793
+                     6              2736    2736
+                     7              2712    2712
+                     8              2730    2730
+                     9              2665    2665
+                    10              2810    2810
+                    11              2696    2696
+                    12              2778    2778
+                    13              2859    2859
+                    14              2724    2724
+                    15              2822    2822
+                    16              2802    2802
+                    17              2773    2773
+                    18              2782    2782
+                    19              2754    2754
+Averages:     9.521    2762    2762
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ FREERFLAG:  Normal termination
+Times: User:       0.2s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>

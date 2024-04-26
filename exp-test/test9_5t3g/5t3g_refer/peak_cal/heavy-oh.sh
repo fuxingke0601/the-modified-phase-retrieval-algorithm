@@ -1,0 +1,83 @@
+#!/bin/sh
+
+bp3 HKLIN 5t3g-sf.mtz HKLOUT nextrun.mtz << eof > nextrun.log
+
+SITE   1 -0.914 -0.288 -0.060  
+SITE   2 -0.983 -0.850 -0.075  
+SITE   3 -0.512 -0.177 -0.091  
+SITE   4 -0.875 -0.451 -0.004  
+SITE   5 -0.000 -0.850 -0.075  
+SITE   6 -0.590 -0.484 -0.076  
+SITE   7 -0.446 -0.605 -0.005  
+SITE   8 -0.614 -0.518 -0.109  
+SITE   9 -0.889 -0.466 -0.069  
+SITE  10 -0.948 -0.868 -0.072  
+SITE  11 -0.029 -0.866 -0.011  
+SITE  12 -0.951 -0.272 -0.056  
+SITE  13 -0.927 -0.327 -0.057  
+SITE  14 -0.881 -0.219 -0.051  
+SITE  15 -0.003 -0.882 -0.072  
+
+
+XTAL bp3_phase
+  CELL   57.615   57.615  150.808  90.000  90.000  90.000
+  ATOM SE SITE 1
+    OCCU   0.848
+    BISO  19.953
+  ATOM SE SITE 2
+    OCCU   0.843
+    BISO  19.952
+  ATOM SE SITE 3
+    OCCU   0.336
+    BISO  19.993
+  ATOM SE SITE 4
+    OCCU   0.353
+    BISO  19.992
+  ATOM SE SITE 5
+    OCCU   0.000
+    BISO  20.000
+  ATOM SE SITE 6
+    OCCU   0.255
+    BISO  19.996
+  ATOM SE SITE 7
+    OCCU   0.252
+    BISO  19.996
+  ATOM SE SITE 8
+    OCCU   0.243
+    BISO  19.996
+  ATOM SE SITE 9
+    OCCU   0.202
+    BISO  19.997
+  ATOM SE SITE 10
+    OCCU   0.116
+    BISO  19.999
+  ATOM SE SITE 11
+    OCCU   0.193
+    BISO  19.997
+  ATOM SE SITE 12
+    OCCU   0.083
+    BISO  20.000
+  ATOM SE SITE 13
+    OCCU   0.100
+    BISO  19.999
+  ATOM SE SITE 14
+    OCCU   0.035
+    BISO  20.000
+  ATOM SE SITE 15
+    OCCU   0.126
+    BISO  19.999
+  DNAMe bp3_phase
+    COLUmn  F+= F(+)  SF+= SIGF(+)  F-= F(-)  SF-= SIGF(-)
+    RESOlution    1.55   31.65
+    BINS 17
+    SDLU  0.733568  0.865891  0.892315  0.883039  0.885257  0.889002  0.832488  0.793767  0.788208  0.656173  0.589243  0.493030  0.391601  0.484088  0.465118  0.537653  0.612014 
+    FORM  SE FP=  -5.979  FPP=   3.831
+
+
+TARGet SAD
+
+# Refine all parameters
+REFAll
+
+
+eof

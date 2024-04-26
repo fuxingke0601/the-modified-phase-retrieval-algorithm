@@ -1,0 +1,1 @@
+/ssd2/scripts/autosol_refine3.sh ../../../27_5ndh_4BR_P212121/5ndh-sf.mtz ../../../27_5ndh_4BR_P212121/rcsb_pdb_5NDH.fasta ../pdb_CF_hand_format.pdb BR 0.9201 0.6368 4

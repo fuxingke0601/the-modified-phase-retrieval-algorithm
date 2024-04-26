@@ -1,0 +1,1662 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                --- RESOLVE ---                      *
+        *                                                     *
+        *         Statistical density modification            *
+        *             Automated model-building                *
+        *                                                     *
+        *                For on-line help                     *
+        *            see "http://solve.lanl.gov"              *
+        *                                                     *
+        *      This software uses library routines from the   *
+        *      CCP4 suite (http://www.ccp4.ac.uk) for which   *
+        *           the author is very thankful!              *
+        *******************************************************
+
+               (version 2.15 of 20-Mar-2010)
+                       (size =  12)
+  Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+>workdir AutoSol_run_1_/TEMP0
+Work directory will be : AutoSol_run_1_/TEMP0/
+
+>outputdir AutoSol_run_1_
+Directory for STOPWIZARD will be AutoSol_run_1_/
+
+>freer_if_present
+Only writing out FreeR_flag if present
+
+>hklin phaser_5.mtz
+Data to be read from mtz file: phaser_5.mtz
+
+>labin FP=FP SIGFP=SIGFP PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB
+Current value of "LABIN" is: labin FP=FP SIGFP=SIGFP PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB                                                                                                                                                                               
+
+>LABIN HLC=HLC HLD=HLD
+Current value of "LABIN" is: labin FP=FP SIGFP=SIGFP PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB HLC=HLC HLD=HLD                                                                                                                                                               
+
+>hklout resolve_wang_20A_5.mtz
+Data to be written to mtz file: resolve_wang_20A_5.mtz
+
+>solvent_content 0.5649
+Fraction of unit cell assumed to be solvent is:    0.5649000    
+
+>no_build
+Model will not be built
+
+>mask_cycles 1
+Number of mask/image cycles:            1
+
+>minor_cycles 4
+Number of minor cycles per mask/image  cycle:            4
+
+>RESOLUTION 1000.0 1.55
+Resolution range (A) is:     1.550000     to     1000.000    
+
+>ha_file None
+Heavy atom sites will be read from file: None
+The file does not exist...ignoring it
+
+>seq_file seq.dat
+Sequence file: seq.dat
+Expecting 1-letter aa sequence of chains, chains separated by lines starting with ">" 
+
+>hklstart phaser_5_fwt.mtz
+Starting phases (but not probabilities) read from mtz file: phaser_5_fwt.mtz
+
+>labstart FP=FWT PHIB=PHWT
+Current value of "LABSTART" is: labin FP=FWT PHIB=PHWT                                                                                                                                                                                                                  
+
+>keep_f_mag
+HKLSTART dataset will keep |F| (normally set to F of hklin)
+
+>phases_from_solve
+Input map assumed experimental
+
+>fom_start    0.34
+FOM of starting map assumed to be 0.34
+
+>modify
+Modifying density near ha sites defined by model pdb file and rad_mask
+
+>rad_mask    1.55
+Radius for creating solvent model:     1.550000    
+
+>model ha_5.pdb_formatted.pdb
+A model will be used to estimate electron density or mask in part of the unit cell.
+Model coords to be read from pdb file: ha_5.pdb_formatted.pdb
+
+>wang_radius    8.00
+Wang radius for solvent mask identification for each mask cycle: will be     8.000000    
+
+>wang_radius   14.00
+Wang radius for solvent mask identification for each mask cycle: will be     14.00000    
+
+>wang_radius   20.00
+Wang radius for solvent mask identification for each mask cycle: will be     20.00000    
+
+>use_wang
+Wang method for solvent mask will be used
+
+>no_ha
+no_ha: heavy-atoms not written out in pdb files
+
+>database 5
+Entry in database of histograms to use:            5
+
+>no_optimize_ncs
+Not optimizing NCS
+
+>nohl
+No HL parameters calculated
+
+>spg_name_use P 41 21 2
+Space group name for output PDB file only: P 41 21 2  
+
+>min_z_value_rho -3.0
+Minimum z-value for a segment not matched to sequence:    -3.000000    
+
+>rho_overlap_min   0.300
+Minimum <rho1*rho2> to keep NCS from ha sites    0.3000000    
+(Note: scaled by ncs copies, value above is for 2 copies)
+
+>no_create_free
+Will not create FREE (test) set
+
+>use_all_for_test
+Will use all data for testing solvent content and histograms
+
+>group_ca_length 4
+Minimum # of residues in a group to keep=           4
+
+>group_length 2
+Minimum # of segments in a group to keep=           2
+
+All done with inputs
+Building protein
+Setting up for building protein
+Standard fill-in residues: ALA A GLY G
+Standard main-chain atoms: N    CA   C    O    CB   NONE
+All main-chain atoms: N     CA    C     O     
+Max dist between adjacent N    atoms:     6.000000    
+List of all residues: GLY ALA SER VAL ILE LEU MET CYS PHE TYR LYS ARG TRP HIS GLU ASP GLN ASN PRO THR 
+List of 1-letter code of residues: GASVILMCFYKRWHEDQNPT
+List of number of atoms in side-chains:            0           1           2           3           4           4           4           2           7           8           5           7          10           6           5           4           5           4           3           3
+checking license file.. solve2.access
+
+       The date today is 29-oct-23.  Your license is good until 15-dec-96.
+
+Opened mtz file phaser_5.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    57.61500        57.61500        150.8080        90.00000        90.00000        90.00000        0.000000    
+Dataset            2 project             crystal             dataset                        1    57.61500        57.61500        150.8080        90.00000        90.00000        90.00000        1.000000    
+Reading SG information from phaser_5.mtz
+Space group name: P41212     Point group: 422       
+Space group number :          92 Symmetry operators:            8
+Number of columns:           21
+H                             K                             L                             FP                            SIGFP                         PHIB                          FOM                           HLA                           HLB                           HLC                           HLD                           HLanomA                       HLanomB                       HLanomC                       HLanomD                       FWT                           PHIFWT                        F(+)                          SIGF(+)                       F(-)                          SIGF(-)                       
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     FP                            
+DATA# 5  PHIB                           :     PHIB                          
+DATA# 6  FOM                            :     FOM                           
+DATA# 7  HLA                            :     HLA                           
+DATA# 8  HLB                            :     HLB                           
+DATA# 9  HLC                            :     HLC                           
+DATA# 10  HLD                            :     HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                          :     SIGFP                         
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                    
+FP taken from column           4
+Dataset information for dataset number           2 and ID=           1
+Dataset name:dataset             
+Crystal name:crystal             
+Project name:project             
+Cell:      57.615002       57.615002       150.80800       90.000000       90.000000       90.000000
+Wavelength:    1.000000    
+PHIB taken from column           6
+FOM taken from column           7
+Using HLA HLB HLC HLD coefficients
+Reading in SIGFP from column            5
+
+No FreeR_flag read in or created
+Total of        35390 reflections read from file
+Guessing FreeR_flag corresponding to free reflections
+This can be set with free_id xx
+No freeR reflections at all
+Total of            0 of        35390 reflections in test set
+ High-resolution limit of input phased data:  1.55
+Adding F000 term (0.0) to this list
+Closed mtz file
+Reading (phaser_5_fwt.mtz                                                                ) to get limits of reflection indices
+Opened mtz file phaser_5_fwt.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    57.61500        57.61500        150.8080        90.00000        90.00000        90.00000        0.000000    
+Dataset            2 project             crystal             dataset                        1    57.61500        57.61500        150.8080        90.00000        90.00000        90.00000        1.000000    
+Cell dimensions for this dataset vs original: 
+1 : 57.615 :: 57.615
+2 : 57.615 :: 57.615
+3 : 150.808 :: 150.808
+4 : 90 :: 90
+5 : 90 :: 90
+6 : 90 :: 90
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     FWT                           
+DATA# 5  PHIB                           :     PHWT                          
+DATA# 6  FOM                           
+DATA# 7  HLA                           
+DATA# 8  HLB                           
+DATA# 9  HLC                           
+DATA# 10  HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                          :     SIGFP                         
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                    
+FP taken from column          12
+PHIB taken from column          13
+Total of        35346 reflections read from file
+Adding F000 term (0.0) to this list
+Closed mtz file
+ Starting resolution:  1.55 max:  1.55
+Space group is          92
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+0 -1 0 0.5
+1 0 0 0.5
+0 0 1 0.25
+SYMMETRY ELEMENT 2
+0 1 0 0.5
+-1 0 0 0.5
+0 0 1 0.75
+SYMMETRY ELEMENT 3
+1 0 0 0.5
+0 -1 0 0.5
+0 0 -1 0.75
+SYMMETRY ELEMENT 4
+-1 0 0 0.5
+0 1 0 0.5
+0 0 -1 0.25
+SYMMETRY ELEMENT 5
+-1 0 0 0
+0 -1 0 0
+0 0 1 0.5
+SYMMETRY ELEMENT 6
+0 1 0 0
+1 0 0 0
+0 0 -1 0
+SYMMETRY ELEMENT 7
+0 -1 0 0
+-1 0 0 0
+0 0 -1 0.5
+SPACE GROUP SYMBOL: P 41 21 2
+CHECK ON SPACE GROUP SYMBOL: P 41 21 2
+HALL SYMBOL :  P 4abw 2nw
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.01736 X +  -0.00000 Y +  -0.00000 Z 
+     fractional y=  0.00000 X +   0.01736 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.00663 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 57.61500 x +   0.00007 y +   0.00017 z 
+     Orthogonal Y=  0.00000 x +  57.61500 y +   0.00017 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y + 150.80800 z 
+
+Estimated # of atoms in au:        1433
+Not separating out FREE set from other reflections for main cycles. Using all data.
+
+Expected resolution-corrected F at d = 2.9A : 771.506
+
+ Results of wilson scaling:
+ Scale on I =     17.393
+ B-value =      0.269
+
+ Scaling data with value of     17.393
+
+Reading model density histograms from /usr/local/phenix-1.20.1-4487/modules/solve_resolve/ext_ref_files/segments/rho.list
+Read total of           10 sets of density functions
+
+ 1.2 A gvp model data         
+ 
+Database 1
+ Protein
+0.13883 49.993 -0.052545 
+0.0028613 0.65609 0.25933 
+0.00094606 1.6127e-07 0 
+ Solvent 
+0.24297 50 -0.066461 
+0 0.27173 0.36529 
+0 0 0 
+
+ 2.1 A p9 model data          
+ 
+Database 2
+ Protein
+0.044882 10.876 -0.099183 
+0.0065938 0.1915 0.81579 
+0 4.992e-07 0 
+ Solvent 
+0.23814 49.998 -0.018448 
+0 0.092931 5.9969e-08 
+0 0 0 
+
+ 2.5 A p9 model data          
+ 
+Database 3
+ Protein
+0.028005 5.0887 -0.10737 
+0.0072492 0.1898 0.86087 
+0 6.5751e-08 0 
+ Solvent 
+0.20336 49.994 -0.021217 
+0 0.051284 -2.8788e-09 
+0 0 0 
+
+ 3.0 A p9 model data          
+ 
+Database 4
+ Protein
+0.015053 1.4002 -0.6344 
+0.0063877 0.16235 0.49508 
+2.1104e-07 7.8393e-09 0 
+ Solvent 
+0.086901 18.852 0.010379 
+0.014104 3.0605 -0.056333 
+0 0 0 
+
+ 3 A dehalogenase model       
+ 
+Database 5
+ Protein
+0.0191631 3.18726 -0.512357 
+0.00724949 0.64234 1.37647 
+0.0108539 1.62321 5.24151e-05 
+ Solvent 
+0.0309225 7.89451 -3.40749e-05 
+0 0.000394973 0 
+0.100204 31.8955 0.00790565 
+
+ 4.0 A p9 model data          
+ 
+Database 6
+ Protein
+0.01046 0.88702 -0.71921 
+0.0077113 0.1957 0.45527 
+0 1.7141e-08 0 
+ Solvent 
+0.058836 10.067 0.0059672 
+0.012859 1.8175 -0.011273 
+0 0 0 
+
+ Acorn map 2013-02-16 real dat
+ 
+Database 7
+ Protein
+0.018509 4.3226 -0.1313 
+0.01638 1.1255 -0.36873 
+0.00068238 1.8232e-08 0 
+ Solvent 
+0.051385 6.7883 -0.030178 
+0.01453 2.9458 0.047202 
+0 0 0 
+
+carbonic anhydrase 3ryj not sh
+ 
+Database 8
+ Protein
+0.033761 6.5653 -0.71026 
+0.007805 0.37567 0.0043698 
+0.00040671 8.1446e-09 0 
+ Solvent 
+0.019614 12.96 0.044435 
+0.0405 3.3172 -0.056361 
+0 0 0 
+
+carbonic anhydrase 3ryj sharpe
+ 
+Database 9
+ Protein
+0.031194 3.1578 -0.40319 
+0.0043546 0.27955 0.30159 
+0.00042361 7.5122e-08 0 
+ Solvent 
+0.059649 5.9617 -0.034235 
+0.0038858 1.0492 0.10247 
+0 0 0 
+
+heavy-atom model B= 7-10 not s
+ 
+Database 10
+ Protein
+0.05154 18.661 0.050944 
+0.024333 3.1634 0.021875 
+0.00043885 3.954e-09 0 
+ Solvent 
+0.050958 22.738 -0.077164 
+0.057472 10.748 0.046222 
+0 0 0 
+Highest value of ix, iy, iz in a.u:         119          119           37
+nu nv nw:          120         120         300   Number of grid points in au:      540060
+ Mean fom of this map was:  0.34
+Reading a pdb file and estimating mask with it.
+Opening ha_5.pdb_formatted.pdb and reading coordinates
+Center of molecule read in with           46
+ atoms is       9.8188248       27.362675       66.341957
+Highest residue number is :           55
+Reading second dataset in read_start_file and putting it in refl
+Opened mtz file phaser_5_fwt.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    57.61500        57.61500        150.8080        90.00000        90.00000        90.00000        0.000000    
+Dataset            2 project             crystal             dataset                        1    57.61500        57.61500        150.8080        90.00000        90.00000        90.00000        1.000000    
+Cell dimensions for this dataset vs original: 
+1 : 57.615 :: 57.615
+2 : 57.615 :: 57.615
+3 : 150.808 :: 150.808
+4 : 90 :: 90
+5 : 90 :: 90
+6 : 90 :: 90
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     FWT                           
+DATA# 5  PHIB                           :     PHWT                          
+DATA# 6  FOM                           
+DATA# 7  HLA                           
+DATA# 8  HLB                           
+DATA# 9  HLC                           
+DATA# 10  HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                          :     SIGFP                         
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                    
+FP taken from column          12
+PHIB taken from column          13
+Total of        35346 reflections read from file
+Adding F000 term (0.0) to this list
+Closed mtz file
+
+ Getting phases and fom from mtz file
+phaser_5_fwt.mtz                                                                
+
+Total of        35346 reflns taken from this file
+Scaling refl_struct_0.refl to match refl_orig:    17.39473       4.7258053E-02
+Modifying map to remove ha sites
+Modified input map with cutoff of     2.000000     sigma
+
+ Summary of starting FOM vs resolution 
+    RES     FOM   FOM-smoothed  N 
+   13.64    0.45    0.84       162
+    8.55    0.54    0.83       248
+    6.44    0.65    0.83       447
+    5.08    0.66    0.83       765
+    4.28    0.72    0.83       752
+    3.70    0.76    0.82      1322
+    3.23    0.85    0.82      1570
+    2.89    0.92    0.81      1732
+    2.64    0.96    0.81      1997
+    2.44    1.00    0.80      2038
+    2.27    0.98    0.80      2688
+    2.13    0.96    0.79      2312
+    2.01    0.92    0.79      2882
+    1.90    0.88    0.78      3613
+    1.78    0.76    0.77      4600
+    1.68    0.62    0.77      4266
+    1.60    0.54    0.76      3996
+
+ Mean fom of this map was:  0.34
+Starting smoothing radius will be     20.00000    
+Smoothing radius for all cycles after the first will be     20.00000    
+
+ Solvent content will be   0.56
+Using database entry            5 for histograms  (" 3 A dehalogenase model       ")
+
+Total mask cycles:            1
+Total density modification mask cycles:            1
+
+ Cycle  Ref NCS  Use NCS  Build     image    solvent    Extend  Cycles  Test
+
+  1      NO         NO      NO        NO        YES       NO       4
+
+
+                        Mask cycle            1
+               Weighting this cycle:     1.000000    
+
+ Histogram DB entry #   5 (" 3 A dehalogenase model       ")
+ Solvent content:  0.56 Smoothing radius: 20.00
+Using Wang mask (highest SD points)
+ New Wang averaging radius = 20.00
+
+ Mean +/- SD of density in protein region :   0.00 +/-   0.80
+ Mean +/- SD of density in solvent region :  -0.00 +/-   0.63
+
+
+ MEAN SD PROT for SQ-SM :   0.59 +/-   0.05
+ MEAN SD SOLV for SQ-SM :   0.41 +/-   0.06
+
+ N:  234979   305081
+Estimate of solvent fraction: 53.1754% 
+
+
+Plot     1
+
+
+ -------------------------------------------------------------------------------
+
+ Plot of probability that a grid point is part of protein region
+ vs percentiles of grid points
+
+ All points to the left of the + signs are in solvent masked region
+ those to right are in protein masked region.
+
+ The values of p(protein) should change from low to high approximately at the 
+ value of the fraction of solvent indicated by the + signs.
+ The sharper the transition the better.
+
+ Note: the mask is only used to make an estimate of the p(protein)
+
+ The values of p(protein) are used to weight the contribution of each grid
+  point to the probability of the map:
+
+  p(rho) = p(rho|protein) p(protein) +  p(rho|solvent) (1-p(protein))
+
+ This says that the probability that we would observe  the value rho  of 
+ electron density at this point is the probability that we 
+ would observe rho if this were really protein times the probability 
+ that this is  protein, plus the probability that we would observe
+ rho if it were really solvent, times the probability that
+ it is solvent.
+
+                     Probability that grid points are in protein region
+
+
+                         1.0  .................................xxxxxxxxxxxxxxxxx
+                              .                           +  xx                .
+                              .                           + x                  .
+                              .                           +                    .
+                              .                           +x                   .
+                              .                           x                    .
+                              .                           +                    .
+                p(protein)    .                          x+                    .
+                         0.5  .                           +                    .
+                              .                         x +                    .
+                              .                           +                    .
+                              .                        x  +                    .
+                              .                       x   +                    .
+                              .                      x    +                    .
+                              .                   xxx     +                    .
+                         0.0  .xxxxxxxxxxxxxxxxxxx........+.....................
+
+                              0       20        40        60        80       100
+
+                                            Percentile of grid points
+ -------------------------------------------------------------------------------
+
+
+
+ Range of P(protein)  and percentiles 
+ used for histograms of protein and solvent:
+
+               P(protein)                  Percentile
+              Low      High              Low      High
+ Protein:    0.89      1.00               64       100
+ Solvent:    0.00      0.13                0        46
+
+
+
+Plot     2
+
+
+ -------------------------------------------------------------------------------
+
+ Plot of probability that a grid point is part of protein region
+ vs percentiles of grid points
+
+ All points to the left of the "+" signs are in solvent masked region
+ those to right are in protein masked region.
+
+ The values of p(protein) should change from low to high approximately at the
+ value of the fraction of solvent indicated by the "+" signs.
+ The sharper the transition the better.
+
+ Note: the mask is only used to make an estimate of the p(protein)
+
+ The values of p(protein) are used to weight the contribution of each grid
+ point to the probability of the map:
+
+  p(rho) = p(rho|protein) p(protein) + p(rho|solvent) (1-p(protein))
+
+ This says that the probability that we would observe the value "rho" of
+ electron density at this point is the probability that we
+ would observe "rho" if this were really protein times the probability
+ that this is protein, plus the probability that we would observe
+ "rho" if it were really solvent, times the probability that
+ it is solvent.
+
+                     Probability that grid points are in protein region
+
+
+                         1.0  .................................xxxxxxxxxxxxxxxxx 
+                              .                           +  xx                . 
+                              .                           + x                  . 
+                              .                           +                    . 
+                              .                           +x                   . 
+                              .                           x                    . 
+                              .                           +                    . 
+                p(protein)    .                          x+                    . 
+                         0.5  .                           +                    . 
+                              .                         x +                    . 
+                              .                           +                    . 
+                              .                        x  +                    . 
+                              .                       x   +                    . 
+                              .                      x    +                    . 
+                              .                   xxx     +                    . 
+                         0.0  .xxxxxxxxxxxxxxxxxxx........+..................... 
+
+                              0       20        40        60        80       100
+
+                                            Percentile of grid points
+ -------------------------------------------------------------------------------
+
+
+CC of final prob mask and model mask:    4.7430549E-02
+
+ Minor cycle    1 of    4 Resolution =   1.55
+
+Setting standard database 5
+Offset for s_rho_cur: 2.07981e-10
+Values of m, alpha, s
+Centric:    0.25088869726507596       0.1303555       0.2507110    
+Acentric:    0.88493274681345080       0.7828789       0.4080807    
+Using all points for histograms
+Fraction protein =    0.451  200259
+Fraction solvent=    0.549  243359
+
+
+Plot     3
+
+
+ Plot of Observed (o) and model (x) electron density distributions for protein
+ region, where the model distribution is given by,
+  p_model(beta*(rho+offset)) = p_ideal(rho)
+ and then convoluted with a gaussian with width of sigma
+ where sigma, offset and beta are given below under "Error estimate."
+
+
+                          0.03..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .              oxxxxxxo                          .
+                              .             xx    .oxx                         .
+                              .           xx      .   xx                       .
+                              .          xx       .     xx                     .
+                p(rho)        .         x         .      xx                    .
+                              .       xx          .        x                   .
+                              .      xx           .        oxxx                .
+                              .     xx            .           xx               .
+                              .   xxo             .            xxx             .
+                              .  xx               .               xxx          .
+                              xxx                 .                 xxxo       .
+                              x                   .                    xxxxxxooo
+                         0.0  x..............................................xxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+
+
+Plot     4
+
+
+ Plot of Observed (o) and model (x) 
+ electron density distributions for solvent region
+
+
+                          0.03..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .                 xxxxxx                         .
+                              .               xx  .  xx                        .
+                              .              xx   .    xx                      .
+                              .             xo    .     xx                     .
+                p(rho)        .           ox      .      xx                    .
+                              .           x       .       xx                   .
+                              .         xx        .        xx                  .
+                              .        xx         .          x                 .
+                              .       xx          .           xx               .
+                              .     xx            .            xx              .
+                              .   xxx             .             xxx            .
+                              xxxxx               .               xxxxxo       .
+                         0.0  x........................................xxxxxxxxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+Modifying map to remove ha sites
+Modified input map with cutoff of     2.000000     sigma
+
+      Error estimate for map on this cycle
+
+ The estimated error in this map is    0.60 based on an analysis of the electron
+ density distributions in the protein and solvent regions with rms
+ values of    0.80 and    0.63 respectively.
+ The value of the scale factor beta relating idealized density distributions
+ P_ideal(rho) to observed ones is:
+
+      obs_rho = beta * (ideal_rho + offset) + sigma
+
+ where beta =    0.63 offset is   -0.30   and sigma is a
+ random variable with rms value of    0.60
+
+
+ Mean starting figure of merit this cycle 
+    Overall    Centric    Acentric 
+       0.82       0.28       0.90
+      35390       4575      30815
+
+
+ Mean normalized structure factor changes this cycle 
+    Acentric       Centric           All
+       0.66         0.39            0.62
+      30815         4518           35333
+
+
+
+ New figure of merit (<m>) of phasing based on: 
+      (1) experimental phase information, and 
+      (2) the probability of the resulting map
+
+ These are the 2 sources of phase information used in resolve.  The phase
+ information from them should be correlated and the phase information from
+ the map should increase during statistical density modification.
+
+ Correlation between prior and map phase information is measured by
+ <cos(delta-phi)>, the mean cosine of the phase difference.
+
+ Best estimate of true figure of merit of map-probability phasing is 
+ ratio of correlation to <m> of prior information
+
+ Fraction of phase information from prior is estimated from <m> of prior, map
+
+
+
+
+
+                  Acentric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.37   0.17   0.42     0.15       0.64        0.42      30815
+
+  4.4    0.54   0.49   0.69     0.20       0.54        0.52       1184
+  2.8    0.56   0.47   0.71     0.28       0.56        0.71       4144
+  2.2    0.51   0.25   0.58     0.22       0.68        0.58       5342
+  1.9    0.41   0.15   0.45     0.17       0.68        0.45       5472
+  1.7    0.27   0.06   0.28     0.09       0.68        0.28       9702
+  1.6    0.18   0.03   0.19     0.07       0.68        0.19       4971
+
+ WGT:    1.00   1.00
+
+
+
+
+                  Centric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.11   0.20   0.24     0.06       0.35        0.24       4575
+
+  4.4    0.14   0.37   0.37     0.00       0.26        0.37        609
+  2.8    0.09   0.38   0.38     0.04       0.18        0.38        982
+  2.2    0.11   0.20   0.23     0.06       0.34        0.23        871
+  1.9    0.10   0.12   0.16     0.09       0.46        0.16        720
+  1.7    0.12   0.04   0.13     0.07       0.73        0.13       1075
+  1.6    0.11   0.02   0.11     0.11       0.85        0.11        318
+
+ WGT:    1.00   1.00
+
+
+
+
+                  All reflections:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.34   0.18   0.40     0.14       0.60        0.40      35390
+
+  4.4    0.40   0.45   0.58     0.13       0.44        0.42       1793
+  2.8    0.47   0.45   0.65     0.23       0.49        0.65       5126
+  2.2    0.46   0.24   0.53     0.20       0.63        0.53       6213
+  1.9    0.37   0.15   0.41     0.16       0.65        0.41       6192
+  1.7    0.25   0.06   0.26     0.08       0.69        0.26      10777
+  1.6    0.18   0.03   0.18     0.07       0.69        0.18       5289
+
+ WGT:    1.00   1.00
+
+
+
+
+ **********************************************************************
+ *                                                                    *
+ *     CORRECTED OVERALL FIGURE OF MERIT OF PHASING:   0.40           *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM PRIOR:  0.60      *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM MAP:    0.40      *
+ *     NOTE: The fraction from prior will be roughly proportional to  *
+ *      prior_weight (current value =   1.00)                         *
+ *                                                                    *
+ *     BIAS RATIO:  2.34                                              *
+ *                                                                    *
+ *     Bias ratio is given by <cos(phiA-phiB)>/(FOMA*FOMB),           *
+ *     where phiA and FOMA are phase and <m> from prior (model or     *
+ *     experiment) and phiB and FOMB are from map.                    *
+ *     Bias ratio is about 1 if phiA and phiB are independent,        *
+ *                        >1 if phiB is biased by phiA,               *
+ *                        <1 if FOMA or FOMB are overestimated        *
+ *                                                                    *
+ *     If BIAS RATIO <1, CORRECTED FOM = ESTIMATED FOM * BIAS RATIO   *
+ **********************************************************************
+
+ Analysis of FC
+ CC of FP and FC vs resolution (CALC is fit to the observed CC with a pseudo-B)
+              ACENTRIC                      CENTRIC
+          N        CC     CALC         N       CC     CALC         DMIN
+          66      0.26    0.31        96      0.13    0.31        10.36
+         143      0.35    0.31       105      0.18    0.31         7.48
+         295      0.26    0.30       152      0.31    0.30         5.75
+         550      0.35    0.30       215      0.31    0.30         4.60
+         569      0.31    0.29       183      0.34    0.29         4.03
+        1045      0.25    0.29       277      0.09    0.29         3.45
+        1281      0.31    0.28       289      0.23    0.28         3.05
+        1446      0.32    0.28       286      0.24    0.28         2.76
+        1697      0.33    0.27       300      0.24    0.27         2.53
+        1747      0.34    0.26       291      0.33    0.26         2.36
+        2345      0.30    0.26       343      0.26    0.26         2.19
+        2038      0.26    0.25       274      0.23    0.25         2.07
+        2550      0.22    0.24       332      0.22    0.24         1.96
+        3224      0.24    0.24       389      0.22    0.24         1.84
+        4143      0.23    0.23       457      0.15    0.23         1.73
+        3902      0.21    0.22       364      0.13    0.22         1.64
+        3774      0.18    0.21       222      0.06    0.21         1.55
+Overall average CC:    0.24794503274223972    
+ Results of wilson scaling of model Fc to Fo :
+ Scale on I to apply to Fc =     18.949
+ B-value to apply to Fc=     -1.353
+
+ Overall R-factor for FC vs FP: 0.545 for      35389 reflections
+Writing overall R-factor of  0.545  to resolve.rfactor 
+
+
+Cumulative phase change from start to end of this cycle [<cos(delta-phi)>]
+
+ DMIN  -----acentric--------  --------centric-------  ---------all---------
+        <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N 
+  0.0    0.88    0.89   30815   0.45    0.45    4575   0.82    0.86   35390
+  4.4    0.71    0.74    1184   0.13    0.19     609   0.51    0.62    1793
+  2.8    0.76    0.78    4144   0.16    0.22     982   0.64    0.72    5126
+  2.2    0.84    0.90    5342   0.38    0.56     871   0.78    0.88    6213
+  1.9    0.87    0.93    5472   0.51    0.74     720   0.82    0.92    6192
+  1.7    0.94    0.97    9702   0.77    0.94    1075   0.92    0.97   10777
+  1.6    0.97    0.99    4971   0.89    0.98     318   0.96    0.99    5289
+
+
+                         End of first cycle
+ ____________________________________________________________
+
+
+
+ Minor cycle    2 of    4 Resolution =   1.55
+
+Setting standard database 5
+Offset for s_rho_cur: 0.00216055
+Values of m, alpha, s
+Centric:    0.24014163941965258       0.1240850       0.2421133    
+Acentric:    0.41924594071041732       0.2415475       0.3853967    
+Using all points for histograms
+Fraction protein =    0.451  200259
+Fraction solvent=    0.549  243359
+
+
+Plot     5
+
+
+ Plot of Observed (o) and model (x) electron density distributions for protein
+ region, where the model distribution is given by,
+  p_model(beta*(rho+offset)) = p_ideal(rho)
+ and then convoluted with a gaussian with width of sigma
+ where sigma, offset and beta are given below under "Error estimate."
+
+
+                          0.03..................................................
+                              .                   .                            .
+                              .              xx   .                            .
+                              .            xxooxo .                            .
+                              .           xoo  oxo.                            .
+                              .          xx      xoo                           .
+                              .          x        xxo                          .
+                p(rho)        .         x         . xo                         .
+                              .        xx         .  xoo                       .
+                              .       ox          .   xxo                      .
+                              .       x           .     xxxo                   .
+                              .      xx           .        xxxxx               .
+                              .     xx            .          oooxxxxx          .
+                              .    xx             .              oooxxxx       .
+                              . oxx               .                    xxxxxxooo
+                         0.0  xxx............................................xxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+
+
+Plot     6
+
+
+ Plot of Observed (o) and model (x) 
+ electron density distributions for solvent region
+
+
+                          0.08..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .                  oxo                           .
+                              .                  x.xx                          .
+                              .                 x . x                          .
+                              .                 x .  x                         .
+                p(rho)        .                x  .  x                         .
+                              .                x  .  x                         .
+                              .               x   .  ox                        .
+                              .               x   .    x                       .
+                              .              x    .    x                       .
+                              .              x    .     x                      .
+                              .             x     .     xx                     .
+                              .           xx      .      xxx                   .
+                         0.0  xxxxxxxxxxxxx................xxxxxxxxxxxxxxxxxxxxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+Modifying map to remove ha sites
+Modified input map with cutoff of     2.000000     sigma
+
+      Error estimate for map on this cycle
+
+ The estimated error in this map is    0.23 based on an analysis of the electron
+ density distributions in the protein and solvent regions with rms
+ values of    0.73 and    0.31 respectively.
+ The value of the scale factor beta relating idealized density distributions
+ P_ideal(rho) to observed ones is:
+
+      obs_rho = beta * (ideal_rho + offset) + sigma
+
+ where beta =    0.89 offset is   -0.22   and sigma is a
+ random variable with rms value of    0.23
+
+
+ Mean starting figure of merit this cycle 
+    Overall    Centric    Acentric 
+       0.42       0.36       0.43
+      35390       4575      30815
+
+
+ Mean normalized structure factor changes this cycle 
+    Acentric       Centric           All
+       0.34         0.48            0.36
+      30815         4555           35370
+
+
+
+ New figure of merit (<m>) of phasing based on: 
+      (1) experimental phase information, and 
+      (2) the probability of the resulting map
+
+ These are the 2 sources of phase information used in resolve.  The phase
+ information from them should be correlated and the phase information from
+ the map should increase during statistical density modification.
+
+ Correlation between prior and map phase information is measured by
+ <cos(delta-phi)>, the mean cosine of the phase difference.
+
+ Best estimate of true figure of merit of map-probability phasing is 
+ ratio of correlation to <m> of prior information
+
+ Fraction of phase information from prior is estimated from <m> of prior, map
+
+
+
+
+
+                  Acentric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.37   0.48   0.57     0.27       0.43        0.57      30815
+
+  4.4    0.54   0.91   0.93     0.44       0.13        0.83       1184
+  2.8    0.56   0.89   0.92     0.52       0.17        0.92       4144
+  2.2    0.51   0.72   0.81     0.41       0.33        0.81       5342
+  1.9    0.41   0.54   0.66     0.31       0.40        0.66       5472
+  1.7    0.27   0.26   0.39     0.16       0.50        0.39       9702
+  1.6    0.18   0.12   0.22     0.06       0.55        0.22       4971
+
+ WGT:    1.00   1.00
+
+
+
+
+                  Centric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.11   0.52   0.53     0.06       0.16        0.53       4575
+
+  4.4    0.14   0.82   0.82    -0.01       0.11       -0.10        609
+  2.8    0.09   0.79   0.79     0.06       0.08        0.69        982
+  2.2    0.11   0.59   0.59     0.09       0.14        0.59        871
+  1.9    0.10   0.46   0.46     0.05       0.17        0.46        720
+  1.7    0.12   0.21   0.24     0.06       0.36        0.24       1075
+  1.6    0.11   0.10   0.15     0.08       0.53        0.15        318
+
+ WGT:    1.00   1.00
+
+
+
+
+                  All reflections:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.34   0.48   0.57     0.25       0.39        0.57      35390
+
+  4.4    0.40   0.88   0.89     0.29       0.12        0.72       1793
+  2.8    0.47   0.87   0.89     0.43       0.15        0.89       5126
+  2.2    0.46   0.70   0.78     0.37       0.30        0.78       6213
+  1.9    0.37   0.53   0.64     0.28       0.38        0.64       6192
+  1.7    0.25   0.26   0.37     0.15       0.49        0.37      10777
+  1.6    0.18   0.12   0.22     0.06       0.55        0.22       5289
+
+ WGT:    1.00   1.00
+
+
+
+
+ **********************************************************************
+ *                                                                    *
+ *     CORRECTED OVERALL FIGURE OF MERIT OF PHASING:   0.57           *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM PRIOR:  0.39      *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM MAP:    0.61      *
+ *     NOTE: The fraction from prior will be roughly proportional to  *
+ *      prior_weight (current value =   1.00)                         *
+ *                                                                    *
+ *     BIAS RATIO:  1.51                                              *
+ *                                                                    *
+ *     Bias ratio is given by <cos(phiA-phiB)>/(FOMA*FOMB),           *
+ *     where phiA and FOMA are phase and <m> from prior (model or     *
+ *     experiment) and phiB and FOMB are from map.                    *
+ *     Bias ratio is about 1 if phiA and phiB are independent,        *
+ *                        >1 if phiB is biased by phiA,               *
+ *                        <1 if FOMA or FOMB are overestimated        *
+ *                                                                    *
+ *     If BIAS RATIO <1, CORRECTED FOM = ESTIMATED FOM * BIAS RATIO   *
+ **********************************************************************
+
+ Analysis of FC
+ CC of FP and FC vs resolution (CALC is fit to the observed CC with a pseudo-B)
+              ACENTRIC                      CENTRIC
+          N        CC     CALC         N       CC     CALC         DMIN
+          66      0.40    0.61        96      0.20    0.61        10.36
+         143      0.63    0.60       105      0.54    0.60         7.48
+         295      0.53    0.59       152      0.47    0.59         5.75
+         550      0.60    0.57       215      0.48    0.58         4.60
+         568      0.62    0.56       183      0.52    0.56         4.03
+        1045      0.58    0.54       277      0.37    0.54         3.45
+        1281      0.60    0.52       289      0.45    0.52         3.05
+        1446      0.59    0.49       286      0.33    0.49         2.76
+        1697      0.57    0.47       300      0.39    0.47         2.53
+        1747      0.56    0.45       291      0.48    0.45         2.36
+        2345      0.54    0.43       343      0.45    0.43         2.19
+        2038      0.47    0.41       274      0.33    0.41         2.07
+        2550      0.45    0.39       332      0.32    0.39         1.96
+        3224      0.39    0.37       389      0.29    0.36         1.84
+        4143      0.32    0.34       457      0.21    0.34         1.73
+        3902      0.26    0.32       364      0.16    0.32         1.64
+        3774      0.16    0.30       222     -0.01    0.30         1.55
+Overall average CC:    0.40158936543198409    
+ Results of wilson scaling of model Fc to Fo :
+ Scale on I to apply to Fc =      1.906
+ B-value to apply to Fc=      9.513
+
+ Overall R-factor for FC vs FP: 0.460 for      35389 reflections
+Writing overall R-factor of  0.460  to resolve.rfactor 
+
+
+Cumulative phase change from start to end of this cycle [<cos(delta-phi)>]
+
+ DMIN  -----acentric--------  --------centric-------  ---------all---------
+        <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N 
+  0.0    0.67    0.69   30815   0.20    0.19    4575   0.61    0.63   35390
+  4.4    0.55    0.56    1184   0.01    0.03     609   0.36    0.39    1793
+  2.8    0.64    0.65    4144   0.05    0.08     982   0.53    0.55    5126
+  2.2    0.65    0.67    5342   0.13    0.22     871   0.57    0.62    6213
+  1.9    0.62    0.67    5472   0.15    0.26     720   0.57    0.63    6192
+  1.7    0.68    0.76    9702   0.41    0.56    1075   0.65    0.74   10777
+  1.6    0.76    0.85    4971   0.62    0.74     318   0.75    0.84    5289
+
+ Minor cycle    3 of    4 Resolution =   1.55
+
+Setting standard database 5
+Offset for s_rho_cur: -0.00017976
+Values of m, alpha, s
+Centric:    0.53001718864781566       0.2880103       0.4480103    
+Acentric:    0.57445900076425649       0.3644590       0.4697836    
+Using all points for histograms
+Fraction protein =    0.451  200259
+Fraction solvent=    0.549  243359
+
+
+Plot     7
+
+
+ Plot of Observed (o) and model (x) electron density distributions for protein
+ region, where the model distribution is given by,
+  p_model(beta*(rho+offset)) = p_ideal(rho)
+ and then convoluted with a gaussian with width of sigma
+ where sigma, offset and beta are given below under "Error estimate."
+
+
+                          0.03..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .          xxxxx    .                            .
+                              .         xx    xx  .                            .
+                              .        xx      xx .                            .
+                              .       xx        ox.                            .
+                p(rho)        .       x           xx                           .
+                              .      x            .xx                          .
+                              .     x             .  xx                        .
+                              .    xx             .    xxxx                    .
+                              .    x              .      oxxxxxx               .
+                              .  xx               .        ooooxxxxxx          .
+                              . xo                .             o ooxxxxxoo    .
+                              xxo                 .                      xxxxxxo
+                         0.0  o................................................x
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+
+
+Plot     8
+
+
+ Plot of Observed (o) and model (x) 
+ electron density distributions for solvent region
+
+
+                          0.08..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .                  ooo                           .
+                              .                  oxxo                          .
+                              .                 oxxxo                          .
+                              .                 x . xo                         .
+                p(rho)        .                ox .  x                         .
+                              .                x  .  x                         .
+                              .               xx  .  ox                        .
+                              .               o   .   ox                       .
+                              .              xo   .    x                       .
+                              .             xo    .    ox                      .
+                              .            xo     .     ox                     .
+                              .           xoo     .      oxx                   .
+                         0.0  xxxxxxxxxxxxo...............oxxxxxxxxxxxxxxxxxxxxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+Modifying map to remove ha sites
+Modified input map with cutoff of     2.000000     sigma
+
+      Error estimate for map on this cycle
+
+ The estimated error in this map is    0.24 based on an analysis of the electron
+ density distributions in the protein and solvent regions with rms
+ values of    0.94 and    0.33 respectively.
+ The value of the scale factor beta relating idealized density distributions
+ P_ideal(rho) to observed ones is:
+
+      obs_rho = beta * (ideal_rho + offset) + sigma
+
+ where beta =    0.99 offset is   -0.37   and sigma is a
+ random variable with rms value of    0.24
+
+
+ Mean starting figure of merit this cycle 
+    Overall    Centric    Acentric 
+       0.59       0.61       0.59
+      35390       4575      30815
+
+
+ Mean normalized structure factor changes this cycle 
+    Acentric       Centric           All
+       0.24         0.32            0.25
+      30815         4562           35377
+
+
+
+ New figure of merit (<m>) of phasing based on: 
+      (1) experimental phase information, and 
+      (2) the probability of the resulting map
+
+ These are the 2 sources of phase information used in resolve.  The phase
+ information from them should be correlated and the phase information from
+ the map should increase during statistical density modification.
+
+ Correlation between prior and map phase information is measured by
+ <cos(delta-phi)>, the mean cosine of the phase difference.
+
+ Best estimate of true figure of merit of map-probability phasing is 
+ ratio of correlation to <m> of prior information
+
+ Fraction of phase information from prior is estimated from <m> of prior, map
+
+
+
+
+
+                  Acentric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.37   0.51   0.60     0.32       0.41        0.60      30815
+
+  4.4    0.54   0.91   0.93     0.46       0.13        0.87       1184
+  2.8    0.56   0.89   0.92     0.52       0.17        0.92       4144
+  2.2    0.51   0.74   0.82     0.48       0.31        0.82       5342
+  1.9    0.41   0.60   0.70     0.38       0.37        0.70       5472
+  1.7    0.27   0.31   0.42     0.21       0.47        0.42       9702
+  1.6    0.18   0.14   0.24     0.10       0.54        0.24       4971
+
+ WGT:    1.00   1.00
+
+
+
+
+                  Centric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.11   0.54   0.55     0.07       0.15        0.55       4575
+
+  4.4    0.14   0.81   0.81    -0.04       0.11       -0.32        609
+  2.8    0.09   0.78   0.78     0.04       0.08        0.51        982
+  2.2    0.11   0.62   0.62     0.08       0.13        0.62        871
+  1.9    0.10   0.50   0.50     0.09       0.16        0.50        720
+  1.7    0.12   0.25   0.28     0.10       0.32        0.28       1075
+  1.6    0.11   0.11   0.16     0.13       0.50        0.16        318
+
+ WGT:    1.00   1.00
+
+
+
+
+                  All reflections:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.34   0.51   0.59     0.29       0.37        0.59      35390
+
+  4.4    0.40   0.88   0.89     0.29       0.12        0.73       1793
+  2.8    0.47   0.87   0.89     0.43       0.15        0.89       5126
+  2.2    0.46   0.72   0.79     0.42       0.29        0.79       6213
+  1.9    0.37   0.58   0.67     0.35       0.34        0.67       6192
+  1.7    0.25   0.30   0.41     0.20       0.46        0.41      10777
+  1.6    0.18   0.14   0.23     0.10       0.54        0.23       5289
+
+ WGT:    1.00   1.00
+
+
+
+
+ **********************************************************************
+ *                                                                    *
+ *     CORRECTED OVERALL FIGURE OF MERIT OF PHASING:   0.59           *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM PRIOR:  0.37      *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM MAP:    0.63      *
+ *     NOTE: The fraction from prior will be roughly proportional to  *
+ *      prior_weight (current value =   1.00)                         *
+ *                                                                    *
+ *     BIAS RATIO:  1.67                                              *
+ *                                                                    *
+ *     Bias ratio is given by <cos(phiA-phiB)>/(FOMA*FOMB),           *
+ *     where phiA and FOMA are phase and <m> from prior (model or     *
+ *     experiment) and phiB and FOMB are from map.                    *
+ *     Bias ratio is about 1 if phiA and phiB are independent,        *
+ *                        >1 if phiB is biased by phiA,               *
+ *                        <1 if FOMA or FOMB are overestimated        *
+ *                                                                    *
+ *     If BIAS RATIO <1, CORRECTED FOM = ESTIMATED FOM * BIAS RATIO   *
+ **********************************************************************
+
+ Analysis of FC
+ CC of FP and FC vs resolution (CALC is fit to the observed CC with a pseudo-B)
+              ACENTRIC                      CENTRIC
+          N        CC     CALC         N       CC     CALC         DMIN
+          66      0.74    0.82        96      0.46    0.82        10.36
+         143      0.80    0.81       104      0.65    0.81         7.48
+         295      0.70    0.80       151      0.69    0.80         5.75
+         550      0.80    0.78       215      0.73    0.78         4.60
+         568      0.81    0.76       178      0.70    0.76         4.03
+        1044      0.76    0.74       277      0.60    0.74         3.45
+        1281      0.76    0.71       289      0.70    0.71         3.05
+        1446      0.75    0.68       286      0.56    0.68         2.76
+        1697      0.73    0.66       300      0.59    0.66         2.53
+        1747      0.73    0.63       291      0.65    0.63         2.36
+        2345      0.73    0.60       343      0.67    0.60         2.19
+        2038      0.68    0.58       274      0.59    0.58         2.07
+        2550      0.65    0.56       332      0.59    0.56         1.96
+        3224      0.59    0.53       389      0.46    0.53         1.84
+        4143      0.48    0.50       457      0.39    0.50         1.73
+        3902      0.38    0.47       364      0.40    0.47         1.64
+        3774      0.24    0.44       222      0.14    0.44         1.55
+Overall average CC:    0.57131157331582449    
+ Results of wilson scaling of model Fc to Fo :
+ Scale on I to apply to Fc =      1.054
+ B-value to apply to Fc=      8.909
+
+ Overall R-factor for FC vs FP: 0.388 for      35381 reflections
+Writing overall R-factor of  0.388  to resolve.rfactor 
+
+
+Cumulative phase change from start to end of this cycle [<cos(delta-phi)>]
+
+ DMIN  -----acentric--------  --------centric-------  ---------all---------
+        <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N 
+  0.0    0.66    0.68   30815   0.19    0.17    4575   0.60    0.62   35390
+  4.4    0.54    0.55    1184  -0.01   -0.01     609   0.35    0.38    1793
+  2.8    0.63    0.63    4144   0.05    0.06     982   0.52    0.53    5126
+  2.2    0.66    0.67    5342   0.13    0.20     871   0.59    0.62    6213
+  1.9    0.63    0.66    5472   0.14    0.22     720   0.57    0.62    6192
+  1.7    0.66    0.74    9702   0.40    0.55    1075   0.64    0.72   10777
+  1.6    0.75    0.83    4971   0.59    0.71     318   0.74    0.83    5289
+
+ Minor cycle    4 of    4 Resolution =   1.55
+
+
+
+ ____________________________________________________________
+
+                         Final cycle
+
+
+Setting standard database 5
+Offset for s_rho_cur: 0.00371631
+Values of m, alpha, s
+Centric:    0.54931063317301898       0.2995864       0.4595864    
+Acentric:    0.59624705625030494       0.3862471       0.4784988    
+Using all points for histograms
+Fraction protein =    0.451  200259
+Fraction solvent=    0.549  243359
+
+
+Plot     9
+
+
+ Plot of Observed (o) and model (x) electron density distributions for protein
+ region, where the model distribution is given by,
+  p_model(beta*(rho+offset)) = p_ideal(rho)
+ and then convoluted with a gaussian with width of sigma
+ where sigma, offset and beta are given below under "Error estimate."
+
+
+                          0.03..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .          xxxxx    .                            .
+                              .         xx   xx   .                            .
+                              .        x      ox  .                            .
+                              .       xx       ox .                            .
+                p(rho)        .       x         oxx                            .
+                              .      x            xx                           .
+                              .     x             .oxx                         .
+                              .    xx             .  xxxx                      .
+                              .   xo              .    ooxxxxxx                .
+                              .  xo               .        oooxxxxx            .
+                              . xoo               .            oooxxxxxooo     .
+                              xxo                 .                    xxxxxoooo
+                         0.0  o.............................................xxxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+
+
+Plot    10
+
+
+ Plot of Observed (o) and model (x) 
+ electron density distributions for solvent region
+
+
+                          0.09..................................................
+                              .                   .                            .
+                              .                   .                            .
+                              .                  ooo                           .
+                              .                  o.o                           .
+                              .                 o xxo                          .
+                              .                 ox. x                          .
+                p(rho)        .                 x .  x                         .
+                              .                x  .  x                         .
+                              .                x  .  x                         .
+                              .               x   .   xx                       .
+                              .              xx   .   ox                       .
+                              .              o    .    ox                      .
+                              .             xo    .     ox                     .
+                              .           xxo     .     ooxx                   .
+                         0.0  xxxxxxxxxxxxoo..............oxxxxxxxxxxxxxxxxxxxxx
+
+                             -2        -1         0         1         2        3
+
+                                  normalized rho (0 = mean of solvent region)
+ -------------------------------------------------------------------------------
+
+
+Modifying map to remove ha sites
+Modified input map with cutoff of     2.000000     sigma
+
+      Error estimate for map on this cycle
+
+ The estimated error in this map is    0.25 based on an analysis of the electron
+ density distributions in the protein and solvent regions with rms
+ values of    0.96 and    0.32 respectively.
+ The value of the scale factor beta relating idealized density distributions
+ P_ideal(rho) to observed ones is:
+
+      obs_rho = beta * (ideal_rho + offset) + sigma
+
+ where beta =    0.94 offset is   -0.45   and sigma is a
+ random variable with rms value of    0.25
+
+
+ Mean starting figure of merit this cycle 
+    Overall    Centric    Acentric 
+       0.61       0.63       0.61
+      35390       4575      30815
+
+
+ Mean normalized structure factor changes this cycle 
+    Acentric       Centric           All
+       0.19         0.27            0.20
+      30815         4567           35382
+
+
+
+ New figure of merit (<m>) of phasing based on: 
+      (1) experimental phase information, and 
+      (2) the probability of the resulting map
+
+ These are the 2 sources of phase information used in resolve.  The phase
+ information from them should be correlated and the phase information from
+ the map should increase during statistical density modification.
+
+ Correlation between prior and map phase information is measured by
+ <cos(delta-phi)>, the mean cosine of the phase difference.
+
+ Best estimate of true figure of merit of map-probability phasing is 
+ ratio of correlation to <m> of prior information
+
+ Fraction of phase information from prior is estimated from <m> of prior, map
+
+
+
+
+
+                  Acentric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.37   0.52   0.61     0.31       0.40        0.61      30815
+
+  4.4    0.54   0.92   0.94     0.45       0.12        0.85       1184
+  2.8    0.56   0.89   0.93     0.52       0.16        0.93       4144
+  2.2    0.51   0.74   0.83     0.45       0.31        0.83       5342
+  1.9    0.41   0.61   0.71     0.36       0.36        0.71       5472
+  1.7    0.27   0.32   0.43     0.20       0.46        0.43       9702
+  1.6    0.18   0.14   0.24     0.11       0.53        0.24       4971
+
+ WGT:    1.00   1.00
+
+
+
+
+                  Centric reflections only:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.11   0.56   0.57     0.06       0.15        0.57       4575
+
+  4.4    0.14   0.81   0.81    -0.05       0.11       -0.34        609
+  2.8    0.09   0.80   0.80     0.04       0.08        0.46        982
+  2.2    0.11   0.64   0.65     0.08       0.12        0.65        871
+  1.9    0.10   0.53   0.54     0.09       0.15        0.54        720
+  1.7    0.12   0.27   0.30     0.13       0.30        0.30       1075
+  1.6    0.11   0.12   0.17     0.03       0.48        0.17        318
+
+ WGT:    1.00   1.00
+
+
+
+
+                  All reflections:
+
+        --Figure of merit--      CC      Fraction    <m> Total
+ DMIN   Prior   Map   Total   Prior-Map from Prior  (corrected)      N
+
+ ALL:    0.34   0.52   0.60     0.28       0.37        0.60      35390
+
+  4.4    0.40   0.88   0.89     0.28       0.12        0.71       1793
+  2.8    0.47   0.88   0.90     0.43       0.14        0.90       5126
+  2.2    0.46   0.73   0.81     0.40       0.28        0.81       6213
+  1.9    0.37   0.60   0.69     0.33       0.33        0.69       6192
+  1.7    0.25   0.32   0.42     0.20       0.45        0.42      10777
+  1.6    0.18   0.14   0.24     0.11       0.53        0.24       5289
+
+ WGT:    1.00   1.00
+
+
+
+
+ **********************************************************************
+ *                                                                    *
+ *     CORRECTED OVERALL FIGURE OF MERIT OF PHASING:   0.60           *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM PRIOR:  0.37      *
+ *     ESTIMATED FRACTION OF PHASE INFORMATION FROM MAP:    0.63      *
+ *     NOTE: The fraction from prior will be roughly proportional to  *
+ *      prior_weight (current value =   1.00)                         *
+ *                                                                    *
+ *     BIAS RATIO:  1.59                                              *
+ *                                                                    *
+ *     Bias ratio is given by <cos(phiA-phiB)>/(FOMA*FOMB),           *
+ *     where phiA and FOMA are phase and <m> from prior (model or     *
+ *     experiment) and phiB and FOMB are from map.                    *
+ *     Bias ratio is about 1 if phiA and phiB are independent,        *
+ *                        >1 if phiB is biased by phiA,               *
+ *                        <1 if FOMA or FOMB are overestimated        *
+ *                                                                    *
+ *     If BIAS RATIO <1, CORRECTED FOM = ESTIMATED FOM * BIAS RATIO   *
+ **********************************************************************
+
+ Analysis of FC
+ CC of FP and FC vs resolution (CALC is fit to the observed CC with a pseudo-B)
+              ACENTRIC                      CENTRIC
+          N        CC     CALC         N       CC     CALC         DMIN
+          66      0.76    0.88        96      0.44    0.88        10.36
+         143      0.83    0.87       105      0.81    0.87         7.48
+         295      0.78    0.86       152      0.81    0.86         5.75
+         550      0.84    0.84       215      0.80    0.84         4.60
+         568      0.83    0.83       179      0.76    0.83         4.03
+        1044      0.82    0.81       277      0.70    0.81         3.45
+        1281      0.80    0.78       289      0.73    0.78         3.05
+        1446      0.79    0.76       286      0.69    0.76         2.76
+        1697      0.78    0.73       300      0.72    0.73         2.53
+        1747      0.79    0.71       291      0.73    0.71         2.36
+        2345      0.80    0.68       343      0.75    0.68         2.19
+        2038      0.77    0.66       274      0.71    0.66         2.07
+        2550      0.74    0.63       332      0.69    0.63         1.96
+        3224      0.69    0.61       389      0.60    0.61         1.84
+        4143      0.59    0.58       457      0.46    0.58         1.73
+        3902      0.48    0.55       364      0.49    0.55         1.64
+        3774      0.32    0.52       222      0.14    0.52         1.55
+Overall average CC:    0.65225562792108815    
+ Results of wilson scaling of model Fc to Fo :
+ Scale on I to apply to Fc =      1.083
+ B-value to apply to Fc=      8.171
+
+ Overall R-factor for FC vs FP: 0.340 for      35384 reflections
+Writing overall R-factor of  0.340  to resolve.rfactor 
+
+
+Cumulative phase change from start to end of this cycle [<cos(delta-phi)>]
+
+ DMIN  -----acentric--------  --------centric-------  ---------all---------
+        <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N    <cos>  <wgt*cos>  N 
+  0.0    0.65    0.66   30815   0.18    0.16    4575   0.59    0.60   35390
+  4.4    0.53    0.53    1184  -0.03   -0.01     609   0.34    0.37    1793
+  2.8    0.62    0.63    4144   0.04    0.07     982   0.51    0.53    5126
+  2.2    0.64    0.65    5342   0.13    0.18     871   0.56    0.59    6213
+  1.9    0.61    0.63    5472   0.15    0.18     720   0.56    0.59    6192
+  1.7    0.65    0.71    9702   0.37    0.51    1075   0.62    0.69   10777
+  1.6    0.75    0.82    4971   0.57    0.66     318   0.73    0.82    5289
+Copying refl to refl_temp
+Writing out           13 columns of data
+CC of prob map with current map:   0.6065578    
+resolve exit_info:
+  source_file: /home/builder/slave/phenix-nightly-intel-linux-2_6-x86_64-centos6/modules/solve_resolve/resolve/aaa_resolve_main.cpp
+  source_line: 1692
+  status: 0
+EndOfResolve

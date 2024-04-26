@@ -1,0 +1,22 @@
+REMARK  SitCom multi-solution consensus model
+REMARK  ===================================================================
+REMARK  consensus model seeded with solution SOL-1
+REMARK  solutions implied ............... 2
+REMARK  overall mean site distance ...... 0.175
+REMARK  sites sorted by SFOM. weights: cons=1.00 dist=0.50 occp=0.00 
+REMARK  ===================================================================
+CRYST1   87.811   58.675   95.730  90.00 114.31  90.00 P1211          
+SCALE1      0.011388 -0.000000  0.005144        0.000000
+SCALE2      0.000000  0.017043 -0.000000        0.000000
+SCALE3      0.000000  0.000000  0.011462        0.000000
+ATOM      1 SE   SIT A   0       0.000   0.000   0.000  0.00 100.0           SE
+ATOM      2 SE   SIT A   3      23.275  -9.074 -34.467  0.70  1.0           SE
+ATOM      3 SE   SIT A   4     -27.032  14.310 -34.219  0.79  1.0           SE
+ATOM      4 SE   SIT A   2      35.947   7.510 -14.400  0.90  1.0           SE
+ATOM      5 SE   SIT A   1     -37.025  -1.924 -12.472  1.00  1.4           SE
+ATOM      6 SE   SIT A   6      22.073   8.021  27.015  0.81  4.9           SE
+ATOM      7 SE   SIT A   7     -18.869  -2.420  27.010  0.72  5.0           SE
+ATOM      8 SE   SIT A   5      19.019  10.820  24.213  0.90 10.0           SE
+ATOM      9 SE   SIT A   8     -16.114  -5.724  23.656  0.69 11.5           SE
+ATOM     10 SE   SIT A   9      35.959   7.475  -9.866  0.24 50.0           SE
+END

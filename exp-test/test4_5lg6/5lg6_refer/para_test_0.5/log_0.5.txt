@@ -1,0 +1,99 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: ../shelx_5lg6-sf_ecal_cad_unique.mtz 
+
+Reading MTZ completed,total reflections:   9149
+ not missing reflections :                 8291
+
+*************************************************************
+
+
+HMAX :   13 KMAX :   42 LMAX :   15
+
+
+Grid of density map : (   27   85   31)
+
+ 弱点设置的阈值和实际阈值,设置的阈值百分:  0.65124857425689697       0.651248574      0.500000000    
+ 用于计算sayre等式的衍射点的数目和阈值 :         1300   1.41297972    
+ 弱衍射点的数目 :         5004
+ 观测点中设置的弱点的数目，missing点的数目        4146         858
+
+*************************************************************
+
+
+************************  Charge Flipping  ****************************
+
+     ntry  rfactor    ntry  rfactor    ntry  rfactor    ntry  rfactor
+           0
+ 用于修正的总的衍射点数目，观测到的衍射点数目，设置的衍射点数目        5196        9149        1300
+ 要修正的衍射点数目：        1300
+ 三相位关系数目的最小值和最大值，平均值:         182         782         369
+ the number of multiplicity point:         1020
+       1      NaN   0.7092      NaN
+       2   9.1695   0.6175   8.1818
+       3      NaN   0.7076      NaN
+       4      NaN   0.6989      NaN
+       5      NaN   0.7051      NaN
+       6      NaN   0.7059      NaN
+       7      NaN   0.7045      NaN
+       8      NaN   0.7122      NaN
+       9      NaN   0.7139      NaN
+      10      NaN   0.7073      NaN
+top best 10 CC is :  8.1818
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_2.mtz   Filename: recover_2.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+top best 10 CC is : *******
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: recover_0.mtz   Filename: recover_0.mtz 
+
+Best CC is :    2  9.1695  0.6175  8.1818
+ charge_flip：           0 阈值设定方法:            1
+**********************************************************************
+

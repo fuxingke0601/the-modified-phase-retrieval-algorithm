@@ -1,0 +1,9 @@
+
+NOTE: space group ('P 1 21 1') and cell ([66.465, 215.69, 78.63, 90.0, 91.9, 90.0]) 
+found in /ssd2/heavy_atom_search/parameter_test/prasa_12_5lg6/exp-test/12_5lg6/peak_cal/solve_occ1/../pdb_CF_hand_format.pdb
+Setting space group from /ssd2/heavy_atom_search/parameter_test/prasa_12_5lg6/exp-test/12_5lg6/peak_cal/solve_occ1/../pdb_CF_hand_format.pdb
+
+
+NOTE: best FOM is very low ( 0.30)...changing to thorough defaults.
+(To prevent this set fom_for_extreme_dm to a value lower than  0.30)
+SKIPPED BUILD

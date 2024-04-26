@@ -1,0 +1,547 @@
+<PRE>
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                                 SitCom logfile                                 
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+ This is SitCom, VERSION 0.17.5, BUILD# 1375 (2017-03-30 14:42)
+ compiled with gcc version 4.4.7 20120313 (Red Hat 4.4.7-4) (GCC) 
+ build target x86_64-redhat-linux, dynamic
+
+ JOB TIMESTAMP: Tue Apr  9 11:41:51 2024
+ 375 MB ALLOCATED FOR MAX. 1020 SOLUTIONS (376 KB per solution, max. 250 sites)
+
+ +------------------------------------------------------------------------------+
+ |                                                                              |
+ |                              SitCom vers. 0.17.5                             |
+ |              (C) 2005-06 Instituto FIRC di Oncologia Moleculare              |
+ |           (C) 2007-10 European Molecular Biology Laboratory (EMBL)           |
+ |                                                                              |
+ |              Authors:  Fabio Dall'Antonia & Thomas R. Schneider              |
+ |                Contact:     fabio.dallantonia@embl-hamburg.de                |
+ |                                                                              |
+ | SitCom has been/is funded by the European Commission as part of the projects |
+ |   -- AutoStruct -- http://www.autostruct.org - Contract QLRI-CT-2000-00398   |
+ |     -- BioXHit -- http://www.bioxhit.org - Contract LHSG-CT-2003-503420      |
+ |                                                                              |
+ |                                 Please cite:                                 |
+ | Dall'Antonia, F. & Schneider, T. R. (2006).  SITCOM: a program for comparing |
+ |   sites in macromolecular substructures. J. Appl. Crystallogr. 39, 618-619   |
+ |                                                                              |
+ |          SitCom's internal symmetry library was created using CCTBX          |
+ |     Grosse-Kunstleve, R. W. & Adams, P. D. (2003). Newsletter of the IUCr    |
+ |              Commission on Crystallographic Computing, 1, 28-38              |
+ |                                                                              |
+ |                        v0.17.5 is a beta-test version                        |
+ |                                                                              |
+ +------------------------------------------------------------------------------+
+
+ LIST OF ACCEPTED COMMAND LINE SWITCHES
+
+ -at E      set the chemical element symbol of the substructure-site atom type.
+            E is an all-upper-case 1/2-char string according to the PSE.
+
+ -d D       set the upper limit for match distances used during comparison.
+            D is a real number for the distance in Angstrom.
+
+ -fix       keep initial sites in their original asymmetric unit.
+
+ -h         HTML format for STDOUT (e.g. 'sitcom > logfile') and file output.
+
+ -m         manual input mode: cards are entered by interactive <STDIN>
+            syntax: card<Enter>; termination with !<Enter>
+
+ -mc        merge coordinates of a matching site cluster to a centered output position.
+
+ -mo        merge occupancies of a matching site cluster to an average output value.
+
+ -name STR  set the global name (file stem name) for output files.
+            STR is a name string that is meaningful to you.
+
+ -ncs N D   apply NCS analysis on a single input substructure or a consensus model.
+            N is an integer for the input number of sites.
+            D is a real number for the search radius in Angstrom.
+
+ -nx N      set the number of expected sites for your structure.
+            N is an integer number to which ouput highlighting is applied.
+
+ -o F N     extract a single SHELXD substructure from the set of solutions.
+            F is a string for the input file name (e.g. shelxd.lst).
+            N is an integer for the solution number.
+
+ -q F E     extract a substructure from a PDB model and convert to SHELXD format.
+            F is a string for the input file name (e.g. model.pdb).
+            E is a string for the (partial) atom type label = element symbol.
+
+ -p D       set the upper limit for projection match distances.
+            D is a real number (see -d switch)
+
+ -res       restrict the comparison target to the 1st stored list.
+
+ -sg N      set the space group number for the substructures compared.
+            N is an integer by which the space group is recognized.
+
+ -tp        invoke the pedantic comparison mode for triclinic (P1) strunctures.
+
+ -v N       set the output verbosity level to low (N = 0) or high (N = 1).
+ -w F A O   set weights for site-score contributions:
+            F is the weight for the frequency of matches (consensus rate).
+            A is the weight for the accuracy = distance between matching sites.
+            O is the input occupancy (peak height) of a unique site.
+
+ -help      OUTPUT ESSENTIAL GUIDANCE to the terminal
+            and produce a html format guide file.
+
+
+
+ ________________________________________________________________________________
+
+                 Program setting for multi-solution comparison                 
+ ________________________________________________________________________________
+
+
+
+ USER-DEFINED AND/OR DEFAULT OPERATIONAL PARAMETERS
+
+    input mode ........................ SINGLE SOLUTIONS BY COMMAND LINE
+
+    comparison mode ................... CONSENSUS MODEL
+
+    structure name .................... sitcom
+    spacegroup number ................. 92
+    unit cell ......................... 57.615 57.615 150.808 90.00 90.00 90.00
+    output sites atom type ............ SE
+
+    single solution #1:
+    > source description .............. SOL-1
+    > scoring weight .................. 1.00
+    > file name ....................... pdb_CF_format.pdb
+    > (formal FOM) .................... 50.00
+    > requested number of sites ....... 249
+    > input sites atom type ........... *
+
+    single solution #2:
+    > source description .............. SOL-2
+    > scoring weight .................. 1.00
+    > file name ....................... ../../52_5T3G_13SE_P41212/5t3g_13SE.pdb
+    > (formal FOM) .................... 49.00
+    > requested number of sites ....... 249
+    > input sites atom type ........... *
+
+    match distance tolerance (3D) ..... 2.00 A
+    projection tolerance (2D) ......... 1.00 A
+    weights for SFOMs of output sites:
+      combined consensus rate ......... 1.00
+      overall mean distance ........... 0.50
+      original site occupancy ......... 0.00
+    consensus coordinate merging ...... disabled
+    consensus occupancy merging ....... disabled
+
+    ncs analysis ...................... disabled
+
+
+  SPACEGROUP ASSIGNED: P41212 RECOGNIZED
+   
+    8 symmetry operators stored.   
+    2 seminvariants stored.
+   
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                                Crystal symmetry                                
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+
+
+ Crystallographic symmetry report for structure [sitcom], as derived from cell and space-group
+
+
+ ________________________________________________________________________________
+
+                               Unit cell Metrics                               
+ ________________________________________________________________________________
+
+
+                EDGES    [A] ........   57.615    57.615   150.808
+                ANGLES [deg] ........    90.00     90.00     90.00
+                VOLUME [A^3] ........   500605
+   
+                Inverse scaling matrix (fractional -> orthogonal):
+
+                ISCALE0 ...........   57.615     0.000     0.000 
+                ISCALE1 ...........    0.000    57.615     0.000 
+                ISCALE2 ...........    0.000     0.000   150.808 
+
+                Scaling matrix (orthogonal -> fractional):
+
+                SCALE0 ............  0.01736  -0.00000  -0.00000 
+                SCALE1 ............  0.00000   0.01736  -0.00000 
+                SCALE2 ............  0.00000   0.00000   0.00663 
+
+ ________________________________________________________________________________
+
+                            Space group description                            
+ ________________________________________________________________________________
+
+
+
+                SPACE GROUP #92 (P41212)  
+                _________________________________________________
+
+                Hermann-Mauguin symbol:                P 41 21 2
+
+                Schoenflies symbol:                         D4^4
+
+                crystal system:                       tetragonal
+
+                crystal class / point group:                 422
+
+                class properties:               acentric, chiral
+
+                symmetry order ..............................  8
+
+                shift/inversion alternatives ................  8
+
+                polarity type  ...................... 0   (none)
+
+
+
+ ________________________________________________________________________________
+
+                      Allowed origin shifts and inversion                      
+ ________________________________________________________________________________
+
+
+ setting descriptors for every combination of allowed origin shifts (except polar ones)
+ and enantiomorph choice (i.e. 'handedness') of the substructure.
+ Once the true setting of a solution relative to a given reference is found,
+ all its sites are commonly transformed by shift and/or inversion.
+
+
+                         Seminvariant vectors and moduli 
+
+                                  { 0 0 1 } 2
+                                  { 1 1 0 } 2
+
+ acentric space group: origin shifts will be combined with inversion
+
+
+    SETTING OPERATOR P41212_0 
+
+     | x'|   | 1  0  0 |   | x |   | 0.00000 |
+     | y'| = | 0  1  0 | * | y | + | 0.00000 |
+     | z'|   | 0  0  1 |   | z |   | 0.00000 |
+
+    SETTING OPERATOR P41212_1 
+
+     | x'|   | 1  0  0 |   | x |   | 0.50000 |
+     | y'| = | 0  1  0 | * | y | + | 0.50000 |
+     | z'|   | 0  0  1 |   | z |   | 0.00000 |
+
+    SETTING OPERATOR P41212_2 
+
+     | x'|   | 1  0  0 |   | x |   | 0.00000 |
+     | y'| = | 0  1  0 | * | y | + | 0.00000 |
+     | z'|   | 0  0  1 |   | z |   | 0.50000 |
+
+    SETTING OPERATOR P41212_3 
+
+     | x'|   | 1  0  0 |   | x |   | 0.50000 |
+     | y'| = | 0  1  0 | * | y | + | 0.50000 |
+     | z'|   | 0  0  1 |   | z |   | 0.50000 |
+
+    SETTING OPERATOR P41212_4 
+
+     | x'|   |-1  0  0 |   | x |   | 0.00000 |
+     | y'| = | 0 -1  0 | * | y | + | 0.00000 |
+     | z'|   | 0  0 -1 |   | z |   | 0.00000 |
+
+    SETTING OPERATOR P41212_5 
+
+     | x'|   |-1  0  0 |   | x |   | 0.50000 |
+     | y'| = | 0 -1  0 | * | y | + | 0.50000 |
+     | z'|   | 0  0 -1 |   | z |   | 0.00000 |
+
+    SETTING OPERATOR P41212_6 
+
+     | x'|   |-1  0  0 |   | x |   | 0.00000 |
+     | y'| = | 0 -1  0 | * | y | + | 0.00000 |
+     | z'|   | 0  0 -1 |   | z |   | 0.50000 |
+
+    SETTING OPERATOR P41212_7 
+
+     | x'|   |-1  0  0 |   | x |   | 0.50000 |
+     | y'| = | 0 -1  0 | * | y | + | 0.50000 |
+     | z'|   | 0  0 -1 |   | z |   | 0.50000 |
+
+ ________________________________________________________________________________
+
+                         Space-group symmetry operators                         
+ ________________________________________________________________________________
+
+
+
+  SYMMETRY OPERATOR P41212_0, symbolic description:  x,y,z
+   
+     | x'|   |  1  0  0 |   | x |   |0.000|
+     | y'| = |  0  1  0 | * | y | + |0.000|
+     | z'|   |  0  0  1 |   | z |   |0.000|
+
+  SYMMETRY OPERATOR P41212_1, symbolic description:-y+1/2,x+1/2,z+1/4
+   
+     | x'|   |  0 -1  0 |   | x |   |0.500|
+     | y'| = |  1  0  0 | * | y | + |0.500|
+     | z'|   |  0  0  1 |   | z |   |0.250|
+
+  SYMMETRY OPERATOR P41212_2, symbolic description:y+1/2,-x+1/2,z+3/4
+   
+     | x'|   |  0  1  0 |   | x |   |0.500|
+     | y'| = | -1  0  0 | * | y | + |0.500|
+     | z'|   |  0  0  1 |   | z |   |0.750|
+
+  SYMMETRY OPERATOR P41212_3, symbolic description:x+1/2,-y+1/2,-z+3/4
+   
+     | x'|   |  1  0  0 |   | x |   |0.500|
+     | y'| = |  0 -1  0 | * | y | + |0.500|
+     | z'|   |  0  0 -1 |   | z |   |0.750|
+
+  SYMMETRY OPERATOR P41212_4, symbolic description:-x+1/2,y+1/2,-z+1/4
+   
+     | x'|   | -1  0  0 |   | x |   |0.500|
+     | y'| = |  0  1  0 | * | y | + |0.500|
+     | z'|   |  0  0 -1 |   | z |   |0.250|
+
+  SYMMETRY OPERATOR P41212_5, symbolic description:-x,-y,z+1/2
+   
+     | x'|   | -1  0  0 |   | x |   |0.000|
+     | y'| = |  0 -1  0 | * | y | + |0.000|
+     | z'|   |  0  0  1 |   | z |   |0.500|
+
+  SYMMETRY OPERATOR P41212_6, symbolic description: y,x,-z
+   
+     | x'|   |  0  1  0 |   | x |   |0.000|
+     | y'| = |  1  0  0 | * | y | + |0.000|
+     | z'|   |  0  0 -1 |   | z |   |0.000|
+
+  SYMMETRY OPERATOR P41212_7, symbolic description:-y,-x,-z+1/2
+   
+     | x'|   |  0 -1  0 |   | x |   |0.000|
+     | y'| = | -1  0  0 | * | y | + |0.000|
+     | z'|   |  0  0 -1 |   | z |   |0.500|
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                            Substructure-site input                            
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+
+
+ ### applying read_sol card# 1 ... loading pdb file input
+
+  > opened PDB file ........... pdb_CF_format.pdb
+    limiting site number .........   250
+    generic FOM .................. 50.00
+    sites stored ....    15
+
+ # input for source 'SOL-1' (#0, weight 1.00) completed with 1 solutions,
+   total number now 1
+
+ ### applying read_sol card# 2 ... loading pdb file input
+
+  > opened PDB file ........... ../../52_5T3G_13SE_P41212/5t3g_13SE.pdb
+    limiting site number .........   250
+    generic FOM .................. 49.00
+    sites stored ....    13
+
+ # input for source 'SOL-2' (#1, weight 1.00) completed with 1 solutions,
+   total number now 2 SOL-1 : putting sites closer to origin                               SOL-2 : putting sites closer to origin                              
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+            Consensus model generation by multi-solution comparison            
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+
+ < seeding unique sites from list SOL-1 >
+
+ ................................................................................
+
+ SOLUTION [SOL-1], TRANSFORMED TO CONSISTENT SETTING
+
+ FOM (CC) ................... 50.00
+ ----------------------------------------------------------
+ ENANTIOMORPH: {1, 0, 0}, {0, 1, 0}, {0, 0, 1} 
+ TRANSLATION:  { 0.0000, 0.0000, 0.0000 }
+ ----------------------------------------------------------
+ MATCHES TO REFERENCE: ......    15
+ MEAN DISTANCE: ............. 0.000
+ RMS DISTANCE: .............. 0.000
+
+  #  height          fractional                    cartesian           r# sy cell  dist
+ -------------------------------------------------------------------------------------
+  1   99.90 |  0.28944 -0.08765 -0.06033 |   16.676   -5.050   -9.098 |  1  0  O--  0.000
+  2   81.92 | -0.01585 -0.15048  0.07451 |   -0.913   -8.670   11.237 |  2  0  --O  0.000
+  3   40.96 | -0.01219 -0.32255  0.15922 |   -0.702  -18.583   24.012 |  3  0  --O  0.000
+  4   37.96 |  0.45193 -0.12708 -0.00332 |   26.038   -7.322   -0.500 |  4  0  O--  0.000
+  5   32.97 | -0.00000 -0.14953  0.07458 |   -0.000   -8.615   11.247 |  5  0  --O  0.000
+  6   26.97 | -0.08846 -0.01257  0.17347 |   -5.096   -0.724   26.160 |  6  0  --O  0.000
+  7   24.98 | -0.39115  0.44792 -0.00620 |  -22.536   25.807   -0.935 |  7  0  -O-  0.000
+  8   23.98 | -0.11019  0.01712  0.14068 |   -6.348    0.987   21.215 |  8  0  -OO  0.000
+  9   20.98 |  0.46458 -0.11060 -0.06791 |   26.767   -6.372  -10.242 |  9  0  O--  0.000
+ 10   16.98 | -0.05683 -0.13502  0.07224 |   -3.274   -7.779   10.895 | 10  0  --O  0.000
+ 11   15.98 |  0.03232 -0.13623  0.01199 |    1.862   -7.849    1.808 | 11  0  O-O  0.000
+ 12   15.98 |  0.25459 -0.04685 -0.05952 |   14.668   -2.699   -8.976 | 12  0  O--  0.000
+ 13   14.98 |  0.31389 -0.06318 -0.05010 |   18.085   -3.640   -7.555 | 13  0  O--  0.000
+ 14   14.98 |  0.21800 -0.10266 -0.05478 |   12.560   -5.915   -8.262 | 14  0  O--  0.000
+ 15   13.99 |  0.00856 -0.11381  0.07555 |    0.493   -6.557   11.394 | 15  0  O-O  0.000
+
+ THIS SUBST    1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+ UNIQUE SET    1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+
+ inconsistent substructure sites: 
+
+ unique sites not found: 
+ 15 / 15 SITES AGREED TO UNIQUE SET
+
+ > 0 new sites will be added to unique set
+
+ <A NAME="histo_0_start">
+
+ UNIQUE SITE LIST/HISTOGRAM AFTER CYCLE 1
+
+ (mean distances are provisory)
+
+ site         source               o(mean)    d(mean)   FOM    hits (prev.)
+ __________________________________________________________________________
+ uniq.1       SOL-1.1               1.000      0.000    99.90   1 ( 0)  *
+ uniq.2       SOL-1.2               0.820      0.000    81.92   1 ( 0)  *
+ uniq.3       SOL-1.3               0.410      0.000    40.96   1 ( 0)  *
+ uniq.4       SOL-1.4               0.380      0.000    37.96   1 ( 0)  *
+ uniq.5       SOL-1.5               0.330      0.000    32.97   1 ( 0)  *
+ uniq.6       SOL-1.6               0.270      0.000    26.97   1 ( 0)  *
+ uniq.7       SOL-1.7               0.250      0.000    24.98   1 ( 0)  *
+ uniq.8       SOL-1.8               0.240      0.000    23.98   1 ( 0)  *
+ uniq.9       SOL-1.9               0.210      0.000    20.98   1 ( 0)  *
+ uniq.10      SOL-1.10              0.170      0.000    16.98   1 ( 0)  *
+ uniq.11      SOL-1.11              0.160      0.000    15.98   1 ( 0)  *
+ uniq.12      SOL-1.12              0.160      0.000    15.98   1 ( 0)  *
+ uniq.13      SOL-1.13              0.150      0.000    14.98   1 ( 0)  *
+ uniq.14      SOL-1.14              0.150      0.000    14.98   1 ( 0)  *
+ uniq.15      SOL-1.15              0.140      0.000    13.99   1 ( 0)  *
+
+ <A NAME="histo_0_end">
+ ................................................................................
+
+ SOLUTION [SOL-2], TRANSFORMED TO CONSISTENT SETTING
+
+ FOM (CC) ................... 49.00
+ ----------------------------------------------------------
+ ENANTIOMORPH: {1, 0, 0}, {0, 1, 0}, {0, 0, 1} 
+ TRANSLATION:  { 0.5000, 0.5000, 0.5000 }
+ ----------------------------------------------------------
+ MATCHES TO REFERENCE: ......     9
+ MEAN DISTANCE: ............. 0.277
+ RMS DISTANCE: .............. 0.310
+
+  #  height          fractional                    cartesian           r# sy cell  dist
+ -------------------------------------------------------------------------------------
+  1   99.90 |  0.08663  0.71119  0.56004 |    4.991   40.975   84.459 |  1  7  O--  0.081
+  2   87.19 |  0.65046  0.48141  0.32517 |   37.477   27.737   49.038 |  2  2  --O  0.186
+  3   81.74 |  0.12856  0.54868  0.50288 |    7.407   31.612   75.839 |  4  7  O--  0.113
+  4   83.55 |  0.82031  0.48527  0.40965 |   47.262   27.959   61.778 |  3  2  --O  0.205
+  5   78.10 |  0.55586  0.39821  0.50467 |   32.026   22.943   76.108 |  7  7  -O-  0.516
+  6   74.47 |  0.40789  0.51696  0.57543 |   23.501   29.785   86.780 |  6  3  --O  0.368
+  7   59.94 |  0.38251  0.48561  0.60915 |   22.039   27.979   91.864 |  8  3  -OO  0.450
+  8   58.12 |  0.36861  0.55254  0.60752 |   21.238   31.835   91.619
+  9   49.04 |  0.46550  0.25431  0.53493 |   26.820   14.652   80.671
+ 10   61.76 |  0.44766  0.02175  0.61388 |   25.792    1.253   92.578
+ 11   81.74 |  0.13918  0.96666  0.48948 |    8.019   55.694   73.817 | 11  7  O-O  0.285
+ 12   49.04 |  0.11058  0.62249  0.57590 |    6.371   35.865   86.850
+ 13   69.02 |  0.10898  0.53531  0.56608 |    6.279   30.842   85.369 |  9  7  O--  0.292
+
+ THIS SUBST    1   2   3   4   5   6   7  11  13
+ UNIQUE SET    1   2   4   3   7   6   8  11   9
+
+ inconsistent substructure sites:   8,  9, 10, 12,
+
+ unique sites not found:   5, 10, 12, 13, 14, 15,
+ 9 / 13 SITES AGREED TO UNIQUE SET
+
+ > 4 new sites will be added to unique set
+
+ <A NAME="histo_1_start">
+
+ UNIQUE SITE LIST/HISTOGRAM AFTER CYCLE 2
+
+ (mean distances are provisory)
+
+ site         source               o(mean)    d(mean)   FOM    hits (prev.)
+ __________________________________________________________________________
+ uniq.1       SOL-1.1               1.000      0.081    99.90   2 ( 1)  **
+ uniq.2       SOL-1.2               0.846      0.186    81.92   2 ( 1)  **
+ uniq.3       SOL-1.3               0.623      0.205    40.96   2 ( 1)  **
+ uniq.4       SOL-1.4               0.599      0.113    37.96   2 ( 1)  **
+ uniq.6       SOL-1.6               0.508      0.368    26.97   2 ( 1)  **
+ uniq.7       SOL-1.7               0.516      0.516    24.98   2 ( 1)  **
+ uniq.8       SOL-1.8               0.420      0.450    23.98   2 ( 1)  **
+ uniq.9       SOL-1.9               0.450      0.292    20.98   2 ( 1)  **
+ uniq.11      SOL-1.11              0.489      0.285    15.98   2 ( 1)  **
+ uniq.5       SOL-1.5               0.330      0.000    32.97   1 ( 1)  *
+ uniq.10      SOL-1.10              0.170      0.000    16.98   1 ( 1)  *
+ uniq.12      SOL-1.12              0.160      0.000    15.98   1 ( 1)  *
+ uniq.13      SOL-1.13              0.150      0.000    14.98   1 ( 1)  *
+ uniq.14      SOL-1.14              0.150      0.000    14.98   1 ( 1)  *
+ uniq.15      SOL-1.15              0.140      0.000    13.99   1 ( 0)  *
+ uniq.16      SOL-2.8               0.582      0.000    58.12   1 ( 0)  *
+ uniq.17      SOL-2.9               0.491      0.000    49.04   1 ( 0)  *
+ uniq.18      SOL-2.10              0.618      0.000    61.76   1 ( 0)  *
+ uniq.19      SOL-2.12              0.491      0.000    49.04   1 ( 0)  *
+
+ <A NAME="histo_1_end">
+
+
+  > N = 19 output sites written to file sitcom.cons.res.
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                             Output file generation                             
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+  
+ RESULT SUMMARY FILE WRITTEN
+
+    sitcom_summary.txt
+
+ SITE FILES FOR PHASING PROGRAMS WRITTEN
+
+    sitcom_consensus.pdb (various)
+
+    sitcom_consensus.res (SHELXE)
+
+
+  CPU times required
+  ------------------------------------
+  parsing and setup   :       0.15 sec
+  reading file-input  :       0.00 sec
+  comparison          :       0.05 sec
+  result processing   :       0.00 sec
+  ncs analysis        :       0.00 sec
+  writing file-output :       0.01 sec
+  ------------------------------------
+  total:                      0.21 sec
+
+
+
+  ~~~~~~~~~~~~~~~~~~  NORMAL PROGRAM TERMINATION ... GOODBYE  ~~~~~~~~~~~~~~~~~~
+

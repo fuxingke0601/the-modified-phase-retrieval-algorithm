@@ -1,0 +1,1 @@
+/ssd2/scripts/autosol_refine3.sh ../../../12_5lg6_48se_P1211/5lg6-sf.mtz ../../../12_5lg6_48se_P1211/rcsb_pdb_5LG6.fasta ../pdb_CF_hand_format.pdb SE 0.9795 0.5209 2

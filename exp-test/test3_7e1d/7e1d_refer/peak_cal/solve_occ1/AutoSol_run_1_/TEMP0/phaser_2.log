@@ -1,0 +1,321 @@
+SAD phasing
+Data read from:  AutoSol_run_1_/TEMP0/TEMP_sca.mtz
+Data output to :  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+Spacegroup Name (Hall symbol) = P 21 21 21 ( P 2ac 2ab)
+Unitcell =  (35.81399917602539, 52.762001037597656, 97.39700317382812, 90.0, 90.0, 90.0)
+LogLikelihood =  -474.501757145
+4  refined atoms
+ atom          x          y          z  occupancy      u-iso      fp     fpp
+   SE    -0.3384    -0.5770    -0.0614     1.0189     0.4081   -8.00    4.73
+   SE    -0.1035    -0.6979    -0.1370     0.9473     0.4232   -8.00    4.73
+   SE    -0.1363    -0.8640    -0.1854     1.0228     0.4657   -8.00    4.73
+   SE    -0.1742    -0.0984    -0.1225     0.8055     0.4777   -8.00    4.73
+
+First  10  reflections
+   H    K    L        FWT       PHWT        FOM
+  16    2    1    92.8731    22.3184     0.2309
+  15    7   10   135.9590  -146.7602     0.1870
+  15    6    2    25.2065    93.4775     0.0545
+  15    5   13    75.5123   133.5573     0.2069
+  15    4    7   181.3967    -2.3543     0.4929
+  15    4    4    62.4465   151.2189     0.1393
+  15    4    2    17.4251   -57.2086     0.0583
+  15    3    9    87.9858   -89.0882     0.2159
+  15    3    7    30.4818  -115.2288     0.0924
+  15    3    6    11.2369    19.9933     0.0429
+******************************************************************************************
+*** Phaser Module: PREPROCESSOR                                                  2.8.3 ***
+******************************************************************************************
+
+ATOM CRYSTAL crystal SET
+ATOM CRYSTAL crystal TYPE SE FRAC -0.3361 -0.5759 -0.0608 OCC 1.00 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC -0.1013 -0.6993 -0.1361 OCC 1.00 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC -0.1381 -0.8658 -0.1857 OCC 1.00 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC -0.1714 -0.0956 -0.1238 OCC 1.00 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC -0.1382 -0.0114 -0.1116 OCC 1.00 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC -0.1802 -0.6996 -0.1453 OCC 1.00 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+CELL 35.814 52.762 97.397 90 90 90
+CRYSTAL crystal DATASET crystal LABIN  F(+) = F(+) SIGF(+) = SIGF(+)  F(-) = F(-) SIGF(-) = SIGF(-)
+HKLOUT ON
+KEYWORDS OFF
+LLGCOMPLETE SCATTERER SE
+MUTE ON
+ROOT "AutoSol_run_1_/TEMP0/phaser_mtz"
+SCATTERING TYPE SE FP=-8 FDP=4.5 FIX EDGE
+
+SPACEGROUP P 21 21 21
+WAVELENGTH 0.97852
+XYZOUT ON
+
+CPU Time: 0 days 0 hrs 0 mins 1.97 secs (      1.97 secs)
+Finished: Fri Oct 27 16:56:21 2023
+
+******************************************************************************************
+*** Phaser Module: SINGLE-WAVELENGTH ANOMALOUS DISPERSION                        2.8.3 ***
+******************************************************************************************
+
+** There is 1 SAD atom refinement set
+
+   Refined Anisotropy Parameters
+   -----------------------------
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         0.005              1.0000  -0.0000  -0.0000
+         0.001              0.0000   1.0000   0.0000
+        -0.006              0.0000  -0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):   0.011
+
+   Scattering edges
+   ----------------
+   Wavelength = 0.97852
+   Atomtype "SE" is near an edge
+      Atomtype "SE" fdp is refined
+
+------------
+ENANTIOMORPH
+------------
+
+** Requested refinement in both enantiomorphs
+** Enantiomorph change does not change spacegroup
+
+----------------
+ATOM SET #1 OF 1
+----------------
+
+   Space Group Name (Number): P 21 21 21 (19)
+
+   INITIAL PHASING STATISTICS
+   --------------------------
+   Atom Parameters: 6 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1    -0.336  -0.576  -0.061   1.000    17.9 (  ---- ) 1 SE
+   #2    -0.101  -0.699  -0.136   1.000    17.9 (  ---- ) 1 SE
+   #3    -0.138  -0.866  -0.186   1.000    17.9 (  ---- ) 1 SE
+   #4    -0.171  -0.096  -0.124   1.000    17.9 (  ---- ) 1 SE
+   #5    -0.138  -0.011  -0.112   1.000    17.9 (  ---- ) 1 SE
+   #6    -0.180  -0.700  -0.145   1.000    17.9 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE         4.5000        -8.0000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  28.35- 2.00   8677 0.553   1780 0.180   1587 0.168  12044 0.447
+
+   Log-Likelihood = -1040
+   R-factor =  77.2
+
+   REFINEMENT #1
+   -------------
+   Log-Likelihood = 476
+   R-factor =  87.6
+
+   SUB-STRUCTURE ANALYSIS #1: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.43A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.43A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #1: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE       4.7018       1.0186       0.0722       0.1019
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   5   -0.154  0.000 -0.108       0.0722       SE  Rejected
+   6   -0.169 -0.683 -0.146       0.0799       SE  Rejected
+
+   Number of old atoms with occupancy less than cut-off = 2
+      Number of these previously restored (therefore not deleted) = 0
+   Number of old atoms identified for deletion = 2
+
+   SUB-STRUCTURE COMPLETION #1
+   ---------------------------
+** Substructure completion requested
+
+   Delete Low Occupancy Sites
+   --------------------------
+   Deleting 2 atoms in current atom list of 6
+   Deleted Atom #'s: 5 6 
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #2
+   -------------
+   Log-Likelihood = 474
+   R-factor =  87.9
+
+   SUB-STRUCTURE ANALYSIS #2: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.43A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.43A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #2: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE       4.7280       1.0228       0.8055       0.1023
+
+   Number of old atoms with occupancy less than cut-off = 0
+      Number of these previously restored (therefore not deleted) = 0
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #2
+   ---------------------------
+** Substructure completion requested
+** Substructure completion has converged
+
+   FINAL PHASING STATISTICS
+   ------------------------
+   Atom Parameters: 4 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1    -0.338  -0.577  -0.061   1.019    32.2 (  ---- ) 1 SE
+   #2    -0.103  -0.698  -0.137   0.947    33.4 (  ---- ) 1 SE
+   #3    -0.136  -0.864  -0.185   1.023    36.8 (  ---- ) 1 SE
+   #4    -0.174  -0.098  -0.123   0.805    37.7 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE         4.7280        -8.0000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  28.35- 2.00   8687 0.326   1780 0.087   1587 0.052  12054 0.254
+
+   Final Log-Likelihood = 474.502
+   Final R-factor =  87.9
+
+------------------------------
+ATOM SET #1 OF 1: ENANTIOMORPH
+------------------------------
+
+** Only one anomalous scattering type
+** Only phasing (not refinement) required in second enantiomorph
+
+   Sites before and after enantiomorph changed
+        X      Y      Z      -> X      Y      Z        Atomtype
+   #1   -12.12 -30.44  -5.98 ->  12.12  30.44   5.98   SE
+   #2    -3.71 -36.82 -13.34 ->   3.71  36.82  13.34   SE
+   #3    -4.88 -45.59 -18.05 ->   4.88  45.59  18.05   SE
+   #4    -6.24  -5.19 -11.93 ->   6.24   5.19  11.93   SE
+
+   Space Group Name (Number): P 21 21 21 (19)
+
+   PHASING STATISTICS
+   ------------------
+   Atom Parameters: 4 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1     0.338   0.577   0.061   1.019    32.2 (  ---- ) 1 SE
+   #2     0.103   0.698   0.137   0.947    33.4 (  ---- ) 1 SE
+   #3     0.136   0.864   0.185   1.023    36.8 (  ---- ) 1 SE
+   #4     0.174   0.098   0.123   0.805    37.7 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE         4.7280        -8.0000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  28.35- 2.00   8687 0.326   1780 0.087   1587 0.052  12054 0.254
+
+   Log-Likelihood = 474
+   R-factor =  87.9
+
+------------
+OUTPUT FILES
+------------
+
+   Output for 1 topfiles requested
+   Hand #2 of 2
+      Atom Set #1 of 1
+         Phases written to MTZ file:  AutoSol_run_1_/TEMP0/phaser_mtz.1.hand.mtz
+
+   Hand #1 of 2
+      Atom Set #1 of 1
+         Phases written to MTZ file:  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+
+   SAD Refinement Table (Unsorted)
+   -------------------------------
+   SET     SpaceGroup  FOM  Log-Likelihood Rfac  Composition
+                                                 SE   
+   #  1    P 21 21 21 0.254            475 87.9  4    
+   -------
+   *=hand
+   #  1 *  P 21 21 21 0.254            475 87.9  4    
+   -------
+
+   SAD Refinement Table (Sorted)
+   -----------------------------
+   SET     SpaceGroup  FOM  Log-Likelihood Rfac  Composition
+                                                 SE   
+   #  1    P 21 21 21 0.254            475 87.9  4    
+   -------
+   *=hand
+   #  1 *  P 21 21 21 0.254            475 87.9  4    
+   -------
+
+CPU Time: 0 days 0 hrs 0 mins 9.43 secs (      9.43 secs)
+Finished: Fri Oct 27 16:56:28 2023
+
+CPU Time: 0 days 0 hrs 0 mins 9.43 secs (      9.43 secs)
+Finished: Fri Oct 27 16:56:28 2023
+
+

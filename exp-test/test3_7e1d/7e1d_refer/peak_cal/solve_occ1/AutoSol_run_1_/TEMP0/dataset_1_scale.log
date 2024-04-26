@@ -1,0 +1,139 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                  --- SOLVE ---                      *
+        *                                                     *
+        *    Automated structure solution for MAD and MIR     *
+        *                                                     *
+        *  Please type "solvehelp" for on-line help   *
+        *      or see "http://solve.lanl.gov"         *
+        *******************************************************
+
+ (version 2.13 of 24-Feb-2008 / Size =   6, maxatm = 150, nsolsitemax = 100)
+   Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+ Dataset title: SOLVE     27-Oct-23                                         
+
+ Space group number is:           19
+ Space group name from file name is: p212121   
+ Rescaling standard dataset to put it on approximate absolute scale.  NRES = 
+         192 ;  <F**2> expected =    94080.00    
+ ;  <F**2> observed in lowest resolution shell =    7927.143    
+   ... Scale factor =    11.86808    
+ 
+ --------------------------------------------------
+ 
+  *** Analysis of this scaled MAD data set *** 
+ 
+  Fbar,sigma,Delano,sigma for            1  wavelengths written to:
+ mad_fbar.scl                                                                    
+ 
+  F+,sigma,F-,sigma for            1  wavelengths written to:
+ mad_fpfm.scl                                                                    
+ 
+  ** Completeness of Fbar data at each wavelength: ** 
+ 
+ 
+ 
+ Completeness of dataset            1   ( F >   0.0000000E+00  * sigma)
+ set 1                                                                           
+ Reflections observed:
+
+                    Possible  Found     % complete
+ shell     dmin      
+
+    1     4.000      1743      1731      99.3
+    2     3.000      2265      2247      99.2
+    3     2.800       888       867      97.6
+    4     2.650       849       834      98.2
+    5     2.500      1075      1052      97.9
+    6     2.400       844       809      95.9
+    7     2.300      1021       986      96.6
+    8     2.200      1186      1099      92.7
+    9     2.100      1451      1247      85.9
+   10     2.000      1730      1184      68.4
+
+ total              13052     12056      92.4
+ 
+  ** R-factors for F-bar data dispersive  differences **
+ 
+ 
+ Anomalous differences lambda            1  (f" =    4.500000     )
+
+
+ Differences by shell:
+
+  shell   dmin    nobs      Fbar      R     scale    SIGNAL  NOISE   S/N
+
+    1     4.000  1250     298.860     0.044   1.000  15.92   4.71   3.38
+    2     3.000  1843     231.215     0.042   1.000  10.89   5.94   1.83
+    3     2.800   719     160.179     0.062   1.000  10.91   6.74   1.62
+    4     2.650   689     139.579     0.076   0.999  11.52   8.38   1.37
+    5     2.500   876     117.630     0.097   1.000  12.65   8.87   1.43
+    6     2.400   674     116.872     0.096   1.000  11.28   9.44   1.20
+    7     2.300   729     109.702     0.109   1.001  13.17   9.72   1.35
+    8     2.200   695     103.951     0.112   1.000  12.26   9.35   1.31
+    9     2.100   686      99.988     0.116   0.999  12.31   8.77   1.40
+   10     2.000   528      87.414     0.108   0.997   9.58   7.82   1.23
+
+ Total:          8689     168.008     0.066   1.000  12.33   7.72   1.76
+
+ Recommended resolution cut-off =    2.00
+
+
+ SAD analysis: defining pseudo-native based on Fbar for the SAD data 
+ and pseudo-derivative  based on Fbar and del anom for the SAD data 
+
+ 
+ Script file suitable for running SOLVE written to:
+ solve_mir.script
+ 
+
+
+INPUT COMMANDS:
+
+SOLVEFILE dataset_1_scale.log                                                  
+SYMFILE p212121.sym                                                            
+RESOLUTION 1000.0 2.0                                                          
+CELL  35.813999176 52.7620010376 97.3970031738 90.0 90.0 90.0                  
+readdenzo                                                                      
+premerged                                                                      
+nequiv_separate 1                                                              
+require_nat                                                                    
+                                                                               
+ratio_out 10.0                                                                 
+                                                                               
+ratmin 0.0                                                                     
+                                                                               
+ikeepflag 1                                                                    
+                                                                               
+id_scale_ref 1                                                                 
+                                                                               
+projectname project                                                            
+                                                                               
+crystalname crystal                                                            
+                                                                               
+datasetname dataset                                                            
+                                                                               
+MAD_ATOM SE                                                                    
+LAMBDA 1                                                                       
+RAWMADFILE ANISO_7e1d-sf_PHX.sca                                               
+ATOMNAME SE                                                                    
+WAVELENGTH 0.97852                                                             
+FPRIMV_MAD -8.0                                                                
+FPRPRV_MAD 4.5                                                                 
+NRES 192                                                                       
+NANOMALOUS 6                                                                   
+SKIP_SOLVE                                                                     
+SAD                                                                            
+                                                                               
+                                                                               

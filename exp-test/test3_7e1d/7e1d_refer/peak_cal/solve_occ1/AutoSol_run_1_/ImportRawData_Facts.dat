@@ -1,0 +1,102 @@
+--------------------------------------------------------
+-------------LIST OF FACTS:---------------------------
+CurrentWizard  "ImportRawData"
+NeedInputs  False
+OutputDir  "AutoSol_run_1_"
+acceptable_run  True
+add_double_quotes_in_condor 0
+amplitudes_intensities  "intensities"
+auto_manual  "Manual"
+background  True
+base_path  False
+cache_resolve_libs  True
+check_wait_time  1.0
+clean_up 0
+condor 0
+condor_universe  "vanilla"
+converted_file_list  /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occ1/AutoSol_run_1_/7e1d-sf_PHX.sca
+coot_name  "coot"
+current_run_number  1
+debug  False
+default_path  False
+done_ImportRawData_output_files  True
+done_ImportRawData_start  True
+extra_verbose 0
+finished  True
+fix_format  True
+ignore_f_dano_arrays 0
+imported_facts_dict  False
+input_file_list  /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d_4se_P212121/7e1d-sf.mtz
+input_files_id_list  /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d_4se_P212121/7e1d-sf.mtz
+input_labels_1  ["I(+)", "SIGI(+)", "I(-)", "SIGI(-)"]
+input_labels_id_list  input_labels_1
+input_labels_list  ['["I(+)", "SIGI(+)", "I(-)", "SIGI(-)"]']
+input_labels_restrict_list  None
+input_labels_split_list  [['I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)']]
+input_labels_string_list  I(+) SIGI(+) I(-) SIGI(-)
+is_centric 0
+job_title  "Run 1 ImportRawData Fri Oct 27 16:56:11 2023"
+link_distance_cutoff  3.0
+local_temp_directory  False
+max_wait_time  1.0
+merge_equivalents  True
+message_0  "STEP: finished  Run 1"
+message_1  False
+message_2  False
+message_3  False
+minimum_version  2.11
+nbatch  1
+never_done []
+next_method  False
+non_anomalous  "No"
+not_files  file_or_file_list  write_run_directory_to_file  output_files_1  dataset_input_file_list  use_map_file_as_hklstart  map_file_fom  map_file_is_density_modified  keep_files
+nproc  1
+only_ano  True
+output_files_1  /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occ1/AutoSol_run_1_/7e1d-sf_PHX.sca
+output_files_id_list  output_files_1
+output_files_list  ['/ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occ1/AutoSol_run_1_/7e1d-sf_PHX.sca']
+output_format  "Scalepack"
+process_dir  "AutoSol_run_1_/.PROCESS_3"
+process_number  3
+queue_commands  
+r_free_flags_fraction  0.1
+r_free_flags_lattice_symmetry_max_delta  5.0
+r_free_flags_max_free  2000
+r_free_flags_use_lattice_symmetry  True
+raise_sorry 0
+read_DB 0
+resolve_command_list []
+resolve_pattern_command_list []
+resolve_size  False
+resolve_wait_time  1
+run_command  "csh"
+scale_max  99999.9
+sg  None
+sg_inv  "P 21 21 21"
+short_summary  "summary of input files:
+
+hklin : /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d_4se_P212121/7e1d-sf.mtz
+    input labels:["I(+)", "SIGI(+)", "I(-)", "SIGI(-)"]
+    OUTPUT FILE NAME: /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occ1/AutoSol_run_1_/7e1d-sf_PHX.sca
+
+SPACE GROUP NAME: P 21 21 21
+
+ CELL: [35.81399917602539, 52.762001037597656, 97.39700317382812, 90.0, 90.0, 90.0]"
+skip_SaveDatabase  True
+skip_xtriage 0
+solve_command_list []
+solve_work_path  False
+space_group  "P 21 21 21"
+subtitle_extra  False
+temp_dir  "AutoSol_run_1_/TEMP0"
+top_output_dir  None
+twin_law  None
+unit_cell  35.814  52.762  97.397  90.0  90.0  90.0
+verbose 0
+visited_highest_screen  True
+wait_between_submit_time  1.0
+warnings []
+wizard_directory_number  None
+working_directory  "/ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occ1"
+-------------END OF LIST OF FACTS:--------------------------
+------------------------------------------------------------

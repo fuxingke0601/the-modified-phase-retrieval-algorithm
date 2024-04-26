@@ -1,0 +1,163 @@
+
+
+-----------CURRENT SOLUTIONS FOR RUN 1 : -------------------
+
+ *** FILES ARE IN THE DIRECTORY: AutoSol_run_1_ ****
+
+
+
+Solution # 3  BAYES-CC: 37.6 +/- 23.3 (2SD) Dataset #1   FOM: 0.27
+
+Solution 3 based on sites from phaser completion using denmod solution 1. Dataset #1 SG="P 21 21 21"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_7e1d-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6 (Already used for Phasing at resol of 2.0)      Refined Sites: 6
+No NCS found
+Experimental phases in: overall_best_hklout_phased.mtz
+Experimental phases plus FreeR_flags for refinement in: overall_best_refine_data.mtz
+Map coefficients (Density-modified phases using model) in: overall_best_denmod_map_coeffs.mtz
+HA sites (PDB format) in: overall_best_ha_pdb.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: overall_best_log_phased.log
+Density modification logfile in: overall_best_log_denmod.log (R=0.4)
+
+ Score type:       SKEW    CORR_RMS    NCS_OVERLAP
+Raw scores:        0.12      0.78      0.00  
+100x EST OF CC:   34.77     33.03     31.25  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ SE      -0.339     -0.577     -0.061         0.97
+ SE      -0.104     -0.698     -0.138         0.86
+ SE      -0.138     -0.873     -0.191         0.45
+ SE      -0.166     -0.102     -0.122         0.63
+ SE       0.135      0.646      0.679         0.51
+ SE       0.204      0.430      0.622         0.22
+
+
+
+Solution # 1  BAYES-CC: 38.1 +/- 23.1 (2SD) Dataset #1   FOM: 0.25
+
+ NOTE: Output files for this solution not written out (in PDS only)
+Adjust 'number_of_solutions_to_display' (currently 1) to write them out.
+
+
+Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="P 21 21 21"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_7e1d-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6 (Already used for Phasing at resol of 2.0)      Refined Sites: 4
+No NCS found
+Experimental phases in: phaser_1.mtz
+Experimental phases plus FreeR_flags for refinement in: exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz
+Map coefficients (Density-modified phases using model) in: resolve_wang_8A_1.mtz
+HA sites (PDB format) in: ha_1.pdb_formatted.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: phaser_1.log
+Density modification logfile in: resolve_wang_8A_1.log (R=0.41)
+
+ Score type:       SKEW    CORR_RMS    NCS_OVERLAP
+Raw scores:        0.12      0.78      0.00  
+100x EST OF CC:   35.40     33.36     31.25  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ SE      -0.338     -0.577     -0.061         1.02
+ SE      -0.103     -0.698     -0.137         0.95
+ SE      -0.136     -0.864     -0.185         1.02
+ SE      -0.174     -0.098     -0.123         0.81
+
+
+
+Solution # 2  BAYES-CC: 13.6 +/- 26.8 (2SD) Dataset #1   FOM: 0.25
+
+ NOTE: Output files for this solution not written out (in PDS only)
+Adjust 'number_of_solutions_to_display' (currently 1) to write them out.
+
+
+Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="P 21 21 21"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_7e1d-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6 (Already used for Phasing at resol of 2.0)      Refined Sites: 4
+No NCS found
+Experimental phases in: phaser_2.mtz
+Experimental phases plus FreeR_flags for refinement in: exptl_fobs_phases_freeR_flags_2_with_anom_data_with_hl_anom.mtz
+Map coefficients (Density-modified phases using model) in: resolve_wang_14A_2.mtz
+HA sites (PDB format) in: ha_2.pdb_formatted.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: phaser_2.log
+Density modification logfile in: resolve_wang_14A_2.log (R=0.44)
+
+ Score type:       SKEW    CORR_RMS    NCS_OVERLAP
+Raw scores:       -0.04      0.73      0.00  
+100x EST OF CC:   10.54     23.97     31.25  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ SE       0.338      0.577      0.061         1.02
+ SE       0.103      0.698      0.137         0.95
+ SE       0.136      0.864      0.185         1.02
+ SE       0.174      0.098      0.123         0.81
+
+
+
+Solution # 4  BAYES-CC: 13.4 +/- 26.8 (2SD) Dataset #1   FOM: 0.26
+
+ NOTE: Output files for this solution not written out (in PDS only)
+Adjust 'number_of_solutions_to_display' (currently 1) to write them out.
+
+
+Solution 4 based on sites from phaser completion using denmod solution 2. Dataset #1 SG="P 21 21 21"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb1_11_7e1d/exp-test/11_7e1d/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_7e1d-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 4 (Already used for Phasing at resol of 2.0)      Refined Sites: 4
+No NCS found
+Experimental phases in: phaser_4.mtz
+Experimental phases plus FreeR_flags for refinement in: exptl_fobs_phases_freeR_flags_4_with_anom_data_with_hl_anom.mtz
+Map coefficients (Density-modified phases using model) in: resolve_wang_14A_4.mtz
+HA sites (PDB format) in: ha_4.pdb_formatted.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: phaser_4.log
+Density modification logfile in: resolve_wang_14A_4.log (R=0.44)
+
+ Score type:       SKEW    CORR_RMS    NCS_OVERLAP
+Raw scores:       -0.04      0.73      0.00  
+100x EST OF CC:   10.25     24.49     31.25  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ SE       0.339      0.577      0.061         0.94
+ SE       0.104      0.698      0.137         0.88
+ SE       0.137      0.864      0.185         0.95
+ SE       0.174      0.098      0.123         0.75
+
+
+Citations for AutoSol:
+
+Liebschner D, Afonine PV, Baker ML, Bunkóczi G, Chen VB, Croll TI, Hintze B,
+Hung LW, Jain S, McCoy AJ, Moriarty NW, Oeffner RD, Poon BK, Prisant MG, Read
+RJ, Richardson JS, Richardson DC, Sammito MD, Sobolev OV, Stockwell DH,
+Terwilliger TC, Urzhumtsev AG, Videau LL, Williams CJ, Adams PD. (2019)
+Macromolecular structure determination using X-rays, neutrons and electrons:
+recent developments in Phenix. Acta Cryst. D75:861-877.
+
+McCoy AJ, Grosse-Kunstleve RW, Adams PD, Winn MD, Storoni LC, Read RJ. (2007)
+Phaser crystallographic software. J Appl Crystallogr 40:658-674.
+
+Terwilliger TC, Adams PD, Read RJ, McCoy AJ, Moriarty NW, Grosse-Kunstleve RW,
+Afonine PV, Zwart PH, Hung LW. (2009) Decision-making in structure solution
+using Bayesian estimates of map quality: the PHENIX AutoSol wizard. Acta
+Crystallogr D Biol Crystallogr 65:582-601.
+
+Zwart PH, Grosse-Kunstleve RW, Adams PD. (2005) Xtriage and Fest: automatic
+assessment of X-ray data and substructure structure factor estimation. CCP4
+Newsletter Winter:Contribution 7.
+
+

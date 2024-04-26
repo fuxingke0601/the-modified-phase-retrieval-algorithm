@@ -1,0 +1,412 @@
+SAD phasing
+Data read from:  AutoSol_run_1_/TEMP0/TEMP_sca.mtz
+Data output to :  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+Spacegroup Name (Hall symbol) = P 41 21 2 ( P 4abw 2nw)
+Unitcell =  (57.6150016784668, 57.6150016784668, 150.80799865722656, 90.0, 90.0, 90.0)
+LogLikelihood =  -2276.41526376
+55  refined atoms
+ atom          x          y          z  occupancy      u-iso      fp     fpp
+   SE     0.9154     0.2853     0.0578     0.4431     0.0585   -8.00    2.41
+   SE     0.9835     0.8506     0.0764     0.6015     0.0978   -8.00    2.41
+   SE     0.5089     0.1741     0.0920     0.4541     0.2035   -8.00    2.41
+   SE     0.8739     0.4517     0.0036     0.4834     0.1584   -8.00    2.41
+   SE     0.5948     0.4871     0.0749     0.2351     0.1169   -8.00    2.41
+   SE     0.4460     0.6038     0.0053     0.5180     0.3022   -8.00    2.41
+   SE     0.6141     0.5174     0.1089     0.3080     0.1622   -8.00    2.41
+   SE     0.8892     0.4650     0.0680     0.2256     0.1103   -8.00    2.41
+   SE     0.0305     0.8652     0.0111     0.2460     0.2005   -8.00    2.41
+   SE     0.0519     0.1302     0.3569     0.3222     0.2042   -8.00    2.41
+   SE     0.0352     0.7527     0.7140     0.2315     0.1603   -8.00    2.41
+   SE     0.0199     0.4554     0.3877     0.2405     0.2087   -8.00    2.41
+   SE     0.0258     0.3104     0.6615     0.3640     0.2635   -8.00    2.41
+   SE     0.1043     0.6249     0.5755     0.1529     0.1484   -8.00    2.41
+   SE     0.0100     0.8303     0.7545     0.1591     0.1842   -8.00    2.41
+   SE     0.0191     0.1506     0.5716     0.3526     0.1276   -8.00    2.41
+   SE     0.0834     0.7114     0.5637     0.3425     0.0073   -8.00    2.41
+   SE     0.0218     0.6180     0.8976     0.1337     0.1124   -8.00    2.41
+   SE     0.0234     0.2706     0.6470     0.1366     0.1283   -8.00    2.41
+   SE     0.0101     0.2743     0.2594     0.1473     0.1468   -8.00    2.41
+   SE     0.1101     0.3726     0.3280     0.1601     0.1662   -8.00    2.41
+   SE     0.0642     0.8240     0.8284     0.1500     0.1788   -8.00    2.41
+   SE     0.1043     0.6615     0.7400     0.1401     0.1424   -8.00    2.41
+   SE     0.0648     0.3984     0.2514     0.1627     0.1845   -8.00    2.41
+   SE     0.0021     0.4768     0.4063     0.1127     0.1187   -8.00    2.41
+   SE     0.0476     0.1600     0.7701     0.1142     0.1805   -8.00    2.41
+   SE     0.0795     0.7047     0.5017     0.1198     0.1422   -8.00    2.41
+   SE     0.0010     0.0602     0.1050     0.1528     0.1621   -8.00    2.41
+   SE     0.1113     0.6265     0.7412     0.1180     0.1398   -8.00    2.41
+   SE     0.1054     0.3278     0.4310     0.1116     0.1578   -8.00    2.41
+   SE     0.0190     0.5834     0.9045     0.1159     0.1550   -8.00    2.41
+   SE     0.0562     0.8873     0.9293     0.1016     0.1136   -8.00    2.41
+   SE     0.0459     0.1782     0.3992     0.0917     0.0811   -8.00    2.41
+   SE     0.1181     0.6542     0.9566     0.1373     0.1449   -8.00    2.41
+   SE     0.0769     0.2100     0.5631     0.1130     0.1193   -8.00    2.41
+   SE     0.0739     0.1268     0.7223     0.0878     0.1060   -8.00    2.41
+   SE     0.0609     0.2152     0.5517     0.0924     0.1366   -8.00    2.41
+   SE     0.0947     0.7039     0.5595     0.3510     0.2144   -8.00    2.41
+   SE     0.0530     0.1477     0.4069     0.0766     0.1265   -8.00    2.41
+   SE     0.0744     0.8055     0.0152     0.1125     0.1708   -8.00    2.41
+   SE     0.0367     0.9137     0.9340     0.0801     0.1461   -8.00    2.41
+   SE     0.0442     0.3603     0.2634     0.0896     0.1114   -8.00    2.41
+   SE     0.0860     0.3048     0.3357     0.0839     0.1466   -8.00    2.41
+   SE     0.0285     0.5734     0.2210     0.1423     0.2078   -8.00    2.41
+   SE     0.1296     0.1547     0.7372     0.0694     0.1538   -8.00    2.41
+   SE     0.1207     0.8577     0.6565     0.0613     0.1647   -8.00    2.41
+   SE     0.0139     0.1822     0.6973     0.0793     0.1215   -8.00    2.41
+   SE     0.0419     0.5598     0.9779     0.0886     0.1276   -8.00    2.41
+   SE     0.0110     0.1389     0.7516     0.1090     0.1623   -8.00    2.41
+   SE     0.0169     0.0746     0.3291     0.2590     0.2499   -8.00    2.41
+   SE     0.0258     0.4620     0.7322     0.0757     0.0554   -8.00    2.41
+   SE     0.1017     0.7708     0.0904     0.1065     0.1404   -8.00    2.41
+   SE     0.0020     0.4654     0.8181     0.0701     0.0682   -8.00    2.41
+   SE     0.0500     0.9377     0.9963     0.0871     0.1974   -8.00    2.41
+   SE     0.0594     0.1687     0.5359     0.0820     0.1409   -8.00    2.41
+
+First  10  reflections
+   H    K    L        FWT       PHWT        FOM
+  35    5   18   221.3236   -72.0770     0.5296
+  35    4    7   243.1388   120.3746     0.6546
+  35    2   10    73.3616   -40.4566     0.1963
+  35    1    6   199.1818   -91.9151     0.5374
+  34    6   23   283.6125   -74.5794     0.7265
+  34    6   15   235.6744  -176.2690     0.7590
+  34    6    5    70.2236   -36.2521     0.2119
+  34    6    2   144.7714   -88.7700     0.4809
+  34    5   22   198.3216    47.7176     0.4908
+  34    5   17   111.5752   159.5260     0.2609
+******************************************************************************************
+*** Phaser Module: PREPROCESSOR                                                  2.8.3 ***
+******************************************************************************************
+
+ATOM CRYSTAL crystal SET
+ATOM CRYSTAL crystal TYPE SE FRAC  0.9160  0.2847  0.0583 OCC 0.05 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.9836  0.8506  0.0761 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.5087  0.1730  0.0924 OCC 0.06 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.8737  0.4514  0.0035 OCC 0.06 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.5955  0.4856  0.0754 OCC 0.03 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.4464  0.6045  0.0053 OCC 0.07 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.6142  0.5160  0.1090 OCC 0.05 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.8894  0.4665  0.0680 OCC 0.03 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0299  0.8644  0.0113 OCC 0.04 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0523  0.1307  0.3571 OCC 0.05 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0350  0.7519  0.7137 OCC 0.03 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0199  0.4551  0.3878 OCC 0.03 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0234  0.3109  0.6614 OCC 0.05 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1049  0.6257  0.5756 OCC 0.03 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0092  0.8305  0.7547 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0194  0.1507  0.5725 OCC 0.05 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0842  0.7103  0.5632 OCC 0.06 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0220  0.6182  0.8979 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0226  0.2700  0.6477 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0096  0.2728  0.2591 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1107  0.3706  0.3272 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0638  0.8254  0.8285 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1031  0.6607  0.7393 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0631  0.3956  0.2517 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0035  0.4750  0.4064 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0493  0.1609  0.7705 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0758  0.7070  0.5021 OCC 0.02 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC -0.0017  0.0629  0.1065 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1084  0.6247  0.7418 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1064  0.3303  0.4317 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0190  0.5834  0.9036 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0563  0.8912  0.9304 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0478  0.1742  0.3994 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1173  0.6535  0.9561 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0777  0.2112  0.5646 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0849  0.1313  0.7237 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0633  0.2159  0.5512 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0940  0.7054  0.5586 OCC 0.05 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0520  0.1481  0.4093 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0744  0.8078  0.0136 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0345  0.9164  0.9344 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0429  0.3645  0.2605 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0861  0.2990  0.3353 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0294  0.5882  0.2185 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1176  0.1517  0.7300 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1233  0.8587  0.6580 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0070  0.1840  0.6967 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0433  0.5595  0.9764 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0075  0.1311  0.7500 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0156  0.0807  0.3281 OCC 0.03 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0264  0.4598  0.7315 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1001  0.7721  0.0900 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0075  0.4645  0.8192 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0541  0.9345  0.9955 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0645  0.1629  0.5368 OCC 0.01 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+CELL 57.615 57.615 150.808 90 90 90
+CRYSTAL crystal DATASET crystal LABIN  F(+) = F(+) SIGF(+) = SIGF(+)  F(-) = F(-) SIGF(-) = SIGF(-)
+HAND OFF
+HKLOUT ON
+KEYWORDS OFF
+LLGCOMPLETE SCATTERER SE
+MUTE ON
+ROOT "AutoSol_run_1_/TEMP0/phaser_mtz"
+SCATTERING TYPE SE FP=-8 FDP=4.5 FIX EDGE
+
+SPACEGROUP P 41 21 2
+WAVELENGTH 0.978
+XYZOUT ON
+
+CPU Time: 0 days 0 hrs 0 mins 2.78 secs (      2.78 secs)
+Finished: Sun Oct 29 21:55:15 2023
+
+******************************************************************************************
+*** Phaser Module: SINGLE-WAVELENGTH ANOMALOUS DISPERSION                        2.8.3 ***
+******************************************************************************************
+
+** There is 1 SAD atom refinement set
+
+   Refined Anisotropy Parameters
+   -----------------------------
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         0.004              0.9991  -0.0416  -0.0000
+         0.004              0.0416   0.9991  -0.0000
+        -0.007              0.0000   0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):   0.011
+
+   Scattering edges
+   ----------------
+   Wavelength = 0.978
+   Atomtype "SE" is near an edge
+      Atomtype "SE" fdp is refined
+
+------------
+ENANTIOMORPH
+------------
+
+** Requested refinement in original enantiomorph only
+
+----------------
+ATOM SET #1 OF 1
+----------------
+
+   Space Group Name (Number): P 41 21 2 (92)
+
+   INITIAL PHASING STATISTICS
+   --------------------------
+   Atom Parameters: 55 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1     0.916   0.285   0.058   0.050    11.0 (  ---- ) 1 SE
+   #2     0.984   0.851   0.076   0.080    11.0 (  ---- ) 1 SE
+   #3     0.509   0.173   0.092   0.060    11.0 (  ---- ) 1 SE
+   #4     0.874   0.451   0.003   0.060    11.0 (  ---- ) 1 SE
+   #5     0.596   0.486   0.075   0.030    11.0 (  ---- ) 1 SE
+   #6     0.446   0.604   0.005   0.070    11.0 (  ---- ) 1 SE
+   #7     0.614   0.516   0.109   0.050    11.0 (  ---- ) 1 SE
+   #8     0.889   0.466   0.068   0.030    11.0 (  ---- ) 1 SE
+   #9     0.030   0.864   0.011   0.040    11.0 (  ---- ) 1 SE
+   #10    0.052   0.131   0.357   0.050    11.0 (  ---- ) 1 SE
+   #11    0.035   0.752   0.714   0.030    11.0 (  ---- ) 1 SE
+   #12    0.020   0.455   0.388   0.030    11.0 (  ---- ) 1 SE
+   #13    0.023   0.311   0.661   0.050    11.0 (  ---- ) 1 SE
+   #14    0.105   0.626   0.576   0.030    11.0 (  ---- ) 1 SE
+   #15    0.009   0.831   0.755   0.020    11.0 (  ---- ) 1 SE
+   #16    0.019   0.151   0.573   0.050    11.0 (  ---- ) 1 SE
+   #17    0.084   0.710   0.563   0.060    11.0 (  ---- ) 1 SE
+   #18    0.022   0.618   0.898   0.020    11.0 (  ---- ) 1 SE
+   #19    0.023   0.270   0.648   0.020    11.0 (  ---- ) 1 SE
+   #20    0.010   0.273   0.259   0.020    11.0 (  ---- ) 1 SE
+   #21    0.111   0.371   0.327   0.020    11.0 (  ---- ) 1 SE
+   #22    0.064   0.825   0.828   0.020    11.0 (  ---- ) 1 SE
+   #23    0.103   0.661   0.739   0.020    11.0 (  ---- ) 1 SE
+   #24    0.063   0.396   0.252   0.020    11.0 (  ---- ) 1 SE
+   #25    0.003   0.475   0.406   0.020    11.0 (  ---- ) 1 SE
+   #26    0.049   0.161   0.771   0.020    11.0 (  ---- ) 1 SE
+   #27    0.076   0.707   0.502   0.020    11.0 (  ---- ) 1 SE
+   #28   -0.002   0.063   0.107   0.010    11.0 (  ---- ) 1 SE
+   #29    0.108   0.625   0.742   0.010    11.0 (  ---- ) 1 SE
+   #30    0.106   0.330   0.432   0.010    11.0 (  ---- ) 1 SE
+   #31    0.019   0.583   0.904   0.010    11.0 (  ---- ) 1 SE
+   #32    0.056   0.891   0.930   0.010    11.0 (  ---- ) 1 SE
+   #33    0.048   0.174   0.399   0.010    11.0 (  ---- ) 1 SE
+   #34    0.117   0.653   0.956   0.010    11.0 (  ---- ) 1 SE
+   #35    0.078   0.211   0.565   0.010    11.0 (  ---- ) 1 SE
+   #36    0.085   0.131   0.724   0.010    11.0 (  ---- ) 1 SE
+   #37    0.063   0.216   0.551   0.010    11.0 (  ---- ) 1 SE
+   #38    0.094   0.705   0.559   0.050    11.0 (  ---- ) 1 SE
+   #39    0.052   0.148   0.409   0.010    11.0 (  ---- ) 1 SE
+   #40    0.074   0.808   0.014   0.010    11.0 (  ---- ) 1 SE
+   #41    0.034   0.916   0.934   0.010    11.0 (  ---- ) 1 SE
+   #42    0.043   0.364   0.261   0.010    11.0 (  ---- ) 1 SE
+   #43    0.086   0.299   0.335   0.010    11.0 (  ---- ) 1 SE
+   #44    0.029   0.588   0.219   0.010    11.0 (  ---- ) 1 SE
+   #45    0.118   0.152   0.730   0.010    11.0 (  ---- ) 1 SE
+   #46    0.123   0.859   0.658   0.010    11.0 (  ---- ) 1 SE
+   #47    0.007   0.184   0.697   0.010    11.0 (  ---- ) 1 SE
+   #48    0.043   0.560   0.976   0.010    11.0 (  ---- ) 1 SE
+   #49    0.008   0.131   0.750   0.010    11.0 (  ---- ) 1 SE
+   #50    0.016   0.081   0.328   0.030    11.0 (  ---- ) 1 SE
+   #51    0.026   0.460   0.731   0.010    11.0 (  ---- ) 1 SE
+   #52    0.100   0.772   0.090   0.010    11.0 (  ---- ) 1 SE
+   #53    0.007   0.465   0.819   0.010    11.0 (  ---- ) 1 SE
+   #54    0.054   0.935   0.995   0.010    11.0 (  ---- ) 1 SE
+   #55    0.064   0.163   0.537   0.010    11.0 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE         4.5000        -8.0000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  31.65- 1.55  27141 0.258   4575 0.017   3439 0.022  35155 0.203
+
+   Log-Likelihood = -11158
+   R-factor =  97.5
+
+   REFINEMENT #1
+   -------------
+   Log-Likelihood = 2276
+   R-factor =  82.7
+
+   SUB-STRUCTURE ANALYSIS #1: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #1: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE       2.4116       0.6015       0.0613       0.0601
+
+   Number of old atoms with occupancy less than cut-off = 0
+      Number of these previously restored (therefore not deleted) = 0
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #1
+   ---------------------------
+** Substructure completion requested
+** Substructure completion has converged
+
+   FINAL PHASING STATISTICS
+   ------------------------
+   Atom Parameters: 55 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1     0.915   0.285   0.058   0.443     4.6 (  ---- ) 1 SE
+   #2     0.984   0.851   0.076   0.601     7.7 (  ---- ) 1 SE
+   #3     0.509   0.174   0.092   0.454    16.1 (  ---- ) 1 SE
+   #4     0.874   0.452   0.004   0.483    12.5 (  ---- ) 1 SE
+   #5     0.595   0.487   0.075   0.235     9.2 (  ---- ) 1 SE
+   #6     0.446   0.604   0.005   0.518    23.9 (  ---- ) 1 SE
+   #7     0.614   0.517   0.109   0.308    12.8 (  ---- ) 1 SE
+   #8     0.889   0.465   0.068   0.226     8.7 (  ---- ) 1 SE
+   #9     0.031   0.865   0.011   0.246    15.8 (  ---- ) 1 SE
+   #10    0.052   0.130   0.357   0.322    16.1 (  ---- ) 1 SE
+   #11    0.035   0.753   0.714   0.232    12.7 (  ---- ) 1 SE
+   #12    0.020   0.455   0.388   0.241    16.5 (  ---- ) 1 SE
+   #13    0.026   0.310   0.661   0.364    20.8 (  ---- ) 1 SE
+   #14    0.104   0.625   0.575   0.153    11.7 (  ---- ) 1 SE
+   #15    0.010   0.830   0.755   0.159    14.5 (  ---- ) 1 SE
+   #16    0.019   0.151   0.572   0.353    10.1 (  ---- ) 1 SE
+   #17    0.083   0.711   0.564   0.342     0.6 (  ---- ) 1 SE
+   #18    0.022   0.618   0.898   0.134     8.9 (  ---- ) 1 SE
+   #19    0.023   0.271   0.647   0.137    10.1 (  ---- ) 1 SE
+   #20    0.010   0.274   0.259   0.147    11.6 (  ---- ) 1 SE
+   #21    0.110   0.373   0.328   0.160    13.1 (  ---- ) 1 SE
+   #22    0.064   0.824   0.828   0.150    14.1 (  ---- ) 1 SE
+   #23    0.104   0.661   0.740   0.140    11.2 (  ---- ) 1 SE
+   #24    0.065   0.398   0.251   0.163    14.6 (  ---- ) 1 SE
+   #25    0.002   0.477   0.406   0.113     9.4 (  ---- ) 1 SE
+   #26    0.048   0.160   0.770   0.114    14.2 (  ---- ) 1 SE
+   #27    0.079   0.705   0.502   0.120    11.2 (  ---- ) 1 SE
+   #28    0.001   0.060   0.105   0.153    12.8 (  ---- ) 1 SE
+   #29    0.111   0.626   0.741   0.118    11.0 (  ---- ) 1 SE
+   #30    0.105   0.328   0.431   0.112    12.5 (  ---- ) 1 SE
+   #31    0.019   0.583   0.904   0.116    12.2 (  ---- ) 1 SE
+   #32    0.056   0.887   0.929   0.102     9.0 (  ---- ) 1 SE
+   #33    0.046   0.178   0.399   0.092     6.4 (  ---- ) 1 SE
+   #34    0.118   0.654   0.957   0.137    11.4 (  ---- ) 1 SE
+   #35    0.077   0.210   0.563   0.113     9.4 (  ---- ) 1 SE
+   #36    0.074   0.127   0.722   0.088     8.4 (  ---- ) 1 SE
+   #37    0.061   0.215   0.552   0.092    10.8 (  ---- ) 1 SE
+   #38    0.095   0.704   0.559   0.351    16.9 (  ---- ) 1 SE
+   #39    0.053   0.148   0.407   0.077    10.0 (  ---- ) 1 SE
+   #40    0.074   0.806   0.015   0.112    13.5 (  ---- ) 1 SE
+   #41    0.037   0.914   0.934   0.080    11.5 (  ---- ) 1 SE
+   #42    0.044   0.360   0.263   0.090     8.8 (  ---- ) 1 SE
+   #43    0.086   0.305   0.336   0.084    11.6 (  ---- ) 1 SE
+   #44    0.028   0.573   0.221   0.142    16.4 (  ---- ) 1 SE
+   #45    0.130   0.155   0.737   0.069    12.1 (  ---- ) 1 SE
+   #46    0.121   0.858   0.657   0.061    13.0 (  ---- ) 1 SE
+   #47    0.014   0.182   0.697   0.079     9.6 (  ---- ) 1 SE
+   #48    0.042   0.560   0.978   0.089    10.1 (  ---- ) 1 SE
+   #49    0.011   0.139   0.752   0.109    12.8 (  ---- ) 1 SE
+   #50    0.017   0.075   0.329   0.259    19.7 (  ---- ) 1 SE
+   #51    0.026   0.462   0.732   0.076     4.4 (  ---- ) 1 SE
+   #52    0.102   0.771   0.090   0.106    11.1 (  ---- ) 1 SE
+   #53    0.002   0.465   0.818   0.070     5.4 (  ---- ) 1 SE
+   #54    0.050   0.938   0.996   0.087    15.6 (  ---- ) 1 SE
+   #55    0.059   0.169   0.536   0.082    11.1 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE         2.4116        -8.0000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  31.65- 1.55  27372 0.416   4575 0.120   3439 0.180  35386 0.355
+
+   Final Log-Likelihood = 2276.42
+   Final R-factor =  82.7
+
+------------
+OUTPUT FILES
+------------
+
+   Output for 1 topfiles requested
+   Hand #1 of 1
+      Atom Set #1 of 1
+         Phases written to MTZ file:  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+
+   SAD Refinement Table (Unsorted)
+   -------------------------------
+   SET     SpaceGroup  FOM  Log-Likelihood Rfac  Composition
+                                                 SE   
+   #  1    P 41 21 2  0.355           2276 82.7  55   
+   -------
+
+   SAD Refinement Table (Sorted)
+   -----------------------------
+   SET     SpaceGroup  FOM  Log-Likelihood Rfac  Composition
+                                                 SE   
+   #  1    P 41 21 2  0.355           2276 82.7  55   
+   -------
+
+CPU Time: 0 days 0 hrs 1 mins 8.30 secs (     68.30 secs)
+Finished: Sun Oct 29 21:56:21 2023
+
+CPU Time: 0 days 0 hrs 1 mins 8.30 secs (     68.30 secs)
+Finished: Sun Oct 29 21:56:21 2023
+
+

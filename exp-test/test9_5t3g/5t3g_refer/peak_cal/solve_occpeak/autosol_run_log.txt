@@ -1,0 +1,1 @@
+/ssd2/scripts/autosol_refine3.sh ../../../52_5T3G_13SE_P41212/5t3g-sf.mtz ../../../52_5T3G_13SE_P41212/rcsb_pdb_5T3G.fasta ../pdb_CF_format.pdb SE 0.978 0.5649 1

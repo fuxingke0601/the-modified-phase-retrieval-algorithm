@@ -1,0 +1,27 @@
+REMARK TITLE [no title set] 
+CRYST1   87.811   58.675   95.730  90.00 114.31  90.00 P 1 21 1      2
+SCALE1      0.011388 -0.000000  0.005144        0.00000
+SCALE2      0.000000  0.017043 -0.000000        0.00000
+SCALE3      0.000000  0.000000  0.011462        0.00000
+HETATM    1 SE   SUB A   1      37.047  27.446  12.827  0.74  1.57          SE
+ANISOU    1 SE   SUB A   1       99    297    202     78     49   -141      SE
+HETATM    2 SE   SUB A   2      -3.579   6.865  73.331  0.48  0.10          SE
+HETATM    3 SE   SUB A   3      64.551  20.121  34.465  1.10 15.79          SE
+HETATM    4 SE   SUB A   4      21.323  14.642  53.234  0.55  0.10          SE
+HETATM    5 SE   SUB A   5      18.889  10.852  24.251  0.75 31.16          SE
+HETATM    6 SE   SUB A   6      22.117   7.832  27.092  0.80 24.96          SE
+HETATM    7 SE   SUB A   7     -20.569  26.902  60.338  0.69 28.54          SE
+HETATM    8 SE   SUB A   8     -23.566  23.305  63.744  0.48 22.01          SE
+HETATM    9 SE   SUB A   9      -3.747   7.113  77.360  0.22 16.57          SE
+HETATM   10 SE   SUB A  10       9.060  56.574  74.052  0.14  0.10          SE
+HETATM   11 SE   SUB A  11      25.405  43.267  32.925  0.24  0.10          SE
+HETATM   12 SE   SUB A  12      19.594  14.241  51.788  0.21  0.10          SE
+HETATM   13 SE   SUB A  13      34.656  27.878  12.341  0.20  0.10          SE
+HETATM   14 SE   SUB A  14      36.828  27.084  11.809  0.47  0.10          SE
+HETATM   15 SE   SUB A  15      -3.509   7.910  72.936  0.51  0.10          SE
+HETATM   16 SE   SUB A  16     -22.509  24.545  62.735  0.24 16.17          SE
+HETATM   17 SE   SUB A  17      -1.210   7.197  72.914  0.24  0.10          SE
+HETATM   18 SE   SUB A  18      -5.929   7.032  72.740  0.21  0.10          SE
+HETATM   19 SE   SUB A  19      39.080  26.568  12.213  0.20  0.10          SE
+HETATM   20 SE   SUB A  20      27.002  43.122  34.375  0.62  0.10          SE
+HETATM   21 SE   SUB A  21      -3.515   7.112  72.108  0.45  0.10          SE

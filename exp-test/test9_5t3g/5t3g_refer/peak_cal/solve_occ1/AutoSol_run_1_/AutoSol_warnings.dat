@@ -1,0 +1,9 @@
+
+NOTE: space group ('P 41 21 2') and cell ([57.615, 57.615, 150.808, 90.0, 90.0, 90.0]) 
+found in /ssd2/heavy_atom_search/parameter_test/pdb2_52_5t3g/exp-test/52_5t3g/peak_cal/solve_occ1/../pdb_CF.pdb
+Setting space group from /ssd2/heavy_atom_search/parameter_test/pdb2_52_5t3g/exp-test/52_5t3g/peak_cal/solve_occ1/../pdb_CF.pdb
+
+
+NOTE: best FOM is very low ( 0.31)...changing to thorough defaults.
+(To prevent this set fom_for_extreme_dm to a value lower than  0.31)
+SKIPPED BUILD

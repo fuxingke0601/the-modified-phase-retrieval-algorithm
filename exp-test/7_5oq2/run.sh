@@ -1,5 +1,7 @@
 #!/bin/bash
 
+python_evn="/home/fuxingke/anaconda3/envs/dsas_python3_10/bin/python"
+
 sayr=0
 mtz_rel="prasa_5oq2_2.61_unique.mtz"
 if [ $# == 2 ];then
@@ -25,7 +27,7 @@ cd mtz_prep
 ./prep.sh $mtz
 
 ####################################calc resolution#########################
-reso=$(python3.9 ../reso_cal.py shelxC.log shelx_ecal_cad.mtz)
+reso=$($python_evn ../reso_cal.py shelxC.log shelx_ecal_cad.mtz)
 
 #判断shelx_${filetitle}_ecal_cad_unique.mtz是否存在，如果存在把它拷到主路径里
 shopt -s nullglob
@@ -44,7 +46,7 @@ cd ..
 #####################################################################################
 ######################################calc cctr######################################
 #####################################################################################
-cctr=$(python3.9 cctr_cal.py $mtz)
+cctr=$($python_evn cctr_cal.py $mtz)
 
 ####################################################################################
 #####################################calc nitr######################################
@@ -85,10 +87,10 @@ obs_reflc=$(cat para_test_0.2/log_0.2.txt | awk -F":" '/not missing reflections 
 miss_reflc=$(( ${all_reflc}-${obs_reflc}))
 #echo "$all_reflc $obs_reflc $c"
 
-weak1_nan=$(python3.9 nan_cal.py para_test_${weak1}/log_${weak1}.txt)
-weak2_nan=$(python3.9 nan_cal.py para_test_${weak2}/log_${weak2}.txt)
-weak3_nan=$(python3.9 nan_cal.py para_test_${weak3}/log_${weak3}.txt)
-weak4_nan=$(python3.9 nan_cal.py para_test_${weak4}/log_${weak4}.txt)
+weak1_nan=$($python_evn nan_cal.py para_test_${weak1}/log_${weak1}.txt)
+weak2_nan=$($python_evn nan_cal.py para_test_${weak2}/log_${weak2}.txt)
+weak3_nan=$($python_evn nan_cal.py para_test_${weak3}/log_${weak3}.txt)
+weak4_nan=$($python_evn nan_cal.py para_test_${weak4}/log_${weak4}.txt)
 #weak1_nan=4
 #weak2_nan=4
 #weak3_nan=4

@@ -1,0 +1,118 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                --- RESOLVE ---                      *
+        *                                                     *
+        *         Statistical density modification            *
+        *             Automated model-building                *
+        *                                                     *
+        *                For on-line help                     *
+        *            see "http://solve.lanl.gov"              *
+        *                                                     *
+        *      This software uses library routines from the   *
+        *      CCP4 suite (http://www.ccp4.ac.uk) for which   *
+        *           the author is very thankful!              *
+        *******************************************************
+
+               (version 2.15 of 20-Mar-2010)
+                       (size =  12)
+  Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+>workdir AutoSol_run_1_/TEMP0
+Work directory will be : AutoSol_run_1_/TEMP0/
+
+>outputdir AutoSol_run_1_
+Directory for STOPWIZARD will be AutoSol_run_1_/
+
+>freer_if_present
+Only writing out FreeR_flag if present
+
+>hklin aniso_refinement_data_PHX.mtz
+Data to be read from mtz file: aniso_refinement_data_PHX.mtz
+
+>no_build
+Model will not be built
+
+>ha_file NONE
+Heavy atom sites will be read from file: NONE
+The file does not exist...ignoring it
+
+>list_column_labels
+Just listing column labels to resolve.labels
+
+>use_wang
+Wang method for solvent mask will be used
+
+>no_ha
+no_ha: heavy-atoms not written out in pdb files
+
+>database 5
+Entry in database of histograms to use:            5
+
+>n_xyz 144 96 160
+Grid units x y z:          144          96         160
+
+>no_optimize_ncs
+Not optimizing NCS
+
+>spg_name_use P 1 21 1
+Space group name for output PDB file only: P 1 21 1   
+
+>min_z_value_rho -3.0
+Minimum z-value for a segment not matched to sequence:    -3.000000    
+
+>rho_overlap_min   0.300
+Minimum <rho1*rho2> to keep NCS from ha sites    0.3000000    
+(Note: scaled by ncs copies, value above is for 2 copies)
+
+>no_create_free
+Will not create FREE (test) set
+
+>use_all_for_test
+Will use all data for testing solvent content and histograms
+
+>free_id 0
+Free R flag ID will be            0
+
+>group_ca_length 4
+Minimum # of residues in a group to keep=           4
+
+>group_length 2
+Minimum # of segments in a group to keep=           2
+
+All done with inputs
+Building protein
+Setting up for building protein
+Standard fill-in residues: ALA A GLY G
+Standard main-chain atoms: N    CA   C    O    CB   NONE
+All main-chain atoms: N     CA    C     O     
+Max dist between adjacent N    atoms:     6.000000    
+List of all residues: GLY ALA SER VAL ILE LEU MET CYS PHE TYR LYS ARG TRP HIS GLU ASP GLN ASN PRO THR 
+List of 1-letter code of residues: GASVILMCFYKRWHEDQNPT
+List of number of atoms in side-chains:            0           1           2           3           4           4           4           2           7           8           5           7          10           6           5           4           5           4           3           3
+checking license file.. solve2.access
+
+       The date today is 29-oct-23.  Your license is good until 15-dec-96.
+
+Opened mtz file aniso_refinement_data_PHX.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    87.81100        58.67500        95.73000        90.00000        114.3100        90.00000        0.000000    
+Dataset            2 project             crystal             dataset                        1    87.81100        58.67500        95.73000        90.00000        114.3100        90.00000        1.000000    
+Reading SG information from aniso_refinement_data_PHX.mtz
+Space group name: P21        Point group: 2         
+Space group number :           4 Symmetry operators:            2
+Number of columns:           14
+H                             K                             L                             FP                            SIGFP                         PHIM                          FOMM                          HLAM                          HLBM                          HLCM                          HLDM                          FreeR_flag                    FWT                           PHWT                          
+resolve exit_info:
+  source_file: /home/builder/slave/phenix-nightly-intel-linux-2_6-x86_64-centos6/modules/solve_resolve/resolve/read_mtz_all.cpp
+  source_line: 334
+  status: 0
+EndOfResolve

@@ -1,0 +1,381 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                --- RESOLVE ---                      *
+        *                                                     *
+        *         Statistical density modification            *
+        *             Automated model-building                *
+        *                                                     *
+        *                For on-line help                     *
+        *            see "http://solve.lanl.gov"              *
+        *                                                     *
+        *      This software uses library routines from the   *
+        *      CCP4 suite (http://www.ccp4.ac.uk) for which   *
+        *           the author is very thankful!              *
+        *******************************************************
+
+               (version 2.15 of 20-Mar-2010)
+                       (size =  12)
+  Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+>workdir AutoSol_run_1_/TEMP0
+Work directory will be : AutoSol_run_1_/TEMP0/
+
+>outputdir AutoSol_run_1_
+Directory for STOPWIZARD will be AutoSol_run_1_/
+
+>freer_if_present
+Only writing out FreeR_flag if present
+
+>hklin phaser_2.mtz
+Data to be read from mtz file: phaser_2.mtz
+
+>labin FP=FP PHIB=PHIB FOM=FOM
+Current value of "LABIN" is: labin FP=FP PHIB=PHIB FOM=FOM                                                                                                                                                                                                           
+
+>hklout random.mtz
+Data to be written to mtz file: random.mtz
+
+>solvent_content 0.4419
+Fraction of unit cell assumed to be solvent is:    0.4419000    
+
+>no_build
+Model will not be built
+
+>mask_cycles 0
+Number of mask/image cycles:            0
+
+>minor_cycles 0
+Number of minor cycles per mask/image  cycle:            0
+
+>RESOLUTION 1000.0 2.5
+Resolution range (A) is:     2.500000     to     1000.000    
+
+>ha_file NONE
+Heavy atom sites will be read from file: NONE
+The file does not exist...ignoring it
+
+>i_ran_seed 242
+Random seed:          242
+
+>fom_target 1.0
+Target FOM for randomized phases     1.000000    
+NOTE: if sigma_target is set and is less than zero, target sigma 
+will be sigma_target *[weight+ (1-weight)*(1-fom_target)] 
+where weight=d/d_min
+
+>fix_fom
+In randomize_phases, original fom will be kept
+
+>use_wang
+Wang method for solvent mask will be used
+
+>no_ha
+no_ha: heavy-atoms not written out in pdb files
+
+>database 5
+Entry in database of histograms to use:            5
+
+>no_optimize_ncs
+Not optimizing NCS
+
+>nohl
+No HL parameters calculated
+
+>spg_name_use C 1 2 1
+Space group name for output PDB file only: C 1 2 1    
+
+>min_z_value_rho -3.0
+Minimum z-value for a segment not matched to sequence:    -3.000000    
+
+>rho_overlap_min   0.300
+Minimum <rho1*rho2> to keep NCS from ha sites    0.3000000    
+(Note: scaled by ncs copies, value above is for 2 copies)
+
+>no_create_free
+Will not create FREE (test) set
+
+>use_all_for_test
+Will use all data for testing solvent content and histograms
+
+>group_ca_length 4
+Minimum # of residues in a group to keep=           4
+
+>group_length 2
+Minimum # of segments in a group to keep=           2
+
+All done with inputs
+Building protein
+Setting up for building protein
+Standard fill-in residues: ALA A GLY G
+Standard main-chain atoms: N    CA   C    O    CB   NONE
+All main-chain atoms: N     CA    C     O     
+Max dist between adjacent N    atoms:     6.000000    
+List of all residues: GLY ALA SER VAL ILE LEU MET CYS PHE TYR LYS ARG TRP HIS GLU ASP GLN ASN PRO THR 
+List of 1-letter code of residues: GASVILMCFYKRWHEDQNPT
+List of number of atoms in side-chains:            0           1           2           3           4           4           4           2           7           8           5           7          10           6           5           4           5           4           3           3
+checking license file.. solve2.access
+
+       The date today is 27-oct-23.  Your license is good until 15-dec-96.
+
+Opened mtz file phaser_2.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    96.53600        44.64100        42.24400        90.00000        97.66500        90.00000        0.000000    
+Dataset            2 project             crystal             dataset                        1    96.53600        44.64100        42.24400        90.00000        97.66500        90.00000        1.000000    
+Reading SG information from phaser_2.mtz
+Space group name: C2         Point group: 2         
+Space group number :           5 Symmetry operators:            4
+Number of columns:           21
+H                             K                             L                             FP                            SIGFP                         PHIB                          FOM                           HLA                           HLB                           HLC                           HLD                           HLanomA                       HLanomB                       HLanomC                       HLanomD                       FWT                           PHIFWT                        F(+)                          SIGF(+)                       F(-)                          SIGF(-)                       
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     FP                            
+DATA# 5  PHIB                           :     PHIB                          
+DATA# 6  FOM                            :     FOM                           
+DATA# 7  HLA                           
+DATA# 8  HLB                           
+DATA# 9  HLC                           
+DATA# 10  HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                         
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                    
+FP taken from column           4
+Dataset information for dataset number           2 and ID=           1
+Dataset name:dataset             
+Crystal name:crystal             
+Project name:project             
+Cell:      96.536003       44.640999       42.243999       90.000000       97.665001       90.000000
+Wavelength:    1.000000    
+PHIB taken from column           6
+FOM taken from column           7
+WARNING: No SIGFP input data--output SIGFP column will be SIGFP=1.0 for all HKL!
+
+No FreeR_flag read in or created
+Total of         6301 reflections read from file
+Guessing FreeR_flag corresponding to free reflections
+This can be set with free_id xx
+No freeR reflections at all
+Total of            0 of         6301 reflections in test set
+ High-resolution limit of input phased data:  2.50
+Adding F000 term (0.0) to this list
+Closed mtz file
+ Starting resolution:  2.50 max:  2.50
+Space group is           5
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+-1 0 0 0
+0 1 0 0
+0 0 -1 0
+SYMMETRY ELEMENT 2
+1 0 0 0.5
+0 1 0 0.5
+0 0 1 0
+SYMMETRY ELEMENT 3
+-1 0 0 0.5
+0 1 0 0.5
+0 0 -1 0
+SPACE GROUP SYMBOL: C 1 2 1
+CHECK ON SPACE GROUP SYMBOL: C 1 2 1
+HALL SYMBOL :  C 2y
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.01036 X +  -0.00000 Y +   0.00139 Z 
+     fractional y=  0.00000 X +   0.02240 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.02389 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 96.53600 x +   0.00005 y +  -5.63449 z 
+     Orthogonal Y=  0.00000 x +  44.64100 y +   0.00005 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y +  41.86655 z 
+
+Estimated # of atoms in au:        1325
+Not separating out FREE set from other reflections for main cycles. Using all data.
+Expected I corrected for centering by factor of            2
+
+Expected resolution-corrected F at d = 2.9A : 741.845
+
+ Results of wilson scaling:
+ Scale on I =      8.097
+ B-value =      4.165
+
+ Scaling data with value of      8.097
+
+Reading model density histograms from /usr/local/phenix-1.20.1-4487/modules/solve_resolve/ext_ref_files/segments/rho.list
+Read total of           10 sets of density functions
+
+ 1.2 A gvp model data         
+ 
+Database 1
+ Protein
+0.13883 49.993 -0.052545 
+0.0028613 0.65609 0.25933 
+0.00094606 1.6127e-07 0 
+ Solvent 
+0.24297 50 -0.066461 
+0 0.27173 0.36529 
+0 0 0 
+
+ 2.1 A p9 model data          
+ 
+Database 2
+ Protein
+0.044882 10.876 -0.099183 
+0.0065938 0.1915 0.81579 
+0 4.992e-07 0 
+ Solvent 
+0.23814 49.998 -0.018448 
+0 0.092931 5.9969e-08 
+0 0 0 
+
+ 2.5 A p9 model data          
+ 
+Database 3
+ Protein
+0.028005 5.0887 -0.10737 
+0.0072492 0.1898 0.86087 
+0 6.5751e-08 0 
+ Solvent 
+0.20336 49.994 -0.021217 
+0 0.051284 -2.8788e-09 
+0 0 0 
+
+ 3.0 A p9 model data          
+ 
+Database 4
+ Protein
+0.015053 1.4002 -0.6344 
+0.0063877 0.16235 0.49508 
+2.1104e-07 7.8393e-09 0 
+ Solvent 
+0.086901 18.852 0.010379 
+0.014104 3.0605 -0.056333 
+0 0 0 
+
+ 3 A dehalogenase model       
+ 
+Database 5
+ Protein
+0.0191631 3.18726 -0.512357 
+0.00724949 0.64234 1.37647 
+0.0108539 1.62321 5.24151e-05 
+ Solvent 
+0.0309225 7.89451 -3.40749e-05 
+0 0.000394973 0 
+0.100204 31.8955 0.00790565 
+
+ 4.0 A p9 model data          
+ 
+Database 6
+ Protein
+0.01046 0.88702 -0.71921 
+0.0077113 0.1957 0.45527 
+0 1.7141e-08 0 
+ Solvent 
+0.058836 10.067 0.0059672 
+0.012859 1.8175 -0.011273 
+0 0 0 
+
+ Acorn map 2013-02-16 real dat
+ 
+Database 7
+ Protein
+0.018509 4.3226 -0.1313 
+0.01638 1.1255 -0.36873 
+0.00068238 1.8232e-08 0 
+ Solvent 
+0.051385 6.7883 -0.030178 
+0.01453 2.9458 0.047202 
+0 0 0 
+
+carbonic anhydrase 3ryj not sh
+ 
+Database 8
+ Protein
+0.033761 6.5653 -0.71026 
+0.007805 0.37567 0.0043698 
+0.00040671 8.1446e-09 0 
+ Solvent 
+0.019614 12.96 0.044435 
+0.0405 3.3172 -0.056361 
+0 0 0 
+
+carbonic anhydrase 3ryj sharpe
+ 
+Database 9
+ Protein
+0.031194 3.1578 -0.40319 
+0.0043546 0.27955 0.30159 
+0.00042361 7.5122e-08 0 
+ Solvent 
+0.059649 5.9617 -0.034235 
+0.0038858 1.0492 0.10247 
+0 0 0 
+
+heavy-atom model B= 7-10 not s
+ 
+Database 10
+ Protein
+0.05154 18.661 0.050944 
+0.024333 3.1634 0.021875 
+0.00043885 3.954e-09 0 
+ Solvent 
+0.050958 22.738 -0.077164 
+0.057472 10.748 0.046222 
+0 0 0 
+Highest value of ix, iy, iz in a.u:         119           26           27
+nu nv nw:          120          54          54   Number of grid points in au:       87534
+ Mean fom of this map was:  0.45
+
+ Summary of starting FOM vs resolution 
+    RES     FOM   FOM-smoothed  N 
+   23.40    0.23    0.52        22
+   13.74    0.35    0.52        35
+   10.40    0.34    0.52        76
+    8.16    0.56    0.51       122
+    6.90    0.55    0.51       126
+    5.96    0.58    0.50       216
+    5.20    0.54    0.50       265
+    4.66    0.56    0.49       289
+    4.25    0.53    0.48       330
+    3.93    0.52    0.47       345
+    3.65    0.51    0.47       463
+    3.42    0.47    0.46       396
+    3.24    0.45    0.45       503
+    3.05    0.44    0.44       623
+    2.87    0.43    0.43       792
+    2.71    0.39    0.42       748
+    2.57    0.36    0.41       946
+
+Scaled F back before writing out
+resolve exit_info:
+  source_file: /home/builder/slave/phenix-nightly-intel-linux-2_6-x86_64-centos6/modules/solve_resolve/resolve/run_randomize_phases.cpp
+  source_line: 94
+  status: 0
+EndOfResolve

@@ -1,0 +1,2264 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                  --- SOLVE ---                      *
+        *                                                     *
+        *    Automated structure solution for MAD and MIR     *
+        *                                                     *
+        *  Please type "solvehelp" for on-line help   *
+        *      or see "http://solve.lanl.gov"         *
+        *******************************************************
+
+ (version 2.13 of 24-Feb-2008 / Size =   6, maxatm = 150, nsolsitemax = 100)
+   Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+ Dataset title: SOLVE     27-Oct-23                                         
+
+>SOLVEFILE dataset_1_scale.log                                                  
+ solvefile            set to: 
+ dataset_1_scale.log                     
+>SYMFILE p21.sym                                                                
+ symfile           set to:
+ /usr/local/phenix-1.20.1-4487/modules/solve_resolve/ext_ref_files/p21.sym       
+>RESOLUTION 1000.0 1.4                                                          
+ Resolution limits will be    1000.000      to    1.400000      A 
+>CELL  42.0099983215 88.1200027466 79.6699981689 90.0 95.4489974976 90.0        
+ Cell =    42.01000       88.12000       79.67000       90.00000    
+   95.44900       90.00000    
+>readdenzo                                                                      
+ data will be read in using DENZO format
+>premerged                                                                      
+ data is assumed to be pre-merged
+>nequiv_separate 1                                                              
+ F- records in SEPARATEANO will be mapped to  equivalent #            1
+  after mapping to  -h -k -l
+>require_nat                                                                    
+ In scaling if native is missing, deriv will be tossed
+>                                                                               
+>ratio_out 10.0                                                                 
+ In scaling reflections with deliso or delano >   10.00000    
+  * rms deliso or delano will be tossed
+>                                                                               
+>ratmin 0.0                                                                     
+ ratmin               set to:  0
+>                                                                               
+>ikeepflag 1                                                                    
+ ikeepflag value will be (0 or 1; applies to merge only):            1
+>                                                                               
+>id_scale_ref 1                                                                 
+ Dataset used as standard in scaling will be:            1
+>                                                                               
+>projectname project                                                            
+ overall projectname is: 
+ project                                                                         
+>                                                                               
+>crystalname crystal                                                            
+ overall crystalname is: 
+ crystal                                                                         
+>                                                                               
+>datasetname dataset                                                            
+ overall datasetname is: 
+ dataset                                                                         
+>                                                                               
+>MAD_ATOM SE                                                                    
+ Using values for atom Se   for  A1 A2 A3 A4 B1 B2 B3 B4 C from 
+ International tables for this MAD experiment.
+ "A" values for MAD data are:   17.00060       5.819600       3.973100    
+   4.354300    
+ "B" values for MAD data are:   2.409800      0.2726000       15.23720    
+   43.81630    
+ "C" value for MAD data is:   2.840900    
+>LAMBDA 1                                                                       
+ Considering set or derivative           1
+>RAWMADFILE ANISO_5hhk-sf_PHX.sca                                               
+ MAD dataset           1  for lambda            1  is:
+ ANISO_5hhk-sf_PHX.sca                   
+>ATOMNAME SE                                                                    
+ atomname(           1 ) = Se  
+>WAVELENGTH 0.97918                                                             
+ wavelength(           1 ) =   0.9791800    
+>FPRIMV_MAD -8.0                                                                
+ f-prime value for MAD wavelength lambda            1  is:   -8.000000    
+>FPRPRV_MAD 4.5                                                                 
+ f" value for MAD wavelength lambda            1  is:    4.500000    
+>NRES 610                                                                       
+ nres                 set to:        610
+>NANOMALOUS 35                                                                  
+ nanomalous           set to:         35
+>SKIP_SOLVE                                                                     
+ Skipping SOLVE
+>SAD                                                                            
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/dataset_1_scale.log                                        
+ Space group number is:            4
+ THE FUNDAMENTAL SET OF    2  ROTATION MATRICES AND
+ TRANSLATION VECTORS FOR THIS SPACE GROUP IS: 
+
+   ROTATION MATRIX      TRANS       ROTATION MATRIX      TRANS
+
+  1.000  0.000  0.000    0.000    -1.000  0.000  0.000    0.000
+  0.000  1.000  0.000    0.000     0.000  1.000  0.000    0.500
+  0.000  0.000  1.000    0.000     0.000  0.000 -1.000    0.000
+ 
+ Space group name from file name is: p21       
+ Opened formatted file: 
+ /usr/local/phenix-1.20.1-4487/modules/solve_resolve/ext_ref_files/p21.sym       
+ There are            2  unique times            1  centerings in this sg
+ 
+ ...getting symmetry information from syminfo for sg            4
+ 
+ ...symmetry information from syminfo for sg 
+ matches supplied symmetry information.
+ 
+ 
+ Space group number:            0  Point group: PG2       
+ Space group name: P 1 21 1  Primitive sym ops:            2
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+ Setting up arrays...this may take some  time for large unit cells....
+ Starting unit vectors for A B C:
+ A =    1.000   0.000   0.000
+ B =    0.000   1.000   0.000
+ C =   -0.095   0.000   0.995
+
+ Rotation placing c* on Z:  -7.3953575E-05
+ New unit vectors for A B C:
+ A =    1.000   0.000   0.000
+ B =    0.000   1.000   0.000
+ C =   -0.095   0.000   0.995
+
+ New vectors for A B C:
+ A =   42.010   0.000   0.000
+ B =    0.000  88.120   0.000
+ C =   -7.565   0.000  79.310
+
+ 
+ SETGRID:  set fft and patterson grids
+ 
+ Setting fft grid...
+ The fft containing the whole map runs from: 
+     0 to    96 in x, where the cell translation is   96
+     0 to   192 in y, where the cell translation is  192
+     0 to   192 in z, where the cell translation is  192
+
+ The fft containing the asymmetric unit of the map runs from: 
+     0 to    95 in x, where the cell translation is   96
+     0 to   191 in y, where the cell translation is  192
+     0 to    96 in z, where the cell translation is  192
+
+ You may wish to include in your "solve.setup" file the following line:
+ FFTGRID      0    95    96     0   191   192     0    96   192
+
+ The EZD map file containing the output map runs from: 
+     0 to    95 in x, where the cell translation is   96
+     0 to   191 in y, where the cell translation is  192
+     0 to    96 in z, where the cell translation is  192
+
+ You may wish to include in your "solve.setup" file the following line:
+ EZDGRID      0    95     0   191     0    96
+
+ Setting patt grid...dmin=   1.400000    
+ The patterson containing the whole map runs from: 
+     0 to    96 in x, where the cell translation is   96
+     0 to   192 in y, where the cell translation is  192
+     0 to   192 in z, where the cell translation is  192
+
+ The patterson containing the asymmetric unit of the map runs from: 
+     0 to    95 in x, where the cell translation is   96
+     0 to    96 in y, where the cell translation is  192
+     0 to    96 in z, where the cell translation is  192
+
+ You may wish to include in your "solve.setup" file the following line:
+ PATTGRID      0    95    96     0    96   192     0    96   192
+
+ This unit cell is not chiral with inversion center   0.0000000E+00
+  0.0000000E+00  0.0000000E+00
+ 
+ Reading in total of            1  MAD datafiles
+ This is MAD dataset #            1
+ 
+ Keeping all reflections on first cycle of scaling
+ 
+ Adding extra cycle just to create a standard dataset for scaling all datasets
+ 
+ File            1  with intensity data for lambda            1 .  This is the 
+           1  th dataset for this wavelength
+ READFILE: read in a  file to .drg format
+ Skipping first 3 lines...then
+ Assuming this data file contains:
+  h k l I(+), sig,[ I(-), sig]; merged to asymmetric unit
+ (I(-) may be missing, this is ok)
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/ANISO_5hhk-sf_PHX.sca                                      
+     1                                                                                                                   
+  -987                                                                                                                   
+     42.010    88.120    79.670    90.000    95.449    90.000 p1211                                                      
+  -30   1   5   104.4    58.4    68.2    43.9                                                                            
+  -30   1   6    53.3    32.0    45.1    28.6                                                                            
+   29  15   0    72.0    43.3    70.8    42.9                                                                            
+   29  14   2    63.2    43.7   147.6    77.3                                                                            
+   29  14   1   172.8    87.8   100.3    61.3                                                                            
+   29  14   0   160.5    80.9    91.7    55.9                                                                            
+   29  13   3    72.9    40.7    42.4    28.3                                                                            
+ First            3  lines of data files are
+  assumed to be header and will be ignored.
+ Dorgbn-style file with this data will be:
+ lambda_1_001_i.drg                                                              
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ Total of       109922  records read, with      109922
+  accepted in the resolution range of    1.400000      to    1000.000    
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ This file has            4  columns of data.  They are:
+ Col:    0:lambda_1_001_i.drg
+ Col:    1:lambda_1_001_i.drg  I-plus
+ Col:    2:lambda_1_001_i.drg  Sig I-plus
+ Col:    3:lambda_1_001_i.drg  I-minus
+ Col:    4:lambda_1_001_i.drg  Sig I-minu
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40    104.40     58.40     68.20     43.90
+  -30   1   6      1.40     53.30     32.00     45.10     28.60
+   29  15   0      1.40     72.00     43.30     70.80     42.90
+   29  14   2      1.40     63.20     43.70    147.60     77.30
+   29  14   1      1.40    172.80     87.80    100.30     61.30
+   29  14   0      1.41    160.50     80.90     91.70     55.90
+   29  13   3      1.40     72.90     40.70     42.40     28.30
+   29  13   2      1.40     65.10     39.70     84.10     47.10
+   29  13   1      1.41    110.50     60.40     84.30     50.50
+   29  13   0      1.41     92.10     55.40    176.70     85.00
+ 
+ Converting this data from I to F.
+ 
+
+
+ MATH:
+ Perform simple math operations on dorgbn files.
+ Operation to be performed is :i_to_f                                                                          
+  Input file  >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ Input data col  0: lambda_1_001_i.drg                                                              
+ Input data col  1: lambda_1_001_i.drg  I-plus                                                      
+ Input data col  2: lambda_1_001_i.drg  Sig I-plus                                                  
+ Input data col  3: lambda_1_001_i.drg  I-minus                                                     
+ Input data col  4: lambda_1_001_i.drg  Sig I-minu                                                  
+  Output file >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.drg                                        
+ Resolution range will be from   1.400000      to    1000.000    
+ Number of records written:       109724 , number with no data:          198
+  number out of resolution range           0
+
+
+ MATH:
+ Perform simple math operations on dorgbn files.
+ Operation to be performed is :i_to_f                                                                          
+  Input file  >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ Input data col  0: lambda_1_001_i.drg                                                              
+ Input data col  1: lambda_1_001_i.drg  I-plus                                                      
+ Input data col  2: lambda_1_001_i.drg  Sig I-plus                                                  
+ Input data col  3: lambda_1_001_i.drg  I-minus                                                     
+ Input data col  4: lambda_1_001_i.drg  Sig I-minu                                                  
+  Output file >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.drg                                        
+ Resolution range will be from   1.400000      to    1000.000    
+ Number of records written:       107508 , number with no data:         2414
+  number out of resolution range           0
+ 
+ Merging data in datafile            1 to use as basis for 
+  overall scaling of everything.  Output is scratch.mrg
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.drg                                        
+ This file has            2  columns of data.  They are:
+ Col:    0:Output of MATH routine from HEAVY
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40     10.22      2.86
+  -30   1   6      1.40      7.30      2.19
+   29  15   0      1.40      8.49      2.55
+   29  14   2      1.40      7.95      2.75
+   29  14   1      1.40     13.15      3.34
+   29  14   0      1.41     12.67      3.19
+   29  13   3      1.40      8.54      2.38
+   29  13   2      1.40      8.07      2.46
+   29  13   1      1.41     10.51      2.87
+   29  13   0      1.41      9.60      2.89
+
+ MERGE: Merge data for equivalent reflns.
+ This routine reads in hkl and F and sigma from any number
+ of files, merges equivalent reflections and writes out an
+ asymmetric unit of data.
+
+ Resolution range will be from   1.400000      to    1000.000    
+ 
+  This program keeps track of the ratio of rms  differences
+  among equivalent reflections to the sigmas.
+  Do you want to keep reflections even if chisqr>20?
+  1=keep anyways, 0 = toss them. (Usually keep them)>
+ 
+ Keeping reflections even if chisqr > 20
+ What is OUTPUT file name (not input file!) ?
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_1.mrg                                              
+ How many input files will there be? >
+ There will be           2  input files
+  What is file name for first file to be merged? >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.drg                                        
+ 
+  Columns           1 ,           2  assumed to be f,sig.
+ Col: 0 Output of MATH routine from HEAVY                                        
+ Col: 1 F from I_TO_F       set 1                                                
+ Col: 2 SIGMA of F          set 1                                                
+ Enter next file name :
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.drg                                        
+  Columns           1 ,           2  assumed to be f,sig.
+ 
+ analyzing data...
+ Estimate of additive error on I: 
+ Sig**2(I)=Sig**2(Poisson)+(  5.0718829E-02 *I)**2
+ This will be applied to all sigmas
+ 
+
+ Summary of data:  Reflections read  : 217232
+ No data (Sig<0)   :      0
+ Absence/out of res:      0
+ Data present,F=0  :      0
+ Data present,F>0  : 217232
+ Rejected          :  
+  |obs-mean|> 4 Sig:      0
+  Chisqr > 20      :      0
+ Unique hkl     :  109922
+ overall r-factor on F:    5.4 % overall r-factor on I:    6.1 %
+
+ shell    dmin       nobs     nunique    r on F   r on I   rms(sig)/rms(F) 
+           (A)                            (%)      (%)   
+
+    1      3.5     14192      7308       2.3       3.7     0.030
+    2      2.8     13503      6880       2.6       4.1     0.031
+    3      2.5     13668      6943       3.3       5.3     0.034
+    4      2.1     24088     12200       3.7       5.7     0.040
+    5      2.0     14960      7570       4.5       6.8     0.052
+    6      1.8     19823     10016       5.8       8.8     0.071
+    7      1.7     26778     13513       7.9      12.5     0.104
+    8      1.5     37268     18799      10.2      17.5     0.145
+    9      1.5     24093     12141      11.9      22.0     0.189
+   10      1.4     28859     14552      12.7      24.8     0.229
+
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_1.mrg                                              
+ This file has            2  columns of data.  They are:
+ Col:    0:Output of MATH routine from HEAVY
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     12.38      0.37
+    0   0   3     26.44     92.61      2.96
+    0   0   4     19.83     75.52      2.27
+    0   0   5     15.86     63.80      1.85
+    0   0   6     13.22     83.88      2.43
+    0   0   7     11.33     14.37      0.50
+    0   0   9      8.81    111.10      3.22
+    0   0  10      7.93     72.53      2.10
+    0   0  11      7.21    148.30      4.29
+    0   0  12      6.61     16.28      0.61
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_1.mrg                                              
+ This file has            2  columns of data.  They are:
+ Col:    0:Output of MATH routine from HEAVY
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     12.38      0.37
+    0   0   3     26.44     92.61      2.96
+    0   0   4     19.83     75.52      2.27
+    0   0   5     15.86     63.80      1.85
+    0   0   6     13.22     83.88      2.43
+    0   0   7     11.33     14.37      0.50
+    0   0   9      8.81    111.10      3.22
+    0   0  10      7.93     72.53      2.10
+    0   0  11      7.21    148.30      4.29
+    0   0  12      6.61     16.28      0.61
+ Rescaling standard dataset to put it on approximate absolute scale.  NRES = 
+         610 ;  <F**2> expected =    149450.0    
+ ;  <F**2> observed in lowest resolution shell =    8919.633    
+   ... Scale factor =    16.75517    
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_1.mrg                                              
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ 
+ Done with generating standard dataset for scaling
+ 
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_all.drg                                            
+ 
+ File            1  with intensity data for lambda            1 .  This is the 
+           1  th dataset for this wavelength
+ READFILE: read in a  file to .drg format
+ Skipping first 3 lines...then
+ Assuming this data file contains:
+  h k l I(+), sig,[ I(-), sig]; merged to asymmetric unit
+ (I(-) may be missing, this is ok)
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/ANISO_5hhk-sf_PHX.sca                                      
+     1                                                                                                                   
+  -987                                                                                                                   
+     42.010    88.120    79.670    90.000    95.449    90.000 p1211                                                      
+  -30   1   5   104.4    58.4    68.2    43.9                                                                            
+  -30   1   6    53.3    32.0    45.1    28.6                                                                            
+   29  15   0    72.0    43.3    70.8    42.9                                                                            
+   29  14   2    63.2    43.7   147.6    77.3                                                                            
+   29  14   1   172.8    87.8   100.3    61.3                                                                            
+   29  14   0   160.5    80.9    91.7    55.9                                                                            
+   29  13   3    72.9    40.7    42.4    28.3                                                                            
+ First            3  lines of data files are
+  assumed to be header and will be ignored.
+ Dorgbn-style file with this data will be:
+ lambda_1_001_i.drg                                                              
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ Overwriting this file.
+ Total of       109922  records read, with      109922
+  accepted in the resolution range of    1.400000      to    1000.000    
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ This file has            4  columns of data.  They are:
+ Col:    0:lambda_1_001_i.drg
+ Col:    1:lambda_1_001_i.drg  I-plus
+ Col:    2:lambda_1_001_i.drg  Sig I-plus
+ Col:    3:lambda_1_001_i.drg  I-minus
+ Col:    4:lambda_1_001_i.drg  Sig I-minu
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40    104.40     58.40     68.20     43.90
+  -30   1   6      1.40     53.30     32.00     45.10     28.60
+   29  15   0      1.40     72.00     43.30     70.80     42.90
+   29  14   2      1.40     63.20     43.70    147.60     77.30
+   29  14   1      1.40    172.80     87.80    100.30     61.30
+   29  14   0      1.41    160.50     80.90     91.70     55.90
+   29  13   3      1.40     72.90     40.70     42.40     28.30
+   29  13   2      1.40     65.10     39.70     84.10     47.10
+   29  13   1      1.41    110.50     60.40     84.30     50.50
+   29  13   0      1.41     92.10     55.40    176.70     85.00
+ 
+ Converting this data from I to F.
+ 
+
+
+ MATH:
+ Perform simple math operations on dorgbn files.
+ Operation to be performed is :i_to_f                                                                          
+  Input file  >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ Input data col  0: lambda_1_001_i.drg                                                              
+ Input data col  1: lambda_1_001_i.drg  I-plus                                                      
+ Input data col  2: lambda_1_001_i.drg  Sig I-plus                                                  
+ Input data col  3: lambda_1_001_i.drg  I-minus                                                     
+ Input data col  4: lambda_1_001_i.drg  Sig I-minu                                                  
+  Output file >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.drg                                        
+ Overwriting this file.
+ Resolution range will be from   1.400000      to    1000.000    
+ Number of records written:       109724 , number with no data:          198
+  number out of resolution range           0
+
+
+ MATH:
+ Perform simple math operations on dorgbn files.
+ Operation to be performed is :i_to_f                                                                          
+  Input file  >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_i.drg                                         
+ Input data col  0: lambda_1_001_i.drg                                                              
+ Input data col  1: lambda_1_001_i.drg  I-plus                                                      
+ Input data col  2: lambda_1_001_i.drg  Sig I-plus                                                  
+ Input data col  3: lambda_1_001_i.drg  I-minus                                                     
+ Input data col  4: lambda_1_001_i.drg  Sig I-minu                                                  
+  Output file >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.drg                                        
+ Overwriting this file.
+ Resolution range will be from   1.400000      to    1000.000    
+ Number of records written:       107508 , number with no data:         2414
+  number out of resolution range           0
+ 
+ Scaling F- to scratch.mrg
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ This file has            2  columns of data.  They are:
+ Col:    0:Output of MATH routine from HEAVY
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.66      1.53
+    0   0   3     26.44    379.08     12.13
+    0   0   4     19.83    309.14      9.29
+    0   0   5     15.86    261.17      7.56
+    0   0   6     13.22    343.36      9.94
+    0   0   7     11.33     58.82      2.03
+    0   0   9      8.81    454.75     13.16
+    0   0  10      7.93    296.89      8.60
+    0   0  11      7.21    607.04     17.56
+    0   0  12      6.61     66.66      2.48
+ 
+   LOCALSCALE:  Space-group general scaling.
+   In this program the Native data is mapped to the
+   asymmetric unit, then expanded to the entire sphere.
+   The Derivative data is scaled without mapping to
+   the asymmetric unit.
+ 
+   Both native and derivative must be in dorgbn-style
+   files.  If anomalous differences are present in the 
+   derivative file, they will be scaled and written out.
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter name of dorgbn-style input file with "native" data to be
+ used as a reference in scaling a "derivative" dataset.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ Col:  0: Output of MATH routine from HEAVY                           
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Native F and Sigma. Use "0" if missing>
+
+ Native F from column:  1: F from I_TO_F       set 1               
+ Sig of Nat F from col:  2: SIGMA of F          set 1               
+
+ What is minimum ratio of F/sig to for F native or F Deriv
+ to be read in at all? >
+ For measurements with F/sigma of F <     0.00 the F will be ignored
+
+ Now enter name of "derivative" dataset to be scaled.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.drg                                        
+ Col:  0: SIGMA of F          set 1                                   
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Deriv F and Sigma and for DelAno and Sig
+  if present. Use "0" if missing>
+ Assuming you have no del Ano measurements
+
+ Deriv F from column:  1: F from I_TO_F       set 1               
+ Sig of Der F from col: 2: SIGMA of F          set 1               
+
+ Each of these columns will be scaled and written to the output file.
+ The output file will have  2 columns of data.
+
+ Enter name of output file to be written with scaled derivative data >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+
+ Enter overall title for scaled output data > 
+ Are we to keep reflections with especially large differences (1),
+ or toss them just before writing out data (0)?  >
+ Reflections with large differences will be kept.
+
+ What is the minimum number of reflections  surrounding a reflection
+ to be scaled to use in scaling (30) > 
+ Minimum number of reflections used in scaling will be     30
+ 
+ Total of       109922  unique reflections for native
+
+
+ Summary of data for derivative : 
+
+ A total of       107509  unique derivative data were found
+ Total of 109922 native F, 107508 deriv F observed
+ Additionally,     0 native and      0 der were not observed.
+
+ Duplicate measurements (averaged) of nat =     0, of der =     0
+
+
+ Reflections observed for derivative:
+
+                    Possible  Unique     All       All
+ shell     dmin      Unique    nat       der       both    both > 3sig
+
+    1     2.800     14317     14188     13541     13541     13436
+    2     2.100     19458     19143     18653     18653     18487
+    3     1.960      7738      7570      7408      7408      7287
+    4     1.855      7441      7246      7107      7107      6967
+    5     1.750      9274      8998      8839      8839      8649
+    6     1.680      7530      7285      7162      7162      6928
+    7     1.610      8919      8605      8460      8460      8183
+    8     1.540     10627     10194     10029     10029      9615
+    9     1.470     12704     12141     11966     11966     11385
+   10     1.400     15324     14552     14343     14343     13444
+
+ total             113332    109922    107508    107508    104381
+
+ Mean value of Nat/Der for 10 resol ranges: 
+   4.09   4.09   4.09   4.07   4.07   4.05   4.04   4.01   4.00   3.98
+
+ A total of   463 reflections were not used in determining
+ scale factors because del fs or sigmas were too large.
+
+
+ Wilson scaling of data: 
+
+ Derivative           A           Sig of A               B          Sig of B
+       1             4.104         0.000              -0.107         0.000
+
+
+
+ For this set of native + 1 derivative, there were
+ a total of107508 records written.
+ Of these, 107508 had Fbar for the deriv
+ and            0 had delf ano for the deriv.
+ A total of107508 had F for native 
+ Number of reflns rejected >3sig:      0
+
+
+ Differences by shell:
+
+  shell   dmin    nobs      Fbar      R     scale    SIGNAL  NOISE   S/N
+
+    1     2.800 13541     304.467     0.025   1.000   7.08   6.30   1.12
+    2     2.100 18653     176.089     0.036   1.000   5.85   5.32   1.10
+    3     1.960  7408     138.084     0.045   1.000   5.36   5.83   0.92
+    4     1.855  7107     114.757     0.055   1.000   5.05   6.27   0.81
+    5     1.750  8839      94.761     0.069   1.000   4.87   6.88   0.71
+    6     1.680  7162      81.575     0.084   1.000   4.81   7.49   0.64
+    7     1.610  8460      75.007     0.093   1.000   4.45   7.86   0.57
+    8     1.540 10029      67.841     0.108   1.000   4.51   8.33   0.54
+    9     1.470 11966      59.424     0.118   1.000   3.41   8.46   0.40
+   10     1.400 14343      50.194     0.125   1.000   0.00   8.36   0.00
+
+ Total:        107508     124.769     0.054   1.000   4.91   7.15   0.69
+
+ Recommended resolution cut-off =    1.40
+
+ NOTE: Sigmas rescaled by factor of   0.5230018     for S/N estimate
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ This file has            2  columns of data.  They are:
+ Col:    0:SIGMA of F          set 1
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40     33.43     10.76
+  -30   1   6      1.40     27.18      8.62
+  -29   1   1      1.44     53.19     12.16
+  -29   1   2      1.45     46.86     11.65
+  -29   1   3      1.45    112.98     11.12
+  -29   1   4      1.45     73.88     14.10
+  -29   1   5      1.45     59.19     12.67
+  -29   1   6      1.45     59.96     13.65
+  -29   1   7      1.45     36.60     10.09
+  -29   1   8      1.45     42.86     11.83
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ 
+ Scaling F+ to scratch.mrg
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ This file has            2  columns of data.  They are:
+ Col:    0:Output of MATH routine from HEAVY
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.66      1.53
+    0   0   3     26.44    379.08     12.13
+    0   0   4     19.83    309.14      9.29
+    0   0   5     15.86    261.17      7.56
+    0   0   6     13.22    343.36      9.94
+    0   0   7     11.33     58.82      2.03
+    0   0   9      8.81    454.75     13.16
+    0   0  10      7.93    296.89      8.60
+    0   0  11      7.21    607.04     17.56
+    0   0  12      6.61     66.66      2.48
+ 
+   LOCALSCALE:  Space-group general scaling.
+   In this program the Native data is mapped to the
+   asymmetric unit, then expanded to the entire sphere.
+   The Derivative data is scaled without mapping to
+   the asymmetric unit.
+ 
+   Both native and derivative must be in dorgbn-style
+   files.  If anomalous differences are present in the 
+   derivative file, they will be scaled and written out.
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter name of dorgbn-style input file with "native" data to be
+ used as a reference in scaling a "derivative" dataset.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ Col:  0: Output of MATH routine from HEAVY                           
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Native F and Sigma. Use "0" if missing>
+
+ Native F from column:  1: F from I_TO_F       set 1               
+ Sig of Nat F from col:  2: SIGMA of F          set 1               
+
+ What is minimum ratio of F/sig to for F native or F Deriv
+ to be read in at all? >
+ For measurements with F/sigma of F <     0.00 the F will be ignored
+
+ Now enter name of "derivative" dataset to be scaled.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.drg                                        
+ Col:  0: SIGMA of F          set 1                                   
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Deriv F and Sigma and for DelAno and Sig
+  if present. Use "0" if missing>
+ Assuming you have no del Ano measurements
+
+ Deriv F from column:  1: F from I_TO_F       set 1               
+ Sig of Der F from col: 2: SIGMA of F          set 1               
+
+ Each of these columns will be scaled and written to the output file.
+ The output file will have  2 columns of data.
+
+ Enter name of output file to be written with scaled derivative data >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+
+ Enter overall title for scaled output data > 
+ Are we to keep reflections with especially large differences (1),
+ or toss them just before writing out data (0)?  >
+ Reflections with large differences will be kept.
+
+ What is the minimum number of reflections  surrounding a reflection
+ to be scaled to use in scaling (30) > 
+ Minimum number of reflections used in scaling will be     30
+ 
+ Total of       109922  unique reflections for native
+
+
+ Summary of data for derivative : 
+
+ A total of       109725  unique derivative data were found
+ Total of 109922 native F, 109724 deriv F observed
+ Additionally,     0 native and      0 der were not observed.
+
+ Duplicate measurements (averaged) of nat =     0, of der =     0
+
+
+ Reflections observed for derivative:
+
+                    Possible  Unique     All       All
+ shell     dmin      Unique    nat       der       both    both > 3sig
+
+    1     2.800     14317     14188     14154     14154     14031
+    2     2.100     19458     19143     19103     19103     18918
+    3     1.960      7738      7570      7552      7552      7418
+    4     1.855      7441      7246      7238      7238      7093
+    5     1.750      9274      8998      8981      8981      8765
+    6     1.680      7530      7285      7274      7274      7023
+    7     1.610      8919      8605      8594      8594      8290
+    8     1.540     10627     10194     10185     10185      9743
+    9     1.470     12704     12141     12127     12127     11523
+   10     1.400     15324     14552     14516     14516     13653
+
+ total             113332    109922    109724    109724    106457
+
+ Mean value of Nat/Der for 10 resol ranges: 
+   4.09   4.09   4.09   4.10   4.09   4.10   4.10   4.11   4.11   4.10
+
+ A total of   485 reflections were not used in determining
+ scale factors because del fs or sigmas were too large.
+
+
+ Wilson scaling of data: 
+
+ Derivative           A           Sig of A               B          Sig of B
+       1             4.085         0.000               0.083         0.000
+
+
+
+ For this set of native + 1 derivative, there were
+ a total of109724 records written.
+ Of these, 109724 had Fbar for the deriv
+ and            0 had delf ano for the deriv.
+ A total of109724 had F for native 
+ Number of reflns rejected >3sig:      0
+
+
+ Differences by shell:
+
+  shell   dmin    nobs      Fbar      R     scale    SIGNAL  NOISE   S/N
+
+    1     2.800 14154     303.122     0.024   1.000   6.76   6.33   1.07
+    2     2.100 19103     175.525     0.035   1.000   5.73   5.34   1.07
+    3     1.960  7552     138.018     0.044   1.000   5.28   5.87   0.90
+    4     1.855  7238     114.859     0.054   1.000   4.99   6.32   0.79
+    5     1.750  8981      94.883     0.069   1.000   4.82   6.93   0.70
+    6     1.680  7274      81.630     0.084   1.000   4.78   7.55   0.63
+    7     1.610  8594      75.020     0.093   1.000   4.43   7.93   0.56
+    8     1.540 10185      67.893     0.108   1.000   4.52   8.40   0.54
+    9     1.470 12127      59.428     0.118   1.000   3.43   8.56   0.40
+   10     1.400 14516      50.242     0.126   1.000   0.00   8.47   0.00
+
+ Total:        109724     125.307     0.053   1.000   4.83   7.21   0.68
+
+ Recommended resolution cut-off =    1.40
+
+ NOTE: Sigmas rescaled by factor of   0.5260043     for S/N estimate
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   0   5      1.40     22.95      8.84
+  -30   0   6      1.40     25.88      9.91
+  -30   1   5      1.40     42.18     11.80
+  -30   1   6      1.40     30.14      9.05
+  -29   0   1      1.44     26.45      9.75
+  -29   0   2      1.45     27.12      9.98
+  -29   0   3      1.45    150.86      9.23
+  -29   0   4      1.45     67.16     16.36
+  -29   0   5      1.45    124.42     10.29
+  -29   0   6      1.45     38.50     12.89
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ 
+ Merging all data from all files as basis for scaling
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_all.drg                                            
+ This file has            2  columns of data.  They are:
+ Col:    0:all data dump for scale_mad. F and sigma
+ Col:    1:all data dump for scale_mad. F and sigma
+ Col:    2:all data dump for scale_mad. F and sigma
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40     33.43     10.76
+  -30   1   6      1.40     27.18      8.62
+  -29   1   1      1.44     53.19     12.16
+  -29   1   2      1.45     46.86     11.65
+  -29   1   3      1.45    112.98     11.12
+  -29   1   4      1.45     73.88     14.10
+  -29   1   5      1.45     59.19     12.67
+  -29   1   6      1.45     59.96     13.65
+  -29   1   7      1.45     36.60     10.09
+  -29   1   8      1.45     42.86     11.83
+
+ MERGE: Merge data for equivalent reflns.
+ This routine reads in hkl and F and sigma from any number
+ of files, merges equivalent reflections and writes out an
+ asymmetric unit of data.
+
+ Resolution range will be from   1.400000      to    1000.000    
+ 
+  This program keeps track of the ratio of rms  differences
+  among equivalent reflections to the sigmas.
+  Do you want to keep reflections even if chisqr>20?
+  1=keep anyways, 0 = toss them. (Usually keep them)>
+ 
+ Keeping reflections even if chisqr > 20
+ What is OUTPUT file name (not input file!) ?
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ Overwriting this file.
+ How many input files will there be? >
+ There will be           1  input files
+  What is file name for first file to be merged? >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_all.drg                                            
+ 
+  Columns           1 ,           2  assumed to be f,sig.
+ Col: 0 all data dump for scale_mad. F and sigma                                 
+ Col: 1 all data dump for scale_mad. F and sigma                                 
+ Col: 2 all data dump for scale_mad. F and sigma                                 
+ 
+ analyzing data...
+ Estimate of additive error on I: 
+ Sig**2(I)=Sig**2(Poisson)+(  5.0876107E-02 *I)**2
+ This will be applied to all sigmas
+ 
+
+ Summary of data:  Reflections read  : 217232
+ No data (Sig<0)   :      0
+ Absence/out of res:      0
+ Data present,F=0  :      0
+ Data present,F>0  : 217232
+ Rejected          :  
+  |obs-mean|> 4 Sig:      0
+  Chisqr > 20      :      0
+ Unique hkl     :  109922
+ overall r-factor on F:    5.4 % overall r-factor on I:    6.1 %
+
+ shell    dmin       nobs     nunique    r on F   r on I   rms(sig)/rms(F) 
+           (A)                            (%)      (%)   
+
+    1      3.5     14192      7308       2.4       3.7     0.030
+    2      2.8     13503      6880       2.6       4.1     0.031
+    3      2.5     13668      6943       3.3       5.3     0.034
+    4      2.1     24088     12200       3.7       5.8     0.040
+    5      2.0     14960      7570       4.5       6.8     0.052
+    6      1.8     19823     10016       5.8       8.8     0.071
+    7      1.7     26778     13513       7.9      12.5     0.104
+    8      1.5     37268     18799      10.1      17.4     0.145
+    9      1.5     24093     12141      11.9      21.9     0.189
+   10      1.4     28859     14552      12.6      24.7     0.229
+
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ This file has            2  columns of data.  They are:
+ Col:    0:all data dump for scale_mad. F and sigma
+ Col:    1:all data dump for scale_mad. F and sigma
+ Col:    2:all data dump for scale_mad. F and sigma
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.56      1.53
+    0   0   3     26.44    378.33     12.13
+    0   0   4     19.83    308.53      9.29
+    0   0   5     15.86    260.67      7.56
+    0   0   6     13.22    342.72      9.95
+    0   0   7     11.33     58.71      2.03
+    0   0   9      8.81    453.96     13.17
+    0   0  10      7.93    296.39      8.61
+    0   0  11      7.21    606.07     17.58
+    0   0  12      6.61     66.56      2.48
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_all.drg                                            
+ Overwriting this file.
+ 
+ Now scaling all datasets to averaged dataset.
+ 
+ 
+ Scaling F- to scratch.mrg
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ This file has            2  columns of data.  They are:
+ Col:    0:all data dump for scale_mad. F and sigma
+ Col:    1:all data dump for scale_mad. F and sigma
+ Col:    2:all data dump for scale_mad. F and sigma
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.56      1.53
+    0   0   3     26.44    378.33     12.13
+    0   0   4     19.83    308.53      9.29
+    0   0   5     15.86    260.67      7.56
+    0   0   6     13.22    342.72      9.95
+    0   0   7     11.33     58.71      2.03
+    0   0   9      8.81    453.96     13.17
+    0   0  10      7.93    296.39      8.61
+    0   0  11      7.21    606.07     17.58
+    0   0  12      6.61     66.56      2.48
+ 
+   LOCALSCALE:  Space-group general scaling.
+   In this program the Native data is mapped to the
+   asymmetric unit, then expanded to the entire sphere.
+   The Derivative data is scaled without mapping to
+   the asymmetric unit.
+ 
+   Both native and derivative must be in dorgbn-style
+   files.  If anomalous differences are present in the 
+   derivative file, they will be scaled and written out.
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter name of dorgbn-style input file with "native" data to be
+ used as a reference in scaling a "derivative" dataset.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ Col:  0: all data dump for scale_mad. F and sigma                    
+ Col:  1: all data dump for scale_mad. F and sigma                    
+ Col:  2: all data dump for scale_mad. F and sigma                    
+ 
+ Please enter column numbers for Native F and Sigma. Use "0" if missing>
+
+ Native F from column:  1: all data dump for scale_mad. F and sigma
+ Sig of Nat F from col:  2: all data dump for scale_mad. F and sigma
+
+ What is minimum ratio of F/sig to for F native or F Deriv
+ to be read in at all? >
+ For measurements with F/sigma of F <     0.00 the F will be ignored
+
+ Now enter name of "derivative" dataset to be scaled.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.drg                                        
+ Col:  0: SIGMA of F          set 1                                   
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Deriv F and Sigma and for DelAno and Sig
+  if present. Use "0" if missing>
+ Assuming you have no del Ano measurements
+
+ Deriv F from column:  1: F from I_TO_F       set 1               
+ Sig of Der F from col: 2: SIGMA of F          set 1               
+
+ Each of these columns will be scaled and written to the output file.
+ The output file will have  2 columns of data.
+
+ Enter name of output file to be written with scaled derivative data >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ Overwriting this file.
+
+ Enter overall title for scaled output data > 
+ Are we to keep reflections with especially large differences (1),
+ or toss them just before writing out data (0)?  >
+ Reflections with large differences will be tossed.
+
+ What is the minimum number of reflections  surrounding a reflection
+ to be scaled to use in scaling (30) > 
+ Minimum number of reflections used in scaling will be     30
+ 
+ Total of       109922  unique reflections for native
+
+
+ Summary of data for derivative : 
+
+ A total of       107509  unique derivative data were found
+ Total of 109922 native F, 107508 deriv F observed
+ Additionally,     0 native and      0 der were not observed.
+
+ Duplicate measurements (averaged) of nat =     0, of der =     0
+
+
+ Reflections observed for derivative:
+
+                    Possible  Unique     All       All
+ shell     dmin      Unique    nat       der       both    both > 3sig
+
+    1     2.800     14317     14188     13541     13541     13436
+    2     2.100     19458     19143     18653     18653     18489
+    3     1.960      7738      7570      7408      7408      7288
+    4     1.855      7441      7246      7107      7107      6963
+    5     1.750      9274      8998      8839      8839      8646
+    6     1.680      7530      7285      7162      7162      6935
+    7     1.610      8919      8605      8460      8460      8182
+    8     1.540     10627     10194     10029     10029      9611
+    9     1.470     12704     12141     11966     11966     11382
+   10     1.400     15324     14552     14343     14343     13481
+
+ total             113332    109922    107508    107508    104413
+
+ Mean value of Nat/Der for 10 resol ranges: 
+   4.09   4.09   4.08   4.07   4.07   4.05   4.03   4.01   3.99   3.97
+
+ A total of   454 reflections were not used in determining
+ scale factors because del fs or sigmas were too large.
+
+
+ Wilson scaling of data: 
+
+ Derivative           A           Sig of A               B          Sig of B
+       1             4.105         0.000              -0.127         0.000
+
+
+
+ For this set of native + 1 derivative, there were
+ a total of107508 records written.
+ Of these, 107508 had Fbar for the deriv
+ and            0 had delf ano for the deriv.
+ A total of107508 had F for native 
+ Number of reflns rejected >3sig:      0
+
+
+ Differences by shell:
+
+  shell   dmin    nobs      Fbar      R     scale    SIGNAL  NOISE   S/N
+
+    1     2.800 13541     304.475     0.025   1.000   7.21   6.19   1.17
+    2     2.100 18653     176.039     0.036   1.002   5.99   5.22   1.15
+    3     1.960  7408     138.016     0.045   1.003   5.51   5.72   0.96
+    4     1.855  7107     114.689     0.055   1.002   5.27   6.14   0.86
+    5     1.750  8839      94.695     0.069   1.002   5.09   6.74   0.75
+    6     1.680  7162      81.510     0.084   1.000   5.02   7.33   0.68
+    7     1.610  8460      74.938     0.092   0.998   4.63   7.70   0.60
+    8     1.540 10029      67.771     0.106   0.996   4.53   8.15   0.56
+    9     1.470 11966      59.355     0.116   0.994   3.36   8.28   0.41
+   10     1.400 14343      50.129     0.123   0.993   0.00   8.17   0.00
+
+ Total:        107508     124.714     0.054   0.999   5.04   7.00   0.72
+
+ Recommended resolution cut-off =    1.40
+
+ NOTE: Sigmas rescaled by factor of   0.5129226     for S/N estimate
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40     34.23     11.02
+  -30   1   6      1.40     28.05      8.90
+  -29   1   1      1.44     52.69     12.04
+  -29   1   2      1.45     46.76     11.62
+  -29   1   3      1.45    111.43     10.97
+  -29   1   4      1.45     73.74     14.07
+  -29   1   5      1.45     58.80     12.59
+  -29   1   6      1.45     59.54     13.55
+  -29   1   7      1.45     36.39     10.03
+  -29   1   8      1.45     42.99     11.87
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ 
+ Scaling F+ to scratch.mrg
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ This file has            2  columns of data.  They are:
+ Col:    0:all data dump for scale_mad. F and sigma
+ Col:    1:all data dump for scale_mad. F and sigma
+ Col:    2:all data dump for scale_mad. F and sigma
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.56      1.53
+    0   0   3     26.44    378.33     12.13
+    0   0   4     19.83    308.53      9.29
+    0   0   5     15.86    260.67      7.56
+    0   0   6     13.22    342.72      9.95
+    0   0   7     11.33     58.71      2.03
+    0   0   9      8.81    453.96     13.17
+    0   0  10      7.93    296.39      8.61
+    0   0  11      7.21    606.07     17.58
+    0   0  12      6.61     66.56      2.48
+ 
+   LOCALSCALE:  Space-group general scaling.
+   In this program the Native data is mapped to the
+   asymmetric unit, then expanded to the entire sphere.
+   The Derivative data is scaled without mapping to
+   the asymmetric unit.
+ 
+   Both native and derivative must be in dorgbn-style
+   files.  If anomalous differences are present in the 
+   derivative file, they will be scaled and written out.
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter name of dorgbn-style input file with "native" data to be
+ used as a reference in scaling a "derivative" dataset.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ Col:  0: all data dump for scale_mad. F and sigma                    
+ Col:  1: all data dump for scale_mad. F and sigma                    
+ Col:  2: all data dump for scale_mad. F and sigma                    
+ 
+ Please enter column numbers for Native F and Sigma. Use "0" if missing>
+
+ Native F from column:  1: all data dump for scale_mad. F and sigma
+ Sig of Nat F from col:  2: all data dump for scale_mad. F and sigma
+
+ What is minimum ratio of F/sig to for F native or F Deriv
+ to be read in at all? >
+ For measurements with F/sigma of F <     0.00 the F will be ignored
+
+ Now enter name of "derivative" dataset to be scaled.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.drg                                        
+ Col:  0: SIGMA of F          set 1                                   
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Deriv F and Sigma and for DelAno and Sig
+  if present. Use "0" if missing>
+ Assuming you have no del Ano measurements
+
+ Deriv F from column:  1: F from I_TO_F       set 1               
+ Sig of Der F from col: 2: SIGMA of F          set 1               
+
+ Each of these columns will be scaled and written to the output file.
+ The output file will have  2 columns of data.
+
+ Enter name of output file to be written with scaled derivative data >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ Overwriting this file.
+
+ Enter overall title for scaled output data > 
+ Are we to keep reflections with especially large differences (1),
+ or toss them just before writing out data (0)?  >
+ Reflections with large differences will be tossed.
+
+ What is the minimum number of reflections  surrounding a reflection
+ to be scaled to use in scaling (30) > 
+ Minimum number of reflections used in scaling will be     30
+ 
+ Total of       109922  unique reflections for native
+
+
+ Summary of data for derivative : 
+
+ A total of       109725  unique derivative data were found
+ Total of 109922 native F, 109724 deriv F observed
+ Additionally,     0 native and      0 der were not observed.
+
+ Duplicate measurements (averaged) of nat =     0, of der =     0
+
+
+ Reflections observed for derivative:
+
+                    Possible  Unique     All       All
+ shell     dmin      Unique    nat       der       both    both > 3sig
+
+    1     2.800     14317     14188     14154     14154     14031
+    2     2.100     19458     19143     19103     19103     18919
+    3     1.960      7738      7570      7552      7552      7421
+    4     1.855      7441      7246      7238      7238      7090
+    5     1.750      9274      8998      8981      8981      8760
+    6     1.680      7530      7285      7274      7274      7027
+    7     1.610      8919      8605      8594      8594      8287
+    8     1.540     10627     10194     10185     10185      9737
+    9     1.470     12704     12141     12127     12127     11512
+   10     1.400     15324     14552     14516     14516     13669
+
+ total             113332    109922    109724    109724    106453
+
+ Mean value of Nat/Der for 10 resol ranges: 
+   4.09   4.09   4.09   4.10   4.09   4.10   4.10   4.11   4.11   4.10
+
+ A total of   483 reflections were not used in determining
+ scale factors because del fs or sigmas were too large.
+
+
+ Wilson scaling of data: 
+
+ Derivative           A           Sig of A               B          Sig of B
+       1             4.086         0.000               0.071         0.000
+
+
+
+ For this set of native + 1 derivative, there were
+ a total of109724 records written.
+ Of these, 109724 had Fbar for the deriv
+ and            0 had delf ano for the deriv.
+ A total of109724 had F for native 
+ Number of reflns rejected >3sig:      0
+
+
+ Differences by shell:
+
+  shell   dmin    nobs      Fbar      R     scale    SIGNAL  NOISE   S/N
+
+    1     2.800 14154     303.119     0.024   1.000   6.98   6.15   1.13
+    2     2.100 19103     175.484     0.035   0.998   5.85   5.19   1.13
+    3     1.960  7552     137.962     0.044   0.998   5.38   5.70   0.94
+    4     1.855  7238     114.802     0.054   0.999   5.14   6.13   0.84
+    5     1.750  8981      94.827     0.068   1.000   4.97   6.73   0.74
+    6     1.680  7274      81.573     0.083   1.001   4.93   7.32   0.67
+    7     1.610  8594      74.961     0.091   1.003   4.59   7.69   0.60
+    8     1.540 10185      67.832     0.106   1.005   4.53   8.15   0.56
+    9     1.470 12127      59.367     0.115   1.004   3.37   8.29   0.41
+   10     1.400 14516      50.185     0.123   1.002   0.00   8.21   0.00
+
+ Total:        109724     125.259     0.053   1.001   4.94   6.99   0.71
+
+ Recommended resolution cut-off =    1.40
+
+ NOTE: Sigmas rescaled by factor of   0.5108252     for S/N estimate
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   0   5      1.40     22.34      8.60
+  -30   0   6      1.40     24.77      9.49
+  -30   1   5      1.40     41.39     11.58
+  -30   1   6      1.40     29.26      8.78
+  -29   0   1      1.44     26.69      9.84
+  -29   0   2      1.45     27.66     10.18
+  -29   0   3      1.45    153.35      9.38
+  -29   0   4      1.45     67.70     16.49
+  -29   0   5      1.45    123.29     10.20
+  -29   0   6      1.45     37.94     12.70
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ 
+ Merging all data from all files as basis for scaling
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_all.drg                                            
+ This file has            2  columns of data.  They are:
+ Col:    0:all data dump for scale_mad. F and sigma
+ Col:    1:all data dump for scale_mad. F and sigma
+ Col:    2:all data dump for scale_mad. F and sigma
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40     34.23     11.02
+  -30   1   6      1.40     28.05      8.90
+  -29   1   1      1.44     52.69     12.04
+  -29   1   2      1.45     46.76     11.62
+  -29   1   3      1.45    111.43     10.97
+  -29   1   4      1.45     73.74     14.07
+  -29   1   5      1.45     58.80     12.59
+  -29   1   6      1.45     59.54     13.55
+  -29   1   7      1.45     36.39     10.03
+  -29   1   8      1.45     42.99     11.87
+
+ MERGE: Merge data for equivalent reflns.
+ This routine reads in hkl and F and sigma from any number
+ of files, merges equivalent reflections and writes out an
+ asymmetric unit of data.
+
+ Resolution range will be from   1.400000      to    1000.000    
+ 
+  This program keeps track of the ratio of rms  differences
+  among equivalent reflections to the sigmas.
+  Do you want to keep reflections even if chisqr>20?
+  1=keep anyways, 0 = toss them. (Usually keep them)>
+ 
+ Keeping reflections even if chisqr > 20
+ What is OUTPUT file name (not input file!) ?
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ Overwriting this file.
+ How many input files will there be? >
+ There will be           1  input files
+  What is file name for first file to be merged? >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_all.drg                                            
+ 
+  Columns           1 ,           2  assumed to be f,sig.
+ Col: 0 all data dump for scale_mad. F and sigma                                 
+ Col: 1 all data dump for scale_mad. F and sigma                                 
+ Col: 2 all data dump for scale_mad. F and sigma                                 
+ 
+ analyzing data...
+ Estimate of additive error on I: 
+ Sig**2(I)=Sig**2(Poisson)+(  5.0672721E-02 *I)**2
+ This will be applied to all sigmas
+ 
+
+ Summary of data:  Reflections read  : 217232
+ No data (Sig<0)   :      0
+ Absence/out of res:      0
+ Data present,F=0  :      0
+ Data present,F>0  : 217232
+ Rejected          :  
+  |obs-mean|> 4 Sig:      0
+  Chisqr > 20      :      0
+ Unique hkl     :  109922
+ overall r-factor on F:    5.4 % overall r-factor on I:    6.1 %
+
+ shell    dmin       nobs     nunique    r on F   r on I   rms(sig)/rms(F) 
+           (A)                            (%)      (%)   
+
+    1      3.5     14192      7308       2.4       3.7     0.030
+    2      2.8     13503      6880       2.6       4.1     0.031
+    3      2.5     13668      6943       3.3       5.3     0.034
+    4      2.1     24088     12200       3.7       5.8     0.040
+    5      2.0     14960      7570       4.5       6.8     0.052
+    6      1.8     19823     10016       5.7       8.8     0.071
+    7      1.7     26778     13513       7.8      12.4     0.104
+    8      1.5     37268     18799      10.0      17.0     0.145
+    9      1.5     24093     12141      11.7      21.2     0.189
+   10      1.4     28859     14552      12.4      24.1     0.229
+
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch.mrg                                                
+ This file has            2  columns of data.  They are:
+ Col:    0:all data dump for scale_mad. F and sigma
+ Col:    1:all data dump for scale_mad. F and sigma
+ Col:    2:all data dump for scale_mad. F and sigma
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.79      1.53
+    0   0   3     26.44    382.15     12.22
+    0   0   4     19.83    311.39      9.35
+    0   0   5     15.86    264.01      7.64
+    0   0   6     13.22    346.94     10.04
+    0   0   7     11.33     59.20      2.05
+    0   0   9      8.81    456.25     13.20
+    0   0  10      7.93    297.13      8.61
+    0   0  11      7.21    605.95     17.52
+    0   0  12      6.61     66.63      2.47
+ 
+ Merging scaled data in F+ at lambda            1  from all            1
+  files .
+ 
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_all.dat                                       
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   0   5      1.40     22.34      8.60
+  -30   0   6      1.40     24.77      9.49
+  -30   1   5      1.40     41.39     11.58
+  -30   1   6      1.40     29.26      8.78
+  -29   0   1      1.44     26.69      9.84
+  -29   0   2      1.45     27.66     10.18
+  -29   0   3      1.45    153.35      9.38
+  -29   0   4      1.45     67.70     16.49
+  -29   0   5      1.45    123.29     10.20
+  -29   0   6      1.45     37.94     12.70
+
+ MERGE: Merge data for equivalent reflns.
+ This routine reads in hkl and F and sigma from any number
+ of files, merges equivalent reflections and writes out an
+ asymmetric unit of data.
+
+ Resolution range will be from   1.400000      to    1000.000    
+ 
+  This program keeps track of the ratio of rms  differences
+  among equivalent reflections to the sigmas.
+  Do you want to keep reflections even if chisqr>20?
+  1=keep anyways, 0 = toss them. (Usually keep them)>
+ 
+ Keeping reflections even if chisqr > 20
+ What is OUTPUT file name (not input file!) ?
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fp.mrg                                        
+ How many input files will there be? >
+ There will be           1  input files
+  What is file name for first file to be merged? >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fp.scltofp                                    
+ 
+  Columns           1 ,           2  assumed to be f,sig.
+ Col: 0 Scaled derivative data                                                   
+ Col: 1 F from I_TO_F       set 1                                                
+ Col: 2 SIGMA of F          set 1                                                
+ 
+ analyzing data...
+ Estimate of additive error on I: 
+ Sig**2(I)=Sig**2(Poisson)+(  0.0000000E+00 *I)**2
+ This will be applied to all sigmas
+ 
+
+ Summary of data:  Reflections read  : 109724
+ No data (Sig<0)   :      0
+ Absence/out of res:      0
+ Data present,F=0  :      0
+ Data present,F>0  : 109724
+ Rejected          :  
+  |obs-mean|> 4 Sig:      0
+  Chisqr > 20      :      0
+ Unique hkl     :  109724
+ overall r-factor on F:    0.0 % overall r-factor on I:    0.0 %
+
+ shell    dmin       nobs     nunique    r on F   r on I   rms(sig)/rms(F) 
+           (A)                            (%)      (%)   
+
+    1      3.5      7298      7298       0.0       0.0     0.015
+    2      2.8      6856      6856       0.0       0.0     0.017
+    3      2.5      6928      6928       0.0       0.0     0.023
+    4      2.1     12175     12175       0.0       0.0     0.031
+    5      2.0      7552      7552       0.0       0.0     0.045
+    6      1.8      9999      9999       0.0       0.0     0.066
+    7      1.7     13494     13494       0.0       0.0     0.101
+    8      1.5     18779     18779       0.0       0.0     0.144
+    9      1.5     12127     12127       0.0       0.0     0.187
+   10      1.4     14516     14516       0.0       0.0     0.227
+
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fp.mrg                                        
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.79      0.83
+    0   0   3     26.44    382.15      7.45
+    0   0   4     19.83    311.39      5.01
+    0   0   5     15.86    264.01      3.68
+    0   0   6     13.22    346.94      4.85
+    0   0   7     11.33     59.20      1.39
+    0   0   9      8.81    456.25      6.36
+    0   0  10      7.93    297.13      4.17
+    0   0  11      7.21    605.95      8.44
+    0   0  12      6.61     66.63      1.81
+ 
+ Merging scaled data in F- at lambda            1  from all            1
+  files .
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+  -30   1   5      1.40     34.23     11.02
+  -30   1   6      1.40     28.05      8.90
+  -29   1   1      1.44     52.69     12.04
+  -29   1   2      1.45     46.76     11.62
+  -29   1   3      1.45    111.43     10.97
+  -29   1   4      1.45     73.74     14.07
+  -29   1   5      1.45     58.80     12.59
+  -29   1   6      1.45     59.54     13.55
+  -29   1   7      1.45     36.39     10.03
+  -29   1   8      1.45     42.99     11.87
+
+ MERGE: Merge data for equivalent reflns.
+ This routine reads in hkl and F and sigma from any number
+ of files, merges equivalent reflections and writes out an
+ asymmetric unit of data.
+
+ Resolution range will be from   1.400000      to    1000.000    
+ 
+  This program keeps track of the ratio of rms  differences
+  among equivalent reflections to the sigmas.
+  Do you want to keep reflections even if chisqr>20?
+  1=keep anyways, 0 = toss them. (Usually keep them)>
+ 
+ Keeping reflections even if chisqr > 20
+ What is OUTPUT file name (not input file!) ?
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fm.mrg                                        
+ How many input files will there be? >
+ There will be           1  input files
+  What is file name for first file to be merged? >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_001_fm.scltofp                                    
+ 
+  Columns           1 ,           2  assumed to be f,sig.
+ Col: 0 Scaled derivative data                                                   
+ Col: 1 F from I_TO_F       set 1                                                
+ Col: 2 SIGMA of F          set 1                                                
+ 
+ analyzing data...
+ Estimate of additive error on I: 
+ Sig**2(I)=Sig**2(Poisson)+(  0.0000000E+00 *I)**2
+ This will be applied to all sigmas
+ 
+
+ Summary of data:  Reflections read  : 107508
+ No data (Sig<0)   :      0
+ Absence/out of res:      0
+ Data present,F=0  :      0
+ Data present,F>0  : 107508
+ Rejected          :  
+  |obs-mean|> 4 Sig:      0
+  Chisqr > 20      :      0
+ Unique hkl     :  107508
+ overall r-factor on F:    0.0 % overall r-factor on I:    0.0 %
+
+ shell    dmin       nobs     nunique    r on F   r on I   rms(sig)/rms(F) 
+           (A)                            (%)      (%)   
+
+    1      3.5      6894      6894       0.0       0.0     0.015
+    2      2.8      6647      6647       0.0       0.0     0.017
+    3      2.5      6740      6740       0.0       0.0     0.023
+    4      2.1     11913     11913       0.0       0.0     0.031
+    5      2.0      7408      7408       0.0       0.0     0.045
+    6      1.8      9824      9824       0.0       0.0     0.066
+    7      1.7     13284     13284       0.0       0.0     0.101
+    8      1.5     18489     18489       0.0       0.0     0.142
+    9      1.5     11966     11966       0.0       0.0     0.184
+   10      1.4     14343     14343       0.0       0.0     0.223
+
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fm.mrg                                        
+ This file has            2  columns of data.  They are:
+ Col:    0:Scaled derivative data
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ How many records would you like to see? 
+          10  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   1   2     36.16    267.39      3.83
+    0   1   3     25.32    360.60      5.17
+    0   1   4     19.34    217.72      2.96
+    0   1   5     15.61    279.65      3.81
+    0   1   6     13.07    219.31      3.20
+    0   1   7     11.24    331.35      4.36
+    0   1   8      9.85    329.21      4.49
+    0   1   9      8.77    350.52      4.80
+    0   1  10      7.90    445.69      6.74
+    0   1  11      7.19    305.20      4.16
+ 
+ Combining all data in one file with F+,sig,F-,sig at lambda            1
+ 
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fp.mrg                                        
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fm.mrg                                        
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/scratch.script                                             
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/scratch.script                                             
+
+ FILE MERGING 
+ How many files do you want to open for reading in data >
+ Opening           2  files for reading in data:
+ INPUT FILE  1> Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fp.mrg                                        
+ INPUT FILE  2> Opened binary file: 
+ AutoSol_run_1_/TEMP0/lambda_1_000_fm.mrg                                        
+ 
+ What is the output file to be called >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fpfm.scl                                               
+
+ Please enter overall title for new file >
+ mad_fpfm.scl Fnat,sig,(F+,sig,F-,sig)n                                          
+ 
+ This program copies columns of data from the input files
+ to the output file.  The columns to copy (and their order)
+ are specified by a series of commands of the form:
+ File #, then on the next line: ColA,ColB,  
+ This command causes columns ColA through ColB from 
+ this file to be copied to the output file. 
+ 
+ Note: The tiles of columns usually are just copied to the
+ output file.  To change the titles, type the new title
+ for ColA at the end of the command line.  The program
+ will prompt for titles for the other columns.
+ 
+ What file do you want to read from (type 0 to end input) >
+ Reading from file            1
+ 
+ COL  0: Scaled derivative data
+ COL  1: F from I_TO_F       set 1
+ COL  2: SIGMA of F          set 1
+ 
+ What is the range of columns to copy ?
+ ColA, ColB, (optional new title for ColA)>
+ Range of columns is:            1  to            2
+ What file do you want to read from (type 0 to end input) >
+ Reading from file            2
+ 
+ COL  0: Scaled derivative data
+ COL  1: F from I_TO_F       set 1
+ COL  2: SIGMA of F          set 1
+ 
+ What is the range of columns to copy ?
+ ColA, ColB, (optional new title for ColA)>
+ Range of columns is:            1  to            2
+ What file do you want to read from (type 0 to end input) >
+  Total of       109922  records written out.
+ All done with file merging... you might wish to view
+ your new file with VIEW now to check it...
+ Closed command file: 
+ AutoSol_run_1_/TEMP0/scratch.script                                             
+ 
+ Getting Fbar,sig,delano,sig at  lambda            1
+ 
+
+
+  GETANOM:
+ Convert from F+,F- to Fbar, DelAno
+ Input name of dorgbn-style file containing F+,sig,F-,sig data>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fpfm.scl                                               
+ ...and name of output dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fbar.scl                                               
+ Overall title for output file:
+ Input data col  0: mad_fpfm.scl Fnat,sig,(F+,sig,F-,sig)n                                          
+ Input data col  1: F from I_TO_F       set 1                                                       
+ Input data col  2: SIGMA of F          set 1                                                       
+ Input data col  3: F from I_TO_F       set 1                                                       
+ Input data col  4: SIGMA of F          set 1                                                       
+ Column numbers for F+, sigma of F+ (0 if not present)>
+ Column numbers for F-, sigma of F- (0 if not present)>
+ Column numbers for F+, sigma:            1           2
+ Column numbers for F-, sigma:            3           4
+ For acentric reflections, those with
+  either F+ and F- or both will be written out...
+ Resolution range will be from   1.400000      to    1000.000    
+ Number of records written=       109922  including            0  zeros...
+  Number out of resolution range (not written out):           0
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fpfm.scl                                               
+ This file has            4  columns of data.  They are:
+ Col:    0:mad_fpfm.scl Fnat,sig,(F+,sig,F-,sig)n
+ Col:    1:F from I_TO_F       set 1
+ Col:    2:SIGMA of F          set 1
+ Col:    3:F from I_TO_F       set 1
+ Col:    4:SIGMA of F          set 1
+ How many records would you like to see? 
+          20  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.79      0.83     -1.00     -1.00
+    0   0   3     26.44    382.15      7.45     -1.00     -1.00
+    0   0   4     19.83    311.39      5.01     -1.00     -1.00
+    0   0   5     15.86    264.01      3.68     -1.00     -1.00
+    0   0   6     13.22    346.94      4.85     -1.00     -1.00
+    0   0   7     11.33     59.20      1.39     -1.00     -1.00
+    0   0   9      8.81    456.25      6.36     -1.00     -1.00
+    0   0  10      7.93    297.13      4.17     -1.00     -1.00
+    0   0  11      7.21    605.95      8.44     -1.00     -1.00
+    0   0  12      6.61     66.63      1.81     -1.00     -1.00
+    0   0  13      6.10    592.60      8.26     -1.00     -1.00
+    0   0  14      5.66    147.84      2.31     -1.00     -1.00
+    0   0  15      5.29     30.56      3.79     -1.00     -1.00
+    0   0  16      4.96    395.68      5.55     -1.00     -1.00
+    0   0  17      4.67     39.37      3.14     -1.00     -1.00
+    0   0  18      4.41    107.26      2.15     -1.00     -1.00
+    0   0  19      4.17    370.65      5.22     -1.00     -1.00
+    0   0  20      3.97    309.65      4.42     -1.00     -1.00
+    0   0  21      3.78    512.04      7.16     -1.00     -1.00
+    0   0  22      3.60    597.53      8.34     -1.00     -1.00
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fpfm.scl                                               
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/solve_1.sca                                                
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter input dorgbn-style file>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fbar.scl                                               
+ This file has            4  columns of data.  They are:
+ Col:    0:mad_fbar.scl Fnat,sig,(fbar,sig,delano,sig)n
+ Col:    1:Fbar                set 1
+ Col:    2:Sig of Fbar         set 1
+ Col:    3:Del Ano (F+ - F-)   set 1
+ Col:    4:sig of Del Ano      set 1
+ How many records would you like to see? 
+          20  records will be listed.
+
+    H   K   L    Resol      Col1     Col2       Col3      Col4     Col5  (etc)
+
+    0   0   2     39.65     50.79      0.83      0.00      0.00
+    0   0   3     26.44    382.15      7.45      0.00      0.00
+    0   0   4     19.83    311.39      5.01      0.00      0.00
+    0   0   5     15.86    264.01      3.68      0.00      0.00
+    0   0   6     13.22    346.94      4.85      0.00      0.00
+    0   0   7     11.33     59.20      1.39      0.00      0.00
+    0   0   9      8.81    456.25      6.36      0.00      0.00
+    0   0  10      7.93    297.13      4.17      0.00      0.00
+    0   0  11      7.21    605.95      8.44      0.00      0.00
+    0   0  12      6.61     66.63      1.81      0.00      0.00
+    0   0  13      6.10    592.60      8.26      0.00      0.00
+    0   0  14      5.66    147.84      2.31      0.00      0.00
+    0   0  15      5.29     30.56      3.79      0.00      0.00
+    0   0  16      4.96    395.68      5.55      0.00      0.00
+    0   0  17      4.67     39.37      3.14      0.00      0.00
+    0   0  18      4.41    107.26      2.15      0.00      0.00
+    0   0  19      4.17    370.65      5.22      0.00      0.00
+    0   0  20      3.97    309.65      4.42      0.00      0.00
+    0   0  21      3.78    512.04      7.16      0.00      0.00
+    0   0  22      3.60    597.53      8.34      0.00      0.00
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fbar.scl                                               
+ Writing column labels to mtz file
+ AutoSol_run_1_/TEMP0/mad_fbar.mtz                                               
+ 
+ --------------------------------------------------
+ 
+  *** Analysis of this scaled MAD data set *** 
+ 
+  ** Completeness of Fbar data at each wavelength: ** 
+ 
+ 
+ 
+ Completeness of dataset             1   ( F >   0.0000000E+00  * sigma)
+ set 1                                                                           
+
+ COMPLETE: Analyzes completeness of a dataset.
+
+
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter name of dorgbn-style input file with  data to be
+ examined.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fbar.scl                                               
+ Col:  0: mad_fbar.scl Fnat,sig,(fbar,sig,delano,sig)n                
+ Col:  1: Fbar                set 1                                   
+ Col:  2: Sig of Fbar         set 1                                   
+ Col:  3: Del Ano (F+ - F-)   set 1                                   
+ Col:  4: sig of Del Ano      set 1                                   
+ 
+ Please enter column numbers for F and Sigma. Use "0" if missing>
+
+ F from column:  1: Fbar                set 1               
+ Sig of  F from col:  2: Sig of Fbar         set 1               
+
+ What is minimum ratio of F/sig to be read in at all? >
+ For measurements with F/sigma of F <     0.00 the F will be ignored
+ Total of       109922  unique reflections for native
+  were found in the resolution range out of      109922  in the file
+ 
+ 
+ **** Acentric reflections only ******
+ Reflections observed:
+
+                    Possible  Found     % complete
+ shell     dmin      
+
+    1     2.800     13652     13583      99.5
+    2     2.100     18940     18692      98.7
+    3     1.960      7558      7414      98.1
+    4     1.855      7283      7115      97.7
+    5     1.750      9087      8844      97.3
+    6     1.680      7387      7167      97.0
+    7     1.610      8747      8464      96.8
+    8     1.540     10440     10045      96.2
+    9     1.470     12493     11977      95.9
+   10     1.400     15083     14365      95.2
+
+ total             110670    107666      97.3
+ 
+ 
+ **** Centric reflections only ******
+ Reflections observed:
+
+                    Possible  Found     % complete
+ shell     dmin      
+
+    1     2.800       665       605      91.0
+    2     2.100       518       451      87.1
+    3     1.960       180       156      86.7
+    4     1.855       158       131      82.9
+    5     1.750       187       154      82.4
+    6     1.680       143       118      82.5
+    7     1.610       172       141      82.0
+    8     1.540       187       149      79.7
+    9     1.470       211       164      77.7
+   10     1.400       241       187      77.6
+
+ total               2662      2256      84.7
+ 
+ 
+ **** All reflections ******
+ Reflections observed:
+
+                    Possible  Found     % complete
+ shell     dmin      
+
+    1     2.800     14317     14188      99.1
+    2     2.100     19458     19143      98.4
+    3     1.960      7738      7570      97.8
+    4     1.855      7441      7246      97.4
+    5     1.750      9274      8998      97.0
+    6     1.680      7530      7285      96.7
+    7     1.610      8919      8605      96.5
+    8     1.540     10627     10194      95.9
+    9     1.470     12704     12141      95.6
+   10     1.400     15324     14552      95.0
+
+ total             113332    109922      97.0
+ 
+ ** R-factors for F-bar data dispersive differences **
+ 
+  **  R-factors for anomalous differences **
+ 
+ 
+ 
+ Anomalous differences lambda            1  (f" =    4.500000     )
+ 
+   LOCALSCALE:  Space-group general scaling.
+   In this program the Native data is mapped to the
+   asymmetric unit, then expanded to the entire sphere.
+   The Derivative data is scaled without mapping to
+   the asymmetric unit.
+ 
+   Both native and derivative must be in dorgbn-style
+   files.  If anomalous differences are present in the 
+   derivative file, they will be scaled and written out.
+ 
+ Resolution range will be from   1.400000      to    1000.000    
+
+ Please enter name of dorgbn-style input file with "native" data to be
+ used as a reference in scaling a "derivative" dataset.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fpfm.scl                                               
+ Col:  0: mad_fpfm.scl Fnat,sig,(F+,sig,F-,sig)n                      
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ Col:  3: F from I_TO_F       set 1                                   
+ Col:  4: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Native F and Sigma. Use "0" if missing>
+
+ Native F from column:  1: F from I_TO_F       set 1               
+ Sig of Nat F from col:  2: SIGMA of F          set 1               
+
+ What is minimum ratio of F/sig to for F native or F Deriv
+ to be read in at all? >
+ For measurements with F/sigma of F <     0.00 the F will be ignored
+
+ Now enter name of "derivative" dataset to be scaled.>
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fpfm.scl                                               
+ Col:  0: mad_fpfm.scl Fnat,sig,(F+,sig,F-,sig)n                      
+ Col:  1: F from I_TO_F       set 1                                   
+ Col:  2: SIGMA of F          set 1                                   
+ Col:  3: F from I_TO_F       set 1                                   
+ Col:  4: SIGMA of F          set 1                                   
+ 
+ Please enter column numbers for Deriv F and Sigma and for DelAno and Sig
+  if present. Use "0" if missing>
+ Assuming you have no del Ano measurements
+
+ Deriv F from column:  3: F from I_TO_F       set 1               
+ Sig of Der F from col: 4: SIGMA of F          set 1               
+
+ Each of these columns will be scaled and written to the output file.
+ The output file will have  2 columns of data.
+
+ Enter name of output file to be written with scaled derivative data >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch3                                                   
+
+ Enter overall title for scaled output data > 
+ Are we to keep reflections with especially large differences (1),
+ or toss them just before writing out data (0)?  >
+ Reflections with large differences will be tossed.
+
+ What is the minimum number of reflections  surrounding a reflection
+ to be scaled to use in scaling (30) > 
+ Minimum number of reflections used in scaling will be     30
+ 
+ Total of       109724  unique reflections for native
+
+
+ Summary of data for derivative : 
+
+ A total of       107509  unique derivative data were found
+ Total of 109724 native F, 107508 deriv F observed
+ Additionally,   198 native and   2414 der were not observed.
+
+ Duplicate measurements (averaged) of nat =     0, of der =     0
+
+
+ Reflections observed for derivative:
+
+                    Possible  Unique     All       All
+ shell     dmin      Unique    nat       der       both    both > 3sig
+
+    1     2.800     14317     14154     13541     13507     13459
+    2     2.100     19458     19103     18653     18613     18534
+    3     1.960      7738      7552      7408      7390      7340
+    4     1.855      7441      7238      7107      7099      7034
+    5     1.750      9274      8981      8839      8822      8723
+    6     1.680      7530      7274      7162      7151      7044
+    7     1.610      8919      8594      8460      8449      8307
+    8     1.540     10627     10185     10029     10020      9761
+    9     1.470     12704     12127     11966     11952     11518
+   10     1.400     15324     14516     14343     14307     13450
+
+ total             113332    109724    107508    107310    105170
+
+ Mean value of Nat/Der for 10 resol ranges: 
+   1.00   1.00   1.00   1.00   1.00   1.00   1.00   1.00   1.00   0.99
+
+ A total of   624 reflections were not used in determining
+ scale factors because del fs or sigmas were too large.
+
+
+ Wilson scaling of data: 
+
+ Derivative           A           Sig of A               B          Sig of B
+       1             1.000         0.000               0.004         0.000
+
+ 
+ NOTE: A total of          198  reflections were missing native and were ignored
+ 
+
+
+ For this set of native + 1 derivative, there were
+ a total of107310 records written.
+ Of these, 107310 had Fbar for the deriv
+ and            0 had delf ano for the deriv.
+ A total of107310 had F for native 
+ Number of reflns rejected >3sig:      0
+
+
+ Differences by shell:
+
+  shell   dmin    nobs      Fbar      R     scale    SIGNAL  NOISE   S/N
+
+    1     2.800 13507     304.401     0.051   1.000  17.95   7.62   2.35
+    2     2.100 18613     176.002     0.073   1.000  14.32   7.71   1.86
+    3     1.960  7390     137.941     0.092   1.000  12.94   9.79   1.32
+    4     1.855  7099     114.561     0.113   1.000  12.21  11.16   1.09
+    5     1.750  8822      94.699     0.142   1.001  11.69  12.73   0.92
+    6     1.680  7151      81.506     0.172   1.001  11.48  14.10   0.81
+    7     1.610  8449      74.952     0.190   1.001  10.65  15.05   0.71
+    8     1.540 10020      67.690     0.218   1.001  10.42  16.02   0.65
+    9     1.470 11952      59.239     0.238   1.000   7.62  16.64   0.46
+   10     1.400 14307      49.967     0.254   0.998   0.00  16.77   0.00
+
+ Total:        107310     124.619     0.110   1.000  11.96  13.01   1.08
+
+ Recommended resolution cut-off =    1.40
+
+ NOTE: Sigmas rescaled by factor of   0.9845759     for S/N estimate
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/solve_1.sn                                                 
+ Deleting scratch files...
+ Defining new atom type "ANO1" with the values of f" for use with "anoonly" and
+  lambda            1
+ Setting max # of sites ("NSOLSITE") to           35  based
+  on value of "NANOMALOUS" as nsolsite is not set
+
+ SAD analysis: defining pseudo-native based on Fbar for the SAD data 
+ and pseudo-derivative  based on Fbar and del anom for the SAD data 
+
+ ANALYZE_MIR/ANALYZE_SAD:  Calculate and compare pattersons and 
+ get ready for SOLVE
+ Origin-removed anomalous SAD Patterson to be written to:
+ patt_ano_orig_removed_sad.ezd                                                   
+ MAPS.  Generates Patterson or Fourier maps 
+ from .drg files.
+ Enter "0" for Patterson, "-1" for origin-removed Patterson, or "1" for Fourier > Patterson will be calculated
+ Patterson will be origin-removed
+
+ Enter name of .drg file with data > Opened binary file: 
+ AutoSol_run_1_/TEMP0/mad_fbar.scl                                               
+ Col  0:mad_fbar.scl Fnat,sig,(fbar,sig,delano,sig)n                             
+ Col  1:Fbar                set 1                                                
+ Col  2:Sig of Fbar         set 1                                                
+ Col  3:Del Ano (F+ - F-)   set 1                                                
+ Col  4:sig of Del Ano      set 1                                                
+ Enter column numbers for f**2 OR F  and for sigma of F**2 or F> F**2 or F and sigma from columns:           3           0
+ Is this f**2 (0) or F (1)> Columns for |F| and sig are            3           0
+ Opened binary scratch file: 
+ AutoSol_run_1_/TEMP0/scratch.dat_0                                              
+ Resolution range will be from   1.400000      to    1000.000    
+ Please enter maximum value of |F|, |delF|, or |DelAno| 
+ to include, or "0" to include everything >
+ No cutoff for |F|, |delF|, or |DelAno| will be used
+ Mean X**2 for shell           1  =    416.8809      n=    6884.000    
+ Mean X**2 for shell           2  =    304.8291      n=    6623.000    
+ Mean X**2 for shell           3  =    260.5494      n=    6725.000    
+ Mean X**2 for shell           4  =    247.1914      n=    11888.00    
+ Mean X**2 for shell           5  =    251.9942      n=    7390.000    
+ Mean X**2 for shell           6  =    265.0399      n=    9807.000    
+ Mean X**2 for shell           7  =    304.2896      n=    13265.00    
+ Mean X**2 for shell           8  =    338.3952      n=    18469.00    
+ Mean X**2 for shell           9  =    321.8379      n=    11952.00    
+ Mean X**2 for shell          10  =    269.7552      n=    14307.00    
+ Mean X**2 for shell           1  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           2  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           3  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           4  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           5  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           6  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           7  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           8  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell           9  =   0.0000000E+00  n=   0.0000000E+00
+ Mean X**2 for shell          10  =   0.0000000E+00  n=   0.0000000E+00
+ Total of 109922 records read and  107310 records written.
+ There were     0 records without phase and 
+  2612 without data and     0 with |F| or |delF| that was too large.
+ and     0 out of resolution range
+ Fast Fourier Transform
+ 
+
+ Overall title from file: 
+  Fourier data Fa+Fb   .                                                         
+ Col: 1: Fourier data Fa   .                                        
+ Col: 2: Fourier data Fb   .                                        
+ Columns for A, B are:    1    2
+
+
+ ORDERING:  A HORIZONTAL     B VERTICAL     C SECTIONS
+ Opened binary scratch file: 
+ AutoSol_run_1_/TEMP0/scratch.dat_0                                              
+ REFLECTIONS read, EXPANDED, FOURIER coeff  107310  214620   59707
+ MAXIMUM HKL   30   62   56
+ MAXIMUM P     30
+
+ The output fft containing an asymmetric unit of the map runs from: 
+     0 to    95 in x, where the cell translation is   96
+     0 to    96 in y, where the cell translation is  192
+     0 to    96 in z, where the cell translation is  192
+
+ Please enter name of output FFT file >
+ Opened binary file: 
+ AutoSol_run_1_/TEMP0/scratch_anomalous_s1d.patt                                 
+ SCALE AND F000...  1 0
+ WHOLE MAP XBAR, SIG...  -447.444 160401
+ 
+ FFTtoEZD:
+ Convert from an asymmetric unit of FFT to any grid
+ and output the file in EZD format.
+ 
+ The fft containing an asymmetric unit of the map runs from: 
+     0 to    95 in x, where the cell translation is   96
+     0 to    96 in y, where the cell translation is  192
+     0 to    96 in z, where the cell translation is  192
+
+ What is the output ezd file name > Opened formatted file: 
+ AutoSol_run_1_/TEMP0/patt_ano_orig_removed_sad.ezd                              
+ The EZD-format fft containing the desired region of the map runs from: 
+     0 to    95 in x, where the cell translation is   96
+     0 to    96 in y, where the cell translation is  192
+     0 to    96 in z, where the cell translation is  192
+
+ This output map is contained within the input map.
+ for   903264 points in input map, mean   -447.413, rms=    160360.1
+ Deleting scratch files...
+ Resolution range will be from   1.400000      to    1000.000    
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/solve_mir.script                                           
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/solve_combine.script                                       
+ Opened formatted file: 
+ AutoSol_run_1_/TEMP0/solve_mir.script                                           
+ Closed command file: 
+ AutoSol_run_1_/TEMP0/solve_mir.script                                           
+>                                                                               
+>                                                                               
+ Ending this session.

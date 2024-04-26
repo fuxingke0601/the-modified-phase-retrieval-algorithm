@@ -1,0 +1,1116 @@
+SAD phasing
+Data read from:  AutoSol_run_1_/TEMP0/TEMP_sca.mtz
+Data output to :  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+Spacegroup Name (Hall symbol) = P 41 21 2 ( P 4abw 2nw)
+Unitcell =  (57.6150016784668, 57.6150016784668, 150.80799865722656, 90.0, 90.0, 90.0)
+LogLikelihood =  -11739.1481699
+57  refined atoms
+ atom          x          y          z  occupancy      u-iso      fp     fpp
+   SE     0.9143     0.2885     0.0597     0.1122     0.1385   -8.50   16.56
+   SE     0.9837     0.8507     0.0760     0.0887     0.0980   -8.50   16.56
+   SE     0.5090     0.1731     0.0924     0.0632     0.1883   -8.50   16.56
+   SE     0.8741     0.4513     0.0036     0.0692     0.1488   -8.50   16.56
+   SE     0.5949     0.4859     0.0753     0.0348     0.1361   -8.50   16.56
+   SE     0.4466     0.6043     0.0053     0.0784     0.3250   -8.50   16.56
+   SE     0.6140     0.5166     0.1090     0.0477     0.1836   -8.50   16.56
+   SE     0.8895     0.4655     0.0681     0.0345     0.1130   -8.50   16.56
+   SE     0.0305     0.8634     0.0112     0.0394     0.2479   -8.50   16.56
+   SE     0.0518     0.1307     0.3571     0.0490     0.2031   -8.50   16.56
+   SE     0.0353     0.7517     0.7136     0.0327     0.1674   -8.50   16.56
+   SE     0.0199     0.4550     0.3878     0.0312     0.1851   -8.50   16.56
+   SE     0.0240     0.3105     0.6613     0.0536     0.2583   -8.50   16.56
+   SE     0.1044     0.6261     0.5757     0.0258     0.1858   -8.50   16.56
+   SE     0.0090     0.8301     0.7544     0.0187     0.1266   -8.50   16.56
+   SE     0.0199     0.1512     0.5723     0.0483     0.1388   -8.50   16.56
+   SE     0.0860     0.7107     0.5628     0.0538    -1.0000   -8.50   16.56
+   SE     0.0218     0.6171     0.8978     0.0189     0.1313   -8.50   16.56
+   SE     0.0224     0.2697     0.6477     0.0250     0.1886   -8.50   16.56
+   SE     0.0105     0.2731     0.2592     0.0218     0.1483   -8.50   16.56
+   SE     0.1101     0.3710     0.3274     0.0249     0.1676   -8.50   16.56
+   SE     0.0640     0.8259     0.8287     0.0254     0.2153   -8.50   16.56
+   SE     0.1031     0.6603     0.7394     0.0205     0.1697   -8.50   16.56
+   SE     0.0644     0.3978     0.2514     0.0210     0.1517   -8.50   16.56
+   SE     0.0029     0.4751     0.4067     0.0190     0.1668   -8.50   16.56
+   SE     0.0495     0.1606     0.7703     0.0233     0.2173   -8.50   16.56
+   SE     0.0773     0.7063     0.5022     0.0225     0.1991   -8.50   16.56
+   SE    -0.0012     0.0619     0.1060     0.0235     0.2218   -8.50   16.56
+   SE     0.1098     0.6242     0.7417     0.0193     0.1717   -8.50   16.56
+   SE     0.1064     0.3293     0.4317     0.0173     0.1651   -8.50   16.56
+   SE     0.0191     0.5828     0.9037     0.0155     0.0942   -8.50   16.56
+   SE     0.0552     0.8901     0.9304     0.0156     0.1280   -8.50   16.56
+   SE     0.0471     0.1753     0.3993     0.0121     0.0375   -8.50   16.56
+   SE     0.1177     0.6535     0.9562     0.0199     0.1655   -8.50   16.56
+   SE     0.0776     0.2105     0.5643     0.0163     0.1415   -8.50   16.56
+   SE     0.0820     0.1291     0.7232     0.0148     0.1820   -8.50   16.56
+   SE     0.0626     0.2149     0.5512     0.0152     0.1554   -8.50   16.56
+   SE     0.0520     0.1481     0.4083     0.0136     0.1568   -8.50   16.56
+   SE     0.0739     0.8067     0.0143     0.0190     0.2304   -8.50   16.56
+   SE     0.0349     0.9160     0.9342     0.0131     0.1426   -8.50   16.56
+   SE     0.0433     0.3614     0.2620     0.0163     0.1578   -8.50   16.56
+   SE     0.0864     0.2999     0.3355     0.0132     0.1556   -8.50   16.56
+   SE     0.0279     0.5772     0.2224     0.0192     0.2257   -8.50   16.56
+   SE     0.1191     0.1502     0.7306     0.0092     0.1498   -8.50   16.56
+   SE     0.1237     0.8594     0.6571     0.0108     0.1850   -8.50   16.56
+   SE     0.0090     0.1837     0.6969     0.0124     0.1658   -8.50   16.56
+   SE     0.0422     0.5583     0.9767     0.0126     0.1226   -8.50   16.56
+   SE     0.0115     0.1364     0.7511     0.0149     0.2029   -8.50   16.56
+   SE     0.0159     0.0769     0.3287     0.0308     0.1775   -8.50   16.56
+   SE     0.0998     0.7715     0.0905     0.0167     0.2111   -8.50   16.56
+   SE     0.0057     0.4643     0.8186     0.0103     0.1511   -8.50   16.56
+   SE     0.0530     0.9352     0.9953     0.0146     0.2250   -8.50   16.56
+   SE     0.0625     0.1658     0.5367     0.0124     0.1873   -8.50   16.56
+   SE     0.0259     0.4608     0.7317     0.0108     0.0936   -8.50   16.56
+   SE     0.0313     0.5976     0.2152     0.0100     0.1466   -8.50   16.56
+   SE     0.0518     0.2433     0.3433     0.0078     0.1473   -8.50   16.56
+   SE     0.0119     0.4579     0.6697     0.0069     0.1028   -8.50   16.56
+
+First  10  reflections
+   H    K    L        FWT       PHWT        FOM
+  35    5   18   241.0117   -38.0635     0.9945
+  35    4    7   218.2239    34.4089     0.9932
+  35    2   10   211.3978   150.2016     0.9930
+  35    1    6   226.6679  -131.6914     0.9941
+  34    6   23   182.2527   -99.4012     0.9951
+  34    6   15   212.9622   104.9561     0.9929
+  34    6    5   176.8066   110.1597     0.9930
+  34    6    2   236.4549  -173.8101     0.9904
+  34    5   22   250.8028    41.3986     0.9942
+  34    5   17   226.2093    75.8322     0.9956
+******************************************************************************************
+*** Phaser Module: PREPROCESSOR                                                  2.8.3 ***
+******************************************************************************************
+
+ATOM CRYSTAL crystal SET
+ATOM CRYSTAL crystal TYPE SE FRAC  0.9154  0.2853  0.0578 OCC 0.44 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.9835  0.8506  0.0764 OCC 0.60 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.5089  0.1741  0.0920 OCC 0.45 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.8739  0.4517  0.0036 OCC 0.48 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.5948  0.4871  0.0749 OCC 0.24 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.4460  0.6037  0.0053 OCC 0.52 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.6141  0.5174  0.1089 OCC 0.31 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.8892  0.4650  0.0680 OCC 0.23 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0305  0.8652  0.0111 OCC 0.25 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0519  0.1302  0.3569 OCC 0.32 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0352  0.7527  0.7140 OCC 0.23 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0199  0.4554  0.3877 OCC 0.24 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0258  0.3104  0.6615 OCC 0.36 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1043  0.6249  0.5755 OCC 0.15 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0100  0.8303  0.7545 OCC 0.16 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0191  0.1506  0.5716 OCC 0.35 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0834  0.7114  0.5637 OCC 0.34 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0218  0.6180  0.8976 OCC 0.13 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0234  0.2706  0.6470 OCC 0.14 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0101  0.2743  0.2594 OCC 0.15 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1101  0.3726  0.3280 OCC 0.16 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0642  0.8240  0.8284 OCC 0.15 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1043  0.6615  0.7400 OCC 0.14 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0648  0.3984  0.2514 OCC 0.16 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0021  0.4768  0.4063 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0476  0.1600  0.7701 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0795  0.7047  0.5017 OCC 0.12 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0010  0.0602  0.1050 OCC 0.15 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1113  0.6265  0.7412 OCC 0.12 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1054  0.3278  0.4310 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0190  0.5834  0.9045 OCC 0.12 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0562  0.8873  0.9293 OCC 0.10 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0459  0.1782  0.3991 OCC 0.09 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1181  0.6542  0.9566 OCC 0.14 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0769  0.2100  0.5631 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0739  0.1268  0.7223 OCC 0.09 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0609  0.2152  0.5517 OCC 0.09 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0947  0.7039  0.5595 OCC 0.35 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0530  0.1477  0.4069 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0744  0.8055  0.0152 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0367  0.9138  0.9340 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0442  0.3603  0.2634 OCC 0.09 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0860  0.3048  0.3357 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0285  0.5734  0.2210 OCC 0.14 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1296  0.1548  0.7372 OCC 0.07 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1207  0.8577  0.6565 OCC 0.06 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0139  0.1822  0.6973 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0419  0.5598  0.9779 OCC 0.09 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0110  0.1389  0.7516 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0169  0.0746  0.3291 OCC 0.26 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0258  0.4620  0.7322 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.1017  0.7708  0.0904 OCC 0.11 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0020  0.4655  0.8181 OCC 0.07 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0500  0.9377  0.9963 OCC 0.09 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+ATOM CRYSTAL crystal TYPE SE FRAC  0.0594  0.1687  0.5359 OCC 0.08 ISOB 0.00 FIXX OFF FIXO OFF FIXB OFF BSWAP OFF
+CELL 57.615 57.615 150.808 90 90 90
+CRYSTAL crystal DATASET crystal LABIN  F(+) = F(+) SIGF(+) = SIGF(+)  F(-) = F(-) SIGF(-) = SIGF(-)
+HAND OFF
+HKLOUT ON
+KEYWORDS OFF
+LLGCOMPLETE SCATTERER SE
+MUTE ON
+PARTIAL  HKLIN "AutoSol_run_1_/TEMP0/add_classic_denmod_3_mapped.mtz" F = FWT PHI = PHWT RMS 1.5
+ROOT "AutoSol_run_1_/TEMP0/phaser_mtz"
+SCATTERING TYPE SE FP=-8.5 FDP=4.5 FIX EDGE
+
+SPACEGROUP P 41 21 2
+WAVELENGTH 0.978
+XYZOUT ON
+
+CPU Time: 0 days 0 hrs 0 mins 1.59 secs (      1.59 secs)
+Finished: Sun Oct 29 22:02:43 2023
+
+******************************************************************************************
+*** Phaser Module: SINGLE-WAVELENGTH ANOMALOUS DISPERSION                        2.8.3 ***
+******************************************************************************************
+
+** There is 1 SAD atom refinement set
+
+   Refined Anisotropy Parameters
+   -----------------------------
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         0.004              0.9991  -0.0416  -0.0000
+         0.004              0.0416   0.9991  -0.0000
+        -0.007              0.0000   0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):   0.011
+
+   Scattering edges
+   ----------------
+   Wavelength = 0.978
+   Atomtype "SE" is near an edge
+      Atomtype "SE" fdp is refined
+
+------------
+ENANTIOMORPH
+------------
+
+** Requested refinement in original enantiomorph only
+
+----------------
+ATOM SET #1 OF 1
+----------------
+
+   Space Group Name (Number): P 41 21 2 (92)
+
+   INITIAL PHASING STATISTICS
+   --------------------------
+   Atom Parameters: 55 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1     0.915   0.285   0.058   0.440    11.0 (  ---- ) 1 SE
+   #2     0.984   0.851   0.076   0.600    11.0 (  ---- ) 1 SE
+   #3     0.509   0.174   0.092   0.450    11.0 (  ---- ) 1 SE
+   #4     0.874   0.452   0.004   0.480    11.0 (  ---- ) 1 SE
+   #5     0.595   0.487   0.075   0.240    11.0 (  ---- ) 1 SE
+   #6     0.446   0.604   0.005   0.520    11.0 (  ---- ) 1 SE
+   #7     0.614   0.517   0.109   0.310    11.0 (  ---- ) 1 SE
+   #8     0.889   0.465   0.068   0.230    11.0 (  ---- ) 1 SE
+   #9     0.031   0.865   0.011   0.250    11.0 (  ---- ) 1 SE
+   #10    0.052   0.130   0.357   0.320    11.0 (  ---- ) 1 SE
+   #11    0.035   0.753   0.714   0.230    11.0 (  ---- ) 1 SE
+   #12    0.020   0.455   0.388   0.240    11.0 (  ---- ) 1 SE
+   #13    0.026   0.310   0.661   0.360    11.0 (  ---- ) 1 SE
+   #14    0.104   0.625   0.575   0.150    11.0 (  ---- ) 1 SE
+   #15    0.010   0.830   0.755   0.160    11.0 (  ---- ) 1 SE
+   #16    0.019   0.151   0.572   0.350    11.0 (  ---- ) 1 SE
+   #17    0.083   0.711   0.564   0.340    11.0 (  ---- ) 1 SE
+   #18    0.022   0.618   0.898   0.130    11.0 (  ---- ) 1 SE
+   #19    0.023   0.271   0.647   0.140    11.0 (  ---- ) 1 SE
+   #20    0.010   0.274   0.259   0.150    11.0 (  ---- ) 1 SE
+   #21    0.110   0.373   0.328   0.160    11.0 (  ---- ) 1 SE
+   #22    0.064   0.824   0.828   0.150    11.0 (  ---- ) 1 SE
+   #23    0.104   0.661   0.740   0.140    11.0 (  ---- ) 1 SE
+   #24    0.065   0.398   0.251   0.160    11.0 (  ---- ) 1 SE
+   #25    0.002   0.477   0.406   0.110    11.0 (  ---- ) 1 SE
+   #26    0.048   0.160   0.770   0.110    11.0 (  ---- ) 1 SE
+   #27    0.079   0.705   0.502   0.120    11.0 (  ---- ) 1 SE
+   #28    0.001   0.060   0.105   0.150    11.0 (  ---- ) 1 SE
+   #29    0.111   0.626   0.741   0.120    11.0 (  ---- ) 1 SE
+   #30    0.105   0.328   0.431   0.110    11.0 (  ---- ) 1 SE
+   #31    0.019   0.583   0.904   0.120    11.0 (  ---- ) 1 SE
+   #32    0.056   0.887   0.929   0.100    11.0 (  ---- ) 1 SE
+   #33    0.046   0.178   0.399   0.090    11.0 (  ---- ) 1 SE
+   #34    0.118   0.654   0.957   0.140    11.0 (  ---- ) 1 SE
+   #35    0.077   0.210   0.563   0.110    11.0 (  ---- ) 1 SE
+   #36    0.074   0.127   0.722   0.090    11.0 (  ---- ) 1 SE
+   #37    0.061   0.215   0.552   0.090    11.0 (  ---- ) 1 SE
+   #38    0.095   0.704   0.559   0.350    11.0 (  ---- ) 1 SE
+   #39    0.053   0.148   0.407   0.080    11.0 (  ---- ) 1 SE
+   #40    0.074   0.806   0.015   0.110    11.0 (  ---- ) 1 SE
+   #41    0.037   0.914   0.934   0.080    11.0 (  ---- ) 1 SE
+   #42    0.044   0.360   0.263   0.090    11.0 (  ---- ) 1 SE
+   #43    0.086   0.305   0.336   0.080    11.0 (  ---- ) 1 SE
+   #44    0.028   0.573   0.221   0.140    11.0 (  ---- ) 1 SE
+   #45    0.130   0.155   0.737   0.070    11.0 (  ---- ) 1 SE
+   #46    0.121   0.858   0.657   0.060    11.0 (  ---- ) 1 SE
+   #47    0.014   0.182   0.697   0.080    11.0 (  ---- ) 1 SE
+   #48    0.042   0.560   0.978   0.090    11.0 (  ---- ) 1 SE
+   #49    0.011   0.139   0.752   0.110    11.0 (  ---- ) 1 SE
+   #50    0.017   0.075   0.329   0.260    11.0 (  ---- ) 1 SE
+   #51    0.026   0.462   0.732   0.080    11.0 (  ---- ) 1 SE
+   #52    0.102   0.771   0.090   0.110    11.0 (  ---- ) 1 SE
+   #53    0.002   0.465   0.818   0.070    11.0 (  ---- ) 1 SE
+   #54    0.050   0.938   0.996   0.090    11.0 (  ---- ) 1 SE
+   #55    0.059   0.169   0.536   0.080    11.0 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE         4.5000        -8.5000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  31.65- 1.55  27348 0.508   4575 0.206   3439 0.156  35362 0.435
+
+   Log-Likelihood = -45865
+   R-factor =  71.2
+
+   REFINEMENT #1
+   -------------
+   Log-Likelihood = 11252
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #1: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   Edited atoms list:
+   #        X      Y      Z    occupancy     Atom
+   17   0.087  0.706  0.562       0.0014       SE  Anisotropic
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 1
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #1: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      12.6946       0.2113       0.0010       0.0211
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   17   0.087  0.706  0.562       0.0014       SE  Rejected
+   32   0.056  0.890  0.930       0.0190       SE  Rejected
+   33   0.048  0.174  0.400       0.0192       SE  Rejected
+   36   0.080  0.129  0.723       0.0144       SE  Rejected
+   38   0.123  0.681  0.554       0.0010       SE  Rejected
+   39   0.051  0.147  0.408       0.0154       SE  Rejected
+   41   0.036  0.915  0.934       0.0147       SE  Rejected
+   43   0.087  0.299  0.335       0.0168       SE  Rejected
+   44   0.028  0.580  0.222       0.0179       SE  Rejected
+   45   0.121  0.153  0.731       0.0117       SE  Rejected
+   46   0.124  0.859  0.657       0.0138       SE  Rejected
+   47   0.009  0.184  0.697       0.0163       SE  Rejected
+   48   0.042  0.560  0.976       0.0121       SE  Rejected
+   49   0.012  0.137  0.751       0.0205       SE  Rejected
+   51  -0.031  0.477  0.739       0.0026       SE  Rejected
+   53   0.004  0.465  0.819       0.0149       SE  Rejected
+   54   0.054  0.935  0.995       0.0167       SE  Rejected
+   55   0.063  0.166  0.536       0.0167       SE  Rejected
+
+   Number of old atoms with occupancy less than cut-off = 18
+      Number of these previously restored (therefore not deleted) = 0
+   Number of old atoms identified for deletion = 18
+
+   SUB-STRUCTURE COMPLETION #1
+   ---------------------------
+** Substructure completion requested
+
+   Make Sites Anisotropic
+   ----------------------
+   Making 1 atoms in current atom list of 55 anisotropic
+   Anisotropic Atom #'s: 17 
+
+   Delete Low Occupancy Sites
+   --------------------------
+   Deleting 18 atoms in current atom list of 55
+   Deleted Atom #'s: 17 32 33 36 38 39 41 43 44 45 46 47 48 49 51 53 54 55 
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #2
+   -------------
+   Log-Likelihood = 10744
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #2: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   Edited atoms list:
+   #        X      Y      Z    occupancy     Atom
+   17   0.087  0.706  0.562       0.0345       SE  Restored 
+   32   0.056  0.890  0.930       0.0345       SE  Restored 
+   33   0.048  0.174  0.400       0.0345       SE  Restored 
+   36   0.080  0.129  0.723       0.0345       SE  Restored 
+   39   0.051  0.147  0.408       0.0345       SE  Restored 
+   41   0.036  0.915  0.934       0.0345       SE  Restored 
+   43   0.087  0.299  0.335       0.0345       SE  Restored 
+   44   0.028  0.580  0.222       0.0345       SE  Restored 
+   45   0.121  0.153  0.731       0.0345       SE  Restored 
+   46   0.124  0.859  0.657       0.0345       SE  Restored 
+   47   0.009  0.184  0.697       0.0345       SE  Restored 
+   48   0.042  0.560  0.976       0.0345       SE  Restored 
+   49   0.012  0.137  0.751       0.0345       SE  Restored 
+   53   0.004  0.465  0.819       0.0345       SE  Restored 
+   54   0.054  0.935  0.995       0.0345       SE  Restored 
+   55   0.063  0.166  0.536       0.0345       SE  Restored 
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 16
+
+   SUB-STRUCTURE ANALYSIS #2: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.8560       0.1523       0.0144       0.0152
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   31   0.019  0.583  0.904       0.0144       SE  Rejected
+
+   Number of old atoms with occupancy less than cut-off = 1
+      Number of these previously restored (therefore not deleted) = 0
+   Number of old atoms identified for deletion = 1
+
+   SUB-STRUCTURE COMPLETION #2
+   ---------------------------
+** Substructure completion requested
+
+   Restore Sites
+   -------------
+   Restoring 16 atoms in current atom list of 55
+   Restored Atoms Atomtype/Z-score (*=best)
+   #  17         SE/7.49*  
+   #  32         SE/10.59*  
+   #  33         SE/11.67*  
+   #  36         SE/10.14*  
+   #  39         SE/8.99*  
+   #  41         SE/8.40*  
+   #  43         SE/9.99*  
+   #  44         SE/11.24*  
+   #  45         SE/6.56*  
+   #  46         SE/7.29*  
+   #  47         SE/9.00*  
+   #  48         SE/9.49*  
+   #  49         SE/9.16*  
+   #  53         SE/7.33*  
+   #  54         SE/8.42*  
+   #  55         SE/8.42*  
+
+   Delete Low Occupancy Sites
+   --------------------------
+   Deleting 1 atoms in current atom list of 55
+   Deleted Atom #'s: 31 
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #3
+   -------------
+   Log-Likelihood = 11434
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #3: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   Peaks over Z-score cutoff
+   #        X      Y      Z Z-scr  M
+   1    0.027  0.461  0.732   9.3  1
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   Edited atoms list:
+   #        X      Y      Z    occupancy     Atom
+   31   0.019  0.583  0.904       0.0286       SE  Restored 
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 1
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 1
+
+   SUB-STRUCTURE ANALYSIS #3: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.5586       0.1414       0.0089       0.0141
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   33   0.048  0.174  0.399       0.0128       SE  (Previously restored)
+   36   0.082  0.129  0.723       0.0131       SE  (Previously restored)
+   39   0.051  0.148  0.408       0.0131       SE  (Previously restored)
+   41   0.035  0.916  0.934       0.0124       SE  (Previously restored)
+   43   0.087  0.299  0.335       0.0131       SE  (Previously restored)
+   45   0.119  0.152  0.731       0.0089       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0108       SE  (Previously restored)
+   47   0.009  0.184  0.697       0.0122       SE  (Previously restored)
+   48   0.042  0.560  0.976       0.0113       SE  (Previously restored)
+   53   0.004  0.466  0.819       0.0103       SE  (Previously restored)
+   55   0.063  0.166  0.537       0.0125       SE  (Previously restored)
+
+   Number of old atoms with occupancy less than cut-off = 11
+      Number of these previously restored (therefore not deleted) = 11
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #3
+   ---------------------------
+** Substructure completion requested
+
+   Restore Sites
+   -------------
+   Restoring 1 atoms in current atom list of 55
+   Restored Atoms Atomtype/Z-score (*=best)
+   #  31         SE/13.84*  
+
+   Add Sites Identified from Log-Likelihood Gradient Map(s)
+   --------------------------------------------------------
+   1 atom after pruning
+   #        X      Y      Z    occupancy Atom Z-score
+   56   0.027  0.461  0.732       0.0286   SE     9.3
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #4
+   -------------
+   Log-Likelihood = 11627
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #4: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   Peaks over Z-score cutoff
+   #        X      Y      Z Z-scr  M
+   1    0.032  0.600  0.214   7.0  1
+   2    0.052  0.243  0.343   6.2  1
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 2
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #4: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.3131       0.1348       0.0092       0.0135
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   33   0.047  0.175  0.399       0.0127       SE  (Previously restored)
+   41   0.035  0.916  0.934       0.0129       SE  (Previously restored)
+   43   0.086  0.300  0.335       0.0132       SE  (Previously restored)
+   45   0.119  0.150  0.731       0.0092       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0109       SE  (Previously restored)
+   47   0.009  0.184  0.697       0.0126       SE  (Previously restored)
+   48   0.042  0.558  0.977       0.0127       SE  (Previously restored)
+   53   0.005  0.464  0.819       0.0107       SE  (Previously restored)
+   55   0.062  0.166  0.537       0.0127       SE  (Previously restored)
+   56   0.026  0.461  0.732       0.0119       SE  Rejected
+
+   Number of old atoms with occupancy less than cut-off = 10
+      Number of these previously restored (therefore not deleted) = 9
+   Number of old atoms identified for deletion = 1
+
+   SUB-STRUCTURE COMPLETION #4
+   ---------------------------
+** Substructure completion requested
+
+   Delete Low Occupancy Sites
+   --------------------------
+   Deleting 1 atoms in current atom list of 56
+   Deleted Atom #'s: 56 
+
+   Add Sites Identified from Log-Likelihood Gradient Map(s)
+   --------------------------------------------------------
+   2 atoms after pruning
+   #        X      Y      Z    occupancy Atom Z-score
+   57   0.032  0.600  0.214       0.0284   SE     7.0
+   58   0.052  0.243  0.343       0.0284   SE     6.2
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #5
+   -------------
+   Log-Likelihood = 11649
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #5: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   Edited atoms list:
+   #        X      Y      Z    occupancy     Atom
+   56   0.026  0.461  0.732       0.0276       SE  Restored 
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 1
+
+   SUB-STRUCTURE ANALYSIS #5: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.6093       0.1280       0.0080       0.0128
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   33   0.047  0.175  0.399       0.0124       SE  (Previously restored)
+   45   0.119  0.150  0.730       0.0092       SE  (Previously restored)
+   46   0.123  0.859  0.657       0.0108       SE  (Previously restored)
+   47   0.009  0.184  0.697       0.0122       SE  (Previously restored)
+   48   0.042  0.559  0.976       0.0110       SE  (Previously restored)
+   53   0.005  0.464  0.819       0.0103       SE  (Previously restored)
+   55   0.062  0.166  0.537       0.0125       SE  (Previously restored)
+   57   0.032  0.599  0.215       0.0094       SE  Rejected
+   58   0.052  0.243  0.343       0.0080       SE  Rejected
+
+   Number of old atoms with occupancy less than cut-off = 9
+      Number of these previously restored (therefore not deleted) = 7
+   Number of old atoms identified for deletion = 2
+
+   SUB-STRUCTURE COMPLETION #5
+   ---------------------------
+** Substructure completion requested
+
+   Restore Sites
+   -------------
+   Restoring 1 atoms in current atom list of 58
+   Restored Atoms Atomtype/Z-score (*=best)
+   #  56         SE/9.33*  
+
+   Delete Low Occupancy Sites
+   --------------------------
+   Deleting 2 atoms in current atom list of 58
+   Deleted Atom #'s: 57 58 
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #6
+   -------------
+   Log-Likelihood = 11656
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #6: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   Edited atoms list:
+   #        X      Y      Z    occupancy     Atom
+   57   0.032  0.599  0.215       0.0283       SE  Restored 
+   58   0.052  0.243  0.343       0.0283       SE  Restored 
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 2
+
+   SUB-STRUCTURE ANALYSIS #6: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.5223       0.1236       0.0091       0.0124
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   33   0.047  0.175  0.399       0.0123       SE  (Previously restored)
+   45   0.119  0.150  0.731       0.0091       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0108       SE  (Previously restored)
+   53   0.005  0.464  0.819       0.0104       SE  (Previously restored)
+   56   0.026  0.461  0.732       0.0113       SE  (Previously restored)
+
+   Number of old atoms with occupancy less than cut-off = 5
+      Number of these previously restored (therefore not deleted) = 5
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #6
+   ---------------------------
+** Substructure completion requested
+
+   Restore Sites
+   -------------
+   Restoring 2 atoms in current atom list of 58
+   Restored Atoms Atomtype/Z-score (*=best)
+   #  57         SE/6.90*  
+   #  58         SE/6.12*  
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #7
+   -------------
+   Log-Likelihood = 11709
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #7: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   Peaks over Z-score cutoff
+   #        X      Y      Z Z-scr  M
+   1    0.012  0.458  0.670   6.1  1
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 1
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #7: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.3965       0.1204       0.0078       0.0120
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   45   0.119  0.150  0.731       0.0094       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0110       SE  (Previously restored)
+   53   0.006  0.464  0.819       0.0104       SE  (Previously restored)
+   56   0.026  0.461  0.732       0.0110       SE  (Previously restored)
+   57   0.031  0.599  0.215       0.0091       SE  (Previously restored)
+   58   0.052  0.243  0.343       0.0078       SE  (Previously restored)
+
+   Number of old atoms with occupancy less than cut-off = 6
+      Number of these previously restored (therefore not deleted) = 6
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #7
+   ---------------------------
+** Substructure completion requested
+
+   Add Sites Identified from Log-Likelihood Gradient Map(s)
+   --------------------------------------------------------
+   1 atom after pruning
+   #        X      Y      Z    occupancy Atom Z-score
+   59   0.012  0.458  0.670       0.0278   SE     6.1
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #8
+   -------------
+   Log-Likelihood = 11736
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #8: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #8: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.6539       0.1159       0.0073       0.0116
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   45   0.119  0.150  0.731       0.0092       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0108       SE  (Previously restored)
+   53   0.006  0.464  0.819       0.0103       SE  (Previously restored)
+   56   0.026  0.461  0.732       0.0109       SE  (Previously restored)
+   57   0.031  0.598  0.215       0.0095       SE  (Previously restored)
+   58   0.052  0.243  0.343       0.0078       SE  (Previously restored)
+   59   0.012  0.458  0.670       0.0073       SE  Rejected
+
+   Number of old atoms with occupancy less than cut-off = 7
+      Number of these previously restored (therefore not deleted) = 6
+   Number of old atoms identified for deletion = 1
+
+   SUB-STRUCTURE COMPLETION #8
+   ---------------------------
+** Substructure completion requested
+
+   Delete Low Occupancy Sites
+   --------------------------
+   Deleting 1 atoms in current atom list of 59
+   Deleted Atom #'s: 59 
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #9
+   -------------
+   Log-Likelihood = 11718
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #9: LLG MAPS
+   -----------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   Edited atoms list:
+   #        X      Y      Z    occupancy     Atom
+   59   0.012  0.458  0.670       0.0274       SE  Restored 
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 1
+
+   SUB-STRUCTURE ANALYSIS #9: WEAK SITES
+   -------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.6437       0.1137       0.0077       0.0114
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   45   0.119  0.150  0.731       0.0093       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0108       SE  (Previously restored)
+   53   0.006  0.464  0.819       0.0102       SE  (Previously restored)
+   56   0.026  0.461  0.732       0.0107       SE  (Previously restored)
+   57   0.031  0.598  0.215       0.0097       SE  (Previously restored)
+   58   0.052  0.243  0.343       0.0077       SE  (Previously restored)
+
+   Number of old atoms with occupancy less than cut-off = 6
+      Number of these previously restored (therefore not deleted) = 6
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #9
+   ---------------------------
+** Substructure completion requested
+
+   Restore Sites
+   -------------
+   Restoring 1 atoms in current atom list of 59
+   Restored Atoms Atomtype/Z-score (*=best)
+   #  59         SE/6.07*  
+
+** Substructure completion has NOT converged
+
+   REFINEMENT #10
+   --------------
+   Log-Likelihood = 11739
+   R-factor =  11.0
+
+   SUB-STRUCTURE ANALYSIS #10: LLG MAPS
+   ------------------------------------
+** 1 gradient map will be calculated
+**    for atom type: SE
+
+   Identify New Atoms for Addition (SE)
+   ------------------------------------
+
+   No new atoms identified
+
+   Identify Old Atoms for Editing (SE)
+   -----------------------------------
+   Old atoms edited if:
+      peak < 1.11A from a previously deleted atom will resurrect the old atom
+      peak or hole < 1.11A from an old atom will turn it anisotropic
+
+   No atoms for editing
+
+   Summary (SE)
+   ------------
+   Number of new atoms identified this cycle = 0
+   Number of old isotropic atoms identified as anisotropic = 0
+   Number of old atoms previously identified for restoration = 0
+
+   SUB-STRUCTURE ANALYSIS #10: WEAK SITES
+   --------------------------------------
+
+   Identify Old Atoms for Deletion
+   -------------------------------
+   Low occupancy sites identified for deletion.
+   Minimum occupancy depends on scattering type f"
+   Atoms previously restored are not deleted, to prevent cycling
+
+    Atom           f"      max occ      min occ   cutoff occ
+      SE      16.5646       0.1122       0.0069       0.0112
+
+   Deleted atoms list:
+   #        X      Y      Z    occupancy     Atom
+   45   0.119  0.150  0.731       0.0092       SE  (Previously restored)
+   46   0.124  0.859  0.657       0.0108       SE  (Previously restored)
+   53   0.006  0.464  0.819       0.0103       SE  (Previously restored)
+   56   0.026  0.461  0.732       0.0108       SE  (Previously restored)
+   57   0.031  0.598  0.215       0.0100       SE  (Previously restored)
+   58   0.052  0.243  0.343       0.0078       SE  (Previously restored)
+   59   0.012  0.458  0.670       0.0069       SE  (Previously restored)
+
+   Number of old atoms with occupancy less than cut-off = 7
+      Number of these previously restored (therefore not deleted) = 7
+   Number of old atoms identified for deletion = 0
+
+   SUB-STRUCTURE COMPLETION #10
+   ----------------------------
+** Substructure completion requested
+** Substructure completion has converged
+
+   FINAL PHASING STATISTICS
+   ------------------------
+   Atom Parameters: 57 atoms in list
+          X       Y       Z       O         B    (AnisoB) M Atomtype
+   #1     0.914   0.288   0.060   0.112    10.9 (  ---- ) 1 SE
+   #2     0.984   0.851   0.076   0.089     7.7 (  ---- ) 1 SE
+   #3     0.509   0.173   0.092   0.063    14.9 (  ---- ) 1 SE
+   #4     0.874   0.451   0.004   0.069    11.7 (  ---- ) 1 SE
+   #5     0.595   0.486   0.075   0.035    10.7 (  ---- ) 1 SE
+   #6     0.447   0.604   0.005   0.078    25.7 (  ---- ) 1 SE
+   #7     0.614   0.517   0.109   0.048    14.5 (  ---- ) 1 SE
+   #8     0.890   0.466   0.068   0.034     8.9 (  ---- ) 1 SE
+   #9     0.031   0.863   0.011   0.039    19.6 (  ---- ) 1 SE
+   #10    0.052   0.131   0.357   0.049    16.0 (  ---- ) 1 SE
+   #11    0.035   0.752   0.714   0.033    13.2 (  ---- ) 1 SE
+   #12    0.020   0.455   0.388   0.031    14.6 (  ---- ) 1 SE
+   #13    0.024   0.311   0.661   0.054    20.4 (  ---- ) 1 SE
+   #14    0.104   0.626   0.576   0.026    14.7 (  ---- ) 1 SE
+   #15    0.009   0.830   0.754   0.019    10.0 (  ---- ) 1 SE
+   #16    0.020   0.151   0.572   0.048    11.0 (  ---- ) 1 SE
+   #17    0.086   0.711   0.563   0.054    21.4 ( +35.68) 1 SE
+   #18    0.022   0.617   0.898   0.019    10.4 (  ---- ) 1 SE
+   #19    0.022   0.270   0.648   0.025    14.9 (  ---- ) 1 SE
+   #20    0.010   0.273   0.259   0.022    11.7 (  ---- ) 1 SE
+   #21    0.110   0.371   0.327   0.025    13.2 (  ---- ) 1 SE
+   #22    0.064   0.826   0.829   0.025    17.0 (  ---- ) 1 SE
+   #23    0.103   0.660   0.739   0.021    13.4 (  ---- ) 1 SE
+   #24    0.064   0.398   0.251   0.021    12.0 (  ---- ) 1 SE
+   #25    0.003   0.475   0.407   0.019    13.2 (  ---- ) 1 SE
+   #26    0.049   0.161   0.770   0.023    17.2 (  ---- ) 1 SE
+   #27    0.077   0.706   0.502   0.023    15.7 (  ---- ) 1 SE
+   #28   -0.001   0.062   0.106   0.024    17.5 (  ---- ) 1 SE
+   #29    0.110   0.624   0.742   0.019    13.6 (  ---- ) 1 SE
+   #30    0.106   0.329   0.432   0.017    13.0 (  ---- ) 1 SE
+   #31    0.019   0.583   0.904   0.016     7.4 (  ---- ) 1 SE
+   #32    0.055   0.890   0.930   0.016    10.1 (  ---- ) 1 SE
+   #33    0.047   0.175   0.399   0.012     3.0 (  ---- ) 1 SE
+   #34    0.118   0.654   0.956   0.020    13.1 (  ---- ) 1 SE
+   #35    0.078   0.210   0.564   0.016    11.2 (  ---- ) 1 SE
+   #36    0.082   0.129   0.723   0.015    14.4 (  ---- ) 1 SE
+   #37    0.063   0.215   0.551   0.015    12.3 (  ---- ) 1 SE
+   #39    0.052   0.148   0.408   0.014    12.4 (  ---- ) 1 SE
+   #40    0.074   0.807   0.014   0.019    18.2 (  ---- ) 1 SE
+   #41    0.035   0.916   0.934   0.013    11.3 (  ---- ) 1 SE
+   #42    0.043   0.361   0.262   0.016    12.5 (  ---- ) 1 SE
+   #43    0.086   0.300   0.336   0.013    12.3 (  ---- ) 1 SE
+   #44    0.028   0.577   0.222   0.019    17.8 (  ---- ) 1 SE
+   #45    0.119   0.150   0.731   0.009    11.8 (  ---- ) 1 SE
+   #46    0.124   0.859   0.657   0.011    14.6 (  ---- ) 1 SE
+   #47    0.009   0.184   0.697   0.012    13.1 (  ---- ) 1 SE
+   #48    0.042   0.558   0.977   0.013     9.7 (  ---- ) 1 SE
+   #49    0.011   0.136   0.751   0.015    16.0 (  ---- ) 1 SE
+   #50    0.016   0.077   0.329   0.031    14.0 (  ---- ) 1 SE
+   #52    0.100   0.771   0.090   0.017    16.7 (  ---- ) 1 SE
+   #53    0.006   0.464   0.819   0.010    11.9 (  ---- ) 1 SE
+   #54    0.053   0.935   0.995   0.015    17.8 (  ---- ) 1 SE
+   #55    0.063   0.166   0.537   0.012    14.8 (  ---- ) 1 SE
+   #56    0.026   0.461   0.732   0.011     7.4 (  ---- ) 1 SE
+   #57    0.031   0.598   0.215   0.010    11.6 (  ---- ) 1 SE
+   #58    0.052   0.243   0.343   0.008    11.6 (  ---- ) 1 SE
+   #59    0.012   0.458   0.670   0.007     8.1 (  ---- ) 1 SE
+
+   Scattering Parameters:
+    Atom             f"           (f')
+      SE        16.5646        -8.5000
+
+   Figures of Merit
+   ----------------
+   Bin Resolution   Acentric     Centric      Single       Total       
+                    Number FOM   Number FOM   Number FOM   Number FOM  
+   ALL  31.65- 1.55  27371 0.942   4575 0.861   3439 0.915  35385 0.929
+
+   Final Log-Likelihood = 11739.1
+   Final R-factor =  11.0
+
+------------
+OUTPUT FILES
+------------
+
+   Output for 1 topfiles requested
+   Hand #1 of 1
+      Atom Set #1 of 1
+         Phases written to MTZ file:  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+
+   SAD Refinement Table (Unsorted)
+   -------------------------------
+   SET     SpaceGroup  FOM  Log-Likelihood Rfac  Composition
+                                                 SE   
+   #  1    P 41 21 2  0.929          11739 11.0  57   
+   -------
+
+   SAD Refinement Table (Sorted)
+   -----------------------------
+   SET     SpaceGroup  FOM  Log-Likelihood Rfac  Composition
+                                                 SE   
+   #  1    P 41 21 2  0.929          11739 11.0  57   
+   -------
+
+CPU Time: 0 days 0 hrs 7 mins 6.71 secs (    426.71 secs)
+Finished: Sun Oct 29 22:09:49 2023
+
+CPU Time: 0 days 0 hrs 7 mins 6.71 secs (    426.71 secs)
+Finished: Sun Oct 29 22:09:49 2023
+
+

@@ -1,0 +1,341 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: ECALC            version 8.0.012 :         ##
+ ###############################################################
+ User: fuxingke  Run date: 15/10/2023 Run time: 20:01:51 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: f2mtz.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown151023
+             47.4760   48.1850  153.0660   90.0000   90.0000   90.0000
+             0.00000
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 5179
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ From f2mtz 15/10/2023 20:01:51                                                  
+
+ * Column Labels :
+
+ H K L FA SIGFA ALPHA
+
+ * Column Types :
+
+ H H H F Q P
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.4760   48.1850  153.0660   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00092    0.15072     (     33.022 -      2.576 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+ Data line--- LABI DPH=FA SIGDPH=SIGFA
+ Data line--- LABO E=EA SIGE=SIGEA
+
+ *** Program options from keywords: 
+
+   Exclude reflections if:
+
+   Differences are NOT corrected for SIGMA component
+   i.e. the difference is taken as the abs(DIFF_obs)
+
+>>>>>> CCP4 library signal mtz:File column type different from type expected by program (Error)
+	 raised in ccp4_lrassn <<<<<<
+   From ccp4_lrassn: expected type D does not match file type F for column FA
+
+ Anomalous difference used to generate Es - no centrics included
+
+
+                                                                                          
+
+
+
+
+ SPACE GROUP         =   19  P 21 21 21
+
+ MAX RESOLUTION      =     2.576
+
+ REFLNS/SHELL        =       200
+
+ NO OF REFLNS WANTED =      5179
+
+
+ Data line--- LABO E=EA SIGE=SIGEA
+
+ $TEXT:Number and range of reflections: $$ comment $$ 
+    5179 REFLNS (Excluding missing ones),  MAX F =     9999.
+
+ MIN, MAX S =    0.0009    0.1507     RESOLUTION LIMITS =    33.022     2.576
+ $$
+
+ checking del sigp sigh sigcut     0.0000         0.0000         0.0000         0.0000         0.0000    
+
+
+
+
+ Number of reflections considered            :    5179
+ Number of reflections rejected (> DEL)      :       0
+ Number of reflections rejected (Mod DEL < 0):       0
+ Number of reflections rejected (FP<SIGCUT)  :       0
+ Number of reflections rejected (FP>FPMAX)   :       0
+ Number of reflections rejected (FPH<SIGCUT) :       0
+ Number of reflections rejected (FPH>FPHMAX) :       0
+
+
+
+    SHELL   NO OF REFLS   RESOLUTION    MEAN DSTAR^3     MEAN F^2    SMOOTHED F^2    MEAN E^2-1     MEAN(E^2-1)^2
+
+        1          1188         7.60        0.001152     7557164.        6877482.         0.099             2.654
+        2          1340         6.05        0.003402     6384460.        6840998.        -0.061             1.500
+        3          1364         5.28        0.005651     6815248.        6426774.         0.055             1.891
+        4          1364         4.80        0.007901     5950378.        6294009.        -0.053             1.625
+        5          1388         4.46        0.010150     6232035.        5931524.         0.047             2.506
+        6          1312         4.20        0.012400     5488030.        5783218.        -0.047             1.573
+        7          1336         3.99        0.014649     5703442.        5478554.         0.034             2.723
+        8          1344         3.81        0.016898     5171237.        5668786.        -0.083             1.496
+        9          1208         3.67        0.019148     6368545.        5469743.         0.162             2.448
+       10          1196         3.54        0.021397     4594759.        5248853.        -0.120             1.488
+       11          1040         3.43        0.023647     4951232.        4840334.         0.013             1.928
+       12          1096         3.33        0.025896     4968009.        4997608.        -0.002             1.975
+       13          1004         3.24        0.028146     5088728.        4919258.         0.039             2.029
+       14           944         3.17        0.030395     4622332.        4614558.        -0.003             2.276
+       15           916         3.09        0.032644     4084150.        4471440.        -0.088             2.079
+       16           744         3.03        0.034894     4915751.        4446325.         0.106             2.320
+       17           636         2.97        0.037143     4235761.        4399213.        -0.028             2.022
+       18           448         2.91        0.039393     3850782.        3898771.        -0.019             3.566
+       19           308         2.86        0.041642     3295977.        3800579.        -0.135             1.153
+       20           192         2.81        0.043891     4762724.        3825786.         0.243             2.292
+       21           132         2.77        0.046141     3244914.        4060614.        -0.189             1.036
+       22            64         2.72        0.048390     4197453.        3718969.         0.103             4.414
+       23            52         2.68        0.050640     4137136.        3881280.         0.069             1.783
+       24            60         2.65        0.052889     3248372.        3865194.        -0.157             1.062
+       25            20         2.61        0.055139     5625428.        3787576.         0.463             3.287
+       26            20         2.58        0.057388     2954715.        4423607.        -0.333             0.609
+
+
+
+
+
+ Parity group      EEE      EEO      EOE      EOO      OEE      OEO      OOE      OOO
+ <E^2>            0.932    0.992    0.941    1.084    0.951    1.005    1.068    1.021
+ <(E^2-1)^2>      1.532    1.887    1.592    2.008    1.575    2.382    2.462    2.674
+ Number            2316     2316     2492     2652     2628     2680     2756     2876
+
+
+
+
+                 OBSERVED               THEORETICAL
+ AVERAGE    ACENTRIC  CENTRIC   ACENTRIC  CENTRIC  HYPERCENTRIC
+
+ E            0.798     0.000     0.886     0.798      0.718
+ E^2          1.001     0.000     1.000     1.000      1.000
+ E^3          1.602     0.000     1.329     1.596      1.916
+ E^4          3.040     0.000     2.000     3.000      4.500
+ E^5          6.608     0.000     3.323     6.383     12.260
+ E^6         16.114     0.000     6.000    15.000     37.500
+ |E^2-1|      0.968     0.000     0.736     0.968      1.145
+ |E^2-1|^2    2.037     0.000     1.000     2.000      3.500
+ |E^2-1|^3    9.690     0.000     2.000     8.000     26.000
+
+
+
+
+ $TABLE: Cumulative distribution of Es:
+ $GRAPHS: E v Fraction<E; F=AnomDiff; FA;                             :A:1,5,6,7,8: $$
+
+    E    Number>=E  Number<E  N(E)[All:Obs]  N(E)[Cen:Theor]  N(E)[Cen:Obs]  N(E)[Acen:Theor]  N(E)[Acen:Obs]
+ $$ $$
+
+   0.00    5179          0        0.000           0.000           0.000           0.000            0.000
+   0.05    4946        233        0.045           0.040           0.000           0.002            0.045
+   0.10    4748        431        0.083           0.080           0.000           0.010            0.083
+   0.15    4550        629        0.121           0.119           0.000           0.022            0.121
+   0.20    4356        823        0.159           0.159           0.000           0.039            0.159
+   0.25    4138       1041        0.201           0.197           0.000           0.061            0.201
+   0.30    3926       1253        0.242           0.236           0.000           0.086            0.242
+   0.35    3743       1436        0.277           0.274           0.000           0.115            0.277
+   0.40    3560       1619        0.313           0.311           0.000           0.148            0.313
+   0.45    3395       1784        0.344           0.347           0.000           0.183            0.344
+
+   0.50    3212       1967        0.380           0.383           0.000           0.221            0.380
+   0.55    3039       2140        0.413           0.418           0.000           0.261            0.413
+   0.60    2867       2312        0.446           0.451           0.000           0.302            0.446
+   0.65    2692       2487        0.480           0.484           0.000           0.345            0.480
+   0.70    2510       2669        0.515           0.516           0.000           0.387            0.515
+   0.75    2355       2824        0.545           0.547           0.000           0.430            0.545
+   0.80    2186       2993        0.578           0.576           0.000           0.473            0.578
+   0.85    2038       3141        0.606           0.605           0.000           0.514            0.606
+   0.90    1911       3268        0.631           0.632           0.000           0.555            0.631
+   0.95    1784       3395        0.656           0.658           0.000           0.594            0.656
+
+   1.00    1660       3519        0.679           0.683           0.000           0.632            0.679
+   1.05    1552       3627        0.700           0.706           0.000           0.668            0.700
+   1.10    1434       3745        0.723           0.729           0.000           0.702            0.723
+   1.15    1321       3858        0.745           0.750           0.000           0.734            0.745
+   1.20    1207       3972        0.767           0.770           0.000           0.763            0.767
+   1.25    1097       4082        0.788           0.789           0.000           0.790            0.788
+   1.30     998       4181        0.807           0.806           0.000           0.815            0.807
+   1.35     915       4264        0.823           0.823           0.000           0.838            0.823
+   1.40     841       4338        0.838           0.839           0.000           0.859            0.838
+   1.45     771       4408        0.851           0.853           0.000           0.878            0.851
+
+   1.50     689       4490        0.867           0.866           0.000           0.895            0.867
+   1.55     635       4544        0.877           0.879           0.000           0.910            0.877
+   1.60     574       4605        0.889           0.890           0.000           0.923            0.889
+   1.65     513       4666        0.901           0.901           0.000           0.934            0.901
+   1.70     463       4716        0.911           0.911           0.000           0.944            0.911
+   1.75     414       4765        0.920           0.920           0.000           0.953            0.920
+   1.80     358       4821        0.931           0.928           0.000           0.961            0.931
+   1.85     321       4858        0.938           0.936           0.000           0.967            0.938
+   1.90     286       4893        0.945           0.943           0.000           0.973            0.945
+   1.95     264       4915        0.949           0.949           0.000           0.978            0.949
+
+   2.00     232       4947        0.955           0.954           0.000           0.982            0.955
+   2.05     209       4970        0.960           0.960           0.000           0.985            0.960
+   2.10     178       5001        0.966           0.964           0.000           0.988            0.966
+   2.15     155       5024        0.970           0.968           0.000           0.990            0.970
+   2.20     137       5042        0.974           0.972           0.000           0.992            0.974
+   2.25     116       5063        0.978           0.976           0.000           0.994            0.978
+   2.30     106       5073        0.980           0.979           0.000           0.995            0.980
+   2.35      95       5084        0.982           0.981           0.000           0.996            0.982
+   2.40      80       5099        0.985           0.984           0.000           0.997            0.985
+   2.45      72       5107        0.986           0.986           0.000           0.998            0.986
+
+   2.50      60       5119        0.988           0.988           0.000           0.998            0.988
+   2.55      50       5129        0.990           0.989           0.000           0.999            0.990
+   2.60      42       5137        0.992           0.991           0.000           0.999            0.992
+   2.65      34       5145        0.993           0.992           0.000           0.999            0.993
+   2.70      32       5147        0.994           0.993           0.000           0.999            0.994
+   2.75      31       5148        0.994           0.994           0.000           0.999            0.994
+   2.80      27       5152        0.995           0.995           0.000           1.000            0.995
+   2.85      23       5156        0.996           0.996           0.000           1.000            0.996
+   2.90      18       5161        0.997           0.996           0.000           1.000            0.997
+   2.95      16       5163        0.997           0.997           0.000           1.000            0.997
+
+   3.00      15       5164        0.997           0.997           0.000           1.000            0.997
+ $$
+ No of reflns. written out =  5179                                                                                             
+ No of Es generated =  5179                                                                                                    
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: shelx_ecal.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown151023
+             47.4760   48.1850  153.0660   90.0000   90.0000   90.0000
+             0.00000
+
+ * Number of Columns = 11
+
+ * Number of Reflections = 5179
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FA SIGFA ALPHA FECALC EA SIGEA F2OR E2OR
+
+ * Column Types :
+
+ H H H F Q P F E Q J J
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   47.4760   48.1850  153.0660   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00092    0.15072     (     33.022 -      2.576 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 21 21 21' (number     19)
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ ECALC:  **** NORMAL TERMINATION ****
+Times: User:       0.0s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>

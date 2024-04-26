@@ -1,0 +1,31 @@
+REMARK  SitCom multi-solution consensus model
+REMARK  ===================================================================
+REMARK  consensus model seeded with solution SOL-1
+REMARK  solutions implied ............... 2
+REMARK  overall mean site distance ...... 0.277
+REMARK  sites sorted by SFOM. weights: cons=1.00 dist=0.50 occp=0.00 
+REMARK  ===================================================================
+CRYST1   57.615   57.615  150.808  90.00  90.00  90.00 P41212         
+SCALE1      0.017357 -0.000000 -0.000000        0.000000
+SCALE2      0.000000  0.017357 -0.000000        0.000000
+SCALE3      0.000000  0.000000  0.006631        0.000000
+ATOM      1 SE   SIT A   0       0.000   0.000   0.000  0.00 100.0           SE
+ATOM      2 SE   SIT A   1      16.676  -5.050  -9.098  1.00  2.5           SE
+ATOM      3 SE   SIT A   4      26.038  -7.322  -0.500  0.38  3.4           SE
+ATOM      4 SE   SIT A   2      -0.913  -8.670  11.237  0.82  5.2           SE
+ATOM      5 SE   SIT A   3      -0.702 -18.583  24.012  0.41  5.7           SE
+ATOM      6 SE   SIT A  11       1.862  -7.849   1.808  0.16  7.4           SE
+ATOM      7 SE   SIT A   9      26.767  -6.372 -10.242  0.21  7.5           SE
+ATOM      8 SE   SIT A   6      -5.096  -0.724  26.160  0.27  9.0           SE
+ATOM      9 SE   SIT A   8      -6.348   0.987  21.215  0.24 10.3           SE
+ATOM     10 SE   SIT A   7     -22.536  25.807  -0.935  0.25 11.3           SE
+ATOM     11 SE   SIT A   5      -0.000  -8.615  11.247  0.33 50.0           SE
+ATOM     12 SE   SIT A  10      -3.274  -7.779  10.895  0.17 50.0           SE
+ATOM     13 SE   SIT A  12      14.668  -2.699  -8.976  0.16 50.0           SE
+ATOM     14 SE   SIT A  13      18.085  -3.640  -7.555  0.15 50.0           SE
+ATOM     15 SE   SIT A  14      12.560  -5.915  -8.262  0.15 50.0           SE
+ATOM     16 SE   SIT A  15       0.493  -6.557  11.394  0.14 50.0           SE
+ATOM     17 SE   SIT A  16      21.238  31.835  91.619  0.58 50.0           SE
+ATOM     18 SE   SIT A  17      26.820  14.652  80.671  0.49 50.0           SE
+ATOM     19 SE   SIT A  18      25.792   1.253  92.578  0.62 50.0           SE
+END

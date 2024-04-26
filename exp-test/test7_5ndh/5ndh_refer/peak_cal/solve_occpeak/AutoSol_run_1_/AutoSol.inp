@@ -1,0 +1,60 @@
+# Input script for AutoSol
+#  Mon Oct 30 09:42:18 2023
+# 
+# Use:
+# 
+# phenix.runWizard AutoSol AutoSol_run_1_/AutoSol.inp restart 
+# 
+res_eval 0.0
+dataset_res_eval 0.0
+wavelength_list 0.9201
+mad_ha_n 6
+nproc 4
+dataset_wavelength_list 0.9201
+dataset_mad_ha_type 'BR'
+dataset_datafile_sn None
+dataset_nat_der_list None
+use_existing_datasets True
+dataset_file_type None
+dataset_log_hyss None
+solvent_fraction 0.6368
+ncs_copies 4
+dataset_read_ha None
+dataset_f_prime_list None
+dataset_f_double_prime_list None
+dataset_original_input_files None
+dataset_another_dataset None
+dataset_scaled None
+use_automatic_hyss False
+input_file_list '../../../27_5ndh_4BR_P212121/5ndh-sf.mtz'
+dataset_derscale_list None
+ha_sites_file ../pdb_CF_format_hand_format.pdb
+dataset_merge_type None
+build False
+dataset_recommended_resolution None
+dataset_wavelength_name_list None
+input_seq_file ../../../27_5ndh_4BR_P212121/rcsb_pdb_5NDH.fasta
+overallscale False
+dataset_log_combine None
+dataset_resolution 0.0
+mad_ha_type BR
+dataset_do_madbst True
+dataset_expt_type 'Auto'
+dataset_number 1
+dataset_n_ha_list None
+dataset_res_hyss None
+expt_type Auto
+dataset_hyss_or_sites_run None
+dataset_original_merge_type None
+dataset_mad_ha_n 6
+number_of_datasets 1
+do_madbst True
+dataset_overallscale False
+dataset_ha_sites_file '../pdb_CF_format_hand_format.pdb'
+dataset_inano_list None
+dataset_group_labels_list None
+dataset_input_file_list '../../../27_5ndh_4BR_P212121/5ndh-sf.mtz'
+dataset_original_file_type None
+dataset_log_scale None
+read_sites True
+resolution 0.0

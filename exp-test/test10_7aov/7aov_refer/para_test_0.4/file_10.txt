@@ -1,0 +1,498 @@
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+-0.1623   1.0783
+-0.7613   0.2601
+-0.7527   0.2723
+ 4.3678   3.5181
+ 5.6128   4.0251
+ 6.4237   5.2914
+ 5.6075   3.4904
+-0.4212   0.2560
+-0.0625      NaN
+    NaN      NaN
+    NaN      NaN
+-0.2727      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 2.8560   2.2317
+ 3.6814   2.6375
+ 5.4034   4.1725
+ 7.4957   6.1482
+    NaN      NaN
+    NaN      NaN
+-0.0341      NaN
+-0.2538      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN   0.4181
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN  -0.0488
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 0.7911   0.2405
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 1.3711   0.6605
+    NaN   0.2873
+-0.1684      NaN
+    NaN      NaN
+ 3.4466   2.3746
+ 3.4909   2.6171
+ 1.1935   1.8968
+ 5.2415   3.9452
+ 3.6638   3.1676
+    NaN   0.7925
+ 3.7751   3.2511
+ 0.2161   0.6620
+    NaN      NaN
+ 0.0397      NaN
+    NaN      NaN
+    NaN   0.2039
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 0.0818   1.0114
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+-0.2892   0.7499
+-0.0913   0.0687
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 0.2581      NaN
+ 0.1719      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 0.0461  -0.2215
+ 1.2398   2.6803
+ 1.2359   2.6854
+-1.6193   1.4494
+ 0.7476   1.7452
+ 0.7169   1.6228
+ 0.4269   0.8660
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+-0.0368      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN   0.8251
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 4.0838   4.7047
+-0.1555   1.1751
+ 3.7984   3.9666
+ 3.8074   3.9748
+ 4.0829   4.7053
+ 3.0794   2.9948
+ 1.5533   2.3032
+-0.5233  -0.4773
+ 0.2106      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+    NaN      NaN
+ 4.7127   3.6494
+ 7.4277   6.1954
+ 9.4717   7.6226
+ 6.4028   6.2595
+ 6.1256   6.2670
+ 6.2578   6.8043
+ 5.7592   6.9045
+ 8.5504   7.9419
+ 8.0608   7.7694
+ 7.4630   7.4182
+ 7.6877   7.5900
+ 7.5011   7.5754
+ 7.7194   7.6425
+ 7.1176   7.4307
+ 6.7631   7.3503
+ 7.1567   7.5394
+ 7.1772   7.6437
+ 7.3165   7.6226
+ 8.0531   7.9238
+ 7.7384   7.9006
+ 7.5813   7.8892
+ 7.5543   7.9026
+ 7.9557   8.0644
+ 8.0250   7.9871
+ 8.4088   8.0798
+ 8.5686   8.2231
+ 7.7560   7.8184
+ 7.7964   7.9144
+ 7.7873   7.9935
+ 8.8915   8.1535
+ 8.9497   8.3447
+ 9.4719   8.8800
+10.1203   9.2751
+ 9.3971   9.0960
+ 8.9580   9.2164
+ 9.8976   9.8114
+10.2489   9.9437
+10.3733   9.9897
+10.8176  10.1986
+11.0685  10.3256
+10.7403  10.2376
+10.5094  10.2000
+10.5773  10.4423
+10.5559  10.5268
+10.8842  10.5466
+10.6982  10.5572
+10.9292  10.6506
+11.0143  10.6060
+11.4998  11.0588
+11.2373  10.9275
+11.2140  11.2107
+11.6360  11.2103
+11.3304  11.0655
+12.0562  11.4291
+12.5702  11.6892
+12.5430  11.9561
+12.9757  12.2734
+12.7499  12.3244
+11.6470  12.0191
+11.4212  11.7514
+11.4700  11.6340
+11.5768  11.7729
+11.8732  11.6388
+12.4032  11.7806
+12.3211  11.8576
+12.1397  11.7540
+11.6287  11.8486
+11.3404  11.6642
+11.3848  11.6764
+11.7595  11.8764
+12.3282  11.9571
+12.7632  12.2697
+12.5447  12.0814
+12.3891  12.2316
+12.4343  12.3743

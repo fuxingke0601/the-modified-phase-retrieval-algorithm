@@ -1,0 +1,54 @@
+REMARK  SitCom multi-solution consensus model
+REMARK  ===================================================================
+REMARK  consensus model seeded with solution SOL-1
+REMARK  solutions implied ............... 2
+REMARK  overall mean site distance ...... 0.351
+REMARK  sites sorted by SFOM. weights: cons=1.00 dist=0.50 occp=0.00 
+REMARK  ===================================================================
+CRYST1   42.010   88.120   79.670  90.00  95.45  90.00 P1211          
+SCALE1      0.023804 -0.000000  0.002271        0.000000
+SCALE2      0.000000  0.011348 -0.000000        0.000000
+SCALE3      0.000000  0.000000  0.012609        0.000000
+ATOM      1 SE   SIT A   0       0.000   0.000   0.000  0.00 100.0           SE
+ATOM      2 SE   SIT A  10      -9.882   3.760  -6.316  0.81  1.0           SE
+ATOM      3 SE   SIT A   9      -7.515  -5.262 -28.508  0.83  1.1           SE
+ATOM      4 SE   SIT A   2       9.090 -20.689  14.137  0.98  2.7           SE
+ATOM      5 SE   SIT A   4     -15.393  17.215  16.789  0.93  2.9           SE
+ATOM      6 SE   SIT A   6      13.688 -11.118 -14.983  0.89  3.1           SE
+ATOM      7 SE   SIT A   5     -20.260   5.043  27.019  0.92  3.2           SE
+ATOM      8 SE   SIT A   8     -10.255   8.321  15.791  0.84  3.4           SE
+ATOM      9 SE   SIT A  12      15.784   2.138  -0.793  0.72  3.5           SE
+ATOM     10 SE   SIT A   1       7.511 -16.325  11.209  1.00  4.4           SE
+ATOM     11 SE   SIT A   7     -12.793   2.954  23.859  0.89  4.7           SE
+ATOM     12 SE   SIT A   3      13.842 -21.831  12.435  0.97  4.8           SE
+ATOM     13 SE   SIT A  15      12.023  16.020  38.286  0.42  5.0           SE
+ATOM     14 SE   SIT A  25       1.294   8.363  -8.900  0.24  5.1           SE
+ATOM     15 SE   SIT A  22     -16.737  13.908 -32.985  0.30  5.3           SE
+ATOM     16 SE   SIT A  11     -16.444   6.610  23.127  0.75  6.2           SE
+ATOM     17 SE   SIT A  13     -20.516 -19.541 -13.204  0.70  6.3           SE
+ATOM     18 SE   SIT A  23      13.951 -13.317  39.023  0.30  6.5           SE
+ATOM     19 SE   SIT A  19     -12.459  16.114 -20.255  0.34  6.6           SE
+ATOM     20 SE   SIT A  17       0.422  22.018  34.775  0.40  8.3           SE
+ATOM     21 SE   SIT A  24      11.417 -14.666  40.897  0.24  8.9           SE
+ATOM     22 SE   SIT A  14      -9.248  -8.265 -12.614  0.64  9.4           SE
+ATOM     23 SE   SIT A  21      -1.862  16.140 -21.589  0.31 10.0           SE
+ATOM     24 SE   SIT A  20      -0.342  14.806 -25.406  0.33 12.7           SE
+ATOM     25 SE   SIT A  18       8.512 -21.921 -30.103  0.35 12.9           SE
+ATOM     26 SE   SIT A  16     -10.575   8.518   2.395  0.41 13.0           SE
+ATOM     27 SE   SIT A  32       0.022   8.127  -8.677  0.15 25.1           SE
+ATOM     28 SE   SIT A  26     -10.045   4.248  -2.513  0.19 50.0           SE
+ATOM     29 SE   SIT A  27      12.098   1.965  -0.793  0.16 50.0           SE
+ATOM     30 SE   SIT A  28       5.011 -14.684   9.557  0.16 50.0           SE
+ATOM     31 SE   SIT A  29       1.124  12.851 -27.910  0.16 50.0           SE
+ATOM     32 SE   SIT A  30     -15.575   5.530  11.824  0.16 50.0           SE
+ATOM     33 SE   SIT A  31      18.096 -18.934 -12.730  0.16 50.0           SE
+ATOM     34 SE   SIT A  33     -20.140   6.234  22.825  0.14 50.0           SE
+ATOM     35 SE   SIT A  34     -15.673   1.473  25.689  0.14 50.0           SE
+ATOM     36 SE   SIT A  35       3.853 -16.392  11.608  0.14 50.0           SE
+ATOM     37 SE   SIT A  36       5.223  30.275   3.411  0.47 50.0           SE
+ATOM     38 SE   SIT A  37      15.361   4.859  -2.323  0.27 50.0           SE
+ATOM     39 SE   SIT A  38      33.020   8.021   2.672  0.50 50.0           SE
+ATOM     40 SE   SIT A  39      32.903  22.735  30.614  0.48 50.0           SE
+ATOM     41 SE   SIT A  40      25.400  18.097  18.168  0.32 50.0           SE
+ATOM     42 SE   SIT A  41      26.875  15.219 -33.630  0.43 50.0           SE
+END

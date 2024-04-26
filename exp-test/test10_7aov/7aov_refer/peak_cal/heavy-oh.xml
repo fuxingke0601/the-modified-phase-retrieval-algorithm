@@ -1,0 +1,166 @@
+<coordinate_data>
+	<atom id="1">
+		<atom_id>SE1</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.9410</x>
+		<y>-0.0889</y>
+		<z>-0.3496</z>
+		<occupancy>  2.748</occupancy>
+		<bfactor> 29.185</bfactor>
+	</atom>
+	<atom id="2">
+		<atom_id>SE2</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.8492</x>
+		<y>-0.3677</y>
+		<z>-0.4405</z>
+		<occupancy>  2.554</occupancy>
+		<bfactor> 31.706</bfactor>
+	</atom>
+	<atom id="3">
+		<atom_id>SE3</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.9427</x>
+		<y>-0.3711</y>
+		<z>-0.3909</z>
+		<occupancy>  2.351</occupancy>
+		<bfactor> 32.455</bfactor>
+	</atom>
+	<atom id="4">
+		<atom_id>SE4</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.4379</x>
+		<y>-0.3499</y>
+		<z>-0.3382</z>
+		<occupancy>  2.823</occupancy>
+		<bfactor> 57.338</bfactor>
+	</atom>
+	<atom id="5">
+		<atom_id>SE5</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.8923</x>
+		<y>-0.0853</y>
+		<z>-0.4429</z>
+		<occupancy>  2.362</occupancy>
+		<bfactor> 29.087</bfactor>
+	</atom>
+	<atom id="6">
+		<atom_id>SE6</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.4566</x>
+		<y>-0.4181</y>
+		<z>-0.1064</z>
+		<occupancy>  2.131</occupancy>
+		<bfactor> 31.871</bfactor>
+	</atom>
+	<atom id="7">
+		<atom_id>SE7</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.0319</x>
+		<y>-0.2723</y>
+		<z>-0.5512</z>
+		<occupancy>  1.680</occupancy>
+		<bfactor> 33.427</bfactor>
+	</atom>
+	<atom id="8">
+		<atom_id>SE8</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.6055</x>
+		<y>-0.0387</y>
+		<z>-0.9572</z>
+		<occupancy>  1.987</occupancy>
+		<bfactor> 28.665</bfactor>
+	</atom>
+	<atom id="9">
+		<atom_id>SE9</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.8328</x>
+		<y>-0.1063</y>
+		<z>-0.9340</z>
+		<occupancy>  2.719</occupancy>
+		<bfactor> 51.530</bfactor>
+	</atom>
+	<atom id="10">
+		<atom_id>SE10</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.0539</x>
+		<y>-0.1856</y>
+		<z>-0.5281</z>
+		<occupancy>  1.823</occupancy>
+		<bfactor> 40.528</bfactor>
+	</atom>
+	<atom id="11">
+		<atom_id>SE11</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.0297</x>
+		<y>-0.0907</y>
+		<z>-0.8123</z>
+		<occupancy>  1.242</occupancy>
+		<bfactor> 38.897</bfactor>
+	</atom>
+	<atom id="12">
+		<atom_id>SE12</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.3625</x>
+		<y>-0.2452</y>
+		<z>-0.5961</z>
+		<occupancy>  1.074</occupancy>
+		<bfactor> 49.686</bfactor>
+	</atom>
+	<atom id="13">
+		<atom_id>SE13</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.2093</x>
+		<y>-0.1772</y>
+		<z>-0.1119</z>
+		<occupancy>  1.424</occupancy>
+		<bfactor> 61.000</bfactor>
+	</atom>
+	<atom id="14">
+		<atom_id>SE14</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.3470</x>
+		<y>-0.1752</y>
+		<z>-0.8138</z>
+		<occupancy>  0.807</occupancy>
+		<bfactor> 24.481</bfactor>
+	</atom>
+	<atom id="15">
+		<atom_id>SE15</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.3176</x>
+		<y>-0.3677</y>
+		<z>-0.5333</z>
+		<occupancy>  1.107</occupancy>
+		<bfactor> 37.522</bfactor>
+	</atom>
+	<atom id="16">
+		<atom_id>SE16</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.9169</x>
+		<y>-0.1002</y>
+		<z>-0.3961</z>
+		<occupancy>  0.263</occupancy>
+		<bfactor>  4.810</bfactor>
+	</atom>
+	<atom id="17">
+		<atom_id>SE17</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.9240</x>
+		<y>-0.1100</y>
+		<z>-0.3403</z>
+		<occupancy>  0.356</occupancy>
+		<bfactor> 20.629</bfactor>
+	</atom>
+	<atom id="18">
+		<atom_id>SE18</atom_id>
+		<element_name>SE</element_name>
+		<x>-0.1325</x>
+		<y>-0.1005</y>
+		<z>-0.4957</z>
+		<occupancy>  0.466</occupancy>
+		<bfactor> 43.173</bfactor>
+	</atom>
+</coordinate_data>
+
+

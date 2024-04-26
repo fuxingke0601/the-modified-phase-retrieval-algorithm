@@ -1,0 +1,1763 @@
+
+density_modification {
+  input {
+    reflection_data {
+      file_name = AutoSol_run_1_/TEMP0/phaser_3.mtz
+      labels = FP,SIGFP
+      high_resolution = None
+      low_resolution = None
+      outliers_rejection = True
+      french_wilson_scale = True
+      french_wilson {
+        max_bins = 60
+        min_bin_size = 40
+      }
+      sigma_fobs_rejection_criterion = None
+      sigma_iobs_rejection_criterion = None
+      ignore_all_zeros = True
+      force_anomalous_flag_to_be_equal_to = None
+      convert_to_non_anomalous_if_ratio_pairs_lone_less_than_threshold = 0.5
+      r_free_flags {
+        file_name = None
+        label = None
+        test_flag_value = None
+        ignore_r_free_flags = False
+        disable_suitability_test = False
+        ignore_pdb_hexdigest = False
+        generate = False
+        fraction = 0.1
+        max_free = 2000
+        lattice_symmetry_max_delta = 5
+        use_lattice_symmetry = True
+        use_dataman_shells = False
+        n_shells = 20
+      }
+    }
+    experimental_phases {
+      file_name = AutoSol_run_1_/TEMP0/phaser_3.mtz
+      labels = HLA,HLB,HLC,HLD
+    }
+    map_coefficients {
+      file_name = AutoSol_run_1_/TEMP0/resolve_wang_8A_3.mtz
+      labels = FWT,PHWT
+    }
+    ncs_file_name = None
+    unit_cell = None
+    space_group = None
+  }
+  output {
+    map {
+      file_name = None
+      format = xplor *ccp4
+      scale = *sigma volume
+    }
+    mtz {
+      file_name = AutoSol_run_1_/TEMP0/add_classic_denmod_3.mtz
+      output_hendrickson_lattman_coefficients = False
+      skip_output_if_worse = True
+    }
+  }
+  job_title = None
+  solvent_fraction = 0.4075
+  initial_steps = 10
+  shrink_steps = 20
+  final_steps = 10
+  grid_resolution_factor = 1/4
+  d_min = None
+  initial_d_min = None
+  phase_extension = False
+  verbose = True
+  change_basis_to_niggli_cell = True
+  ncs_averaging = False
+  protein_solvent_ratio = 1.31
+  density_truncation {
+    fraction_min = 0.25
+    fraction_max = None
+  }
+  solvent_modification {
+    method = *flipping flattening
+    scale_flip = false
+  }
+  solvent_adjust = True
+  solvent_mask {
+    averaging_radius {
+      initial = None
+      final = None
+    }
+  }
+  anisotropic_correction = True
+  asu_contents {
+    n_residues = None
+    n_bases = None
+    n_copies_per_asu = None
+  }
+}
+
+=================== Solvent content and Matthews coefficient ==================
+
+
+ Number of residues unknown, assuming 50% solvent content
+
+  Best guess :  168 residues in the ASU
+
+ Caution: this estimate is based on the distribution of solvent content across
+ structures in the PDB, but it does not take into account the resolution of
+ the data (which is strongly correlated with solvent content) or the physical
+ properties of the model (such as oligomerization state, et cetera).  If you
+ encounter problems with molecular replacement and/or refinement, you may need
+ to consider the possibility that the ASU contents are different than expected.
+
+
+       ----------Maximum likelihood anisotropic Wilson scaling----------
+
+ML estimate of overall B_cart value:
+  22.54,  0.00,  0.00
+         21.70,  0.00
+                20.63
+
+Equivalent representation as U_cif:
+   0.29, -0.00, -0.00
+          0.27,  0.00
+                 0.26
+
+Eigen analyses of B-cart:
+  -------------------------------------------------
+  | Eigenvector | Value   | Vector                |
+  -------------------------------------------------
+  | 1           |  22.544 | ( 1.00,  0.00,  0.00) |
+  | 2           |  21.702 | (-0.00,  1.00,  0.00) |
+  | 3           |  20.626 | (-0.00, -0.00,  1.00) |
+  -------------------------------------------------
+ML estimate of  -log of scale factor:
+   0.41
+
+                    ----------Anisotropy analyses----------
+
+
+ For the resolution shell spanning between 2.17 - 2.00 Angstrom,
+ the mean I/sigI is equal to  6.57. 64.8 % of these intensities have
+ an I/sigI > 3. When sorting these intensities by their anisotropic
+ correction factor and analysing the I/sigI behavior for this ordered
+ list, we can gauge the presence of 'anisotropy induced noise amplification'
+ in reciprocal space.
+
+ The quarter of Intensities *least* affected by the anisotropy correction show
+
+    <I/sigI>                 :   7.10e+00
+    Fraction of I/sigI > 3   :   6.83e-01     ( Z =     1.65 )
+  The quarter of Intensities *most* affected by the anisotropy correction show
+
+    <I/sigI>                 :   4.96e+00
+    Fraction of I/sigI > 3   :   5.42e-01     ( Z =     4.96 )
+ Z-scores are computed on the basis of a Bernoulli model assuming independence
+ of weak reflections with respect to anisotropy.
+n phased: 12053
+Mean solvent density: -0.0105
+Mean protein density: 0.0072
+RMS solvent density: 0.1211
+RMS protein density: 0.3148
+RMS solvent/protein density ratio: 0.3847
+F000/V: 0.0676
+Mean FOM: 0.2690
+
+################################################################################
+Cycle 1
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7575
+Mean solvent density: -0.0342
+Mean protein density: 0.0356
+F000/V: 0.0693
+Protein density truncation:
+  min = -0.2083 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: -0.0113
+RMS solvent density: 0.1213
+RMS protein density: 0.3147
+RMS solvent/protein density ratio: 0.3853
+Standard deviation (local RMS): 0.4503
+Mean delta phi: 56.9568
+Mean delta phi (initial): 56.9568
+R1-factor:       0.51
+R1-factor (fom): 0.46
+Skewness: 0.9093
+Mean figure of merit (FOM): 0.582
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7498
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8187
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7382
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6939
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.6371
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5548
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5179
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5021
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.4416
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.3825
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.3700
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.3922
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 2
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7708
+Mean solvent density: -0.0407
+Mean protein density: 0.0511
+F000/V: 0.1200
+Protein density truncation:
+  min = -0.2390 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0011
+RMS solvent density: 0.1948
+RMS protein density: 0.3616
+RMS solvent/protein density ratio: 0.5385
+Standard deviation (local RMS): 0.5093
+Mean delta phi: 43.9935
+Mean delta phi (initial): 52.7394
+R1-factor:       0.49
+R1-factor (fom): 0.43
+Skewness: 0.8891
+Mean figure of merit (FOM): 0.516
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6762
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7140
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6099
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5945
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5519
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4945
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.4608
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4401
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.4483
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.4476
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.3202
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.2630
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 3
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7860
+Mean solvent density: -0.0407
+Mean protein density: 0.0497
+F000/V: 0.0917
+Protein density truncation:
+  min = -0.2403 (25.06%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: -0.0047
+RMS solvent density: 0.1972
+RMS protein density: 0.3597
+RMS solvent/protein density ratio: 0.5483
+Standard deviation (local RMS): 0.5217
+Mean delta phi: 48.2525
+Mean delta phi (initial): 55.5296
+R1-factor:       0.49
+R1-factor (fom): 0.44
+Skewness: 0.8918
+Mean figure of merit (FOM): 0.544
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7063
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7289
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6242
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5957
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5662
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4919
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.4947
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4685
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.4721
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.4551
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4071
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.3754
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 4
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7708
+Mean solvent density: -0.0412
+Mean protein density: 0.0523
+F000/V: 0.1183
+Protein density truncation:
+  min = -0.2417 (25.05%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0011
+RMS solvent density: 0.2029
+RMS protein density: 0.3632
+RMS solvent/protein density ratio: 0.5588
+Standard deviation (local RMS): 0.5284
+Mean delta phi: 52.8556
+Mean delta phi (initial): 57.1986
+R1-factor:       0.47
+R1-factor (fom): 0.42
+Skewness: 0.8625
+Mean figure of merit (FOM): 0.576
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6895
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7393
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6314
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6209
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5934
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5465
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5240
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5120
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5340
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5549
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5029
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.3411
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 5
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7888
+Mean solvent density: -0.0406
+Mean protein density: 0.0517
+F000/V: 0.1088
+Protein density truncation:
+  min = -0.2377 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0001
+RMS solvent density: 0.2109
+RMS protein density: 0.3579
+RMS solvent/protein density ratio: 0.5893
+Standard deviation (local RMS): 0.5055
+Mean delta phi: 59.2128
+Mean delta phi (initial): 58.4081
+R1-factor:       0.45
+R1-factor (fom): 0.40
+Skewness: 0.8080
+Mean figure of merit (FOM): 0.589
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7213
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7597
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6453
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6175
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5749
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5452
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5447
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5100
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5383
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5476
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5055
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4533
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 6
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.8081
+Mean solvent density: -0.0407
+Mean protein density: 0.0523
+F000/V: 0.1177
+Protein density truncation:
+  min = -0.2379 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0018
+RMS solvent density: 0.2200
+RMS protein density: 0.3568
+RMS solvent/protein density ratio: 0.6167
+Standard deviation (local RMS): 0.4863
+Mean delta phi: 65.0021
+Mean delta phi (initial): 58.3138
+R1-factor:       0.44
+R1-factor (fom): 0.39
+Skewness: 0.7887
+Mean figure of merit (FOM): 0.600
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6992
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7478
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6452
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6130
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5908
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5746
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5568
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5307
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5748
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5937
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5686
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4059
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 7
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7865
+Mean solvent density: -0.0403
+Mean protein density: 0.0544
+F000/V: 0.1315
+Protein density truncation:
+  min = -0.2329 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0068
+RMS solvent density: 0.2249
+RMS protein density: 0.3534
+RMS solvent/protein density ratio: 0.6362
+Standard deviation (local RMS): 0.4746
+Mean delta phi: 68.4088
+Mean delta phi (initial): 58.1376
+R1-factor:       0.46
+R1-factor (fom): 0.41
+Skewness: 0.7622
+Mean figure of merit (FOM): 0.581
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7053
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7603
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6338
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6023
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5624
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5159
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.4895
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5186
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5644
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5737
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5174
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4354
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 8
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7541
+Mean solvent density: -0.0403
+Mean protein density: 0.0532
+F000/V: 0.1193
+Protein density truncation:
+  min = -0.2339 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0038
+RMS solvent density: 0.2263
+RMS protein density: 0.3531
+RMS solvent/protein density ratio: 0.6409
+Standard deviation (local RMS): 0.4737
+Mean delta phi: 70.2518
+Mean delta phi (initial): 57.9653
+R1-factor:       0.45
+R1-factor (fom): 0.40
+Skewness: 0.7625
+Mean figure of merit (FOM): 0.582
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6912
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7442
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6431
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6034
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5729
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5306
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5279
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5231
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5617
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5560
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5276
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4043
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 9
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.7894
+Mean solvent density: -0.0402
+Mean protein density: 0.0552
+F000/V: 0.1345
+Protein density truncation:
+  min = -0.2315 (25.03%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0082
+RMS solvent density: 0.2292
+RMS protein density: 0.3527
+RMS solvent/protein density ratio: 0.6499
+Standard deviation (local RMS): 0.4712
+Mean delta phi: 71.1286
+Mean delta phi (initial): 58.6100
+R1-factor:       0.46
+R1-factor (fom): 0.41
+Skewness: 0.7570
+Mean figure of merit (FOM): 0.574
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7053
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7582
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6192
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5780
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5522
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5124
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.4991
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5216
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5563
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5291
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5143
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4517
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 10
+d min: 2.00
+Mask averaging radius: 3.00
+Solvent mask volume (%): 40.8223
+Mean solvent density: -0.0398
+Mean protein density: 0.0558
+F000/V: 0.1395
+Protein density truncation:
+  min = -0.2283 (25.06%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0102
+RMS solvent density: 0.2298
+RMS protein density: 0.3511
+RMS solvent/protein density ratio: 0.6545
+Standard deviation (local RMS): 0.4762
+Mean delta phi: 72.1586
+Mean delta phi (initial): 57.9973
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.7324
+Mean figure of merit (FOM): 0.582
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6975
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7491
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6237
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5910
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5798
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5340
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5204
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4970
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5492
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5340
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5217
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.5101
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 11
+d min: 2.00
+Mask averaging radius: 2.95
+Solvent mask volume (%): 40.8374
+Mean solvent density: -0.0401
+Mean protein density: 0.0552
+F000/V: 0.1342
+Protein density truncation:
+  min = -0.2306 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0083
+RMS solvent density: 0.2340
+RMS protein density: 0.3514
+RMS solvent/protein density ratio: 0.6658
+Standard deviation (local RMS): 0.4730
+Mean delta phi: 72.2318
+Mean delta phi (initial): 58.2546
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.7407
+Mean figure of merit (FOM): 0.567
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7014
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7452
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6209
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5761
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5340
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5232
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.4794
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4885
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5079
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5611
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5176
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4731
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 12
+d min: 2.00
+Mask averaging radius: 2.90
+Solvent mask volume (%): 40.8392
+Mean solvent density: -0.0400
+Mean protein density: 0.0567
+F000/V: 0.1483
+Protein density truncation:
+  min = -0.2289 (25.06%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0122
+RMS solvent density: 0.2284
+RMS protein density: 0.3512
+RMS solvent/protein density ratio: 0.6503
+Standard deviation (local RMS): 0.4827
+Mean delta phi: 72.2627
+Mean delta phi (initial): 57.9950
+R1-factor:       0.46
+R1-factor (fom): 0.41
+Skewness: 0.7579
+Mean figure of merit (FOM): 0.568
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6951
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7379
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6279
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5777
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5851
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4955
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5021
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5035
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5399
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5252
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4899
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4400
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 13
+d min: 2.00
+Mask averaging radius: 2.85
+Solvent mask volume (%): 40.7647
+Mean solvent density: -0.0399
+Mean protein density: 0.0561
+F000/V: 0.1427
+Protein density truncation:
+  min = -0.2285 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0109
+RMS solvent density: 0.2291
+RMS protein density: 0.3509
+RMS solvent/protein density ratio: 0.6530
+Standard deviation (local RMS): 0.4943
+Mean delta phi: 73.1893
+Mean delta phi (initial): 59.4078
+R1-factor:       0.46
+R1-factor (fom): 0.41
+Skewness: 0.7320
+Mean figure of merit (FOM): 0.581
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7190
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7686
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6369
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5796
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5395
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5225
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5108
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5427
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5458
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5505
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5145
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4454
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 14
+d min: 2.00
+Mask averaging radius: 2.80
+Solvent mask volume (%): 40.7793
+Mean solvent density: -0.0400
+Mean protein density: 0.0576
+F000/V: 0.1559
+Protein density truncation:
+  min = -0.2274 (25.05%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0144
+RMS solvent density: 0.2297
+RMS protein density: 0.3509
+RMS solvent/protein density ratio: 0.6546
+Standard deviation (local RMS): 0.4866
+Mean delta phi: 74.1710
+Mean delta phi (initial): 58.7430
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.7281
+Mean figure of merit (FOM): 0.578
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7002
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7517
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6403
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5905
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5761
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4960
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5041
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5184
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5673
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5575
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5059
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4380
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 15
+d min: 2.00
+Mask averaging radius: 2.75
+Solvent mask volume (%): 40.8740
+Mean solvent density: -0.0399
+Mean protein density: 0.0585
+F000/V: 0.1597
+Protein density truncation:
+  min = -0.2257 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0160
+RMS solvent density: 0.2307
+RMS protein density: 0.3503
+RMS solvent/protein density ratio: 0.6587
+Standard deviation (local RMS): 0.5012
+Mean delta phi: 73.8819
+Mean delta phi (initial): 59.4727
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.7363
+Mean figure of merit (FOM): 0.577
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7073
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7518
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6322
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5687
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5338
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5134
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5089
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5237
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5592
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5641
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5262
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4533
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 16
+d min: 2.00
+Mask averaging radius: 2.70
+Solvent mask volume (%): 40.7605
+Mean solvent density: -0.0401
+Mean protein density: 0.0597
+F000/V: 0.1745
+Protein density truncation:
+  min = -0.2260 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0191
+RMS solvent density: 0.2283
+RMS protein density: 0.3505
+RMS solvent/protein density ratio: 0.6515
+Standard deviation (local RMS): 0.5106
+Mean delta phi: 73.4654
+Mean delta phi (initial): 58.3160
+R1-factor:       0.47
+R1-factor (fom): 0.42
+Skewness: 0.7712
+Mean figure of merit (FOM): 0.575
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7023
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7398
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6303
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5685
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5708
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4855
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5199
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5099
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5720
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5515
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5145
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4410
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 17
+d min: 2.00
+Mask averaging radius: 2.65
+Solvent mask volume (%): 40.8436
+Mean solvent density: -0.0398
+Mean protein density: 0.0608
+F000/V: 0.1871
+Protein density truncation:
+  min = -0.2231 (25.05%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0226
+RMS solvent density: 0.2302
+RMS protein density: 0.3504
+RMS solvent/protein density ratio: 0.6569
+Standard deviation (local RMS): 0.5328
+Mean delta phi: 73.8255
+Mean delta phi (initial): 59.2923
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.6980
+Mean figure of merit (FOM): 0.576
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7090
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7541
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6527
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5723
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5261
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5322
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5041
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5113
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5438
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5548
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5306
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4328
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 18
+d min: 2.00
+Mask averaging radius: 2.60
+Solvent mask volume (%): 40.7636
+Mean solvent density: -0.0403
+Mean protein density: 0.0590
+F000/V: 0.1616
+Protein density truncation:
+  min = -0.2282 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0161
+RMS solvent density: 0.2281
+RMS protein density: 0.3519
+RMS solvent/protein density ratio: 0.6481
+Standard deviation (local RMS): 0.5175
+Mean delta phi: 74.3505
+Mean delta phi (initial): 59.3357
+R1-factor:       0.46
+R1-factor (fom): 0.41
+Skewness: 0.7554
+Mean figure of merit (FOM): 0.577
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.6916
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7484
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6381
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5890
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5535
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4938
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5360
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5373
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5592
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5367
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5016
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4524
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 19
+d min: 2.00
+Mask averaging radius: 2.55
+Solvent mask volume (%): 40.8063
+Mean solvent density: -0.0400
+Mean protein density: 0.0612
+F000/V: 0.1866
+Protein density truncation:
+  min = -0.2240 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0226
+RMS solvent density: 0.2284
+RMS protein density: 0.3508
+RMS solvent/protein density ratio: 0.6510
+Standard deviation (local RMS): 0.5462
+Mean delta phi: 73.6930
+Mean delta phi (initial): 58.6635
+R1-factor:       0.47
+R1-factor (fom): 0.42
+Skewness: 0.7784
+Mean figure of merit (FOM): 0.573
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7186
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7546
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6540
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5611
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5240
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5072
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5201
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5017
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5311
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5346
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5122
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4625
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 20
+d min: 2.00
+Mask averaging radius: 2.50
+Solvent mask volume (%): 40.7675
+Mean solvent density: -0.0400
+Mean protein density: 0.0591
+F000/V: 0.1659
+Protein density truncation:
+  min = -0.2264 (25.05%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0173
+RMS solvent density: 0.2228
+RMS protein density: 0.3518
+RMS solvent/protein density ratio: 0.6331
+Standard deviation (local RMS): 0.5670
+Mean delta phi: 73.0194
+Mean delta phi (initial): 59.0452
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.7703
+Mean figure of merit (FOM): 0.575
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7050
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7478
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6296
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5597
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5552
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5025
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5152
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5366
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5513
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5286
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5204
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4635
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 21
+d min: 2.00
+Mask averaging radius: 2.45
+Solvent mask volume (%): 40.8537
+Mean solvent density: -0.0403
+Mean protein density: 0.0629
+F000/V: 0.2019
+Protein density truncation:
+  min = -0.2244 (25.06%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0262
+RMS solvent density: 0.2232
+RMS protein density: 0.3523
+RMS solvent/protein density ratio: 0.6336
+Standard deviation (local RMS): 0.5759
+Mean delta phi: 73.1060
+Mean delta phi (initial): 58.6999
+R1-factor:       0.47
+R1-factor (fom): 0.42
+Skewness: 0.7962
+Mean figure of merit (FOM): 0.578
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7250
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7609
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6606
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5893
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5292
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5034
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5171
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5027
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5323
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5449
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5166
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4648
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 22
+d min: 2.00
+Mask averaging radius: 2.40
+Solvent mask volume (%): 40.8385
+Mean solvent density: -0.0405
+Mean protein density: 0.0626
+F000/V: 0.1994
+Protein density truncation:
+  min = -0.2260 (25.03%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0252
+RMS solvent density: 0.2176
+RMS protein density: 0.3533
+RMS solvent/protein density ratio: 0.6159
+Standard deviation (local RMS): 0.6014
+Mean delta phi: 73.3912
+Mean delta phi (initial): 58.6985
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.8036
+Mean figure of merit (FOM): 0.579
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7397
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7490
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6510
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5920
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5388
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5054
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5042
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5166
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5466
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5394
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5206
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4455
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 23
+d min: 2.00
+Mask averaging radius: 2.35
+Solvent mask volume (%): 40.7899
+Mean solvent density: -0.0403
+Mean protein density: 0.0659
+F000/V: 0.2275
+Protein density truncation:
+  min = -0.2215 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0332
+RMS solvent density: 0.2184
+RMS protein density: 0.3526
+RMS solvent/protein density ratio: 0.6196
+Standard deviation (local RMS): 0.6174
+Mean delta phi: 71.9797
+Mean delta phi (initial): 58.7103
+R1-factor:       0.48
+R1-factor (fom): 0.42
+Skewness: 0.8292
+Mean figure of merit (FOM): 0.576
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7342
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7623
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6714
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5896
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5268
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4778
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5108
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4874
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5402
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5460
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5194
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4447
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 24
+d min: 2.00
+Mask averaging radius: 2.30
+Solvent mask volume (%): 40.7685
+Mean solvent density: -0.0410
+Mean protein density: 0.0637
+F000/V: 0.2068
+Protein density truncation:
+  min = -0.2284 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0267
+RMS solvent density: 0.2108
+RMS protein density: 0.3569
+RMS solvent/protein density ratio: 0.5906
+Standard deviation (local RMS): 0.6548
+Mean delta phi: 70.5599
+Mean delta phi (initial): 58.4145
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.8459
+Mean figure of merit (FOM): 0.576
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7418
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7639
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6543
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5898
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5387
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5056
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.4777
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4961
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5404
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5418
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5058
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4518
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 25
+d min: 2.00
+Mask averaging radius: 2.25
+Solvent mask volume (%): 40.8843
+Mean solvent density: -0.0407
+Mean protein density: 0.0674
+F000/V: 0.2449
+Protein density truncation:
+  min = -0.2229 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0367
+RMS solvent density: 0.2096
+RMS protein density: 0.3535
+RMS solvent/protein density ratio: 0.5930
+Standard deviation (local RMS): 0.6595
+Mean delta phi: 69.9027
+Mean delta phi (initial): 58.0956
+R1-factor:       0.48
+R1-factor (fom): 0.42
+Skewness: 0.8801
+Mean figure of merit (FOM): 0.582
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7531
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7788
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6750
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5906
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5691
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5094
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5031
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4897
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5399
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5343
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4918
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4377
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 26
+d min: 2.00
+Mask averaging radius: 2.20
+Solvent mask volume (%): 40.8925
+Mean solvent density: -0.0410
+Mean protein density: 0.0675
+F000/V: 0.2464
+Protein density truncation:
+  min = -0.2252 (25.06%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0364
+RMS solvent density: 0.2057
+RMS protein density: 0.3565
+RMS solvent/protein density ratio: 0.5770
+Standard deviation (local RMS): 0.6851
+Mean delta phi: 68.8977
+Mean delta phi (initial): 58.0064
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.8676
+Mean figure of merit (FOM): 0.582
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7636
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7762
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6773
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.5948
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5564
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5162
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5090
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4890
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5332
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5080
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5004
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4515
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 27
+d min: 2.00
+Mask averaging radius: 2.15
+Solvent mask volume (%): 40.9216
+Mean solvent density: -0.0410
+Mean protein density: 0.0679
+F000/V: 0.2500
+Protein density truncation:
+  min = -0.2247 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0374
+RMS solvent density: 0.2032
+RMS protein density: 0.3559
+RMS solvent/protein density ratio: 0.5709
+Standard deviation (local RMS): 0.6854
+Mean delta phi: 68.9446
+Mean delta phi (initial): 59.2370
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9230
+Mean figure of merit (FOM): 0.592
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7765
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7948
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6778
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6182
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5722
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5080
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5228
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4973
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5396
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5376
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5141
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4162
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 28
+d min: 2.00
+Mask averaging radius: 2.10
+Solvent mask volume (%): 40.8475
+Mean solvent density: -0.0414
+Mean protein density: 0.0676
+F000/V: 0.2500
+Protein density truncation:
+  min = -0.2278 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0365
+RMS solvent density: 0.1989
+RMS protein density: 0.3583
+RMS solvent/protein density ratio: 0.5552
+Standard deviation (local RMS): 0.7386
+Mean delta phi: 68.9550
+Mean delta phi (initial): 59.1887
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9135
+Mean figure of merit (FOM): 0.594
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7865
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.7879
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6811
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6084
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5774
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5410
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5369
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5013
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5169
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5142
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4820
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4754
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 29
+d min: 2.00
+Mask averaging radius: 2.05
+Solvent mask volume (%): 40.8714
+Mean solvent density: -0.0413
+Mean protein density: 0.0697
+F000/V: 0.2711
+Protein density truncation:
+  min = -0.2246 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0420
+RMS solvent density: 0.1969
+RMS protein density: 0.3571
+RMS solvent/protein density ratio: 0.5515
+Standard deviation (local RMS): 0.7333
+Mean delta phi: 67.0134
+Mean delta phi (initial): 57.2520
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.9750
+Mean figure of merit (FOM): 0.572
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7759
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8132
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.6900
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6085
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5406
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.4769
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5018
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4687
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.4886
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5027
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4739
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.3844
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 30
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.9923
+Mean solvent density: -0.0413
+Mean protein density: 0.0697
+F000/V: 0.2690
+Protein density truncation:
+  min = -0.2250 (25.00%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0416
+RMS solvent density: 0.1890
+RMS protein density: 0.3584
+RMS solvent/protein density ratio: 0.5275
+Standard deviation (local RMS): 0.7847
+Mean delta phi: 65.3930
+Mean delta phi (initial): 58.0260
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9539
+Mean figure of merit (FOM): 0.584
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7933
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8035
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7034
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6112
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5560
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5053
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5096
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4818
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5061
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.4896
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4705
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4487
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 31
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.8925
+Mean solvent density: -0.0414
+Mean protein density: 0.0703
+F000/V: 0.2739
+Protein density truncation:
+  min = -0.2250 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0428
+RMS solvent density: 0.1887
+RMS protein density: 0.3593
+RMS solvent/protein density ratio: 0.5252
+Standard deviation (local RMS): 0.7695
+Mean delta phi: 65.1077
+Mean delta phi (initial): 57.8994
+R1-factor:       0.46
+R1-factor (fom): 0.39
+Skewness: 0.9760
+Mean figure of merit (FOM): 0.593
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7950
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8204
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7089
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6301
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5538
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5036
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5140
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.4843
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5216
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5299
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5081
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4174
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 32
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.9838
+Mean solvent density: -0.0414
+Mean protein density: 0.0703
+F000/V: 0.2733
+Protein density truncation:
+  min = -0.2246 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0428
+RMS solvent density: 0.1880
+RMS protein density: 0.3597
+RMS solvent/protein density ratio: 0.5226
+Standard deviation (local RMS): 0.7833
+Mean delta phi: 65.2039
+Mean delta phi (initial): 58.3113
+R1-factor:       0.45
+R1-factor (fom): 0.39
+Skewness: 0.9523
+Mean figure of merit (FOM): 0.602
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7934
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8121
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7161
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6493
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5935
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5209
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5176
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5125
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5278
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5088
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.4799
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4654
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 33
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.8061
+Mean solvent density: -0.0415
+Mean protein density: 0.0692
+F000/V: 0.2691
+Protein density truncation:
+  min = -0.2268 (25.03%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0408
+RMS solvent density: 0.1891
+RMS protein density: 0.3589
+RMS solvent/protein density ratio: 0.5268
+Standard deviation (local RMS): 0.7529
+Mean delta phi: 66.3196
+Mean delta phi (initial): 59.5696
+R1-factor:       0.45
+R1-factor (fom): 0.39
+Skewness: 0.9908
+Mean figure of merit (FOM): 0.613
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8006
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8332
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7135
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6539
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5744
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5289
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5673
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5218
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5373
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5488
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5290
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4120
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 34
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.9817
+Mean solvent density: -0.0414
+Mean protein density: 0.0688
+F000/V: 0.2661
+Protein density truncation:
+  min = -0.2267 (25.04%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0400
+RMS solvent density: 0.1893
+RMS protein density: 0.3597
+RMS solvent/protein density ratio: 0.5262
+Standard deviation (local RMS): 0.7756
+Mean delta phi: 66.7959
+Mean delta phi (initial): 58.9019
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9683
+Mean figure of merit (FOM): 0.608
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8021
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8230
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7185
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6353
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5887
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5104
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5445
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5023
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5610
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5158
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5287
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4390
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 35
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.9156
+Mean solvent density: -0.0414
+Mean protein density: 0.0719
+F000/V: 0.2919
+Protein density truncation:
+  min = -0.2236 (25.03%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0471
+RMS solvent density: 0.1906
+RMS protein density: 0.3592
+RMS solvent/protein density ratio: 0.5305
+Standard deviation (local RMS): 0.7585
+Mean delta phi: 66.3716
+Mean delta phi (initial): 60.0500
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9610
+Mean figure of merit (FOM): 0.617
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8000
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8260
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7134
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6589
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5844
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5404
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5519
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5406
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5504
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5493
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5204
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4264
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 36
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.8076
+Mean solvent density: -0.0417
+Mean protein density: 0.0703
+F000/V: 0.2768
+Protein density truncation:
+  min = -0.2272 (25.02%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0429
+RMS solvent density: 0.1897
+RMS protein density: 0.3612
+RMS solvent/protein density ratio: 0.5252
+Standard deviation (local RMS): 0.7715
+Mean delta phi: 66.8464
+Mean delta phi (initial): 59.4000
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9404
+Mean figure of merit (FOM): 0.608
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8094
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8231
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7166
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6381
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5916
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5298
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5150
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5118
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5578
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5269
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5068
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4327
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 37
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.8552
+Mean solvent density: -0.0413
+Mean protein density: 0.0706
+F000/V: 0.2785
+Protein density truncation:
+  min = -0.2239 (25.01%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0441
+RMS solvent density: 0.1903
+RMS protein density: 0.3586
+RMS solvent/protein density ratio: 0.5306
+Standard deviation (local RMS): 0.7480
+Mean delta phi: 66.8321
+Mean delta phi (initial): 60.3028
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9766
+Mean figure of merit (FOM): 0.620
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8025
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8370
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7131
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6752
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5568
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5381
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5700
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5555
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5422
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5596
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5107
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4484
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 38
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.7930
+Mean solvent density: -0.0414
+Mean protein density: 0.0702
+F000/V: 0.2781
+Protein density truncation:
+  min = -0.2252 (25.00%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0434
+RMS solvent density: 0.1897
+RMS protein density: 0.3600
+RMS solvent/protein density ratio: 0.5270
+Standard deviation (local RMS): 0.7687
+Mean delta phi: 66.8023
+Mean delta phi (initial): 59.9853
+R1-factor:       0.46
+R1-factor (fom): 0.40
+Skewness: 0.9410
+Mean figure of merit (FOM): 0.618
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.7963
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8286
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7226
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6507
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.6054
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5678
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5353
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5216
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5577
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5191
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5144
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.4728
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 39
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.8408
+Mean solvent density: -0.0415
+Mean protein density: 0.0708
+F000/V: 0.2832
+Protein density truncation:
+  min = -0.2250 (25.03%)
+Solvent flipping factor: -1.4540
+Solvent level raised by: 0.0447
+RMS solvent density: 0.1918
+RMS protein density: 0.3594
+RMS solvent/protein density ratio: 0.5338
+Standard deviation (local RMS): 0.7446
+Mean delta phi: 67.2929
+Mean delta phi (initial): 60.8038
+R1-factor:       0.47
+R1-factor (fom): 0.41
+Skewness: 0.9566
+Mean figure of merit (FOM): 0.626
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8000
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8374
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.7263
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.6600
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.5719
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.5320
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.5656
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.5410
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.5574
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5447
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5359
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.5290
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+################################################################################
+Cycle 40
+d min: 2.00
+Mask averaging radius: 2.00
+Solvent mask volume (%): 40.8408
+Mean solvent density: -0.0415
+Mean protein density: 0.0696
+F000/V: 0.2708
+Protein density truncation:
+  min = -0.2265 (25.05%)
+Solvent flipping factor: 0.0000
+Solvent level raised by: 0.0415
+RMS solvent density: 0.1892
+RMS protein density: 0.3606
+RMS solvent/protein density ratio: 0.5247
+Standard deviation (local RMS): 0.7568
+Mean delta phi: 43.5279
+Mean delta phi (initial): 59.0053
+R1-factor:       0.40
+R1-factor (fom): 0.36
+Skewness: 1.4478
+Mean figure of merit (FOM): 0.710
+Mean figure of merit (FOM) in resolution bins:
+unused:         - 28.3521 [   0/6   ]
+bin  1: 28.3521 -  4.5776 [1180/1185] 0.8806
+bin  2:  4.5776 -  3.6358 [1112/1116] 0.8926
+bin  3:  3.6358 -  3.1769 [1090/1096] 0.8195
+bin  4:  3.1769 -  2.8868 [1072/1090] 0.7541
+bin  5:  2.8868 -  2.6800 [1058/1080] 0.7121
+bin  6:  2.6800 -  2.5221 [1037/1059] 0.6488
+bin  7:  2.5221 -  2.3959 [1017/1061] 0.6594
+bin  8:  2.3959 -  2.2916 [1049/1085] 0.6176
+bin  9:  2.2916 -  2.2034 [ 978/1059] 0.6171
+bin 10:  2.2034 -  2.1274 [ 940/1058] 0.5937
+bin 11:  2.1274 -  2.0609 [ 802/1058] 0.5855
+bin 12:  2.0609 -  2.0020 [ 720/1063] 0.6208
+unused:  2.0020 -         [   0/0   ]
+################################################################################
+
+
+Time taken for density modification: 22.20s

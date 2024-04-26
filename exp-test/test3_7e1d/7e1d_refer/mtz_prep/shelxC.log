@@ -1,0 +1,59 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXC - Create input files for SHELXD and SHELXE - Version 2016/1  +
+  +  Copyright (c) George M. Sheldrick 2003-16                           +
+  +  SHELX                           Started at 22:19:55 on 19 Sep 2023  +
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    21571 Reflections read from SAD file 7e1d-sf_ctrun-cad_MTZ2V.hkl
+
+    12503 Unique reflections, highest resolution  2.002 Angstroms
+    166.5 Friedel pairs used on average for local scaling
+
+ Resl.   Inf. 10.72  6.60  4.97  4.06  3.47  3.06  2.74  2.50  2.30  2.14  2.00
+ N(data)     101   313   512   738   963  1139  1441  1597  1862  1990  1847
+ <I/sig>    50.7  53.4  49.6  58.1  47.6  36.5  26.5  18.2  13.9   9.1   7.0
+ %Complete  86.3  97.8  98.7  99.6  99.5  99.6  99.7  99.7  99.7  97.8  80.1
+ Multipl.    1.5   1.7   1.7   1.8   1.8   1.8   1.8   1.9   1.8   1.6   1.5
+ R(pim)%    3.93  3.90  4.58  2.71  2.78  3.34  4.72  6.54  7.93  9.34  9.58
+ Ranom%     7.85  7.79  9.15  5.42  5.55  6.68  9.44 13.07 15.85 18.68 19.17
+ <d"/sig>   4.09  3.82  3.74  2.57  1.98  1.68  1.58  1.37  1.30  1.29  1.23
+
+ For zero signal <d'/sig> and <d"/sig> should be about 0.80
+
+     7789 Reflections written to SHELX_fa.hkl for input to SHELXD/E
+
+    12503 Reflections written to SHELX.hkl for input to SHELXE
+
+    12503 Reflections written to SHELX_sad.cif containing:
+ h, k, l, I, sigI, I(+), sigI(+), I(-), sigI(-) and free-R flag
+
+ Dataset  <|E^2-1|>  Max.resln.(A)
+ SAD        0.747      2.002
+
+ If <|E^2-1|> is less than about 0.68, it is likely that the structure
+ is twinned or that F has been read in as intensity (specify -f!)
+
+ File SHELX_fa.ins written for input to SHELXD:
+
+ TITL SHELX_fa.ins SAD in P 21 21 21
+ CELL 0.98000 35.81 52.76 97.40 90.00 90.00 90.00
+ LATT -1
+ SYMM 1/2-X, -Y, 1/2+Z
+ SYMM -X, 1/2+Y, 1/2-Z
+ SYMM 1/2+X, 1/2-Y, -Z
+ SFAC SE
+ UNIT 128
+ FIND 8
+ SHEL 999 2.5
+ MIND -1.5 -0.1
+ PATS
+ NTRY 1000
+ SEED 1
+ HKLF 3
+ END 
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXC for SHELX finished at 22:19:55 on 19 Sep 2023                +
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

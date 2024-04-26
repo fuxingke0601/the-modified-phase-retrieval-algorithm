@@ -1,0 +1,94 @@
+<coordinate_data>
+	<atom id="1">
+		<atom_id>SE1</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.4858</x>
+		<y> 0.4672</y>
+		<z> 0.1430</z>
+		<occupancy>  1.407</occupancy>
+		<bfactor> 21.505</bfactor>
+	</atom>
+	<atom id="2">
+		<atom_id>SE2</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.3353</x>
+		<y> 0.1280</y>
+		<z> 0.8349</z>
+		<occupancy>  1.274</occupancy>
+		<bfactor> 15.061</bfactor>
+	</atom>
+	<atom id="3">
+		<atom_id>SE3</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.9123</x>
+		<y> 0.3454</y>
+		<z> 0.3951</z>
+		<occupancy>  0.978</occupancy>
+		<bfactor>  8.346</bfactor>
+	</atom>
+	<atom id="4">
+		<atom_id>SE4</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.5161</x>
+		<y> 0.2439</y>
+		<z> 0.6078</z>
+		<occupancy>  1.117</occupancy>
+		<bfactor> 11.376</bfactor>
+	</atom>
+	<atom id="5">
+		<atom_id>SE5</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.3411</x>
+		<y> 0.1844</y>
+		<z> 0.2775</z>
+		<occupancy>  1.274</occupancy>
+		<bfactor> 56.152</bfactor>
+	</atom>
+	<atom id="6">
+		<atom_id>SE6</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.3903</x>
+		<y> 0.1367</y>
+		<z> 0.3097</z>
+		<occupancy>  1.142</occupancy>
+		<bfactor> 36.622</bfactor>
+	</atom>
+	<atom id="7">
+		<atom_id>SE7</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.0759</x>
+		<y> 0.4588</y>
+		<z> 0.6904</z>
+		<occupancy>  1.010</occupancy>
+		<bfactor> 41.493</bfactor>
+	</atom>
+	<atom id="8">
+		<atom_id>SE8</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.0618</x>
+		<y> 0.4025</y>
+		<z> 0.7288</z>
+		<occupancy>  0.973</occupancy>
+		<bfactor> 48.198</bfactor>
+	</atom>
+	<atom id="9">
+		<atom_id>SE9</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.3588</x>
+		<y> 0.1274</y>
+		<z> 0.8869</z>
+		<occupancy>  0.335</occupancy>
+		<bfactor> 24.006</bfactor>
+	</atom>
+	<atom id="10">
+		<atom_id>SE10</atom_id>
+		<element_name>SE</element_name>
+		<x> 0.3104</x>
+		<y> 0.1289</y>
+		<z> 0.7849</z>
+		<occupancy>  0.281</occupancy>
+		<bfactor> 20.598</bfactor>
+	</atom>
+</coordinate_data>
+
+

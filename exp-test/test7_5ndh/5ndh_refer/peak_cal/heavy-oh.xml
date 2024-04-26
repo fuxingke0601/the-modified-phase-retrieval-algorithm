@@ -1,0 +1,58 @@
+<coordinate_data>
+	<atom id="1">
+		<atom_id>BR1</atom_id>
+		<element_name>BR</element_name>
+		<x>-0.9864</x>
+		<y>-0.5288</y>
+		<z>-0.1974</z>
+		<occupancy>  4.129</occupancy>
+		<bfactor>  9.868</bfactor>
+	</atom>
+	<atom id="2">
+		<atom_id>BR2</atom_id>
+		<element_name>BR</element_name>
+		<x>-0.1746</x>
+		<y>-0.8037</y>
+		<z>-0.0539</z>
+		<occupancy>  8.962</occupancy>
+		<bfactor> 69.174</bfactor>
+	</atom>
+	<atom id="3">
+		<atom_id>BR3</atom_id>
+		<element_name>BR</element_name>
+		<x>-0.3334</x>
+		<y>-0.6695</y>
+		<z>-0.0477</z>
+		<occupancy>  0.998</occupancy>
+		<bfactor> 18.419</bfactor>
+	</atom>
+	<atom id="4">
+		<atom_id>BR4</atom_id>
+		<element_name>BR</element_name>
+		<x>-0.1047</x>
+		<y>-0.3631</y>
+		<z>-0.2085</z>
+		<occupancy>  1.455</occupancy>
+		<bfactor> 31.680</bfactor>
+	</atom>
+	<atom id="5">
+		<atom_id>BR5</atom_id>
+		<element_name>BR</element_name>
+		<x> 0.0179</x>
+		<y>-0.4518</y>
+		<z>-0.1962</z>
+		<occupancy>  1.001</occupancy>
+		<bfactor> 24.662</bfactor>
+	</atom>
+	<atom id="6">
+		<atom_id>BR6</atom_id>
+		<element_name>BR</element_name>
+		<x>-0.0354</x>
+		<y>-0.5650</y>
+		<z>-0.1964</z>
+		<occupancy>  1.354</occupancy>
+		<bfactor>  4.700</bfactor>
+	</atom>
+</coordinate_data>
+
+

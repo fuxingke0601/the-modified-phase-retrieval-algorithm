@@ -1,0 +1,63 @@
+REMARK TITLE [no title set] 
+CRYST1   66.465  215.690   78.630  90.00  91.90  90.00 P 1 21 1      2
+SCALE1      0.015046 -0.000000  0.000499        0.00000
+SCALE2      0.000000  0.004636 -0.000000        0.00000
+SCALE3      0.000000  0.000000  0.012725        0.00000
+HETATM    1 SE   SUB A   1      49.705  82.546  57.768  0.22  0.10          SE
+HETATM    2 SE   SUB A   2      50.633  84.002  17.053  0.22  0.10          SE
+HETATM    3 SE   SUB A   3      39.234  96.063  56.842  0.15  0.10          SE
+HETATM    4 SE   SUB A   4       9.838  59.826  51.692  0.18  0.10          SE
+HETATM    5 SE   SUB A   5      45.494  79.948  61.673  0.18  0.10          SE
+HETATM    6 SE   SUB A   6      10.432  61.291  13.830  0.19  0.10          SE
+HETATM    7 SE   SUB A   7      16.402  45.744  46.490  0.17  0.10          SE
+HETATM    8 SE   SUB A   8      11.802  48.959  39.058  0.14  0.70          SE
+HETATM    9 SE   SUB A   9      52.182  13.432   2.647  0.15  0.10          SE
+HETATM   10 SE   SUB A  10      45.657  98.379  11.592  0.17  0.10          SE
+HETATM   11 SE   SUB A  11      52.799  91.965  56.089  0.13  0.10          SE
+HETATM   12 SE   SUB A  12      -1.620  90.483  59.491  0.11  0.10          SE
+HETATM   13 SE   SUB A  13      21.976  48.837  13.417  0.13  1.05          SE
+HETATM   14 SE   SUB A  14      -0.656  32.204   6.516  0.16  0.10          SE
+HETATM   15 SE   SUB A  15      14.431  64.593  17.750  0.17  0.10          SE
+HETATM   16 SE   SUB A  16      48.788  95.734  45.570  0.11  4.40          SE
+HETATM   17 SE   SUB A  17       9.770  32.167   8.641  0.19  0.10          SE
+HETATM   18 SE   SUB A  18      46.454  87.250  12.513  0.17  0.10          SE
+HETATM   19 SE   SUB A  19      39.078  95.419  69.477  0.13  0.10          SE
+HETATM   20 SE   SUB A  20       8.446  51.049  11.990  0.12  0.10          SE
+HETATM   21 SE   SUB A  21      -0.003   2.685  27.133  0.17  0.10          SE
+HETATM   22 SE   SUB A  22      14.658  56.863  47.180  0.16  0.10          SE
+HETATM   23 SE   SUB A  23      50.546  19.807  30.066  0.15  0.10          SE
+HETATM   24 SE   SUB A  24      62.971  50.942  14.104  0.10  0.10          SE
+HETATM   25 SE   SUB A  25      63.243  66.438   7.086  0.08  1.10          SE
+HETATM   26 SE   SUB A  26      32.500  89.275   7.436  0.15  0.37          SE
+HETATM   27 SE   SUB A  27      30.485  63.535  54.956  0.10  0.10          SE
+HETATM   28 SE   SUB A  28      32.943  49.938  54.100  0.12  0.10          SE
+HETATM   29 SE   SUB A  29      10.507   3.371  25.661  0.18  0.10          SE
+HETATM   30 SE   SUB A  30      29.133  55.883  43.003  0.12  0.10          SE
+HETATM   31 SE   SUB A  31      28.218  95.848  18.228  0.14  0.10          SE
+HETATM   32 SE   SUB A  32      64.071  27.716  50.114  0.09  5.00          SE
+HETATM   33 SE   SUB A  33      21.720  49.790  26.184  0.18  0.10          SE
+HETATM   34 SE   SUB A  34      52.890  91.455  -1.591  0.11  0.10          SE
+HETATM   35 SE   SUB A  35      29.779  81.213  19.395  0.10  0.50          SE
+HETATM   36 SE   SUB A  36      32.166  27.473  23.127  0.08  1.56          SE
+HETATM   37 SE   SUB A  37      10.175  89.832  10.215  0.08  4.38          SE
+HETATM   38 SE   SUB A  38      54.378  86.824  22.406  0.03  6.86          SE
+HETATM   39 SE   SUB A  39      59.234  56.207  69.121  0.10  3.21          SE
+HETATM   40 SE   SUB A  40       9.410  52.007  33.049  0.12  0.10          SE
+HETATM   41 SE   SUB A  41      57.867  88.694  60.731  0.04  0.60          SE
+HETATM   42 SE   SUB A  42      50.498  95.206   4.198  0.14  0.94          SE
+HETATM   43 SE   SUB A  43       2.783  90.300  64.865  0.09  0.10          SE
+HETATM   44 SE   SUB A  44      58.583  83.501  16.091  0.04  6.77          SE
+HETATM   45 SE   SUB A  45      13.448  48.015   1.475  0.09  4.39          SE
+HETATM   46 SE   SUB A  46      37.486 104.151  60.558  0.05  2.36          SE
+HETATM   47 SE   SUB A  47      47.467  95.125  59.039  0.04  1.89          SE
+HETATM   48 SE   SUB A  48      38.493  85.260  66.526  0.03  6.15          SE
+HETATM   49 SE   SUB A  49      51.307  49.987  43.263  0.08  0.10          SE
+HETATM   50 SE   SUB A  50     -13.016-134.580 -61.138  0.09  0.10          SE
+HETATM   51 SE   SUB A  51     -17.272 -59.243 -45.991  0.08  0.10          SE
+HETATM   52 SE   SUB A  52       2.129-100.889 -61.927  0.09  2.05          SE
+HETATM   53 SE   SUB A  53     -21.552 -60.972 -26.105  0.08  0.10          SE
+HETATM   54 SE   SUB A  54     -13.055-128.786 -61.226  0.06  2.52          SE
+HETATM   55 SE   SUB A  55      -0.718-161.405 -64.249  0.08  5.59          SE
+HETATM   56 SE   SUB A  56     -13.390-193.088 -48.369  0.09  0.10          SE
+HETATM   57 SE   SUB A  57      -1.040-140.320 -26.015  0.08  2.58          SE
+HETATM   58 SE   SUB A  58     -14.323 -46.136 -17.759  0.07  3.52          SE

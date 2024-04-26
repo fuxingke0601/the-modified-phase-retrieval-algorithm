@@ -1,0 +1,561 @@
+--------------------------------------------------------
+-------------LIST OF FACTS:---------------------------
+/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca_1  <phenix.autosol.Datafile.Datafile instance at 0x7f1ef8a2be18>
+/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca_1  <phenix.autosol.Datafile.Datafile instance at 0x7f1ef877ef80>
+/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz_1  <phenix.autosol.Datafile.Datafile instance at 0x7f1ef8769a70>
+CurrentWizard  "AutoSol"
+NeedInputs  False
+OutputDir  "AutoSol_run_1_"
+acceptable_cc_hyss  0.2
+acceptable_quality  40.0
+acceptable_r  0.35
+acceptable_run  True
+acceptable_secondary_structure_cc  0.35
+add_classic_denmod  Auto
+add_double_quotes_in_condor  True
+add_extra_if_fa  True
+add_res_max  2.0
+all_input_refinement_labels  FREE  FP  SIGFP  DP  SIGDP  None
+allow_negative_f_double_prime 0
+allowed_score_types  SKEW  CC_DENMOD  RFACTOR  NCS_OVERLAP  TRUNCATE  REGIONS  CONTRAST  FOM  FLATNESS  CORR_RMS
+always_include_peak  True
+another_dataset 0
+auto_manual  "Manual"
+b_iso  16.861371174
+b_iso_use  16.861371174
+background  True
+base_path  None
+best_fom_so_far  0.42
+best_initial_phased_solution <self.Facts[best_initial_phased_solution]>
+best_of_n_hyss  1
+best_of_n_hyss_always  10
+build  "False"
+build_model_from_scratch  True
+build_set 0
+build_successful 0
+build_type  "RESOLVE"
+cache_resolve_libs  True
+cell_found  "C 1 2 1"
+chain_type  "PROTEIN"
+change_sg 0
+check_only 0
+check_run_command 0
+check_wait_time  1.0
+cif_def_file_list []
+cluster_pdb_file  None
+combine_datasets 0
+combine_same_parent_only 0
+combine_siblings  True
+condor_universe  "vanilla"
+connect  True
+converted_file_list  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca
+coot_name  "coot"
+create_scoring_table 0
+crystal_symmetry <self.Facts[crystal_symmetry]>
+current_run_number  1
+current_solution <self.Facts[current_solution]>
+data_quality  "moderate"
+data_quality_applied  True
+database_version  1.4
+datafile_sn  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+dataset_another_dataset  False
+dataset_another_dataset_set  None
+dataset_converted  True
+dataset_datafile_sn  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+dataset_datafile_sn_set  None
+dataset_derscale_list  None
+dataset_derscale_list_set  None
+dataset_do_madbst  True
+dataset_do_madbst_set  True
+dataset_expt_type  sad
+dataset_expt_type_set  Auto
+dataset_f_double_prime_list  [4.5]
+dataset_f_double_prime_list_set  None
+dataset_f_prime_list  [-8.0]
+dataset_f_prime_list_set  None
+dataset_file_type  sca
+dataset_file_type_set  None
+dataset_group_labels_list  None
+dataset_group_labels_list_set  None
+dataset_ha_sites_file  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb
+dataset_ha_sites_file_set  ../pdb_CF_format_hand_format.pdb
+dataset_hyss_or_sites_run  True
+dataset_hyss_or_sites_run_set  None
+dataset_inano_list  None
+dataset_inano_list_set  None
+dataset_input_file_list  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+dataset_input_file_list_set  ['../../../5_5c82_4se_C121/5c82-sf.mtz']
+dataset_list_keys  input_file_list  wavelength_list  wavelength_name_list  nat_der_list  f_prime_list  derscale_list  f_double_prime_list  resolution  merge_type  file_type  do_madbst  res_hyss  res_eval  recommended_resolution  overallscale  inano_list  n_ha_list  read_ha  ha_sites_file  mad_ha_n  expt_type  scaled  hyss_or_sites_run  datafile_sn  log_scale  log_hyss  log_combine  another_dataset  mad_ha_type  group_labels_list  original_merge_type  original_file_type  original_input_files
+dataset_log_combine  None
+dataset_log_combine_set  None
+dataset_log_hyss  None
+dataset_log_hyss_set  None
+dataset_log_scale  dataset_1_scale.log
+dataset_log_scale_set  None
+dataset_mad_ha_n  6
+dataset_mad_ha_n_set  6
+dataset_mad_ha_type  SE
+dataset_mad_ha_type_set  SE
+dataset_merge_type  premerged
+dataset_merge_type_set  None
+dataset_n_ha_list  None
+dataset_n_ha_list_set  None
+dataset_nat_der_list  None
+dataset_nat_der_list_set  None
+dataset_number  1
+dataset_number_set  1
+dataset_original_file_type  sca
+dataset_original_file_type_set  None
+dataset_original_input_files  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+dataset_original_input_files_set  None
+dataset_original_merge_type  premerged
+dataset_original_merge_type_set  None
+dataset_overallscale  False
+dataset_overallscale_set  False
+dataset_read_ha  True
+dataset_read_ha_set  None
+dataset_recommended_resolution  2.200285
+dataset_recommended_resolution_set  None
+dataset_res_eval  2.5
+dataset_res_eval_set  0.0
+dataset_res_hyss  None
+dataset_res_hyss_set  None
+dataset_resolution  2.2
+dataset_resolution_set  0.0
+dataset_scaled  True
+dataset_scaled_set  None
+dataset_wavelength_list  [0.97869]
+dataset_wavelength_list_set  [0.97869]
+dataset_wavelength_name_list  ['peak']
+dataset_wavelength_name_list_set  None
+debug  False
+default_f_double_prime_peak_edge_remote_list  4.5  3.0  3.5  3.5  3.0
+default_f_prime_peak_edge_remote_list  -8.0  -9.0  -3.0  -6.0  -6.0
+default_ha_n  4
+default_lowest_buffer_resolution  2.0
+default_lowest_recommended_resolution  5.0
+default_mad_ha_n  4
+default_mad_ha_type  "Se"
+default_overallscale 0
+default_path  False
+default_recommended_resolution  2.5
+default_res_eval  2.5
+default_res_hyss  3.0
+default_res_hyss_low  4.5
+default_residues  200
+default_resolution  2.5
+default_solvent_fraction  0.5
+default_wavelength_peak_edge_remote_list  0.9795  0.9792  0.96  0.978  0.982
+delta_b_for_auto_remove_aniso  20.0
+denmod_solution_descriptions_for_build  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+denmod_solutions  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+denmod_solutions_for_build  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+denmod_solutions_for_sites []
+descr_list  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+description_list  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+desired_coverage  0.8
+direct_methods_only 0
+dmax  1000.0
+do_madbst  True
+do_madbst_set  True
+done_AutoSol_build  True
+done_AutoSol_build_params  True
+done_AutoSol_choose_solutions_for_build  True
+done_AutoSol_choose_solutions_for_denmod  True
+done_AutoSol_choose_solutions_for_phasing  True
+done_AutoSol_choose_solutions_for_sites 0
+done_AutoSol_denmod  True
+done_AutoSol_files_for_read_ha_solution  True
+done_AutoSol_guess_phased_solution_descriptions_for_denmod  True
+done_AutoSol_guess_setup_for_scaling  True
+done_AutoSol_guess_solution_descriptions_for_phasing  True
+done_AutoSol_hyss  True
+done_AutoSol_phasing  True
+done_AutoSol_refinement_file_info_inputs  True
+done_AutoSol_scale_and_analyze_mad  True
+done_AutoSol_score_ha_solutions  True
+done_AutoSol_set_params  True
+done_AutoSol_setup_for_scaling  True
+done_AutoSol_start  True
+done_AutoSol_verify_crystal_info  True
+done_xtriage  True
+expt_type  "sad"
+expt_type_set  "Auto"
+extra_verbose 0
+extreme_dm 0
+f_double_prime_list  4.5
+f_prime_list  -8.0
+file_type  "sca"
+fill 0
+find_ncs  "Auto"
+finish_message  "
+To carry out automated iterative model-building, density modification
+ and refinement based on your solution run the AutoBuild 
+wizard in this directory now."
+finished  True
+fit_loops  True
+fix_xyz 0
+fix_xyz_after_denmod 0
+fixscattfactors  "True"
+fixscattfactors_in_phasing 0
+fom_for_extreme_dm  0.35
+fully_skip_combine_extend  True
+general_logs  5c82-sf_PHX.sca_xtriage.log  5c82-sf_PHX.sca_xtriage_graphs.log
+generate_hl_if_missing 0
+go_back_to_dataset  "(keep going)"
+good_cc_hyss  0.3
+group_ca_length  4
+group_length  2
+guess_hklin  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+guess_phased_solution_descriptions_for_denmod  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+guess_res_eval  2.5
+guess_res_hyss  3.0
+guess_solution_descriptions_for_phasing  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+ha_iteration 0
+ha_sites_file  "/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb"
+ha_sites_file_set  "../pdb_CF_format_hand_format.pdb"
+have_hand  True
+have_hl_anom_in_hklin_ref  True
+helices_strands_only  "False"
+helices_strands_start 0
+highest_res_datafile_name  "/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca"
+highest_resolution_by_dataset  {1: 2.200285243372019}
+highest_scaled_data_res  2.2
+highest_screen  4
+hklin_exp  "aniso_refinement_data_PHX.mtz"
+hklin_for_hyss  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+hklin_map  "map_coeffs_1.mtz"
+hklin_ref  "aniso_refinement_data_PHX_with_hl_anom.mtz"
+hklin_ref_uncorrected  "exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz"
+hklout_fwt  "phaser_1_fwt.mtz"
+hl_anom_label  "HLanomA,HLanomB,HLanomC,HLanomD"
+hl_in_resolve 0
+hl_label  "HLAM,HLBM,HLCM,HLDM"
+hold_resolution  2.2
+hold_resolution_set 0
+hyss_enable_early_termination  True
+hyss_general_positions_only  True
+hyss_min_distance  3.5
+hyss_n_fragments  3
+hyss_n_patterson_vectors  33
+hyss_or_sites_run  True
+hyss_random_seed  792341
+hyss_runs_min  2
+i_ran_seed  72432
+id_scale_ref  1
+ikeepflag  1
+imported 0
+imported_facts_dict  False
+include_input_model 0
+input_compare_file  None
+input_data_file_use  "AutoSol_run_1_/TEMP0/TEMP_ref_file.mtz"
+input_file_list  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+input_file_list_set  ../../../5_5c82_4se_C121/5c82-sf.mtz
+input_ha_file  "AutoSol_run_1_/TEMP0/ha_1.pdb_formatted.pdb"
+input_labels_string_list  F(+) SIGF(+) F(-) SIGF(-)
+input_map_file_use  "AutoSol_run_1_/resolve_histograms_1.mtz"
+input_part_map_coeffs_file  None
+input_part_map_coeffs_labels  "FC,PHIC"
+input_part_map_ha_fraction  0.75
+input_partpdb_file  None
+input_pdb_file  False
+input_phase_file  None
+input_phase_file_last  None
+input_phase_is_part_map_coeffs  True
+input_phase_labels []
+input_refinement_file  "/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz"
+input_refinement_file_last  "/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz"
+input_refinement_labels  FP  SIGFP  FREE
+input_seq_file  "AutoSol_run_1_/sequence_autosol.dat"
+input_seq_file_set  "../../../5_5c82_4se_C121/rcsb_pdb_5C82.fasta"
+insert_helices  True
+is_centric 0
+job_title  None
+keep_atom_types 0
+keep_files  overall_best*  phaser_*.mtz  resolve_*.mtz  solve_*.mtz  ha_*.pdb  dataset*.log
+labin_FP_PHIB_FOM  "labin FP=FP PHIB=PHIM FOM=FOMM"
+labin_FWT  "labin FP=FWT PHIB=PHWT"
+labin_exp  "labin FP=FP SIGFP=SIGFP PHIB=PHIM FOM=FOMM 
+labin HLA=HLAM HLB=HLBM HLC=HLCM HLD=HLDM 
+"
+labin_exp_with_hl  "labin FP=FP SIGFP=SIGFP PHIB=PHIM FOM=FOMM 
+labin HLA=HLAM HLB=HLBM HLC=HLCM HLD=HLDM 
+"
+labin_map_is_two_cols  True
+labin_map_use  "FP=FWT PHIB=PHWT"
+labin_phase  False
+labin_ref  "labin FP=FP SIGFP=SIGFP PHIB=PHIM FOM=FOMM 
+labin HLA=HLAM HLB=HLBM HLC=HLCM HLD=HLDM 
+labin  FreeR_flag=FreeR_flag
+"
+labin_refine  "FP=FP SIGFP=SIGFP FreeR_flag=FREE "
+labin_use  "FP=FP SIGFP=SIGFP FreeR_flag=FREE PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB 
+labin HLC=HLC HLD=HLD "
+last_process_is_local  True
+last_scaling  True
+last_solve_resolution  2.2
+link_distance_cutoff  3.0
+localscale_before_phaser  True
+log_scale  "dataset_1_scale.log"
+logfile_name  "build_1.log"
+loop_cc_min  0.4
+loop_lib 0
+low_fom  0.2
+mad_ha_add_f_double_prime_list []
+mad_ha_add_f_prime_list []
+mad_ha_add_list []
+mad_ha_n  6
+mad_ha_n_set  6
+mad_ha_type  "SE"
+mad_ha_type_set  "SE"
+make_files_for_coot  True
+map_name_for_model_building  "AutoSol_run_1_/resolve_histograms_1.mtz"
+mask_as_mtz 0
+mask_cycles  5
+mask_type  "histograms"
+mask_type_evaluated  True
+max_b_iso  40.0
+max_cc_extra_unique_solutions  0.5
+max_choices  1
+max_composite_choices  8
+max_cutout_model_radius  20.0
+max_extra_unique_solutions 0
+max_ha_iterations  2
+max_model_ha_iterations  1
+max_models_in_ha_iteration  1
+max_range_to_keep  4.0
+max_single_sites  5
+max_span  30
+max_useful_dm_r  0.4
+max_wait_time  1.0
+medium_defaults <self.Facts[medium_defaults]>
+merge_type  "premerged"
+message_0  "STEP: finished  Run 1
+
+Last warning message:
+SKIPPED BUILD
+...To see additional warnings click magnifying glass at upper left"
+message_1  False
+message_2  False
+message_3  False
+min_fom  0.05
+min_fom_for_dm 0
+min_fraction_of_sites_found  0.667
+min_hyss_cc  0.05
+min_phased_each_deriv  1
+minimum_improvement 0
+minimum_merge_cc  0.25
+minimum_ncs_cc  0.3
+minimum_version  2.1
+minor_cycles  10
+model_ha_iteration 0
+moderate_defaults <self.Facts[moderate_defaults]>
+mtz_label_refinement  FP  SIGFP  FREE
+n_add_res_max  2
+n_cycle_build 0
+n_random  6
+n_random_frag 0
+n_random_loop  3
+n_rebuild_in_place  1
+n_try_rebuild  5
+n_xyz_list  144  64  60
+nbatch  1
+ncs_copies  1
+ncs_copies_max  1
+ncs_copies_min  1
+ncs_copies_min_for_overlap  2
+ncs_copies_set  1
+ncs_from_partpdb  True
+ncs_in_refinement  "torsion"
+ncs_operators  False
+ncs_refine_coord_sigma_from_rmsd 0
+ncs_refine_coord_sigma_from_rmsd_ratio  1.0
+ncycle_refine  3
+never  True
+never_done  AutoSol_guess_files_for_ha_solution
+next_method  False
+not_files  file_or_file_list  write_run_directory_to_file  output_files_1  dataset_input_file_list  use_map_file_as_hklstart  map_file_fom  map_file_is_density_modified  keep_files
+nproc  4
+nproc_set  4
+number_of_builds  1
+number_of_datasets  1
+number_of_datasets_set  1
+number_of_ha_iterations 0
+number_of_models  1
+number_of_solutions_to_display  1
+offsets_list  53.0  7.0  23.0
+optimize_ncs  True
+orig_input_file_list []
+original_file_type  "sca"
+original_input_files  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca
+original_merge_type  "premerged"
+overall_score_method  "BAYES-CC"
+overallscale  "False"
+overallscale_set 0
+padding  1.0
+perfect_labels []
+phase_full_resolution  True
+phase_improve_and_build  True
+phase_only 0
+phased_solution_description_list  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"  Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"
+phased_solutions  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"  Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"
+phased_solutions_for_denmod  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+phaser_completion  True
+phaser_sites_then_phase 0
+phasing_method  "PHASER"
+phasing_solution_description_list  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+place_waters  True
+pop_parameter_window  True
+precondition 0
+print_citations  True
+process_dir  "AutoSol_run_1_/.PROCESS_1"
+process_number  1
+program_refinement_labels  FP  SIGFP  FreeR_flag
+quality_cc_min  0.5
+queue_commands []
+quick_defaults <self.Facts[quick_defaults]>
+r_free_flags_fraction  0.1
+r_free_flags_lattice_symmetry_max_delta  5.0
+r_free_flags_max_free  2000.0
+r_free_flags_use_lattice_symmetry  True
+r_switch  0.4
+raise_sorry 0
+random_scoring 0
+ratio_b_for_auto_remove_aniso  1.0
+ratio_out  10.0
+ratmin 0
+read_DB 0
+read_ha  True
+read_sites  "True"
+read_sites_set  True
+rebuild_chain_list  
+rebuild_in_place 0
+rebuild_res_end_list  0
+rebuild_res_start_list  0
+recommended_resolution  2.200285
+refine  "True"
+refine_b  True
+refine_eff_file_list []
+refine_se_occ  True
+refine_trace_loops  True
+refine_with_ncs  True
+refinement_resolution 0
+remove_aniso  "True"
+remove_outlier_segments_z_cut  3.0
+require_nat  True
+require_nonzero  True
+res_eval  2.5
+res_eval_set 0
+res_phase  2.2
+residues  190
+resolution  2.2
+resolution_build  2.2003
+resolution_build_set 0
+resolution_helices_strands  3.1
+resolution_line  False
+resolution_set 0
+resolve_command_list []
+resolve_libs  <solve_resolve_resolve_helper_ext.resolve_libs object at 0x7f1ef77d9940>
+resolve_pattern_command_list []
+resolve_size  12
+resolve_wait_time  1
+rho_overlap_min  0.3
+rho_overlap_min_scoring  0.5
+run_command  "sh "
+s_annealing  False
+save_time  1698390757.0
+scale_only 0
+scaled  True
+scaled_data_res  2.2
+score_individual_offset_list []
+score_individual_scale_list []
+score_individual_sd_list []
+score_type_list  SKEW  CORR_RMS
+score_weight_list []
+scoring_table  <phenix.autosol.ScoringTable.ScoringTable instance at 0x7f1ef77f9878>
+self_diff_fourier  True
+semet  "True"
+sg_found  "C 1 2 1"
+sg_inv  "C 1 2 1"
+skip_build 0
+skip_clash_guard  True
+skip_classic_if_worse_fom  True
+skip_extra_phasing  True
+skip_ha  "False"
+skip_hyss_other_derivs_if_quick  True
+skip_score_list []
+skip_xtriage 0
+solution_description_list  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"  Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"
+solution_number  2
+solution_to_display 0
+solutions  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"  Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"
+solutions_for_phasing  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+solve_command_list []
+solve_size  False
+solve_work_path  False
+solvent_fraction  0.4419
+solvent_fraction_set  0.4419
+sort_hetatms 0
+space_group  "C 1 2 1"
+space_group_set  "C 1 2 1"
+standard_loops  True
+start_chains_list []
+still_improving  True
+strong_defaults <self.Facts[strong_defaults]>
+subtitle_extra  False
+target_b_ratio  10.0
+temp_dir  "AutoSol_run_1_/TEMP0"
+test_flag_value 0
+test_mask_type  "False"
+test_remove_aniso  True
+thorough_defaults <self.Facts[thorough_defaults]>
+thorough_denmod  "True"
+thorough_loop_fit  False
+thoroughness  "quick"
+thoroughness_applied  True
+tolerance_add_classic  0.02
+top_output_dir  None
+top_solution <self.Facts[top_solution]>
+trace_as_lig 0
+trace_chain 0
+trace_chain_score 0
+trace_loops 0
+truncate_ha_sites_in_resolve  "True"
+try_low_res_for_cys  True
+try_low_resolution 0
+try_orig_sad_data_in_hyss 0
+try_recommended_resolution_for_hyss  True
+unit_cell  96.5360031128  44.6409988403  42.2439994812  90.0  97.6650009155  90.0
+use_any_side 0
+use_automatic_hyss 0
+use_automatic_hyss_set 0
+use_existing_datasets  True
+use_existing_datasets_set  True
+use_hl_anom_in_denmod 0
+use_hl_anom_in_denmod_with_model 0
+use_hl_anom_in_refinement 0
+use_measurability  True
+use_met_in_align  "True"
+use_mlhl  "True"
+use_ncs_in_denmod  "True"
+use_perfect 0
+use_phaser_hklstart  True
+use_phaser_rescoring 0
+use_sca_as_is  True
+using_aniso  True
+verbose 0
+visited_highest_screen  True
+wait_between_submit_time  1.0
+warnings  
+NOTE: space group ('C 1 2 1') and cell ([96.536, 44.641, 42.244, 90.0, 97.67, 90.0]) 
+found in /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+Setting space group from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+  SKIPPED BUILD
+wavelength_list  0.97869
+wavelength_list_set  0.97869
+wavelength_name_list  peak
+weak_defaults <self.Facts[weak_defaults]>
+work_pdb_file  False
+working_directory  "/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak"
+-------------END OF LIST OF FACTS:--------------------------
+------------------------------------------------------------

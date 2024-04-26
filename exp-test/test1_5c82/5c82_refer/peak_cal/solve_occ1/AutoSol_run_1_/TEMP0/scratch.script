@@ -1,0 +1,10 @@
+2,
+lambda_1_000_fp.mrg                                                             
+lambda_1_000_fm.mrg                                                             
+mad_fpfm.scl                                                                    
+mad_fpfm.scl Fnat,sig,(F+,sig,F-,sig)n                                          
+1,
+ 1, 2
+2,
+ 1, 2
+0

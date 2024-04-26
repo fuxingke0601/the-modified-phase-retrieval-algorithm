@@ -1,0 +1,170 @@
+
+ JOB TIMESTAMP .... Tue Oct 17 17:02:27 2023
+ STRUCTURE ID ..... a 
+ SPACE GROUP ...... P212121 (19)
+ UNIT CELL ........   35.814   52.762   97.397   90.000   90.000   90.000 
+ INPUT SOURCES
+ ___ SOL-1        ___ file pdb_CF_format.pdb    (249 sites)
+ ___ SOL-2        ___ file 7e1d_4se.pdb         (249 sites)
+
+ for details, see log output
+
+ +------------------------------------------------------------------------------+
+ |                                                                              |
+ |                              SitCom vers. 0.17.5                             |
+ |              (C) 2005-06 Instituto FIRC di Oncologia Moleculare              |
+ |           (C) 2007-10 European Molecular Biology Laboratory (EMBL)           |
+ |                                                                              |
+ |              Authors:  Fabio Dall'Antonia & Thomas R. Schneider              |
+ |                Contact:     fabio.dallantonia@embl-hamburg.de                |
+ |                                                                              |
+ | SitCom has been/is funded by the European Commission as part of the projects |
+ |   -- AutoStruct -- http://www.autostruct.org - Contract QLRI-CT-2000-00398   |
+ |     -- BioXHit -- http://www.bioxhit.org - Contract LHSG-CT-2003-503420      |
+ |                                                                              |
+ |                                 Please cite:                                 |
+ | Dall'Antonia, F. & Schneider, T. R. (2006).  SITCOM: a program for comparing |
+ |   sites in macromolecular substructures. J. Appl. Crystallogr. 39, 618-619   |
+ |                                                                              |
+ |          SitCom's internal symmetry library was created using CCTBX          |
+ |     Grosse-Kunstleve, R. W. & Adams, P. D. (2003). Newsletter of the IUCr    |
+ |              Commission on Crystallographic Computing, 1, 28-38              |
+ |                                                                              |
+ |                        v0.17.5 is a beta-test version                        |
+ |                                                                              |
+ +------------------------------------------------------------------------------+
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                Comparison of multi-Solution vs. Consensus Sites                
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+
+
+ The following tables summarise the results of inter-solution comparison used for
+ unique site determination and collection of consensus sites. They do not yet refer
+ to the final consensus model.
+
+
+ ________________________________________________________________________________
+
+                             SITE CONNECTION TABLE                             
+ ________________________________________________________________________________
+
+
+ The columns contain the unique site positions as collected from the input solutions.
+ The rows list the solutions in the order of reading, single pdb files before shelxd
+ sets, solutions of sets are sorted by fom (cc). Thus, the table cells contain single
+ site numbers, as read from the respective solution (row), put to the column of the
+ unique position they are equivalent to.
+
+                        UNIQUE SITE #  >  ||   1 |   2 |   3 |   4 |   5 |   6 |
+    SOLUTION         FOM    SET  ADD.HITS ||     |     |     |     |     |     |
+    ======================================||=====|=====|=====|=====|=====|=====|
+    SOL-1           50.00    0     6 /  6 ||   1 |   2 |   3 |   4 |   5 |   6 |
+    --------------------------------------||-----|-----|-----|-----|-----|-----|
+    SOL-2           49.00   11     4 /  4 ||   4 |   1 |   2 |   3 |     |     |
+    --------------------------------------||-----|-----|-----|-----|-----|-----|
+    ======================================||=====|=====|=====|=====|=====|=====|
+        PRESENCE IN [N] OF   2 TRIALS     ||   2 |   2 |   2 |   2 |   1 |   1 |
+
+
+
+ ________________________________________________________________________________
+
+                                DISTANCES TABLE                                
+ ________________________________________________________________________________
+
+
+ The columns contain the unique site positions as collected from the input solutions.
+ The rows list the solutions in the order of reading, single pdb files before shelxd
+ sets, solutions of sets are sorted by fom (cc). The table cells contain the distances
+ of the sites to the unique positions (columns), which were seeded by the top solution.
+ Therefore, the first solution has zero distances for all its sites, every following
+ solution has zero distances for those sites not agreeing to previous ones (and
+ consequently defining new unique positions.
+
+                      UNIQUE SITE #  >  ||   1 |   2 |   3 |   4 |   5 |   6 |
+    SOLUTION         FOM   SET  D(MEAN) ||     |     |     |     |     |     |
+    ====================================||=====|=====|=====|=====|=====|=====|
+    SOL-1           50.00    0   0.000  ||0.000|0.000|0.000|0.000|0.000|0.000|
+    ------------------------------------||-----|-----|-----|-----|-----|-----|
+    SOL-2           49.00   11   0.725  ||0.182|0.225|0.410|0.632|     |     |
+    ------------------------------------||-----|-----|-----|-----|-----|-----|
+    ====================================||=====|=====|=====|=====|=====|=====|
+      AVG. DIST. FOR UNIQUE LOCATION    ||0.182|0.225|0.410|0.632|0.000|0.000|
+
+    OVERALL AVERAGE DISTANCE:  0.362 
+
+
+
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                        Consensus model of unique sites                        
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+The final result of site comparison, after the consensus sites at unique positions
+  have been scored, sorted and marked for NCS compliance.
+
+ ________________________________________________________________________________
+
+                            Consensus model scoring                            
+ ________________________________________________________________________________
+
+
+ Site scoring, i.e. the calculation of SFOM values, is based on three contributions:
+ Consensus rate, mean consensus distance and site occupancy. The SFOM value is then
+ taken to judge the reliability of the site.
+ Fundamentally, all consensus sites are written to the output files. The reliability
+ classification is (only) a decision help for the manual truncation of the output.
+ SFOM values calculated by following model:
+
+ criterion             | weight |                         FOM defined as        
+ ------------------------------------------------------------------------------------------------
+ consensus rate        |  1.00  | group-weighted mean of n(agreements,group) / n(solutions,group)
+ overall mean distance |  0.50  |                        1 / 1 + d(mean)        
+ source-site occupancy |  0.00  |                 occupancy (peak height) value 
+ ------------------------------------------------------------------------------------------------
+
+ Site reliability color scheme:
+
+ predicted reliablity   |  indicator                  
+ ------------------------------------                 
+ high   (SFOM  >  0.65) |   ##  ##                    
+ medium (SFOM  >  0.35) |   ++  ++                    
+ low    (SFOM  <= 0.35) |   --  --   		 
+ ------------------------------------
+
+ ________________________________________________________________________________
+
+                             Consensus model table                             
+ ________________________________________________________________________________
+
+
+ Here, the consensus sites are shown, sorted by score, with columns for each SFOM
+ contribution and resulting SFOM value. If NCS-analysis was requested, there is an
+ extra column. For completeness, also the unique position (in fractional and
+ cartesian coordinates) and its source site are displayed.
+  ===========================================================================================================================================================
+    #  |consensus rate,weight=1.00| d(mean) | occupancy |    SFOM    | source site of   |         fractionals         |         cartesians          
+       |    SOL-1    |   SOL-2    |  w=0.50 |   w=0.00  |            | uniq. position   |     x        y        z     |      x        y        z    
+       |     1.00    |    1.00    |         |           |            |                  |                             |                             
+  ===========================================================================================================================================================
+    2  |     1.00    |    1.00    |  0.182  |    1.00   | ## 0.95 ## | SOL-1.1          | -0.16390 -0.07585 -0.06079  |   -5.870   -4.002   -5.921 
+    3  |     1.00    |    1.00    |  0.225  |    0.98   | ## 0.94 ## | SOL-1.2          |  0.10133 -0.30071  0.13614  |    3.629  -15.866   13.260 
+    4  |     1.00    |    1.00    |  0.410  |    0.94   | ## 0.90 ## | SOL-1.3          |  0.13813 -0.13419  0.18571  |    4.947   -7.080   18.088 
+    5  |     1.00    |    1.00    |  0.632  |    0.63   | ## 0.87 ## | SOL-1.4          |  0.17141  0.09562  0.12377  |    6.139    5.045   12.055 
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------
+    6  |     1.00    |    0.00    |  0.000  |    0.22   | ++ 0.50 ++ | SOL-1.5          |  0.13819  0.01143  0.11156  |    4.949    0.603   10.866 
+    7  |     1.00    |    0.00    |  0.000  |    0.18   | ++ 0.50 ++ | SOL-1.6          | -0.31985 -0.19961 -0.14525  |  -11.455  -10.532  -14.147 
+  ===========================================================================================================================================================
+    #  |consensus rate,weight=1.00| d(mean) | occupancy |    SFOM    | source site of   |         fractionals         |         cartesians          
+       |    SOL-1    |   SOL-2    |  w=0.50 |   w=0.00  |            | uniq. position   |     x        y        z     |      x        y        z    
+       |     1.00    |    1.00    |         |           |            |                  |                             |                             
+  ===========================================================================================================================================================
+

@@ -1,0 +1,29 @@
+remove_aniso {
+  input_files {
+    mtz_in = "AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz"
+    obs_labels = None
+  }
+  output_files {
+    mtz_out = "AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX.mtz"
+    log = "remove_aniso.log"
+    extension = None
+    params_out = "remove_aniso_params.eff"
+  }
+  directories {
+    temp_dir = "AutoSol_run_1_/TEMP0"
+    output_dir = "AutoSol_run_1_"
+  }
+  crystal_info {
+    resolution = None
+  }
+  aniso {
+    b_iso = 18.1
+  }
+  control {
+    verbose = False
+    raise_sorry = False
+    debug = False
+    dry_run = False
+    resolve_command_list = None
+  }
+}

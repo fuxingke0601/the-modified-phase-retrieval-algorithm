@@ -1,0 +1,542 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                --- RESOLVE ---                      *
+        *                                                     *
+        *         Statistical density modification            *
+        *             Automated model-building                *
+        *                                                     *
+        *                For on-line help                     *
+        *            see "http://solve.lanl.gov"              *
+        *                                                     *
+        *      This software uses library routines from the   *
+        *      CCP4 suite (http://www.ccp4.ac.uk) for which   *
+        *           the author is very thankful!              *
+        *******************************************************
+
+               (version 2.15 of 20-Mar-2010)
+                       (size =  12)
+  Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+>workdir AutoSol_run_1_/TEMP0
+Work directory will be : AutoSol_run_1_/TEMP0/
+
+>outputdir AutoSol_run_1_
+Directory for STOPWIZARD will be AutoSol_run_1_/
+
+>write_if_present
+Only writing out HL coeffs and FreeR_flag if present
+
+>hklin TEMP_ref_file.mtz
+Data to be read from mtz file: TEMP_ref_file.mtz
+
+>labin FP=F_from_7e1d-sf SIGFP=SIGF_from_7e1d-sf
+Current value of "LABIN" is: labin FP=F_from_7e1d-sf SIGFP=SIGF_from_7e1d-sf                                                                                                                                                                                         
+
+>LABIN FreeR_flag=FreeR_flag
+Current value of "LABIN" is: labin FP=F_from_7e1d-sf SIGFP=SIGF_from_7e1d-sf FreeR_flag=FreeR_flag                                                                                                                                                                   
+
+>labin PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB HLC=HLC HLD=HLD
+Current value of "LABIN" is: labin FP=F_from_7e1d-sf SIGFP=SIGF_from_7e1d-sf FreeR_flag=FreeR_flag PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB HLC=HLC HLD=HLD                                                                                                                 
+
+>hklout exptl_fobs_phases_freeR_flags_4.mtz
+Data to be written to mtz file: exptl_fobs_phases_freeR_flags_4.mtz
+
+>solvent_content 0.4075
+Fraction of unit cell assumed to be solvent is:    0.4075000    
+
+>no_build
+Model will not be built
+
+>mask_cycles 1
+Number of mask/image cycles:            1
+
+>minor_cycles 0
+Number of minor cycles per mask/image  cycle:            0
+
+>ha_file NONE
+Heavy atom sites will be read from file: NONE
+The file does not exist...ignoring it
+
+>keep_missing
+All reflections kept, even with missing F
+
+>use_wang
+Wang method for solvent mask will be used
+
+>no_ha
+no_ha: heavy-atoms not written out in pdb files
+
+>database 5
+Entry in database of histograms to use:            5
+
+>no_optimize_ncs
+Not optimizing NCS
+
+>spg_name_use P 21 21 21
+Space group name for output PDB file only: P 21 21 21 
+
+>min_z_value_rho -3.0
+Minimum z-value for a segment not matched to sequence:    -3.000000    
+
+>rho_overlap_min   0.300
+Minimum <rho1*rho2> to keep NCS from ha sites    0.3000000    
+(Note: scaled by ncs copies, value above is for 2 copies)
+
+>no_create_free
+Will not create FREE (test) set
+
+>use_all_for_test
+Will use all data for testing solvent content and histograms
+
+>free_id 0
+Free R flag ID will be            0
+
+>group_ca_length 4
+Minimum # of residues in a group to keep=           4
+
+>group_length 2
+Minimum # of segments in a group to keep=           2
+
+All done with inputs
+Building protein
+Setting up for building protein
+Standard fill-in residues: ALA A GLY G
+Standard main-chain atoms: N    CA   C    O    CB   NONE
+All main-chain atoms: N     CA    C     O     
+Max dist between adjacent N    atoms:     6.000000    
+List of all residues: GLY ALA SER VAL ILE LEU MET CYS PHE TYR LYS ARG TRP HIS GLU ASP GLN ASN PRO THR 
+List of 1-letter code of residues: GASVILMCFYKRWHEDQNPT
+List of number of atoms in side-chains:            0           1           2           3           4           4           4           2           7           8           5           7          10           6           5           4           5           4           3           3
+checking license file.. solve2.access
+
+       The date today is 27-oct-23.  Your license is good until 15-dec-96.
+
+Opened mtz file TEMP_ref_file.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    35.81400        52.76200        97.39700        90.00000        90.00000        90.00000        0.000000    
+Dataset            2 project             crystal             dataset                        1    35.81400        52.76200        97.39700        90.00000        90.00000        90.00000        1.000000    
+Reading SG information from TEMP_ref_file.mtz
+Space group name: P212121    Point group: 222       
+Space group number :          19 Symmetry operators:            4
+Number of columns:           12
+H                             K                             L                             F_from_7e1d-sf                SIGF_from_7e1d-sf             FreeR_flag                    PHIB                          FOM                           HLA                           HLB                           HLC                           HLD                           
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     F_from_7e1d-sf                
+DATA# 5  PHIB                           :     PHIB                          
+DATA# 6  FOM                            :     FOM                           
+DATA# 7  HLA                            :     HLA                           
+DATA# 8  HLB                            :     HLB                           
+DATA# 9  HLC                            :     HLC                           
+DATA# 10  HLD                            :     HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                          :     SIGF_from_7e1d-sf             
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                     :     FreeR_flag                    
+FP taken from column           4
+Dataset information for dataset number           2 and ID=           1
+Dataset name:dataset             
+Crystal name:crystal             
+Project name:project             
+Cell:      35.813999       52.762001       97.397003       90.000000       90.000000       90.000000
+Wavelength:    1.000000    
+PHIB taken from column           7
+FOM taken from column           8
+Using HLA HLB HLC HLD coefficients
+Reading in SIGFP from column            5
+
+Reading in FreeR_flag
+Total of        12507 reflections read from file
+Free R reflections are those with FreeR_flag=           0
+Total of         1251 of        12507 reflections in test set
+ High-resolution limit of input phased data:  2.00
+Adding F000 term (0.0) to this list
+Closed mtz file
+ Starting resolution:  2.00 max:  2.00
+Space group is          19
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+1 0 0 0.5
+0 -1 0 0.5
+0 0 -1 0
+SYMMETRY ELEMENT 2
+-1 0 0 0
+0 1 0 0.5
+0 0 -1 0.5
+SYMMETRY ELEMENT 3
+-1 0 0 0.5
+0 -1 0 0
+0 0 1 0.5
+SPACE GROUP SYMBOL: P 21 21 21
+CHECK ON SPACE GROUP SYMBOL: P 21 21 21
+HALL SYMBOL :  P 2ac 2ab
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.02792 X +  -0.00000 Y +  -0.00000 Z 
+     fractional y=  0.00000 X +   0.01895 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.01027 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 35.81400 x +   0.00006 y +   0.00011 z 
+     Orthogonal Y=  0.00000 x +  52.76200 y +   0.00011 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y +  97.39700 z 
+
+Estimated # of atoms in au:        1435
+Not separating out FREE set from other reflections for main cycles. Using all data.
+
+Expected resolution-corrected F at d = 2.9A : 545.885
+
+ Results of wilson scaling:
+ Scale on I =   4534.407
+ B-value =     14.501
+
+ Scaling data with value of   4534.407
+
+Reading model density histograms from /usr/local/phenix-1.20.1-4487/modules/solve_resolve/ext_ref_files/segments/rho.list
+Read total of           10 sets of density functions
+
+ 1.2 A gvp model data         
+ 
+Database 1
+ Protein
+0.13883 49.993 -0.052545 
+0.0028613 0.65609 0.25933 
+0.00094606 1.6127e-07 0 
+ Solvent 
+0.24297 50 -0.066461 
+0 0.27173 0.36529 
+0 0 0 
+
+ 2.1 A p9 model data          
+ 
+Database 2
+ Protein
+0.044882 10.876 -0.099183 
+0.0065938 0.1915 0.81579 
+0 4.992e-07 0 
+ Solvent 
+0.23814 49.998 -0.018448 
+0 0.092931 5.9969e-08 
+0 0 0 
+
+ 2.5 A p9 model data          
+ 
+Database 3
+ Protein
+0.028005 5.0887 -0.10737 
+0.0072492 0.1898 0.86087 
+0 6.5751e-08 0 
+ Solvent 
+0.20336 49.994 -0.021217 
+0 0.051284 -2.8788e-09 
+0 0 0 
+
+ 3.0 A p9 model data          
+ 
+Database 4
+ Protein
+0.015053 1.4002 -0.6344 
+0.0063877 0.16235 0.49508 
+2.1104e-07 7.8393e-09 0 
+ Solvent 
+0.086901 18.852 0.010379 
+0.014104 3.0605 -0.056333 
+0 0 0 
+
+ 3 A dehalogenase model       
+ 
+Database 5
+ Protein
+0.0191631 3.18726 -0.512357 
+0.00724949 0.64234 1.37647 
+0.0108539 1.62321 5.24151e-05 
+ Solvent 
+0.0309225 7.89451 -3.40749e-05 
+0 0.000394973 0 
+0.100204 31.8955 0.00790565 
+
+ 4.0 A p9 model data          
+ 
+Database 6
+ Protein
+0.01046 0.88702 -0.71921 
+0.0077113 0.1957 0.45527 
+0 1.7141e-08 0 
+ Solvent 
+0.058836 10.067 0.0059672 
+0.012859 1.8175 -0.011273 
+0 0 0 
+
+ Acorn map 2013-02-16 real dat
+ 
+Database 7
+ Protein
+0.018509 4.3226 -0.1313 
+0.01638 1.1255 -0.36873 
+0.00068238 1.8232e-08 0 
+ Solvent 
+0.051385 6.7883 -0.030178 
+0.01453 2.9458 0.047202 
+0 0 0 
+
+carbonic anhydrase 3ryj not sh
+ 
+Database 8
+ Protein
+0.033761 6.5653 -0.71026 
+0.007805 0.37567 0.0043698 
+0.00040671 8.1446e-09 0 
+ Solvent 
+0.019614 12.96 0.044435 
+0.0405 3.3172 -0.056361 
+0 0 0 
+
+carbonic anhydrase 3ryj sharpe
+ 
+Database 9
+ Protein
+0.031194 3.1578 -0.40319 
+0.0043546 0.27955 0.30159 
+0.00042361 7.5122e-08 0 
+ Solvent 
+0.059649 5.9617 -0.034235 
+0.0038858 1.0492 0.10247 
+0 0 0 
+
+heavy-atom model B= 7-10 not s
+ 
+Database 10
+ Protein
+0.05154 18.661 0.050944 
+0.024333 3.1634 0.021875 
+0.00043885 3.954e-09 0 
+ Solvent 
+0.050958 22.738 -0.077164 
+0.057472 10.748 0.046222 
+0 0 0 
+Highest value of ix, iy, iz in a.u:          53           79           37
+nu nv nw:           54          80         150   Number of grid points in au:      162000
+ Mean fom of this map was:  0.26
+
+ Summary of starting FOM vs resolution 
+    RES     FOM   FOM-smoothed  N 
+   17.10    0.30    0.52        51
+   11.01    0.41    0.50        91
+    8.29    0.45    0.49       150
+    6.55    0.49    0.47       267
+    5.52    0.48    0.44       264
+    4.78    0.47    0.42       453
+    4.16    0.44    0.39       562
+    3.73    0.41    0.36       589
+    3.40    0.37    0.33       701
+    3.15    0.39    0.30       706
+    2.92    0.34    0.28       934
+    2.74    0.25    0.26       804
+    2.59    0.22    0.23       992
+    2.44    0.20    0.21      1229
+    2.30    0.14    0.19      1559
+    2.17    0.11    0.17      1336
+    2.06    0.10    0.15      1366
+
+ Mean fom of this map was:  0.26
+
+Starting phases assumed to be experimental
+   (To override, use "phases_from_resolve")
+
+
+Estimating optimal initial smoothing radius using the function:
+R=2.41 * (dmin**0.90) * (fom**-0.26)
+with dmin =     2.001674     and fom =    0.2560316    
+Leading to R=    6.413791    
+To override, set "wang_radius_cycle", "wang_radius", or "wang_radius_start"
+
+
+Setting final smoothing radius to     4.000000    
+To override, set "wang_radius_cycle", "wang_radius", or "wang_radius_finish"
+
+ Solvent content will be   0.41
+Using database entry            5 for histograms  (" 3 A dehalogenase model       ")
+
+Total mask cycles:            1
+Total density modification mask cycles:            1
+
+ Cycle  Ref NCS  Use NCS  Build     image    solvent    Extend  Cycles  Test
+
+  1      NO         NO      NO        NO        YES       NO       0
+
+
+                        Mask cycle            1
+               Weighting this cycle:     1.000000    
+
+ Histogram DB entry #   5 (" 3 A dehalogenase model       ")
+ Solvent content:  0.41 Smoothing radius:  6.41
+Using Wang mask (highest SD points)
+ New Wang averaging radius =  6.41
+
+ Mean +/- SD of density in protein region :  -0.00 +/-   0.34
+ Mean +/- SD of density in solvent region :   0.00 +/-   0.26
+
+
+ MEAN SD PROT for SQ-SM :   0.10 +/-   0.01
+ MEAN SD SOLV for SQ-SM :   0.07 +/-   0.01
+
+ N:   95968    66032
+Estimate of solvent fraction: 44.9498% 
+
+
+Plot     1
+
+
+ -------------------------------------------------------------------------------
+
+ Plot of probability that a grid point is part of protein region
+ vs percentiles of grid points
+
+ All points to the left of the + signs are in solvent masked region
+ those to right are in protein masked region.
+
+ The values of p(protein) should change from low to high approximately at the 
+ value of the fraction of solvent indicated by the + signs.
+ The sharper the transition the better.
+
+ Note: the mask is only used to make an estimate of the p(protein)
+
+ The values of p(protein) are used to weight the contribution of each grid
+  point to the probability of the map:
+
+  p(rho) = p(rho|protein) p(protein) +  p(rho|solvent) (1-p(protein))
+
+ This says that the probability that we would observe  the value rho  of 
+ electron density at this point is the probability that we 
+ would observe rho if this were really protein times the probability 
+ that this is  protein, plus the probability that we would observe
+ rho if it were really solvent, times the probability that
+ it is solvent.
+
+                     Probability that grid points are in protein region
+
+
+                         1.0  ..................................xxxxxxxxxxxxxxxx
+                              .                   +          xxx               .
+                              .                   +        xx                  .
+                              .                   +       x                    .
+                              .                   +      x                     .
+                              .                   +    xx                      .
+                              .                   +   x                        .
+                p(protein)    .                   +  x                         .
+                         0.5  .                   + x                          .
+                              .                   xx                           .
+                              .                  x+                            .
+                              .                xx +                            .
+                              .              xx   +                            .
+                              .           xxx     +                            .
+                              .      xxxxx        +                            .
+                         0.0  .xxxxxx.............+.............................
+
+                              0       20        40        60        80       100
+
+                                            Percentile of grid points
+ -------------------------------------------------------------------------------
+
+
+
+ Range of P(protein)  and percentiles 
+ used for histograms of protein and solvent:
+
+               P(protein)                  Percentile
+              Low      High              Low      High
+ Protein:    0.88      1.00               64       100
+ Solvent:    0.00      0.12                0        26
+
+
+
+Plot     2
+
+
+ -------------------------------------------------------------------------------
+
+ Plot of probability that a grid point is part of protein region
+ vs percentiles of grid points
+
+ All points to the left of the "+" signs are in solvent masked region
+ those to right are in protein masked region.
+
+ The values of p(protein) should change from low to high approximately at the
+ value of the fraction of solvent indicated by the "+" signs.
+ The sharper the transition the better.
+
+ Note: the mask is only used to make an estimate of the p(protein)
+
+ The values of p(protein) are used to weight the contribution of each grid
+ point to the probability of the map:
+
+  p(rho) = p(rho|protein) p(protein) + p(rho|solvent) (1-p(protein))
+
+ This says that the probability that we would observe the value "rho" of
+ electron density at this point is the probability that we
+ would observe "rho" if this were really protein times the probability
+ that this is protein, plus the probability that we would observe
+ "rho" if it were really solvent, times the probability that
+ it is solvent.
+
+                     Probability that grid points are in protein region
+
+
+                         1.0  ..................................xxxxxxxxxxxxxxxx 
+                              .                   +          xxx               . 
+                              .                   +        xx                  . 
+                              .                   +       x                    . 
+                              .                   +      x                     . 
+                              .                   +    xx                      . 
+                              .                   +   x                        . 
+                p(protein)    .                   +  x                         . 
+                         0.5  .                   + x                          . 
+                              .                   xx                           . 
+                              .                  x+                            . 
+                              .                xx +                            . 
+                              .              xx   +                            . 
+                              .           xxx     +                            . 
+                              .      xxxxx        +                            . 
+                         0.0  .xxxxxx.............+............................. 
+
+                              0       20        40        60        80       100
+
+                                            Percentile of grid points
+ -------------------------------------------------------------------------------
+
+
+Copying refl to refl_temp
+Writing out           14 columns of data
+CC of prob map with current map:    1.000000    
+resolve exit_info:
+  source_file: /home/builder/slave/phenix-nightly-intel-linux-2_6-x86_64-centos6/modules/solve_resolve/resolve/aaa_resolve_main.cpp
+  source_line: 1692
+  status: 0
+EndOfResolve

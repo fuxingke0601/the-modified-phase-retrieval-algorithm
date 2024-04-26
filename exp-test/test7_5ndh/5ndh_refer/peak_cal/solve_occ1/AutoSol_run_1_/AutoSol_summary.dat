@@ -1,0 +1,96 @@
+
+
+-----------CURRENT SOLUTIONS FOR RUN 1 : -------------------
+
+ *** FILES ARE IN THE DIRECTORY: AutoSol_run_1_ ****
+
+
+
+Solution # 1  BAYES-CC: 60.2 +/- 14.2 (2SD) Dataset #1   FOM: 0.36
+
+Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb3_27_5ndh/exp-test/27_5ndh/peak_cal/pdb_CF_hand_format.pdb Dataset #1 SG="P 21 21 21"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb3_27_5ndh/exp-test/27_5ndh/peak_cal/solve_occ1/AutoSol_run_1_/TEMP0/ANISO_5ndh-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6 (Already used for Phasing at resol of 1.81)      Refined Sites: 7
+No NCS found
+Experimental phases in: overall_best_hklout_phased.mtz
+Experimental phases plus FreeR_flags for refinement in: overall_best_refine_data.mtz
+Map coefficients (Density-modified phases using model) in: overall_best_denmod_map_coeffs.mtz
+HA sites (PDB format) in: overall_best_ha_pdb.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: overall_best_log_phased.log
+Density modification logfile in: overall_best_log_denmod.log (R=0.27)
+
+ Score type:       SKEW    CORR_RMS    NCS_OVERLAP
+Raw scores:        0.32      0.85      0.00  
+100x EST OF CC:   60.50     50.98     31.25  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ BR      -0.979     -0.523     -0.195         0.74
+ BR      -0.175     -0.804     -0.055         0.71
+ BR      -0.336     -0.672     -0.047         0.36
+ BR      -0.104     -0.367     -0.210         0.31
+ BR       0.010     -0.541     -0.202         0.66
+ BR       0.193      0.681      0.559         0.35
+ BR       0.161      0.709      0.547         0.35
+
+
+
+Solution # 2  BAYES-CC: 11.0 +/- 29.8 (2SD) Dataset #1   FOM: 0.36
+
+ NOTE: Output files for this solution not written out (in PDS only)
+Adjust 'number_of_solutions_to_display' (currently 1) to write them out.
+
+
+Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb3_27_5ndh/exp-test/27_5ndh/peak_cal/pdb_CF_hand_format.pdb and taking inverse Dataset #1 SG="P 21 21 21"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb3_27_5ndh/exp-test/27_5ndh/peak_cal/solve_occ1/AutoSol_run_1_/TEMP0/ANISO_5ndh-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6     Refined Sites: 7
+No NCS found
+Experimental phases in: phaser_2.mtz
+HA sites (PDB format) in: ha_2.pdb_formatted.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: phaser_2.log
+
+ Score type:       SKEW    CORR_RMS    NCS_OVERLAP
+Raw scores:       -0.17      0.83      0.00  
+100x EST OF CC:    8.10     45.16     31.25  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ BR       0.979      0.523      0.195         0.74
+ BR       0.175      0.804      0.055         0.71
+ BR       0.336      0.672      0.047         0.36
+ BR       0.104      0.367      0.210         0.31
+ BR      -0.010      0.541      0.202         0.66
+ BR      -0.193     -0.681     -0.559         0.35
+ BR      -0.161     -0.709     -0.547         0.35
+
+
+Citations for AutoSol:
+
+Liebschner D, Afonine PV, Baker ML, Bunkóczi G, Chen VB, Croll TI, Hintze B,
+Hung LW, Jain S, McCoy AJ, Moriarty NW, Oeffner RD, Poon BK, Prisant MG, Read
+RJ, Richardson JS, Richardson DC, Sammito MD, Sobolev OV, Stockwell DH,
+Terwilliger TC, Urzhumtsev AG, Videau LL, Williams CJ, Adams PD. (2019)
+Macromolecular structure determination using X-rays, neutrons and electrons:
+recent developments in Phenix. Acta Cryst. D75:861-877.
+
+McCoy AJ, Grosse-Kunstleve RW, Adams PD, Winn MD, Storoni LC, Read RJ. (2007)
+Phaser crystallographic software. J Appl Crystallogr 40:658-674.
+
+Terwilliger TC, Adams PD, Read RJ, McCoy AJ, Moriarty NW, Grosse-Kunstleve RW,
+Afonine PV, Zwart PH, Hung LW. (2009) Decision-making in structure solution
+using Bayesian estimates of map quality: the PHENIX AutoSol wizard. Acta
+Crystallogr D Biol Crystallogr 65:582-601.
+
+Zwart PH, Grosse-Kunstleve RW, Adams PD. (2005) Xtriage and Fest: automatic
+assessment of X-ray data and substructure structure factor estimation. CCP4
+Newsletter Winter:Contribution 7.
+
+

@@ -1,0 +1,2096 @@
+
+
+               PHENIX autosol  Fri Oct 27 15:12:04 2023
+ 
+ 
+Phenix developers include:
+
+  Paul Adams, Pavel Afonine, Vincent Chen, Ian Davis, Nathaniel Echols,
+  Kreshna Gopal, Ralf Grosse-Kunstleve, Jeff Headd, Li-Wei Hung,
+  Robert Immormino, Tom Ioerger, Airlie McCoy, Erik McKee, Nigel Moriarty,
+  Reetal Pai, Randy Read, Jane Richardson, David Richardson, Tod Romo,
+  Jim Sacchettini, Nicholas Sauter, Jacob Smith, Laurent Storoni,
+  Tom Terwilliger, Peter Zwart
+
+Phenix home page:
+  http://www.phenix-online.org/
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Phenix components are copyrighted by:
+  - Lawrence Berkeley National Laboratory
+  - Los Alamos National Laboratory
+  - University of Cambridge
+  - Duke University
+  - Texas Agricultural Experiment Station &
+    Texas Engineering Experiment Station
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Major third-party components of Phenix include:
+    Python, wxwidgets, wxPython, Boost, SCons, Clipper, PULCHRA,
+    CCP4 Monomer Library, CCP4 I/O libraries, PyCifRW, FFTPACK, L-BFGS
+  Enter phenix.acknowledgments for details.
+
+               If you use PHENIX please cite:
+
+Adams, P.D., Afonine, P.V., Chen, V., Echols, N., Headd, J. J., Hung, L.-W.,
+Grosse-Kunstleve, R.W., McCoy, A.J., Moriarty, N.W., Read, R.J.,
+Richardson, D.C., Richardson, J.S., Terwilliger, T.C. and Zwart, P. H. (2010)
+PHENIX - A Comprehensive Python-based System for Macromolecular Structure
+Solution. Acta Cryst. D66, 213-221.
+
+
+For help type:
+phenix.doc
+
+      
+ 
+For access to full documentation please type: phenix.doc
+
+
+------------------------------------------------------------ 
+Starting AutoSol with the command:
+
+phenix.autosol data=../../../5_5c82_4se_C121/5c82-sf.mtz atom_type=SE   \
+lambda=0.97869 solvent_fraction=0.4419 nproc=4   \
+seq_file=../../../5_5c82_4se_C121/rcsb_pdb_5C82.fasta sites=6   \
+sites_file=../pdb_CF_format_hand_format.pdb ncs_copies=1   \
+use_automatic_hyss=False build=False 
+
+autosol {
+  atom_type = "SE"
+  lambda = 0.97869
+  f_prime = None
+  f_double_prime = None
+  wavelength_name = peak inf high low remote
+  sites = 6
+  sites_file = "../pdb_CF_format_hand_format.pdb"
+  seq_file = "../../../5_5c82_4se_C121/rcsb_pdb_5C82.fasta"
+  quick = None
+  data = "../../../5_5c82_4se_C121/5c82-sf.mtz"
+  labels = None
+  derscale = None
+  crystal_info {
+    unit_cell = None
+    space_group = None
+    solvent_fraction = 0.4419
+    chain_type = *Auto PROTEIN DNA RNA
+    resolution = 0
+    change_sg = False
+    residues = None
+    sequence = None
+  }
+  input_files {
+    cif_def_file_list = None
+    group_labels_list = None
+    input_file_list = None
+    input_phase_is_part_map_coeffs = True
+    input_phase_file = None
+    input_phase_labels = None
+    input_refinement_file = None
+    input_refinement_labels = None
+    input_seq_file = Auto
+    refine_eff_file_list = None
+  }
+  wavelength {
+    wavelength_name = peak inf high low remote
+    data = None
+    labels = None
+    atom_type = None
+    lambda = None
+    res_hyss = None
+    res_eval = None
+    f_prime = None
+    f_double_prime = None
+    sites = None
+    sites_file = None
+    derscale = None
+    group = 1
+    added_wavelength = True
+    ignore = False
+  }
+  native {
+    data = None
+    labels = None
+    lambda = None
+    group = 1
+    added_native = True
+    ignore = False
+  }
+  deriv {
+    data = None
+    labels = None
+    atom_type = None
+    sites = None
+    sites_file = None
+    res_hyss = None
+    res_eval = None
+    inano = noinano *inano anoonly
+    f_prime = None
+    f_double_prime = None
+    lambda = None
+    derscale = None
+    group = 1
+    added_deriv = True
+    ignore = False
+  }
+  decision_making {
+    hyss_scoring {
+      model_ha_iteration = None
+      acceptable_r = 0.35
+      max_model_ha_iterations = None
+      max_models_in_ha_iteration = None
+      ha_iteration = None
+      max_ha_iterations = None
+      minimum_improvement = 0
+    }
+    always_include_peak = True
+    add_extra_if_fa = True
+    create_scoring_table = None
+    desired_coverage = None
+    skip_hyss_other_derivs_if_quick = True
+    self_diff_fourier = True
+    combine_siblings = True
+    max_cc_extra_unique_solutions = 0.5
+    max_choices = None
+    max_composite_choices = 8
+    max_extra_unique_solutions = None
+    max_range_to_keep = 4
+    min_fom = 0.05
+    low_fom = 0.2
+    minimum_merge_cc = 0.25
+    min_fom_for_dm = 0
+    extreme_dm = False
+    fom_for_extreme_dm = 0.35
+    minimum_ncs_cc = 0.3
+    min_phased_each_deriv = 1
+    n_random = 6
+    res_eval = 0
+    score_individual_offset_list = None
+    score_individual_scale_list = None
+    score_individual_sd_list = None
+    score_overall_offset = None
+    score_overall_scale = None
+    score_overall_sd = None
+    score_type_list = SKEW CORR_RMS
+    score_weight_list = None
+    skip_score_list = None
+    ncs_copies_min_for_overlap = 2
+    rho_overlap_min = 0.3
+    rho_overlap_min_scoring = 0.5
+    build_scoring {
+      overall_score_method = *BAYES-CC Z-SCORE
+      r_switch = 0.4
+      acceptable_quality = 40
+      acceptable_secondary_structure_cc = 0.35
+      trace_chain = False
+      trace_chain_score = False
+      include_dm_score = None
+      use_map_model_cc = None
+      quality_cc_min = 0.5
+      max_useful_dm_r = 0.4
+    }
+    dev_scoring {
+      random_scoring = False
+      use_perfect = False
+      hklperfect = None
+      perfect_labels = None
+    }
+  }
+  scaling {
+    remove_aniso = Auto *True False
+    b_iso = None
+    max_b_iso = 40
+    target_b_ratio = 10
+    try_orig_sad_data_in_hyss = Auto
+    localscale_before_phaser = True
+    delta_b_for_auto_remove_aniso = 20
+    ratio_b_for_auto_remove_aniso = 1
+    test_remove_aniso = True
+    use_sca_as_is = True
+    derscale_list = None
+    scale_only = False
+    phase_only = False
+  }
+  heavy_atom_search {
+    min_hyss_cc = 0.05
+    acceptable_cc_hyss = 0.2
+    good_cc_hyss = 0.3
+    n_add_res_max = 2
+    add_res_max = 2
+    try_recommended_resolution_for_hyss = True
+    hyss_runs_min = 2
+    best_of_n_hyss = 1
+    best_of_n_hyss_always = 10
+    min_fraction_of_sites_found = 0.667
+    max_single_sites = 5
+    hyss_enable_early_termination = True
+    hyss_general_positions_only = True
+    hyss_min_distance = 3.5
+    hyss_n_fragments = 3
+    hyss_n_patterson_vectors = 33
+    hyss_random_seed = 792341
+    res_hyss = None
+    try_low_res_for_cys = True
+    direct_methods_only = False
+    use_measurability = True
+    use_phaser_rescoring = False
+    use_automatic_hyss = False
+    mad_ha_n = None
+    mad_ha_type = "Se"
+  }
+  phasing {
+    keep_atom_types = False
+    do_madbst = True
+    overallscale = False
+    res_phase = 0
+    phase_full_resolution = True
+    fixscattfactors = None
+    fixscattfactors_in_phasing = False
+    fix_xyz_in_phasing = None
+    have_hand = False
+    id_scale_ref = None
+    ratio_out = 10
+    ratmin = 0
+    require_nat = True
+    ikeepflag = 1
+    phasing_method = SOLVE *PHASER
+    cluster_pdb_file = None
+    input_partpdb_file = None
+    ncs_from_partpdb = True
+    input_part_map_ha_fraction = 0.75
+    phaser_sites_then_phase = False
+    partpdb_rms = None
+    input_part_map_coeffs_file = None
+    input_part_map_coeffs_labels = "FC,PHIC"
+    llgc_sigma = None
+    phaser_completion = True
+    use_phaser_hklstart = True
+    combine_same_parent_only = False
+    skip_extra_phasing = *Auto True False
+    read_sites = False
+    f_double_prime_list = None
+    f_prime_list = None
+    mad_ha_add_f_double_prime_list = None
+    mad_ha_add_f_prime_list = None
+    mad_ha_add_list = None
+    n_ha_list = None
+    nat_der_list = None
+  }
+  density_modification {
+    add_classic_denmod = Auto
+    skip_classic_if_worse_fom = True
+    skip_ncs_in_add_classic = True
+    tolerance_add_classic = 0.02
+    fix_xyz = False
+    fix_xyz_after_denmod = None
+    hl_in_resolve = False
+    mask_type = *histograms probability wang classic
+    test_mask_type = None
+    mask_cycles = 5
+    minor_cycles = 10
+    thorough_denmod = None
+    truncate_ha_sites_in_resolve = Auto *True False
+    rad_mask = None
+    use_ncs_in_denmod = True
+    mask_as_mtz = False
+    protein_output_mask_file = None
+    ncs_output_mask_file = None
+    omit_output_mask_file = None
+    use_hl_anom_in_denmod = None
+    use_hl_anom_in_denmod_with_model = None
+    precondition = False
+  }
+  model_building {
+    build = False
+    phase_improve_and_build = True
+    sort_hetatms = False
+    map_to_object = None
+    helices_strands_only = False
+    resolution_helices_strands = 3.1
+    helices_strands_start = False
+    cc_helix_min = None
+    cc_strand_min = None
+    build_type = *RESOLVE RESOLVE_AND_BUCCANEER
+    resolve {
+      n_cycle_build = None
+      refine = True
+      ncycle_refine = 3
+      number_of_builds = None
+      number_of_models = None
+      resolution_build = 0
+      fit_loops = True
+      loop_cc_min = 0.4
+      group_ca_length = 4
+      group_length = 2
+      input_compare_file = None
+      n_random_frag = 0
+      n_random_loop = 3
+      offsets_list = 53 7 23
+      remove_outlier_segments_z_cut = 3
+      resolve_command_list = None
+      solve_command_list = None
+      rms_random_frag = None
+      rms_random_loop = None
+      semet = None
+      use_met_in_align = Auto *True False
+      start_chains_list = None
+      thorough_loop_fit = None
+      trace_as_lig = False
+      use_any_side = False
+      loop_lib = False
+      standard_loops = True
+      trace_loops = False
+      refine_trace_loops = True
+      density_of_points = None
+      a_cut_min = None
+      max_density_of_points = None
+      cutout_model_radius = None
+      max_cutout_model_radius = 20
+      padding = 1
+      cut_out_density = True
+      max_span = 30
+      max_c_ca_dist = None
+      max_overlap_rmsd = 2
+      max_overlap = None
+      min_overlap = None
+    }
+  }
+  ncs {
+    find_ncs = *Auto True False
+    ncs_copies = 1
+    ncs_refine_coord_sigma_from_rmsd = False
+    ncs_refine_coord_sigma_from_rmsd_ratio = 1
+    optimize_ncs = True
+    refine_with_ncs = True
+    ncs_in_refinement = *torsion cartesian None
+  }
+  refinement {
+    refine_b = True
+    refine_se_occ = True
+    skip_clash_guard = True
+    correct_special_position_tolerance = None
+    use_mlhl = True
+    generate_hl_if_missing = False
+    place_waters = True
+    refinement_resolution = 0
+    ordered_solvent_low_resolution = None
+    link_distance_cutoff = 3
+    r_free_flags_fraction = 0.1
+    r_free_flags_max_free = 2000
+    r_free_flags_use_lattice_symmetry = True
+    r_free_flags_lattice_symmetry_max_delta = 5
+    allow_overlapping = None
+    fix_ligand_occupancy = None
+    remove_outlier_segments = True
+    twin_law = None
+    use_hl_anom_in_refinement = None
+    include_ha_in_refinement = None
+  }
+  display {
+    number_of_solutions_to_display = 1
+    solution_to_display = 0
+  }
+  general {
+    data_quality = *moderate strong weak
+    thoroughness = *quick medium thorough
+    nproc = 4
+    nbatch = 1
+    keep_files = "overall_best*" "phaser_*.mtz" "resolve_*.mtz" "solve_*.mtz" \
+                 "ha_*.pdb" "dataset*.log"
+    coot_name = "coot"
+    i_ran_seed = 72432
+    raise_sorry = False
+    background = True
+    check_wait_time = 1
+    max_wait_time = 1
+    wait_between_submit_time = 1
+    cache_resolve_libs = True
+    resolve_size = "12"
+    check_run_command = False
+    run_command = "sh "
+    queue_commands = None
+    condor_universe = "vanilla"
+    add_double_quotes_in_condor = True
+    condor = None
+    last_process_is_local = True
+    skip_r_factor = False
+    test_flag_value = Auto
+    skip_xtriage = False
+    base_path = None
+    temp_dir = None
+    local_temp_directory = None
+    clean_up = None
+    print_citations = True
+    solution_output_pickle_file = None
+    job_title = None
+    top_output_dir = None
+    wizard_directory_number = None
+    verbose = False
+    extra_verbose = False
+    debug = False
+    require_nonzero = True
+    remove_path_word_list = None
+    fill = False
+    res_fill = None
+    check_only = False
+  }
+  run_control {
+    coot = None
+    ignore_blanks = None
+    stop = None
+    display_facts = None
+    display_summary = None
+    carry_on = None
+    run = None
+    copy_run = None
+    display_runs = None
+    delete_runs = None
+    display_labels = None
+    dry_run = False
+    params_only = False
+    display_all = False
+  }
+  special_keywords {
+    write_run_directory_to_file = None
+  }
+  non_user_parameters {
+    gui_output_dir = None
+    allow_negative_f_double_prime = False
+    inano_list = None
+    ha_sites_file = None
+    expt_type = *Auto mad sir sad
+    wavelength_list = None
+    wavelength_name_list = None
+    sg = None
+  }
+}
+
+Groups of input data:  [1]
+Datafiles for group  1 : ['../../../5_5c82_4se_C121/5c82-sf.mtz']  Experiment type:  Auto
+
+Working directory:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_ 
+
+USER = fuxingke
+PID = 2208641
+
+
+************************************************************
+          PHENIX AutoSol  Fri Oct 27 15:12:04 2023
+************************************************************
+
+Working directory:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak 
+
+
+AutoSol_start  AutoSol  Run 1 Fri Oct 27 15:12:05 2023
+
+INPUT FILE LIST:  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../../../5_5c82_4se_C121/5c82-sf.mtz']
+Setting chain_type to  PROTEIN
+Copied  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/rcsb_pdb_5C82.fasta to AutoSol_run_1_/sequence_autosol.dat
+
+Setting defaults for data_quality moderate
+NOTE: fixscattfactors is not applicable for sad dataset
+Setting thorough_denmod to 'True'
+Setting max_model_ha_iterations to '1'
+Setting fix_xyz_after_denmod to 'False'
+Setting max_ha_iterations to '2'
+Setting fixscattfactors to 'True'
+
+Setting defaults for thoroughness quick
+Setting max_extra_unique_solutions to '0'
+Setting number_of_builds to '1'
+Setting ha_iteration to 'None'
+Setting max_models_in_ha_iteration to '1'
+Setting create_scoring_table to 'False'
+Setting max_choices to '1'
+Setting n_cycle_build to '0'
+Setting number_of_models to '1'
+Setting desired_coverage to '0.8'
+Setting test_mask_type to 'False'
+Setting thorough_loop_fit to ''
+Set try_orig_sad_data_in_hyss=False as thoroughness=quick and extreme_dm=False
+/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+
+NOTE: space group ('C 1 2 1') and cell ([96.536, 44.641, 42.244, 90.0, 97.67, 90.0]) 
+found in /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+Setting space group from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+
+Unit cell: (96.536, 44.641, 42.244, 90, 97.67, 90)
+Space group: C 1 2 1 (No. 5)
+
+Set use_hl_anom_in_denmod to False as input_part_map_coeffs_file is 'None' and phaser_sites_then_phase is False
+Set use_hl_anom_in_denmod_with_model to False as input_part_map_coeffs_file is 'None' and phaser_sites_then_phase is False
+Set use_hl_anom_in_refinement to False as input_part_map_coeffs_file is 'None' and phaser_sites_then_phase is False
+Trying to guess refinement file for later use from  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz']
+Choosing guess of refinement file for later use from all files:  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz']
+FILE TYPE ccp4_mtz
+COLUMN LABELS: ['H', 'K', 'L', 'FREE', 'FP', 'SIGFP', 'I', 'SIGI', 'F(+)', 'SIGF(+)', 'F(-)', 'SIGF(-)', 'DP', 'SIGDP', 'I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)']
+GUESS FILE TYPE MERGE TYPE mtz premerged
+TARGET LABELS ['F+', 'SIGF+', 'F-', 'SIGF-']
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+CONTENTS: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz', 'mtz', 'premerged', 'C 1 2 1', [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0], 2.2002852047854864, ['F+', 'SIGF+', 'F-', 'SIGF-']]
+File  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz  RES:     2.2
+Guess of datafile for refinement:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz
+
+Using  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz  for refinement
+Specify input_refinement_file=/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz to change this
+
+HKLIN ENTRY:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz
+FILE TYPE ccp4_mtz
+COLUMN LABELS: ['H', 'K', 'L', 'FREE', 'FP', 'SIGFP', 'I', 'SIGI', 'F(+)', 'SIGF(+)', 'F(-)', 'SIGF(-)', 'DP', 'SIGDP', 'I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)']
+GUESS FILE TYPE MERGE TYPE mtz premerged
+TARGET LABELS ['F+', 'SIGF+', 'F-', 'SIGF-']
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+CONTENTS: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz', 'mtz', 'premerged', 'C 1 2 1', [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0], 2.2002852047854864, ['F+', 'SIGF+', 'F-', 'SIGF-']]
+Not checking SG as cell or sg not yet defined
+CELL from  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz  is:  [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0]
+Converting the files ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz'] to sca format before proceeding
+Running import directly...
+WIZARD:  ImportRawData
+LOCAL INIT: Readdatabase: True   SetUpInputs: True
+ImportRawData  
+    Fri Oct 27 15:12:05 2023
+
+WORKDIR: /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak
+Restarting...forgetting everything that  has been done for this run
+STARTING ALL OVER: REMOVING ALL DATABASE  INFORMATION (except SCRIPT)
+Restarting, appending output afterwards...
+WIZARD:  ImportRawData
+LOCAL INIT: Readdatabase: False   SetUpInputs: False
+ImportRawData  
+    Fri Oct 27 15:12:05 2023
+
+WORKDIR: /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak
+Removing information from PDS for  ImportRawData
+Removing all data for  ImportRawData_run_1_
+Removing all data for  ImportRawData_run_1_0
+Removing all data for  ImportRawData_run_1_1
+Removing all data for  ImportRawData_run_1_2
+Restarting successful
+Getting inputs on first pass...
+Setting Fact in ImportRawData: verbose False
+Setting Fact in ImportRawData: output_format Scalepack
+Setting Fact in ImportRawData: clean_up False
+Setting Fact in ImportRawData: auto_manual Manual
+Setting Fact in ImportRawData: unit_cell [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0]
+Setting Fact in ImportRawData: fix_format True
+Setting Fact in ImportRawData: ignore_f_dano_arrays False
+Setting Fact in ImportRawData: only_ano True
+Setting Fact in ImportRawData: space_group C 1 2 1
+Setting Fact in ImportRawData: input_labels_restrict_list []
+Setting Fact in ImportRawData: input_file_list ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz']
+Setting Fact in ImportRawData: temp_dir AutoSol_run_1_/TEMP0
+Setting Fact in ImportRawData: debug 
+Setting Fact in ImportRawData: skip_SaveDatabase True
+Setting Fact in ImportRawData: history ['AutoSol_start']
+Running ImportRawData now
+
+************************************************************
+          PHENIX ImportRawData  Fri Oct 27 15:12:05 2023
+************************************************************
+
+Working directory:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak 
+
+PHENIX ...installer date unknown
+
+ImportRawData_start  ImportRawData  Run 1 Fri Oct 27 15:12:05 2023
+
+application method:  ImportRawData_start
+FINISH START
+Getting column labels from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Number of intensity arrays in this file: 0
+Number of amplitude arrays in this file: 1
+
+NOTE: To specify a particular set of data from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz... you can 
+specify one of the following as its labels: ...:
+'F(+) SIGF(+) F(-) SIGF(-)'
+
+
+ImportRawData_output_files  ImportRawData  Run 1 Fri Oct 27 15:12:05 2023
+
+summary of input files:
+
+hklin : /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz
+    input labels:["F(+)", "SIGF(+)", "F(-)", "SIGF(-)"]
+    OUTPUT FILE NAME: /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca
+
+SPACE GROUP NAME: C 1 2 1
+
+ CELL: [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0]
+INPUT LABELS ID LIST: [['["F(+)", "SIGF(+)", "F(-)", "SIGF(-)"]']]
+OUTPUT FILES ID LIST: [['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']]
+INPUT FILES ID LIST: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz']
+application method:  ImportRawData_output_files
+Creating output files from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz in Scalepack format
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Writing ["F(+)", "SIGF(+)", "F(-)", "SIGF(-)"] to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca
+Merging symmetry-equivalent values:
+  R-linear = sum(abs(data - mean(data))) / sum(abs(data))
+  R-square = sum((data - mean(data))**2) / sum(data**2)
+  In these sums single measurements are excluded.
+                               Redundancy       Mean      Mean
+                             Min  Max   Mean  R-linear  R-square
+  unused:         - 47.8480
+  bin  1: 47.8480 -  4.7390    1    2  1.079    0.0000    0.0000
+  bin  2:  4.7390 -  3.7619    1    2  1.047    0.0000    0.0000
+  bin  3:  3.7619 -  3.2865    1    2  1.039    0.0000    0.0000
+  bin  4:  3.2865 -  2.9861    1    2  1.036    0.0000    0.0000
+  bin  5:  2.9861 -  2.7721    1    2  1.033    0.0000    0.0000
+  bin  6:  2.7721 -  2.6087    1    2  1.029    0.0000    0.0000
+  bin  7:  2.6087 -  2.4780    1    2  1.030    0.0000    0.0000
+  bin  8:  2.4780 -  2.3702    1    2  1.026    0.0000    0.0000
+  bin  9:  2.3702 -  2.2789    1    2  1.023    0.0000    0.0000
+  bin 10:  2.2789 -  2.2003    1    2  1.023    0.0000    0.0000
+  unused:  2.2003 -
+
+Converting amplitudes to intensities:
+
+finished  ImportRawData  Run 1 Fri Oct 27 15:12:05 2023
+
+Finishing  ImportRawData Run 1
+Facts written to AutoSol_run_1_/ImportRawData_Facts.dat
+application method:  finished
+ImportRawData Run 1
+List of files to convert to Scalepack format:
+File 1: 5c82-sf.mtz
+
+List of output files :
+File 1: 5c82-sf_PHX.sca
+
+Load after ImportRawData
+Loading from ImportRawData: converted_file_list ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+Loading from ImportRawData: space_group C 1 2 1
+Loading from ImportRawData: unit_cell [96.536, 44.641, 42.244, 90.0, 97.665, 90.0]
+Loading from ImportRawData: history ['AutoSol_start', 'ImportRawData_start', 'ImportRawData_output_files', 'finished']
+Loading from ImportRawData: input_labels_string_list ['F(+) SIGF(+) F(-) SIGF(-)']
+New input file list:  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+Rerunning START method with the converted files...
+input file list:  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+INPUT FILE LIST:  ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+Copied  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/sequence_autosol.dat to AutoSol_run_1_/sequence_autosol.dat
+/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+
+Using working space group ('C 1 2 1'). Space group and cell ([96.536, 44.641, 42.244, 90.0, 97.665, 90.0]) match /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+
+Set use_hl_anom_in_denmod to False as input_part_map_coeffs_file is 'None' and phaser_sites_then_phase is False
+Set use_hl_anom_in_denmod_with_model to False as input_part_map_coeffs_file is 'None' and phaser_sites_then_phase is False
+Set use_hl_anom_in_refinement to False as input_part_map_coeffs_file is 'None' and phaser_sites_then_phase is False
+HKLIN ENTRY:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca
+FILE TYPE scalepack_merge
+GUESS FILE TYPE MERGE TYPE sca premerged
+TARGET LABELS ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+CONTENTS: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca', 'sca', 'premerged', 'C 1 2 1', [96.536, 44.641, 42.244, 90.0, 97.665, 90.0], 2.200285243372019, ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']]
+Total of 1 input data files
+['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+DATAFILE_LIST: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca']
+Done rerunning START method with the converted files...
+
+AutoSol_verify_crystal_info  AutoSol  Run 1 Fri Oct 27 15:12:05 2023
+
+Sequence file: AutoSol_run_1_/sequence_autosol.dat
+SG:C 1 2 1
+CELL:    96.5    44.6     42.2    90.0     97.7    90.0 
+
+Getting column labels from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz for refinement data file
+NOTE: Skipping anomalous array as require_non_anomalous is set:  ['F(+)', 'SIGF(+)', 'F(-)', 'SIGF(-)']
+Resolution from datafile: 2.20028520479
+SG: C 1 2 1
+Cell: [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0]
+
+
+Refinement file program labels: ['FP', 'SIGFP', 'FreeR_flag']
+
+
+Refinement file input labels: ['FP', 'SIGFP', 'FREE']
+
+
+Refinement file all input labels: ['FREE', 'FP', 'SIGFP', 'DP', 'SIGDP', 'None']
+
+AutoSol_refinement_file_info_inputs  AutoSol  Run 1 Fri Oct 27 15:12:06 2023
+
+LABIN PROGRAM LABELS:  ['FP', 'SIGFP', 'FreeR_flag']
+LABIN INPUT LABELS:  ['FP', 'SIGFP', 'FREE']
+LABIN:  FP=FP SIGFP=SIGFP FreeR_flag=FREE 
+
+AutoSol_set_params  AutoSol  Run 1 Fri Oct 27 15:12:06 2023
+
+Setting defaults for thorough density modification
+Input sequence file is  AutoSol_run_1_/sequence_autosol.dat
+
+AutoSol_build_params  AutoSol  Run 1 Fri Oct 27 15:12:06 2023
+
+Copying fact  resolution  of  2.2003  to  resolution_build
+Recovering fact  resolution  of  2.20028520479
+
+AutoSol_guess_setup_for_scaling  AutoSol  Run 1 Fri Oct 27 15:12:06 2023
+
+This is the last dataset to scale
+Guessing setup for scaling dataset 1
+Guess of heavy-atom type: SE
+NCS copies will be based on input value of 1
+
+
+#                       ncs_and_number_of_ha
+#
+# Guess NCS copies and number of sites 
+
+
+# Type phenix.doc for help
+Values of all params:
+ncs_and_number_of_ha {
+  input_files {
+    seq_file = "AutoSol_run_1_/sequence_autosol.dat"
+    data = None
+    ncs_file = None
+  }
+  crystal_info {
+    space_group = "C 1 2 1"
+    unit_cell = 96.536 44.641 42.244 90 97.665 90
+    atom_type = "se"
+    chain_type = "PROTEIN"
+    ncs_copies = 1
+    number_of_sites = None
+    ncs_operators_known = None
+  }
+  output_files {
+    log = None
+    params_out = None
+  }
+  directories {
+    output_dir = ""
+  }
+  control {
+    verbose = False
+    raise_sorry = False
+    debug = False
+    dry_run = False
+  }
+}
+
+Estimation of ncs_copies and number of heavy-atom sites
+
+Cell and space group:
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Number of residues in unique chains in seq file: 190
+Cell volume: 180422.35
+Equivalent positions:4
+Testing NCS copies value of  1
+Best guess of number of NCS copies: 1
+Estimate of solvent fraction: 0.43
+
+Best guess of number of SE sites: 5
+NCS COPIES MAX BASED ON INPUT NCS COPIES:  1
+Working NCS copies: 1
+Working solvent fraction:   0.44
+Number of residues set to 190
+Using value of 6 for number of heavy atoms
+Total residues:190
+Total Met:5
+FILE TYPE scalepack_merge
+GUESS FILE TYPE MERGE TYPE sca premerged
+TARGET LABELS ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+CONTENTS: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca', 'sca', 'premerged', 'C 1 2 1', [96.536, 44.641, 42.244, 90.0, 97.665, 90.0], 2.200285243372019, ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']]
+Guess of resolution:     2.2
+resolution estimate: 2.2
+
+Wavelength for  sad is 0.97869  A
+Guessing peak for sad dataset
+
+Guesses of scattering factors for  SE
+ Name      Lambda          f'        f"       datafile
+  peak    0.97869         -8.0       4.5     5c82-sf_PHX.sca
+
+
+
+Effective parameters: 
+#phil __ON__
+scaling {
+  input {
+    asu_contents {
+      sequence_file = None
+      n_residues = 190
+      n_bases = None
+      n_sites = 5
+      n_copies_per_asu = 1
+    }
+    xray_data {
+      file_name = "/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca"
+      obs_labels = None
+      calc_labels = None
+      unit_cell = 96.53600311 44.64099884 42.24399948 90 97.66500092 90
+      space_group = "C 1 2 1"
+      high_resolution = 2.2
+      low_resolution = None
+      completeness_as_non_anomalous = True
+      reference {
+        data {
+          file_name = None
+          labels = None
+          unit_cell = None
+          space_group = None
+        }
+        structure {
+          file_name = None
+        }
+      }
+    }
+    parameters {
+      reporting {
+        verbose = 1
+        log = "AutoSol_run_1_/5c82-sf_PHX.sca_xtriage.log"
+        loggraphs = False
+      }
+      merging {
+        n_bins = 10
+        skip_merging = False
+      }
+      misc_twin_parameters {
+        missing_symmetry {
+          sigma_inflation = 1.25
+        }
+        twinning_with_ncs {
+          perform_analyses = False
+          n_bins = 7
+        }
+        twin_test_cuts {
+          low_resolution = 10
+          high_resolution = None
+          isigi_cut = 3
+          completeness_cut = 0.85
+        }
+        apply_basic_filters_prior_to_twin_analysis = True
+      }
+    }
+    optional {
+      hklout = None
+      hklout_type = mtz sca *Auto
+      label_extension = "massaged"
+      aniso {
+        action = *remove_aniso None
+        final_b = *eigen_min eigen_mean user_b_iso
+        b_iso = None
+      }
+      outlier {
+        action = *extreme basic beamstop None
+        parameters {
+          basic_wilson {
+            level = 1e-06
+          }
+          extreme_wilson {
+            level = 0.01
+          }
+          beamstop {
+            level = 0.001
+            d_min = 10
+          }
+        }
+      }
+      symmetry {
+        action = detwin twin *None
+        twinning_parameters {
+          twin_law = None
+          fraction = None
+        }
+      }
+    }
+  }
+  gui {
+    result_file = None
+    output_dir = None
+    job_title = None
+  }
+}
+#phil __END__
+
+
+Symmetry, cell and reflection file content summary
+
+Miller array info: /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca:I(+),SIGI(+),I(-),SIGI(-)
+Observation type: xray.intensity
+Type of data: double, size=17472
+Type of sigmas: double, size=17472
+Number of Miller indices: 17472
+Anomalous flag: True
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 638
+Resolution range: 47.8367 2.20029
+Completeness in resolution range: 0.985004
+Completeness with d_max=infinity: 0.985004
+Anomalous completeness in resolution range: 0.982906
+Bijvoet pairs: 8395
+Lone Bijvoet mates: 44
+Mean anomalous difference: 0.0923
+
+################################################################################
+#                               Basic statistics                               #
+################################################################################
+
+=================== Solvent content and Matthews coefficient ==================
+
+ Crystallized molecule(s) defined as 190 protein residues
+  -------------------------------------------------------------------
+  | Solvent content analysis                                        |
+  |-----------------------------------------------------------------|
+  | Copies | Solvent content | Matthews coeff. | P(solvent content) |
+  |-----------------------------------------------------------------|
+  | 1      | 0.417           | 2.11            | 1.000              |
+  -------------------------------------------------------------------
+
+ Best guess : 1 copy in the ASU
+Number of copies per asymmetric unit provided
+ Will use user specified value of  1.0
+
+======================== Data strength and completeness =======================
+
+Overall <I/sigma> for this dataset is    15.9
+
+              ----------Completeness at I/sigma cutoffs----------
+
+
+ The following table lists the completeness in various resolution ranges,
+ after applying a I/sigI cut. Miller indices for which individual I/sigI
+ values are larger than the value specified in the top row of the table, are
+ retained, while other intensities are discarded. The resulting completeness
+ profiles are an indication of the strength of the data.
+
+  ----------------------------------------------------------------------------------------
+  | Completeness and data strength                                                       |
+  |--------------------------------------------------------------------------------------|
+  | Res. range   | I/sigI>1  | I/sigI>2  | I/sigI>3  | I/sigI>5  | I/sigI>10 | I/sigI>15 |
+  |--------------------------------------------------------------------------------------|
+  | 47.85 - 5.42 |  99.1     |  95.2     |  94.0     |  92.2     |  88.6     |  83.4     |
+  | 5.42 - 4.31  | 100.0     |  98.4     |  97.6     |  95.4     |  91.2     |  84.2     |
+  | 4.31 - 3.76  | 100.0     |  98.0     |  96.7     |  94.1     |  87.2     |  79.7     |
+  | 3.76 - 3.42  | 100.0     |  96.4     |  94.6     |  89.9     |  80.9     |  70.6     |
+  | 3.42 - 3.17  | 100.0     |  95.8     |  90.3     |  82.4     |  69.2     |  57.8     |
+  | 3.17 - 2.99  | 100.0     |  93.6     |  87.4     |  80.5     |  61.8     |  48.5     |
+  | 2.99 - 2.84  |  99.8     |  90.5     |  83.4     |  72.7     |  52.5     |  34.4     |
+  | 2.84 - 2.71  | 100.0     |  87.8     |  80.8     |  69.1     |  41.4     |  27.2     |
+  | 2.71 - 2.61  |  99.7     |  83.1     |  72.7     |  60.2     |  33.9     |  16.6     |
+  | 2.61 - 2.52  | 100.0     |  78.8     |  66.6     |  51.2     |  26.9     |  15.2     |
+  | 2.52 - 2.44  |  99.8     |  75.9     |  63.4     |  48.1     |  19.6     |   9.8     |
+  | 2.44 - 2.37  |  99.7     |  74.6     |  59.2     |  41.3     |  16.7     |   7.8     |
+  | 2.37 - 2.31  |  96.7     |  66.9     |  52.0     |  35.8     |  14.7     |   6.3     |
+  | 2.31 - 2.25  |  93.4     |  56.7     |  43.3     |  27.4     |   9.9     |   3.6     |
+  ----------------------------------------------------------------------------------------
+
+  The completeness of data for which I/sig(I)>3.00, exceeds 85 %
+  for resolution ranges lower than 2.99A.
+  The data are cut at this resolution for the potential twin tests and
+  intensity statistics.
+
+
+            ----------Low resolution completeness analyses----------
+
+The following table shows the completeness of the data to 5.0 A.  Poor
+low-resolution completeness often leads to map distortions and other
+difficulties, and is typically caused by problems with the crystal orientation
+during data collection, overexposure of frames, interference with the beamstop,
+or omission of reflections by data-processing software.
+  ---------------------------------------------------------
+  | Resolution range  | N(obs)/N(possible) | Completeness |
+  ---------------------------------------------------------
+  | 47.8389 - 10.7376 | [86/88]            | 0.977        |
+  | 10.7376 -  8.5386 | [85/85]            | 1.000        |
+  |  8.5386 -  7.4639 | [81/81]            | 1.000        |
+  |  7.4639 -  6.7835 | [83/83]            | 1.000        |
+  |  6.7835 -  6.2985 | [83/83]            | 1.000        |
+  |  6.2985 -  5.9278 | [78/78]            | 1.000        |
+  |  5.9278 -  5.6314 | [83/83]            | 1.000        |
+  |  5.6314 -  5.3866 | [80/80]            | 1.000        |
+  |  5.3866 -  5.1795 | [81/81]            | 1.000        |
+  |  5.1795 -  5.0010 | [79/79]            | 1.000        |
+  ---------------------------------------------------------
+
+                 ----------Completeness (log-binning)----------
+
+The table below presents an alternative overview of data completeness, using
+the entire resolution range but on a logarithmic scale.  This is more sensitive
+to missing low-resolution data (and is complementary to the separate table
+showing low-resolution completeness only).
+  --------------------------------------------------
+  | Resolution        | Reflections | Completeness |
+  --------------------------------------------------
+  | 47.8367 - 12.1497 | 100/104     | 96.8%        |
+  | 12.0458 - 9.9037  | 99/99       | 100.0%       |
+  | 9.8939 - 8.1461   | 155/155     | 100.0%       |
+  | 8.1092 - 6.6977   | 278/276     | 100.0%       |
+  | 6.6743 - 5.4836   | 514/514     | 100.0%       |
+  | 5.4736 - 4.5046   | 912/912     | 100.0%       |
+  | 4.5029 - 3.6987   | 1699/1699   | 100.0%       |
+  | 3.6980 - 3.0382   | 2978/2979   | 100.0%       |
+  | 3.0375 - 2.4953   | 5436/5439   | 100.0%       |
+  | 2.4950 - 2.2003   | 5301/5559   | 95.9%        |
+  --------------------------------------------------
+
+               ----------Analysis of resolution limits----------
+
+Your data have been examined to determine the resolution limits of the data
+along the reciprocal space axes (a*, b*, and c*).  These are expected to vary
+slightly depending on unit cell parameters and overall resolution, but should
+never be significantly different for complete data.  (This is distinct from the
+amount of anisotropy present in the data, which changes the effective
+resolution but does not actually exclude reflections.)
+
+    overall d_min                = 2.200
+    d_min along a*               = 2.225
+    d_min along b*               = 2.232
+    d_min along c*               = 2.326
+    max. difference between axes = 0.101
+
+Resolution limits are within expected tolerances.
+
+================================== Input data =================================
+
+
+                          ----------Summary----------
+
+                              File name:                        5c82-sf_PHX.sca
+                            Data labels:              I(+),SIGI(+),I(-),SIGI(-)
+                            Space group:                                C 1 2 1
+                              Unit cell: 96.536, 44.641, 42.244, 90, 97.665, 90
+                              Data type:                         xray.intensity
+                             Resolution:                      47.8367 - 2.20029
+                              Anomalous:                                   True
+  Number of reflections (non-anomalous):                                   9077
+           Completeness (non-anomalous):                                 98.70%
+            Number of reflections (all):                                  17472
+                     Completeness (all):                                 98.50%
+                 Anomalous completeness:                                 98.29%
+
+  Completeness (non-anomalous) is the completeness of the data after merging
+  Friedel pairs.
+
+  Completeness (all) is the completeness of the data before merging Friedel
+  pairs.
+
+  Completeness (anomalous) is the completeness of the anomalous data. The
+  anomalous completeness is calcluated by dividing the number of measured
+  acentric, Bijvoet mates by the total possible number of acentric indices.
+
+  Completeness (non-anomalous) should be used to determine if there is
+  sufficient data for non-anomalous purposes (refinement, model-building).
+  A value greater than 90% is generally desired, while a value less than
+  75% is considered poor. Values in between will provide less than optimal
+  results.
+
+  Completeness (anomalous) should be used to determine if there is sufficient
+  data for anomalous purposes (phasing, finding anomalous atoms, refinement
+  of anomalous occupancies or scattering factors). A value greater than 80%
+  is generally desired, while a value less than 50% is considered poor. Values
+  in between will provide less than optimal results.
+  
+
+=============================== Anomalous signal ==============================
+
+
+             ----------Measurability of anomalous signal----------
+
+ The anomalous signal seems to extend to about 2.9 A (or to 2.7 A, from a
+ more optimistic point of view).  The quoted resolution limits can be used as a
+ guideline to decide where to cut the resolution for phenix.hyss.
+ Depending however on the size and nature of your substructure you could cut
+ the data at an even lower resolution to speed up the search.
+
+Table of measurability as a function of resolution:
+
+  ----------------------------------------------------------
+  | Resolution range  | N(obs)/N(possible) | Measurability |
+  ----------------------------------------------------------
+  | 47.8480 -  4.7390 | [1769/1773]        |  0.4165       |
+  |  4.7390 -  3.7619 | [1773/1773]        |  0.2911       |
+  |  3.7619 -  3.2865 | [1789/1789]        |  0.1826       |
+  |  3.2865 -  2.9861 | [1733/1734]        |  0.1078       |
+  |  2.9861 -  2.7721 | [1783/1783]        |  0.0731       |
+  |  2.7721 -  2.6087 | [1833/1833]        |  0.0303       |
+  |  2.6087 -  2.4780 | [1709/1713]        |  0.0181       |
+  |  2.4780 -  2.3702 | [1797/1799]        |  0.0171       |
+  |  2.3702 -  2.2789 | [1704/1779]        |  0.0024       |
+  |  2.2789 -  2.2003 | [1582/1762]        |  0.0026       |
+  ----------------------------------------------------------
+
+ The measurability is defined as the fraction of Bijvoet related intensity
+ differences for which the following relationship holds:
+
+    |delta_I|/sigma_delta_I > 3.0
+    min[I(+)/sigma_I(+), I(-)/sigma_I(-)] > 3.0
+
+  The measurability provides an intuitive feeling of the quality of the data,
+  as it is related to the number of reliable Bijvoet differences.  When the
+  data are processed properly and the standard deviations have been estimated
+  accurately, values larger than 0.05 are encouraging.  Note that this
+  analysis relies on the correctness of the estimated standard deviations of
+  the intensities.
+
+
+===================== Absolute scaling and Wilson analysis ====================
+
+
+        ----------Maximum likelihood isotropic Wilson scaling----------
+
+ ML estimate of overall B value:
+   22.96 A**2
+ Estimated -log of scale factor:
+   -0.64
+ The overall B value ("Wilson B-factor", derived from the Wilson plot) gives
+ an isotropic approximation for the falloff of intensity as a function of
+ resolution.  Note that this approximation may be misleading for anisotropic
+ data (where the crystal is poorly ordered along an axis).  The Wilson B is
+ strongly correlated with refined atomic B-factors but these may differ by
+ a significant amount, especially if anisotropy is present.
+
+       ----------Maximum likelihood anisotropic Wilson scaling----------
+
+ML estimate of overall B_cart value:
+  16.86,  0.00, -3.02
+         26.71,  0.00
+                28.86
+
+Equivalent representation as U_cif:
+   0.21, -0.00,  0.01
+          0.34,  0.00
+                 0.37
+
+Eigen analyses of B-cart:
+  ------------------------------------------------
+  | Eigenvector | Value   | Vector               |
+  ------------------------------------------------
+  | 1           |  29.577 | (-0.23, 0.00,  0.97) |
+  | 2           |  26.715 | (0.00,  1.00, 0.00)  |
+  | 3           |  16.144 | ( 0.97, 0.00,  0.23) |
+  ------------------------------------------------
+ML estimate of  -log of scale factor:
+  -0.62
+
+                    ----------Anisotropy analyses----------
+
+
+ For the resolution shell spanning between 2.30 - 2.20 Angstrom,
+ the mean I/sigI is equal to  3.78. 38.0 % of these intensities have
+ an I/sigI > 3. When sorting these intensities by their anisotropic
+ correction factor and analysing the I/sigI behavior for this ordered
+ list, we can gauge the presence of 'anisotropy induced noise amplification'
+ in reciprocal space.
+
+ The quarter of Intensities *least* affected by the anisotropy correction show
+
+    <I/sigI>                 :   4.35e+00
+    Fraction of I/sigI > 3   :   4.55e-01     ( Z =     3.44 )
+  The quarter of Intensities *most* affected by the anisotropy correction show
+
+    <I/sigI>                 :   2.08e+00
+    Fraction of I/sigI > 3   :   1.56e-01     ( Z =    10.32 )
+ Z-scores are computed on the basis of a Bernoulli model assuming independence
+ of weak reflections with respect to anisotropy.
+
+                        ----------Wilson plot----------
+
+ The Wilson plot shows the falloff in intensity as a function in resolution;
+ this is used to calculate the overall B-factor ("Wilson B-factor") for the
+ data shown above.  The expected plot is calculated based on analysis of
+ macromolecule structures in the PDB, and the distinctive appearance is due to
+ the non-random arrangement of atoms in the crystal.  Some variation is
+ natural, but major deviations from the expected plot may indicate pathological
+ data (including ice rings, detector problems, or processing errors).
+
+                  ----------Mean intensity analyses----------
+
+ Inspired by: Morris et al. (2004). J. Synch. Rad.11, 56-59.
+ The following resolution shells are worrisome:
+ *** None ***
+
+                     ----------Possible outliers----------
+
+  Inspired by: Read, Acta Cryst. (1999). D55, 1759-1764
+
+Acentric reflections:
+            None
+
+Centric reflections:
+            None
+
+
+                 ----------Ice ring related problems----------
+
+ The following statistics were obtained from ice-ring insensitive resolution
+ ranges:
+
+    mean bin z_score      : 0.80
+        ( rms deviation   : 0.63 )
+    mean bin completeness : 0.99
+        ( rms deviation   : 0.03 )
+
+ The following table shows the Wilson plot Z-scores and completeness for
+ observed data in ice-ring sensitive areas.  The expected relative intensity
+ is the theoretical intensity of crystalline ice at the given resolution.
+ Large z-scores and high completeness in these resolution ranges might
+ be a reason to re-assess your data processsing if ice rings were present.
+
+  -------------------------------------------------------------
+  | d_spacing | Expected rel. I | Data Z-score | Completeness |
+  -------------------------------------------------------------
+  |     3.897 |      1.000      |    3.64      |    1.00      |
+  |     3.669 |      0.750      |    2.74      |    1.00      |
+  |     3.441 |      0.530      |    0.07      |    1.00      |
+  |     2.671 |      0.170      |    1.38      |    1.00      |
+  |     2.249 |      0.390      |    0.32      |    0.93      |
+  -------------------------------------------------------------
+ Abnormalities in mean intensity or completeness at resolution ranges with a
+ relative ice ring intensity lower than 0.10 will be ignored.
+ At 3.90 A the z-score is more than 4.00 times the standard deviation of
+ all z-scores, while at the same time, the completeness does not go down.
+
+ As there was only 1 ice-ring related warning, it is not clear whether or not
+ ice ring related features are really present.
+
+
+################################################################################
+#                        Twinning and symmetry analyses                        #
+################################################################################
+
+============================= Systematic absences =============================
+
+
+             ----------Table of systematic absence rules----------
+
+ The following table gives information about systematic absences allowed for
+ the specified intensity point group.
+
+ For each operator, the reflections are split in three classes:
+
+
+  Systematic absence: Reflections that are absent for this operator.
+  Non absence       : Reflections of the same type (i.e. (0,0,l)) as above, but they
+                      should be present.
+  Other reflections : All other reflections.
+
+For each class, the <I/sigI> is reported, as well as the number of
+violations. A violation is a reflection that is absent when it is expected
+to be present for a particular space group, or present when it is
+expected to be absent. The criteria are:
+
+  Systematic absence violation: I/sigI > 3.0
+  Non absence violation       : I/sigI < 3.0
+  Other relections violation  : I/sigI < 3.0
+
+Operators with low associated violations for *both* systematically absent and
+non absent reflections, are likely to be true screw axis or glide planes. Both
+the number of violations and their percentages are given.  The number of
+violations within the 'other reflections' class, can be used as a comparison
+for the number of violations in the non-absent class.
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | Operator | # expected systematic absences | <I/sigI> (violations) | # expected non absences | <I/sigI> (violations) | # other reflections | <I/sigI> (violations)  | Score    |
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | 2_0 (b)  |        0                       |     0.00  (0,  0.0%)  |        5                |    22.38  (0,  0.0%)  |     3596            |    24.56  (223,  6.2%) | 3.05e+00 |
+  | 2_1 (b)  |        0                       |     0.00  (0,  0.0%)  |        5                |    22.38  (0,  0.0%)  |     3596            |    24.56  (223,  6.2%) | 3.05e+00 |
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                 ----------Space group identification----------
+
+Analyses of the absences table indicates a number of likely space group
+candidates, which are listed below. For each space group, the number of
+systematic absence violations are listed under the '+++' column. The number of
+non-absence violations (weak reflections) are listed under '---'. The last
+column is a likelihood based score for the particular space group.  Note that
+enantiomorphic spacegroups will have equal scores. Also, if absences were
+removed while processing the data, they will be regarded as missing
+information, rather then as enforcing that absence in the space group choices.
+
+  ------------------------------------------------------------------------------------
+  | space group | #  absent | <Z>_absent | <Z/sigZ>_absent | +++ | --- | score       |
+  ------------------------------------------------------------------------------------
+  | C 1 2 1     | 0         |     0.00   |     0.00        |  0  |  0  |  0.000e+00  |
+  ------------------------------------------------------------------------------------
+
+           ----------List of individual systematic absences----------
+
+ Note: this analysis uses the original input data rather than the filtered data
+ used for twinning detection; therefore, the results shown here may include
+ more reflections than shown above.
+
+C 1 2 1 (input space group): no absences found
+
+=============== Diagnostic tests for twinning and pseudosymmetry ==============
+
+Using data between 10.00 to 2.99 Angstrom.
+
+                     ----------Patterson analyses----------
+
+ Largest Patterson peak with length larger than 15 Angstrom:
+ Frac. coord.              :    0.052    0.500   -0.027
+ Distance to origin        :   22.931
+ Height relative to origin :   10.656 %
+ p_value(height)           :    1.257e-01
+
+Explanation
+ The p-value, the probability that a peak of the specified height or larger
+ is found in a Patterson function of a macromolecule that does not have any
+ translational pseudo-symmetry, is equal to 1.257e-01.  p_values smaller than
+ 0.05 might indicate weak translational pseudo symmetry, or the self vector of
+ a large anomalous scatterer such as Hg, whereas values smaller than 1e-3 are
+ a very strong indication for the presence of translational pseudo symmetry.
+
+
+                  ----------Wilson ratio and moments----------
+
+Acentric reflections:
+
+
+   <I^2>/<I>^2    :2.060   (untwinned: 2.000; perfect twin 1.500)
+   <F>^2/<F^2>    :0.784   (untwinned: 0.785; perfect twin 0.885)
+   <|E^2 - 1|>    :0.740   (untwinned: 0.736; perfect twin 0.541)
+
+Centric reflections:
+
+
+   <I^2>/<I>^2    :2.808   (untwinned: 3.000; perfect twin 2.000)
+   <F>^2/<F^2>    :0.664   (untwinned: 0.637; perfect twin 0.785)
+   <|E^2 - 1|>    :0.958   (untwinned: 0.968; perfect twin 0.736)
+
+
+               ----------NZ test for twinning and TNCS----------
+
+
+The NZ test is diagnostic for both twinning and translational NCS.  Note
+however that if both are present, the effects may cancel each other out,
+therefore the results of the Patterson analysis and L-test also need to be
+considered.
+
+
+  Maximum deviation acentric      :  0.011
+  Maximum deviation centric       :  0.051
+
+  <NZ(obs)-NZ(twinned)>_acentric  : +0.006
+  <NZ(obs)-NZ(twinned)>_centric   : -0.028
+
+  ----------------------------------------------------------------------------------------------------------
+  | NZ test                                                                                                |
+  |--------------------------------------------------------------------------------------------------------|
+  | z                  | Acentric observed  | Acentric untwinned | Centric observed   | Centric untwinned  |
+  |--------------------------------------------------------------------------------------------------------|
+  | 0                  | 0                  | 0                  | 0                  | 0                  |
+  | 0.1                | 0.0900626          | 0.0952             | 0.196923           | 0.2481             |
+  | 0.2                | 0.188826           | 0.1813             | 0.32               | 0.3453             |
+  | 0.3                | 0.26454            | 0.2592             | 0.372308           | 0.4187             |
+  | 0.4                | 0.338116           | 0.3297             | 0.427692           | 0.4738             |
+  | 0.5                | 0.404213           | 0.3935             | 0.483077           | 0.5205             |
+  | 0.6                | 0.459472           | 0.4512             | 0.547692           | 0.5614             |
+  | 0.7                | 0.51122            | 0.5034             | 0.569231           | 0.5972             |
+  | 0.8                | 0.558999           | 0.5507             | 0.596923           | 0.6289             |
+  | 0.9                | 0.599298           | 0.5934             | 0.636923           | 0.6572             |
+  | 1                  | 0.640818           | 0.6321             | 0.670769           | 0.6833             |
+  ----------------------------------------------------------------------------------------------------------
+
+
+                  ----------L test for acentric data----------
+
+Using difference vectors (dh,dk,dl) of the form:
+    (2hp, 2kp, 2lp)
+where hp, kp, and lp are random signed integers such that
+    2 <= |dh| + |dk| + |dl| <= 8
+  Mean |L|   :0.505  (untwinned: 0.500; perfect twin: 0.375)
+  Mean  L^2  :0.337  (untwinned: 0.333; perfect twin: 0.200)
+
+ The distribution of |L| values indicates a twin fraction of
+ 0.00. Note that this estimate is not as reliable as obtained
+ via a Britton plot or H-test if twin laws are available.
+
+  ---------------------------------------------------------------------------------------------------------------------------------
+  | L test, acentric data                                                                                                         |
+  |-------------------------------------------------------------------------------------------------------------------------------|
+  | |l|                           | Observed                      | Acentric theory               | Acentric theory, perfect twin |
+  |-------------------------------------------------------------------------------------------------------------------------------|
+  | 0                             | 0.000584226                   | 0                             | 0                             |
+  | 0.02                          | 0.0196689                     | 0.02                          | 0.029996                      |
+  | 0.04                          | 0.0397274                     | 0.04                          | 0.059968                      |
+  | 0.06                          | 0.0560857                     | 0.06                          | 0.089892                      |
+  | 0.08                          | 0.0771178                     | 0.08                          | 0.119744                      |
+  | 0.1                           | 0.0956183                     | 0.1                           | 0.1495                        |
+  | 0.12                          | 0.115482                      | 0.12                          | 0.179136                      |
+  | 0.14                          | 0.138462                      | 0.14                          | 0.208628                      |
+  | 0.16                          | 0.15852                       | 0.16                          | 0.237952                      |
+  | 0.18                          | 0.177215                      | 0.18                          | 0.267084                      |
+  | 0.2                           | 0.197858                      | 0.2                           | 0.296                         |
+  | 0.22                          | 0.215969                      | 0.22                          | 0.324676                      |
+  | 0.24                          | 0.234859                      | 0.24                          | 0.353088                      |
+  | 0.26                          | 0.252191                      | 0.26                          | 0.381212                      |
+  | 0.28                          | 0.269912                      | 0.28                          | 0.409024                      |
+  | 0.3                           | 0.291918                      | 0.3                           | 0.4365                        |
+  | 0.32                          | 0.308666                      | 0.32                          | 0.463616                      |
+  | 0.34                          | 0.327556                      | 0.34                          | 0.490348                      |
+  | 0.36                          | 0.347614                      | 0.36                          | 0.516672                      |
+  | 0.38                          | 0.364557                      | 0.38                          | 0.542564                      |
+  | 0.4                           | 0.385979                      | 0.4                           | 0.568                         |
+  | 0.42                          | 0.408179                      | 0.42                          | 0.592956                      |
+  | 0.44                          | 0.42668                       | 0.44                          | 0.617408                      |
+  | 0.46                          | 0.446543                      | 0.46                          | 0.641332                      |
+  | 0.48                          | 0.467965                      | 0.48                          | 0.664704                      |
+  | 0.5                           | 0.487244                      | 0.5                           | 0.6875                        |
+  | 0.52                          | 0.505161                      | 0.52                          | 0.709696                      |
+  | 0.54                          | 0.525803                      | 0.54                          | 0.731268                      |
+  | 0.56                          | 0.546641                      | 0.56                          | 0.752192                      |
+  | 0.58                          | 0.568452                      | 0.58                          | 0.772444                      |
+  | 0.6                           | 0.590847                      | 0.6                           | 0.792                         |
+  | 0.62                          | 0.61149                       | 0.62                          | 0.810836                      |
+  | 0.64                          | 0.631548                      | 0.64                          | 0.828928                      |
+  | 0.66                          | 0.64927                       | 0.66                          | 0.846252                      |
+  | 0.68                          | 0.670107                      | 0.68                          | 0.862784                      |
+  | 0.7                           | 0.691139                      | 0.7                           | 0.8785                        |
+  | 0.72                          | 0.707692                      | 0.72                          | 0.893376                      |
+  | 0.74                          | 0.731646                      | 0.74                          | 0.907388                      |
+  | 0.76                          | 0.752093                      | 0.76                          | 0.920512                      |
+  | 0.78                          | 0.776047                      | 0.78                          | 0.932724                      |
+  | 0.8                           | 0.798442                      | 0.8                           | 0.944                         |
+  | 0.82                          | 0.820643                      | 0.82                          | 0.954316                      |
+  | 0.84                          | 0.841675                      | 0.84                          | 0.963648                      |
+  | 0.86                          | 0.865628                      | 0.86                          | 0.971972                      |
+  | 0.88                          | 0.887829                      | 0.88                          | 0.979264                      |
+  | 0.9                           | 0.908861                      | 0.9                           | 0.9855                        |
+  | 0.92                          | 0.931451                      | 0.92                          | 0.990656                      |
+  | 0.94                          | 0.95073                       | 0.94                          | 0.994708                      |
+  | 0.96                          | 0.971762                      | 0.96                          | 0.997632                      |
+  | 0.98                          | 0.988315                      | 0.98                          | 0.999404                      |
+  ---------------------------------------------------------------------------------------------------------------------------------
+
+ Reference:
+  J. Padilla & T. O. Yeates. A statistic for local intensity differences:
+  robustness to anisotropy and pseudo-centering and utility for detecting
+  twinning. Acta Crystallogr. D59, 1124-30, 2003.
+
+
+================================== Twin laws ==================================
+
+
+                  ----------Twin law identification----------
+
+
+No twin laws are possible for this crystal lattice.
+
+
+================== Twinning and intensity statistics summary ==================
+
+
+                       ----------Final verdict----------
+
+
+The largest off-origin peak in the Patterson function is 10.66% of the
+height of the origin peak. No significant pseudotranslation is detected.
+
+The results of the L-test indicate that the intensity statistics behave as
+expected. No twinning is suspected.
+
+            ----------Statistics independent of twin laws----------
+
+  <I^2>/<I>^2 : 2.060  (untwinned: 2.0, perfect twin: 1.5)
+  <F>^2/<F^2> : 0.784  (untwinned: 0.785, perfect twin: 0.885)
+  <|E^2-1|>   : 0.740  (untwinned: 0.736, perfect twin: 0.541)
+  <|L|>       : 0.505  (untwinned: 0.500; perfect twin: 0.375)
+  <L^2>       : 0.337  (untwinned: 0.333; perfect twin: 0.200)
+  Multivariate Z score L-test: 2.487
+
+
+ The multivariate Z score is a quality measure of the given spread in
+ intensities. Good to reasonable data are expected to have a Z score lower
+ than 3.5.  Large values can indicate twinning, but small values do not
+ necessarily exclude it.  Note that the expected values for perfect twinning
+ are for merohedrally twinned structures, and deviations from untwinned will
+ be larger for perfect higher-order twinning.
+
+
+No (pseudo)merohedral twin laws were found.
+
+
+AutoSol_setup_for_scaling  AutoSol  Run 1 Fri Oct 27 15:12:07 2023
+
+Setting up for  scaling dataset 
+resolution: 2.2
+solvent_fraction: 0.4419
+ncs_copies: 1
+Scoring criteria will be:  ['SKEW', 'CORR_RMS']
+Scoring method will be: BAYES-CC
+
+AutoSol_scale_and_analyze_mad  AutoSol  Run 1 Fri Oct 27 15:12:07 2023
+
+scale_and_analyze_mad for dataset 1
+
+File type :sca readdenzo
+merge type :premerged
+Testing anisotropy in  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca  ...
+Applying overall anisotropic B correction to  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca  to yield  AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+Overall B set to minimum of the trace of B values
+Range of aniso B:  16.861371174 28.8591204856
+
+Max b_iso target allowed is   40.00 A**2
+
+Min B aniso from datafiles is   16.86 A**2
+Target aniso B set to   16.86 A**2 
+Setting anisotropic overall B to  16.861371174
+Removing anisotropy from  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca ..result in  AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+Applying overall anisotropic B correction to  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca  to yield  AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+Overall B set to  16.861371174
+Range of aniso B:  16.861371174 28.8591204856
+Using aniso-corrected data files as 'remove_aniso' is set
+Using data with aniso correction ['ANISO_5c82-sf_PHX.sca']
+current merge type:  premerged
+new merge type after aniso correction:  premerged
+FILE TYPE scalepack_merge
+GUESS FILE TYPE MERGE TYPE sca premerged
+TARGET LABELS ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+CONTENTS: ['AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca', 'sca', 'premerged', 'C 1 2 1', [96.536, 44.641, 42.244, 90.0, 97.665, 90.0], 2.200285243372019, ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']]
+File  ANISO_5c82-sf_PHX.sca  RES:     2.2
+Guess of most complete dataset:  1  with resolution of     2.2 for dataset  1
+File with highest resolution to be used with anomalous refinement data: /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/5c82-sf_PHX.sca
+
+File: /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca
+Recommended resolution: 2.200285
+signal to noise: 3.863658
+FILE TYPE scalepack_merge
+GUESS FILE TYPE MERGE TYPE sca premerged
+TARGET LABELS ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+CONTENTS: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca', 'sca', 'premerged', 'C 1 2 1', [96.536, 44.641, 42.244, 90.0, 97.665, 90.0], 2.200285243372019, ['IPLUS', 'SIGIPLUS', 'IMINU', 'SIGIMINU']]
+Saved /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca_ano_1.sca in PDS 
+Saved Miller arrays in PDS as ANISO_5c82-sf_PHX.sca_ano_1.sca_as_miller_arrays Dataset = 1
+Saved mad_fpfm.scl in PDS 
+Saved mad_fbar.scl in PDS 
+Saved mad_fbar.mtz in PDS 
+FILE DATA:/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca sn: 3.863658
+order of datasets for trying phasing:['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+SCALED DATASET 1
+DONE WITH SCALING 1 DATASETS
+
+AutoSol_guess_files_for_ha_solution  AutoSol  Run 1 Fri Oct 27 15:12:11 2023
+
+Guessing input_ha_files for dataset 1
+RANGE to KEEP:1.28
+SN_LIST: [3.863658]
+datafile_sn: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+Minimum S/N to include in list: -12796.136342
+Considering file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca for starting HA search:
+Guess of list of files for HYSS: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+
+AutoSol_files_for_read_ha_solution  AutoSol  Run 1 Fri Oct 27 15:12:11 2023
+
+Set dataset for reading in or generating heavy-atom 
+ sites to 1
+Shifting to Automatic mode....
+HA SITES FILE /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb
+Reading sites from  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb
+Reading sites from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb
+Reading this file as a PDB file
+Dataset number: 1
+SITES: [-0.38093618008497954, -0.3602069939678885, -0.05839985341832509]
+SITES: [-0.2980739776241332, -0.26213571165498956, -0.053574998452884735]
+SITES: [-0.3242106467100292, -0.1769897673719084, 0.0]
+SITES: [-0.30893103043808595, -0.27342578161517694, -0.8847159798015385]
+SITES: [-0.32458159211713655, -0.31110415001405695, -0.012922012555956597]
+SITES: [-0.30685284391404066, -0.34690084008623895, -0.04230107991977658]
+Writing out solution  1 :  C 1 2 1
+xyz         -0.381          -0.360          -0.058       0.00     None
+
+xyz         -0.298          -0.262          -0.054       0.00     None
+
+xyz         -0.324          -0.177           0.000       0.00     None
+
+xyz         -0.309          -0.273          -0.885       0.00     None
+
+xyz         -0.325          -0.311          -0.013       0.00     None
+
+xyz         -0.307          -0.347          -0.042       0.00     None
+
+Writing out solution  2 :  C 1 2 1
+xyz          0.381           0.360           0.058       0.00     None
+
+xyz          0.298           0.262           0.054       0.00     None
+
+xyz          0.324           0.177           0.000       0.00     None
+
+xyz          0.309           0.273           0.885       0.00     None
+
+xyz          0.325           0.311           0.013       0.00     None
+
+xyz          0.307           0.347           0.042       0.00     None
+
+DONE WITH SITES on 1 DATASETS
+
+AutoSol_score_ha_solutions  AutoSol  Run 1 Fri Oct 27 15:12:11 2023
+
+Total number of solutions to score: 2
+Skipping extra phasing steps as skip_extra_phasing=Auto and phasing_method=PHASER
+
+SCORING SOLUTION 1: Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1", with 6 sites
+Number of scoring criteria:  2
+Using BAYES-CC (Bayesian estimate of CC of map to perfect) as scores
+Evaluating solution 1
+Copied mad_fpfm.scl from PDS to AutoSol_run_1_/TEMP0
+Copied mad_fbar.scl from PDS to AutoSol_run_1_/TEMP0
+Copied mad_fbar.mtz from PDS to AutoSol_run_1_/TEMP0
+
+Using  ANISO_5c82-sf_PHX.sca_ano_1.sca  (localscaled version of  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca ) as input to PHASER
+
+List of all scatterers to be considered:
+ SE  :   fo=   34.00  f'=   -8.00  f''=    4.50  f'-adjusted   -8.00
+
+Using default HA type of  SE
+Phasing based on  ANISO_5c82-sf_PHX.sca_ano_1.sca
+
+Converting intensities to amplitudes
+Averaging Bijvoet mates for saved data...
+Setting resolution limit for phasing to  2.2
+F-prime value for this data:  -8.0
+F-double_prime value for this data:  4.5
+Using protein sequence information from  AutoSol_run_1_/sequence_autosol.dat  for content estimation along with copy number of  1.0
+Anisotropy Correction
+Data read from:  AutoSol_run_1_/TEMP0/TEMP_sca.mtz
+Data output to :  AutoSol_run_1_/F_ano.mtz
+Spacegroup Name (Hall symbol) = C 1 2 1 ( C 2y)
+Unitcell =   96.54   44.64   42.24   90.00   97.67   90.00
+Principal components =    0.36    0.22   -0.57
+Range of principal components =    0.93
+Wilson Scale =    1.74
+Wilson B-factor =   14.07
+Completing sites:  True
+Starting with 6 input sites 
+Scattering factors for SE will be f'=  -8.00 f''=   4.50
+Data output to :  AutoSol_run_1_/TEMP0/phaser_mtz
+Running phaser with both hands of the heavy-atom substructure/SG
+logfile:  AutoSol_run_1_/TEMP0/phaser_1.log
+SAD phasing
+Data read from:  AutoSol_run_1_/TEMP0/TEMP_sca.mtz
+Data output to :  AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+Spacegroup Name (Hall symbol) = C 1 2 1 ( C 2y)
+Unitcell =  (96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0)
+LogLikelihood =  -585.580819999
+4  refined atoms
+ atom          x          y          z  occupancy      u-iso      fp     fpp
+   SE    -0.3819    -0.3615    -0.0619     1.1134     0.1102   -8.00    4.47
+   SE    -0.2969    -0.2601    -0.0538     0.9345     0.1074   -8.00    4.47
+   SE    -0.3240    -0.1737    -0.0103     1.1006     0.1938   -8.00    4.47
+   SE    -0.3100    -0.2734    -0.8850     1.0967     0.2409   -8.00    4.47
+
+Reading from ... AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz
+
+Including HLA HLB HLC HLD from AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz and writing to AutoSol_run_1_/TEMP0/phaser_1.mtz
+
+
+Including HLanomA HLanomB HLanomC HLanomD (anomalous information 
+only, no real scattering information) from 
+AutoSol_run_1_/TEMP0/phaser_mtz.1.mtz as HLanomA HLanomB HLanomC HLanomD
+...and writing them to AutoSol_run_1_/TEMP0/phaser_1.mtz
+
+FP SIGFP PHIB FOM HLA HLB HLC HLD FWT PHIFWT written to  AutoSol_run_1_/TEMP0/phaser_1.mtz
+Wrote FWT PHIFWT as FP PHIB FOM to  phaser_1_fwt.mtz
+Final sites:
+Reading from ... AutoSol_run_1_/TEMP0/phaser_mtz.1.hand.mtz
+
+Including HLA HLB HLC HLD from AutoSol_run_1_/TEMP0/phaser_mtz.1.hand.mtz and writing to AutoSol_run_1_/TEMP0/phaser_1.1.hand.mtz
+
+
+Including HLanomA HLanomB HLanomC HLanomD (anomalous information 
+only, no real scattering information) from 
+AutoSol_run_1_/TEMP0/phaser_mtz.1.hand.mtz as HLanomA HLanomB HLanomC HLanomD
+...and writing them to AutoSol_run_1_/TEMP0/phaser_1.1.hand.mtz
+
+FP SIGFP PHIB FOM HLA HLB HLC HLD FWT PHIFWT written to  AutoSol_run_1_/TEMP0/phaser_1.1.hand.mtz
+Wrote FWT PHIFWT as FP PHIB FOM to  phaser_1_fwt.1.hand.mtz
+Final sites:
+FOM found:  0.42
+REFINED HA FRACTIONAL COORDS AND OCCUPANCIES: 
+SE          -0.382         -0.362         -0.062       1.11
+SE          -0.297         -0.260         -0.054       0.93
+SE          -0.324         -0.174         -0.010       1.10
+SE          -0.310         -0.273         -0.885       1.10
+Number of scoring criteria:  2
+Using BAYES-CC (Bayesian estimate of CC of map to perfect) as scores
+
+Evaluate_solution
+
+
+Scoring for this solution now...
+
+AutoSol_run_1_/TEMP0/resolve.scores SKEW 0.1988759
+AutoSol_run_1_/TEMP0/resolve.scores CORR_RMS 0.868488
+Reading NCS information from:  AutoSol_run_1_/TEMP0/resolve.log
+ based on  [ha_1.pdb,phaser_1.mtz]
+
+CC-EST (BAYES-CC) SKEW : 49.1 +/- 23.1
+CC-EST (BAYES-CC) CORR_RMS : 54.1 +/- 37.3
+ESTIMATED MAP CC x 100:  53.1 +/- 16.3 (2SD)
+
+FOM for solution  1 : 0.42 phaser_1.log 1
+Reformatting  ha_1.pdb  and putting it in  ha_1.pdb_formatted.pdb
+
+SCORING SOLUTION 2: Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1", with 6 sites
+Evaluating solution 2
+Copied mad_fpfm.scl from PDS to AutoSol_run_1_/TEMP0
+Copied mad_fbar.scl from PDS to AutoSol_run_1_/TEMP0
+Copied mad_fbar.mtz from PDS to AutoSol_run_1_/TEMP0
+
+Using existing inverse files phaser_1.1.hand.mtz 
+
+FOM found:  0.42
+REFINED HA FRACTIONAL COORDS AND OCCUPANCIES: 
+SE           0.382          0.362          0.062       1.11
+SE           0.297          0.260          0.054       0.93
+SE           0.324          0.174          0.010       1.10
+SE           0.310          0.273          0.885       1.10
+Number of scoring criteria:  2
+Using BAYES-CC (Bayesian estimate of CC of map to perfect) as scores
+
+Evaluate_solution
+
+
+Scoring for this solution now...
+
+AutoSol_run_1_/TEMP0/resolve.scores SKEW 0.00047560432
+AutoSol_run_1_/TEMP0/resolve.scores CORR_RMS 0.8218053
+Reading NCS information from:  AutoSol_run_1_/TEMP0/resolve.log
+ based on  [ha_2.pdb,phaser_2.mtz]
+
+CC-EST (BAYES-CC) SKEW : 13.9 +/- 29.6
+CC-EST (BAYES-CC) CORR_RMS : 43.1 +/- 40.1
+ESTIMATED MAP CC x 100:  21.7 +/- 34.8 (2SD)
+
+FOM for solution  2 : 0.42 phaser_2.log 1
+Reformatting  ha_2.pdb  and putting it in  ha_2.pdb_formatted.pdb
+RANGE to KEEP:1.28
+Confident of the hand (Quality diff from opp hand is 1.6 sigma)
+
+MARKING DUPLICATES FROM solutions
+
+
+AutoSol_guess_solution_descriptions_for_phasing  AutoSol  Run 1 Fri Oct 27 15:12:18 2023
+
+RANGE to KEEP:1.28
+No more solutions added as number of datasets is 1
+GUESS SOLUTIONS FOR PHASING: ['Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"']
+ALL SOLUTIONS FOR PHASING: ['Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"', 'Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"']
+
+AutoSol_choose_solutions_for_phasing  AutoSol  Run 1 Fri Oct 27 15:12:18 2023
+
+NEW SOLUTION FOR PHASING: Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+
+AutoSol_phasing  AutoSol  Run 1 Fri Oct 27 15:12:18 2023
+
+
+Phasing solution  1
+Resolution for phasing >= scaling: skipping madbst and scale
+Setting res_phase based on overall resolution of: 2.2
+Resolution for phasing:     2.2
+Fixing xyz in this phasing run
+Copied mad_fpfm.scl from PDS to AutoSol_run_1_/TEMP0
+Copied mad_fbar.scl from PDS to AutoSol_run_1_/TEMP0
+Copied mad_fbar.mtz from PDS to AutoSol_run_1_/TEMP0
+SKIPPING EXTRA PHASING
+FOM for solution  1 : 0.42 phaser_1.log 1
+Reformatting  ha_1.pdb  and putting it in  ha_1.pdb_formatted.pdb
+
+ PHASED SOLUTION: Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+
+
+MARKING DUPLICATES FROM solutions
+
+
+AutoSol_guess_phased_solution_descriptions_for_denmod  AutoSol  Run 1 Fri Oct 27 15:12:18 2023
+
+RANGE to KEEP:1.28
+Allowed local range... 1.28
+Considering... Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1" with delta quality=    0.0
+Considering... Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1" with delta quality=    1.6
+GUESS SOLUTIONS FOR DM: ['Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"']
+ALL SOLUTIONS FOR DM: ['Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"', 'Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"']
+
+AutoSol_choose_solutions_for_denmod  AutoSol  Run 1 Fri Oct 27 15:12:18 2023
+
+
+AutoSol_denmod  AutoSol  Run 1 Fri Oct 27 15:12:18 2023
+
+
+SOLUTION USED TO START DEN MOD:
+Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+HKLIN: phaser_1.mtz
+Using FWT and PHIFWT from phaser_1_fwt.mtz  to start density modification
+Using FOM of    0.42 as starting FOM for density modification
+Truncating ha sites at start of resolve
+Mask types to consider:  ['histograms']
+
+Testing density modification with mask_type = histograms
+RFACTOR:  0.2877
+Best mask type so far is  histograms
+Copying AutoSol_run_1_/TEMP0/resolve_histograms_1.mtz to AutoSol_run_1_/denmod_1.mtz 
+
+ DM SOLUTION: Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1" R=0.2877
+
+AutoSol_choose_solutions_for_build  AutoSol  Run 1 Fri Oct 27 15:12:34 2023
+
+Solution suitable for build:Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1" Quality: 53.1389166247
+Maximum number of builds:  2
+
+Solution for build:  Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+
+AutoSol_build  AutoSol  Run 1 Fri Oct 27 15:12:34 2023
+
+SOLUTION FOR MODEL-BUILDING: Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+
+DM SOLUTION USED FOR MODEL-BUILDING 1:Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+SG: C 1 2 1
+Cell: [96.53600311279297, 44.64099884033203, 42.24399948120117, 90.0, 97.66500091552734, 90.0]
+Using FWT and PHIFWT from phaser_1_fwt.mtz  to start density modification
+Using FOM of    0.42 as starting FOM for density modification
+Merging  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz  and  AutoSol_run_1_/phaser_1.mtz  and adding free R flags (if necessary) for refinement
+phased input and program labels:  ['FP', 'SIGFP', 'PHIB', 'FOM', 'HLA', 'HLB', 'HLC', 'HLD'] ['FP', 'SIGFP', 'PHIB', 'FOM', 'HLA', 'HLB', 'HLC', 'HLD']
+prog,inp refinement labels:  ['FP', 'SIGFP', 'FreeR_flag'] ['FP', 'SIGFP', 'FREE']
+Merged program label list:  ['FP', 'SIGFP', 'FreeR_flag', 'PHIB', 'FOM', 'HLA', 'HLB', 'HLC', 'HLD']
+Merged input label list:  ['FP', 'SIGFP', 'FREE', 'PHIB', 'FOM', 'HLA', 'HLB', 'HLC', 'HLD']
+Refinement labels to use:  ['FP', 'SIGFP', 'FREE']
+Phased labels to use:  ['PHIB', 'FOM', 'HLA', 'HLB', 'HLC', 'HLD']
+Selecting arrays from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/5_5c82_4se_C121/5c82-sf.mtz : ['FREE'] ['FP', 'SIGFP'] 
+Selecting arrays from AutoSol_run_1_/phaser_1.mtz : ['PHIB'] ['FOM'] ['HLA', 'HLB', 'HLC', 'HLD'] 
+Output space group: C 1 2 1 (No. 5)
+Columns of data in AutoSol_run_1_/TEMP0/TEMP_ref_file.mtz:
+H K L FREE FP SIGFP PHIB FOM HLA HLB HLC HLD 
+H H H I F Q P W A A A A 
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+input_data_file_use:  AutoSol_run_1_/TEMP0/TEMP_ref_file.mtz
+labin_use:  FP=FP SIGFP=SIGFP FreeR_flag=FREE PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB 
+labin HLC=HLC HLD=HLD 
+Copying  TEMP_ref_file.mtz  to  exptl_fobs_phases_freeR_flags_1.mtz
+Columns used:  FP=FP SIGFP=SIGFP FreeR_flag=FREE PHIB=PHIB FOM=FOM HLA=HLA HLB=HLB 
+labin HLC=HLC HLD=HLD 
+
+Checking for HL coeffs in  exptl_fobs_phases_freeR_flags_1.mtz True
+
+Removing columns of data with all zeroes (if any)
+All columns of data have non-zero values
+
+Refinement file with freeR flags is in  AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz
+Using default test_flag_value of 0 from 
+AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz
+
+Removing anisotropy and sharpening refinement file 
+(AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz)  to b_iso=  16.86...
+yielding AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX.mtz
+Aniso-corrected data to be written to AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX.mtz
+Aniso B offset for refinement file:   -7.38
+
+NOTE: using same file for hklin_exp and hklin_ref:  /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/aniso_refinement_data_PHX.mtz 
+
+
+NOTE: Using phase information from input files in refinement and 
+density modification
+
+
+Refinement file with free R flags (not aniso corrected): /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/exptl_fobs_phases_freeR_flags_1.mtz
+
+Copying  AutoSol_run_1_/resolve_histograms_1.mtz  to  map_coeffs_1.mtz as input map coeffs
+Columns used: FP=FWT PHIB=PHWT
+Input map file is FWT PHWT or equiv
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+wrote anomalous data to: AutoSol_run_1_/TEMP0/5c82-sf_PHX_anom_data.mtz
+
+Adding anomalous data from AutoSol_run_1_/TEMP0/5c82-sf_PHX_anom_data.mtz to AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz to yield AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data.mtz 
+MERGING:  AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz AutoSol_run_1_/TEMP0/5c82-sf_PHX_anom_data.mtz  with labels  [['I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)']]
+Selecting arrays from AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1.mtz : ['FP', 'SIGFP'] ['PHIM'] ['FOMM'] ['HLAM', 'HLBM', 'HLCM', 'HLDM'] ['FreeR_flag'] ['FWT', 'PHWT'] 
+Selecting arrays from AutoSol_run_1_/TEMP0/5c82-sf_PHX_anom_data.mtz : ['I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)'] 
+Output space group: C 1 2 1 (No. 5)
+Columns of data in AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data.mtz:
+H K L FP SIGFP PHIM FOMM HLAM HLBM HLCM HLDM FreeR_flag FWT PHWT I(+) SIGI(+) I(-) SIGI(-) 
+H H H F Q P W A A A A I F P K M K M 
+Output labels: ['FP', 'SIGFP', 'PHIM', 'FOMM', 'HLAM', 'HLBM', 'HLCM', 'HLDM', 'FreeR_flag', 'FWT', 'PHWT', 'I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)']
+
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Set self.Facts['hl_anom_label']: HLanomA,HLanomB,HLanomC,HLanomD self.Facts['hl_label']: HLA,HLB,HLC,HLD
+
+Adding HLanom coeffs from AutoSol_run_1_/phaser_1.mtz to AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX.mtz to yield AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX_with_hl_anom.mtz 
+MERGING:  AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX.mtz AutoSol_run_1_/phaser_1.mtz  with labels  ['HLanomA', 'HLanomB', 'HLanomC', 'HLanomD']
+Selecting arrays from AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX.mtz : ['FP', 'SIGFP'] ['PHIM'] ['FOMM'] ['HLAM', 'HLBM', 'HLCM', 'HLDM'] ['FreeR_flag'] ['FWT', 'PHWT'] 
+Selecting arrays from AutoSol_run_1_/phaser_1.mtz : ['HLanomA', 'HLanomB', 'HLanomC', 'HLanomD'] 
+Output space group: C 1 2 1 (No. 5)
+Columns of data in AutoSol_run_1_/TEMP0/aniso_refinement_data_PHX_with_hl_anom.mtz:
+H K L FP SIGFP PHIM FOMM HLAM HLBM HLCM HLDM FreeR_flag FWT PHWT HLanomA HLanomB HLanomC HLanomD 
+H H H F Q P W A A A A I F P A A A A 
+Output labels: ['FP', 'SIGFP', 'PHIM', 'FOMM', 'HLAM', 'HLBM', 'HLCM', 'HLDM', 'FreeR_flag', 'FWT', 'PHWT', 'HLanomA', 'HLanomB', 'HLanomC', 'HLanomD']
+
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Set self.Facts['hl_anom_label']: HLanomA,HLanomB,HLanomC,HLanomD self.Facts['hl_label']: HLA,HLB,HLC,HLD
+
+Adding HLanom coeffs from AutoSol_run_1_/phaser_1.mtz to AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data.mtz to yield AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz 
+MERGING:  AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data.mtz AutoSol_run_1_/phaser_1.mtz  with labels  ['HLanomA', 'HLanomB', 'HLanomC', 'HLanomD']
+Selecting arrays from AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data.mtz : ['FP', 'SIGFP'] ['PHIM'] ['FOMM'] ['HLAM', 'HLBM', 'HLCM', 'HLDM'] ['FreeR_flag'] ['FWT', 'PHWT'] ['I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)'] 
+Selecting arrays from AutoSol_run_1_/phaser_1.mtz : ['HLanomA', 'HLanomB', 'HLanomC', 'HLanomD'] 
+Output space group: C 1 2 1 (No. 5)
+Columns of data in AutoSol_run_1_/TEMP0/exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz:
+H K L FP SIGFP PHIM FOMM HLAM HLBM HLCM HLDM FreeR_flag FWT PHWT I(+) SIGI(+) I(-) SIGI(-) HLanomA HLanomB HLanomC HLanomD 
+H H H F Q P W A A A A I F P K M K M A A A A 
+Output labels: ['FP', 'SIGFP', 'PHIM', 'FOMM', 'HLAM', 'HLBM', 'HLCM', 'HLDM', 'FreeR_flag', 'FWT', 'PHWT', 'I(+)', 'SIGI(+)', 'I(-)', 'SIGI(-)', 'HLanomA', 'HLanomB', 'HLanomC', 'HLanomD']
+
+Unit cell: (96.536, 44.641, 42.244, 90, 97.665, 90)
+Space group: C 1 2 1 (No. 5)
+Set self.Facts['hl_anom_label']: HLanomA,HLanomB,HLanomC,HLanomD self.Facts['hl_label']: HLAM,HLBM,HLCM,HLDM
+
+Have HLanom in refinement file
+Not using HLanom in refinement. Phase labels=HLAM,HLBM,HLCM,HLDM
+Saving  exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz  for refinement
+THE FILE AutoSol_run_1_/resolve_histograms_1.mtz will be used for model-building
+THE FILE aniso_refinement_data_PHX_with_hl_anom.mtz will be used for refinement
+Copying fact  resolution_build  of  2.2003  to  resolution
+Building model for solution 1
+SKIPPING BUILD (build=False)
+Recovering fact  resolution  of  2.2
+************************************************************
+SKIPPED BUILD
+Acceptable model not yet obtained...
+
+finished  AutoSol  Run 1 Fri Oct 27 15:12:37 2023
+
+Finishing  AutoSol Run 1
+Facts written to AutoSol_run_1_/AutoSol_Facts.dat
+
+Warnings:
+
+
+NOTE: space group ('C 1 2 1') and cell ([96.536, 44.641, 42.244, 90.0, 97.67, 90.0]) 
+found in /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+Setting space group from /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/../pdb_CF_format_hand_format.pdb
+
+SKIPPED BUILD
+
+
+Writing out files for solution # 1
+
+Creating overall_best files ...
+
+Refining None against original data in AutoSol_run_1_/exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz 
+No data or no model...skipping
+
+Copying files to overall_best
+
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/phaser_1.mtz to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_hklout_phased.mtz
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/exptl_fobs_phases_freeR_flags_1_with_anom_data_with_hl_anom.mtz to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_refine_data.mtz
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/resolve_histograms_1.mtz to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_denmod_map_coeffs.mtz
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/ha_1.pdb_formatted.pdb to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_ha_pdb.pdb
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/AutoSol_1.ncs_spec to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_ncs_file.ncs_spec
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/phaser_1.log to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_log_phased.log
+
+Copying /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/resolve_histograms_1.log to /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/overall_best_log_denmod.log
+
+Copying out overall best files
+AutoSol Run 1
+
+
+-----------CURRENT SOLUTIONS FOR RUN 1 : -------------------
+
+ *** FILES ARE IN THE DIRECTORY: AutoSol_run_1_ ****
+
+
+
+Solution # 1  BAYES-CC: 53.1 +/- 16.3 (2SD) Dataset #1   FOM: 0.42
+
+Solution 1 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb Dataset #1 SG="C 1 2 1"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6 (Already used for Phasing at resol of 2.2)      Refined Sites: 4
+No NCS found
+Experimental phases in: overall_best_hklout_phased.mtz
+Experimental phases plus FreeR_flags for refinement in: overall_best_refine_data.mtz
+Map coefficients (Density-modified phases using model) in: overall_best_denmod_map_coeffs.mtz
+HA sites (PDB format) in: overall_best_ha_pdb.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: overall_best_log_phased.log
+Density modification logfile in: overall_best_log_denmod.log (R=0.29)
+
+ Score type:       SKEW    CORR_RMS
+Raw scores:        0.20      0.87  
+100x EST OF CC:   49.12     54.12  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ SE      -0.382     -0.362     -0.062         1.11
+ SE      -0.297     -0.260     -0.054         0.93
+ SE      -0.324     -0.174     -0.010         1.10
+ SE      -0.310     -0.273     -0.885         1.10
+
+
+
+Solution # 2  BAYES-CC: 21.7 +/- 34.8 (2SD) Dataset #1   FOM: 0.42
+
+ NOTE: Output files for this solution not written out (in PDS only)
+Adjust 'number_of_solutions_to_display' (currently 1) to write them out.
+
+
+Solution  2 read from file /ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/pdb_CF_format_hand_format.pdb and taking inverse Dataset #1 SG="C 1 2 1"
+Dataset number: 1
+Dataset type: sad
+Datafiles used: ['/ssd2/heavy_atom_search/parameter_test/pdb1_3_5c82/exp-test/3_5c82_2/peak_cal/solve_occpeak/AutoSol_run_1_/TEMP0/ANISO_5c82-sf_PHX.sca']
+Anisotropy correction applied to all data except overall_best_refine_data.mtz
+Sites: 6     Refined Sites: 4
+No NCS found
+Experimental phases in: phaser_2.mtz
+HA sites (PDB format) in: ha_2.pdb_formatted.pdb
+Sequence file in: sequence_autosol.dat
+Phasing logfile in: phaser_2.log
+
+ Score type:       SKEW    CORR_RMS
+Raw scores:        0.00      0.82  
+100x EST OF CC:   13.87     43.13  
+
+Refined heavy atom sites (fractional): 
+ ATOM           X         Y          Z              OCC
+ SE       0.382      0.362      0.062         1.11
+ SE       0.297      0.260      0.054         0.93
+ SE       0.324      0.174      0.010         1.10
+ SE       0.310      0.273      0.885         1.10
+
+
+Citations for AutoSol:
+
+Liebschner D, Afonine PV, Baker ML, Bunkóczi G, Chen VB, Croll TI, Hintze B,
+Hung LW, Jain S, McCoy AJ, Moriarty NW, Oeffner RD, Poon BK, Prisant MG, Read
+RJ, Richardson JS, Richardson DC, Sammito MD, Sobolev OV, Stockwell DH,
+Terwilliger TC, Urzhumtsev AG, Videau LL, Williams CJ, Adams PD. (2019)
+Macromolecular structure determination using X-rays, neutrons and electrons:
+recent developments in Phenix. Acta Cryst. D75:861-877.
+
+McCoy AJ, Grosse-Kunstleve RW, Adams PD, Winn MD, Storoni LC, Read RJ. (2007)
+Phaser crystallographic software. J Appl Crystallogr 40:658-674.
+
+Terwilliger TC, Adams PD, Read RJ, McCoy AJ, Moriarty NW, Grosse-Kunstleve RW,
+Afonine PV, Zwart PH, Hung LW. (2009) Decision-making in structure solution
+using Bayesian estimates of map quality: the PHENIX AutoSol wizard. Acta
+Crystallogr D Biol Crystallogr 65:582-601.
+
+Zwart PH, Grosse-Kunstleve RW, Adams PD. (2005) Xtriage and Fest: automatic
+assessment of X-ray data and substructure structure factor estimation. CCP4
+Newsletter Winter:Contribution 7.
+
+
+

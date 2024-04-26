@@ -1,0 +1,1 @@
+/ssd2/scripts/autosol_refine3.sh ../../../13_5hhk_33se_p1211/5hhk-sf.mtz ../../../13_5hhk_33se_p1211/rcsb_pdb_5HHK.fasta ../pdb_CF.pdb SE 0.97918 0.4169 2

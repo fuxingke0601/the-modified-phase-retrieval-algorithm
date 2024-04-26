@@ -1,0 +1,428 @@
+# Effective parameters for autosol
+#  Sun Oct 29 21:43:46 2023
+# 
+# Use:
+# 
+# phenix.autosol AutoSol_run_1_/autosol.eff
+# 
+# Input arguments: 
+#  data=../../../52_5T3G_13SE_P41212/5t3g-sf.mtz
+#  atom_type=SE
+#  lambda=0.978
+#  solvent_fraction=0.5649
+#  nproc=2
+#  seq_file=../../../52_5T3G_13SE_P41212/rcsb_pdb_5T3G.fasta
+#  sites=15
+#  sites_file=../pdb_CF.pdb
+#  ncs_copies=1
+#  use_automatic_hyss=False
+#  build=False
+# 
+autosol {
+  atom_type = "SE"
+  lambda = 0.978
+  f_prime = None
+  f_double_prime = None
+  wavelength_name = peak inf high low remote
+  sites = 15
+  sites_file = "../pdb_CF.pdb"
+  seq_file = "../../../52_5T3G_13SE_P41212/rcsb_pdb_5T3G.fasta"
+  quick = None
+  data = "../../../52_5T3G_13SE_P41212/5t3g-sf.mtz"
+  labels = None
+  derscale = None
+  crystal_info {
+    unit_cell = None
+    space_group = None
+    solvent_fraction = 0.5649
+    chain_type = *Auto PROTEIN DNA RNA
+    resolution = 0
+    change_sg = False
+    residues = None
+    sequence = None
+  }
+  input_files {
+    cif_def_file_list = None
+    group_labels_list = None
+    input_file_list = None
+    input_phase_is_part_map_coeffs = True
+    input_phase_file = None
+    input_phase_labels = None
+    input_refinement_file = None
+    input_refinement_labels = None
+    input_seq_file = Auto
+    refine_eff_file_list = None
+  }
+  wavelength {
+    wavelength_name = peak inf high low remote
+    data = None
+    labels = None
+    atom_type = None
+    lambda = None
+    res_hyss = None
+    res_eval = None
+    f_prime = None
+    f_double_prime = None
+    sites = None
+    sites_file = None
+    derscale = None
+    group = 1
+    added_wavelength = True
+    ignore = False
+  }
+  native {
+    data = None
+    labels = None
+    lambda = None
+    group = 1
+    added_native = True
+    ignore = False
+  }
+  deriv {
+    data = None
+    labels = None
+    atom_type = None
+    sites = None
+    sites_file = None
+    res_hyss = None
+    res_eval = None
+    inano = noinano *inano anoonly
+    f_prime = None
+    f_double_prime = None
+    lambda = None
+    derscale = None
+    group = 1
+    added_deriv = True
+    ignore = False
+  }
+  decision_making {
+    hyss_scoring {
+      model_ha_iteration = None
+      acceptable_r = 0.35
+      max_model_ha_iterations = None
+      max_models_in_ha_iteration = None
+      ha_iteration = None
+      max_ha_iterations = None
+      minimum_improvement = 0
+    }
+    always_include_peak = True
+    add_extra_if_fa = True
+    create_scoring_table = None
+    desired_coverage = None
+    skip_hyss_other_derivs_if_quick = True
+    self_diff_fourier = True
+    combine_siblings = True
+    max_cc_extra_unique_solutions = 0.5
+    max_choices = None
+    max_composite_choices = 8
+    max_extra_unique_solutions = None
+    max_range_to_keep = 4
+    min_fom = 0.05
+    low_fom = 0.2
+    minimum_merge_cc = 0.25
+    min_fom_for_dm = 0
+    extreme_dm = False
+    fom_for_extreme_dm = 0.35
+    minimum_ncs_cc = 0.3
+    min_phased_each_deriv = 1
+    n_random = 6
+    res_eval = 0
+    score_individual_offset_list = None
+    score_individual_scale_list = None
+    score_individual_sd_list = None
+    score_overall_offset = None
+    score_overall_scale = None
+    score_overall_sd = None
+    score_type_list = SKEW CORR_RMS
+    score_weight_list = None
+    skip_score_list = None
+    ncs_copies_min_for_overlap = 2
+    rho_overlap_min = 0.3
+    rho_overlap_min_scoring = 0.5
+    build_scoring {
+      overall_score_method = *BAYES-CC Z-SCORE
+      r_switch = 0.4
+      acceptable_quality = 40
+      acceptable_secondary_structure_cc = 0.35
+      trace_chain = False
+      trace_chain_score = False
+      include_dm_score = None
+      use_map_model_cc = None
+      quality_cc_min = 0.5
+      max_useful_dm_r = 0.4
+    }
+    dev_scoring {
+      random_scoring = False
+      use_perfect = False
+      hklperfect = None
+      perfect_labels = None
+    }
+  }
+  scaling {
+    remove_aniso = Auto *True False
+    b_iso = None
+    max_b_iso = 40
+    target_b_ratio = 10
+    try_orig_sad_data_in_hyss = Auto
+    localscale_before_phaser = True
+    delta_b_for_auto_remove_aniso = 20
+    ratio_b_for_auto_remove_aniso = 1
+    test_remove_aniso = True
+    use_sca_as_is = True
+    derscale_list = None
+    scale_only = False
+    phase_only = False
+  }
+  heavy_atom_search {
+    min_hyss_cc = 0.05
+    acceptable_cc_hyss = 0.2
+    good_cc_hyss = 0.3
+    n_add_res_max = 2
+    add_res_max = 2
+    try_recommended_resolution_for_hyss = True
+    hyss_runs_min = 2
+    best_of_n_hyss = 1
+    best_of_n_hyss_always = 10
+    min_fraction_of_sites_found = 0.667
+    max_single_sites = 5
+    hyss_enable_early_termination = True
+    hyss_general_positions_only = True
+    hyss_min_distance = 3.5
+    hyss_n_fragments = 3
+    hyss_n_patterson_vectors = 33
+    hyss_random_seed = 792341
+    res_hyss = None
+    try_low_res_for_cys = True
+    direct_methods_only = False
+    use_measurability = True
+    use_phaser_rescoring = False
+    use_automatic_hyss = False
+    mad_ha_n = None
+    mad_ha_type = "Se"
+  }
+  phasing {
+    keep_atom_types = False
+    do_madbst = True
+    overallscale = False
+    res_phase = 0
+    phase_full_resolution = True
+    fixscattfactors = None
+    fixscattfactors_in_phasing = False
+    fix_xyz_in_phasing = None
+    have_hand = False
+    id_scale_ref = None
+    ratio_out = 10
+    ratmin = 0
+    require_nat = True
+    ikeepflag = 1
+    phasing_method = SOLVE *PHASER
+    cluster_pdb_file = None
+    input_partpdb_file = None
+    ncs_from_partpdb = True
+    input_part_map_ha_fraction = 0.75
+    phaser_sites_then_phase = False
+    partpdb_rms = None
+    input_part_map_coeffs_file = None
+    input_part_map_coeffs_labels = "FC,PHIC"
+    llgc_sigma = None
+    phaser_completion = True
+    use_phaser_hklstart = True
+    combine_same_parent_only = False
+    skip_extra_phasing = *Auto True False
+    read_sites = False
+    f_double_prime_list = None
+    f_prime_list = None
+    mad_ha_add_f_double_prime_list = None
+    mad_ha_add_f_prime_list = None
+    mad_ha_add_list = None
+    n_ha_list = None
+    nat_der_list = None
+  }
+  density_modification {
+    add_classic_denmod = Auto
+    skip_classic_if_worse_fom = True
+    skip_ncs_in_add_classic = True
+    tolerance_add_classic = 0.02
+    fix_xyz = False
+    fix_xyz_after_denmod = None
+    hl_in_resolve = False
+    mask_type = *histograms probability wang classic
+    test_mask_type = None
+    mask_cycles = 5
+    minor_cycles = 10
+    thorough_denmod = None
+    truncate_ha_sites_in_resolve = Auto *True False
+    rad_mask = None
+    use_ncs_in_denmod = True
+    mask_as_mtz = False
+    protein_output_mask_file = None
+    ncs_output_mask_file = None
+    omit_output_mask_file = None
+    use_hl_anom_in_denmod = None
+    use_hl_anom_in_denmod_with_model = None
+    precondition = False
+  }
+  model_building {
+    build = False
+    phase_improve_and_build = True
+    sort_hetatms = False
+    map_to_object = None
+    helices_strands_only = False
+    resolution_helices_strands = 3.1
+    helices_strands_start = False
+    cc_helix_min = None
+    cc_strand_min = None
+    build_type = *RESOLVE RESOLVE_AND_BUCCANEER
+    resolve {
+      n_cycle_build = None
+      refine = True
+      ncycle_refine = 3
+      number_of_builds = None
+      number_of_models = None
+      resolution_build = 0
+      fit_loops = True
+      loop_cc_min = 0.4
+      group_ca_length = 4
+      group_length = 2
+      input_compare_file = None
+      n_random_frag = 0
+      n_random_loop = 3
+      offsets_list = 53 7 23
+      remove_outlier_segments_z_cut = 3
+      resolve_command_list = None
+      solve_command_list = None
+      rms_random_frag = None
+      rms_random_loop = None
+      semet = None
+      use_met_in_align = Auto *True False
+      start_chains_list = None
+      thorough_loop_fit = None
+      trace_as_lig = False
+      use_any_side = False
+      loop_lib = False
+      standard_loops = True
+      trace_loops = False
+      refine_trace_loops = True
+      density_of_points = None
+      a_cut_min = None
+      max_density_of_points = None
+      cutout_model_radius = None
+      max_cutout_model_radius = 20
+      padding = 1
+      cut_out_density = True
+      max_span = 30
+      max_c_ca_dist = None
+      max_overlap_rmsd = 2
+      max_overlap = None
+      min_overlap = None
+    }
+  }
+  ncs {
+    find_ncs = *Auto True False
+    ncs_copies = 1
+    ncs_refine_coord_sigma_from_rmsd = False
+    ncs_refine_coord_sigma_from_rmsd_ratio = 1
+    optimize_ncs = True
+    refine_with_ncs = True
+    ncs_in_refinement = *torsion cartesian None
+  }
+  refinement {
+    refine_b = True
+    refine_se_occ = True
+    skip_clash_guard = True
+    correct_special_position_tolerance = None
+    use_mlhl = True
+    generate_hl_if_missing = False
+    place_waters = True
+    refinement_resolution = 0
+    ordered_solvent_low_resolution = None
+    link_distance_cutoff = 3
+    r_free_flags_fraction = 0.1
+    r_free_flags_max_free = 2000
+    r_free_flags_use_lattice_symmetry = True
+    r_free_flags_lattice_symmetry_max_delta = 5
+    allow_overlapping = None
+    fix_ligand_occupancy = None
+    remove_outlier_segments = True
+    twin_law = None
+    use_hl_anom_in_refinement = None
+    include_ha_in_refinement = None
+  }
+  display {
+    number_of_solutions_to_display = 1
+    solution_to_display = 0
+  }
+  general {
+    data_quality = *moderate strong weak
+    thoroughness = *quick medium thorough
+    nproc = 2
+    nbatch = 1
+    keep_files = "overall_best*" "phaser_*.mtz" "resolve_*.mtz" "solve_*.mtz" \
+                 "ha_*.pdb" "dataset*.log"
+    coot_name = "coot"
+    i_ran_seed = 72432
+    raise_sorry = False
+    background = True
+    check_wait_time = 1
+    max_wait_time = 1
+    wait_between_submit_time = 1
+    cache_resolve_libs = True
+    resolve_size = "12"
+    check_run_command = False
+    run_command = "sh "
+    queue_commands = None
+    condor_universe = "vanilla"
+    add_double_quotes_in_condor = True
+    condor = None
+    last_process_is_local = True
+    skip_r_factor = False
+    test_flag_value = Auto
+    skip_xtriage = False
+    base_path = None
+    temp_dir = None
+    local_temp_directory = None
+    clean_up = None
+    print_citations = True
+    solution_output_pickle_file = None
+    job_title = None
+    top_output_dir = None
+    wizard_directory_number = None
+    verbose = False
+    extra_verbose = False
+    debug = False
+    require_nonzero = True
+    remove_path_word_list = None
+    fill = False
+    res_fill = None
+    check_only = False
+  }
+  run_control {
+    coot = None
+    ignore_blanks = None
+    stop = None
+    display_facts = None
+    display_summary = None
+    carry_on = None
+    run = None
+    copy_run = None
+    display_runs = None
+    delete_runs = None
+    display_labels = None
+    dry_run = False
+    params_only = False
+    display_all = False
+  }
+  special_keywords {
+    write_run_directory_to_file = None
+  }
+  non_user_parameters {
+    gui_output_dir = None
+    allow_negative_f_double_prime = False
+    inano_list = None
+    ha_sites_file = None
+    expt_type = *Auto mad sir sad
+    wavelength_list = None
+    wavelength_name_list = None
+    sg = None
+  }
+}

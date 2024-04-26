@@ -1,0 +1,57 @@
+ !solve_combine.script -- run SOLVE on multiple datasets
+ TITLE         SOLVE     29-Oct-23                                             
+ SOLVEFILE     dataset_1_scale.log                                             
+ !Space group information:
+ CELL     66.465   215.690    78.630    90.000    91.899    90.000
+ SYMFILE       /usr/local/phenix-1.20.1-4487/modules/solve_resolve/ext_ref_file
+ FFTGRID      0    95    96     0   287   288     0    48    96
+ PATTGRID      0    95    96     0   144   288     0    48    96
+ RESOLUTION    2.500000       1000.000    
+ IMADPHASE            0
+ NNATF            1
+ NNATS            2
+ 
+ ! New atom types:
+ NEWATOMTYPE ANO1
+ AVAL         0.00000        0.00000        0.00000        0.00000
+ BVAL         0.00000        0.00000        0.00000        0.00000
+ CVAL         0.00000
+ FPRIMV         0.01000
+ FPRPRV         4.50000
+ 
+ IHEAVYPROC            5
+ NREP            5
+ ! Information on            1  more derivatives:
+ 
+ DERIVATIVE            1
+ LABEL         set 1                                                           
+ NCOLFBAR            1
+ NCOLSFBAR            2
+ NCOLDELF            3
+ NCOLSDELF            4
+ INANO
+ ANOONLY
+ NSOLSITE_DERIV           50
+ ! Heavy atoms for this derivative:
+ !  ----------- ATOM ANO1 ----------
+ ATOMNAME ANO1
+ OCCUPANCY   0.1000000    
+ BVALUE    35.00000    
+ REFINEALL
+ 
+ ! Information for HASSP and SOLVE
+ IHASSPTYPE           5
+ SEARCHREGION  0.000 0.990 0.000 0.997 0.000 0.500
+ ICRMAX           20
+ NTOPHASSP           30
+ NTOPFOUR          110
+ NTOPDERIV            5
+ NSOLSITE           50
+ NSEEDTEST           10
+ NSEEDSOLVE            5
+ NTOPSOLVE            5
+ NTOL_SITE            8
+ NTOL_SOLN            2
+ ACCEPTANCE   0.2000000    
+ DELETE
+ INVERSE

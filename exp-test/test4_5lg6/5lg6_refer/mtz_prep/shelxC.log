@@ -1,0 +1,57 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXC - Create input files for SHELXD and SHELXE - Version 2016/1  +
+  +  Copyright (c) George M. Sheldrick 2003-16                           +
+  +  SHELX                           Started at 21:01:31 on 07 Oct 2023  +
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   145304 Reflections read from SAD file 5lg6-sf_ctrun-cad_MTZ2V.hkl
+
+    73423 Unique reflections, highest resolution  2.500 Angstroms
+    191.6 Friedel pairs used on average for local scaling
+
+ Resl.   Inf. 13.39  8.25  6.21  5.08  4.34  3.82  3.43  3.12  2.88  2.67  2.50
+ N(data)     414  1624  2842  4028  5296  6650  7904  9395 10211 12099 12960
+ <I/sig>    25.8  25.5  21.8  20.5  20.9  18.4  15.3  11.5   8.2   6.4   4.9
+ %Complete  80.4  98.1  98.5  97.9  96.2  97.5  97.4  96.9  96.2  95.6  94.9
+ Multipl.    1.9   2.0   2.0   2.0   2.0   2.0   2.0   2.0   2.0   2.0   2.0
+ R(pim)%    4.13  3.28  4.19  3.85  3.43  3.49  4.19  5.73  8.33 10.59 13.47
+ Ranom%     8.26  6.56  8.39  7.71  6.85  6.98  8.39 11.46 16.66 21.18 26.95
+ <d"/sig>   1.68  1.26  1.28  1.07  0.93  0.83  0.80  0.78  0.79  0.78  0.78
+
+ For zero signal <d'/sig> and <d"/sig> should be about 0.80
+
+    49652 Reflections written to SHELX_fa.hkl for input to SHELXD/E
+
+    73423 Reflections written to SHELX.hkl for input to SHELXE
+
+    73423 Reflections written to SHELX_sad.cif containing:
+ h, k, l, I, sigI, I(+), sigI(+), I(-), sigI(-) and free-R flag
+
+ Dataset  <|E^2-1|>  Max.resln.(A)
+ SAD        0.715      2.500
+
+ If <|E^2-1|> is less than about 0.68, it is likely that the structure
+ is twinned or that F has been read in as intensity (specify -f!)
+
+ File SHELX_fa.ins written for input to SHELXD:
+
+ TITL SHELX_fa.ins SAD in P 1 21 1
+ CELL 0.98000 66.46 215.69 78.63 90.00 91.90 90.00
+ LATT -1
+ SYMM -X, 1/2+Y, -Z
+ SFAC SE
+ UNIT 64
+ FIND 8
+ SHEL 999 3.0
+ MIND -1.5 -0.1
+ PATS
+ NTRY 1000
+ SEED 1
+ HKLF 3
+ END 
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXC for SHELX finished at 21:01:31 on 07 Oct 2023                +
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

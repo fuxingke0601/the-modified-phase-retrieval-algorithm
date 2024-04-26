@@ -1,0 +1,63 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXC - Create input files for SHELXD and SHELXE - Version 2016/1  +
+  +  Copyright (c) George M. Sheldrick 2003-16                           +
+  +  SHELX                           Started at 20:00:49 on 10 Oct 2023  +
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    62766 Reflections read from SAD file 5t3g-sf_ctrun-cad_MTZ2V.hkl
+
+    35390 Unique reflections, highest resolution  1.554 Angstroms
+    200.7 Friedel pairs used on average for local scaling
+
+ Resl.   Inf.  8.30  5.11  3.85  3.15  2.69  2.37  2.13  1.94  1.78  1.66  1.55
+ N(data)     301   901  1503  2096  2763  3318  3914  4579  5488  5503  5024
+ <I/sig>    71.1  76.4  81.2  78.7  70.8  59.2  49.9  36.4  21.1   9.4   4.7
+ %Complete  91.8  98.6  99.3  99.1  98.8  98.5  98.2  97.8  97.3  96.3  76.0
+ Multipl.    1.5   1.7   1.8   1.8   1.8   1.9   1.9   1.9   1.9   1.7   1.4
+ R(pim)%    3.20  2.78  1.66  1.73  2.08  2.56  2.63  3.34  5.23  9.36 12.10
+ Ranom%     6.39  5.57  3.32  3.47  4.17  5.12  5.27  6.67 10.46 18.72 24.21
+ <d"/sig>   4.60  3.75  2.32  2.23  2.21  2.10  1.73  1.49  1.24  1.09  1.08
+
+ For zero signal <d'/sig> and <d"/sig> should be about 0.80
+
+    23543 Reflections written to SHELX_fa.hkl for input to SHELXD/E
+
+    35390 Reflections written to SHELX.hkl for input to SHELXE
+
+    35390 Reflections written to SHELX_sad.cif containing:
+ h, k, l, I, sigI, I(+), sigI(+), I(-), sigI(-) and free-R flag
+
+ Dataset  <|E^2-1|>  Max.resln.(A)
+ SAD        0.752      1.554
+
+ If <|E^2-1|> is less than about 0.68, it is likely that the structure
+ is twinned or that F has been read in as intensity (specify -f!)
+
+ File SHELX_fa.ins written for input to SHELXD:
+
+ TITL SHELX_fa.ins SAD in P 41 21 2
+ CELL 0.98000 57.62 57.62 150.81 90.00 90.00 90.00
+ LATT -1
+ SYMM 1/2-Y, 1/2+X, 1/4+Z
+ SYMM -X, -Y, 1/2+Z
+ SYMM 1/2+Y, 1/2-X, 3/4+Z
+ SYMM 1/2-X, 1/2+Y, 1/4-Z
+ SYMM Y, X, -Z
+ SYMM 1/2+X, 1/2-Y, 3/4-Z
+ SYMM -Y, -X, 1/2-Z
+ SFAC SE
+ UNIT 256
+ FIND 8
+ SHEL 999 2.1
+ MIND -1.5 -0.1
+ PATS
+ NTRY 1000
+ SEED 1
+ HKLF 3
+ END 
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXC for SHELX finished at 20:00:49 on 10 Oct 2023                +
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

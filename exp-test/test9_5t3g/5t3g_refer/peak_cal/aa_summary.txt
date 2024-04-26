@@ -1,0 +1,183 @@
+
+ JOB TIMESTAMP .... Wed Oct 18 10:41:39 2023
+ STRUCTURE ID ..... aa 
+ SPACE GROUP ...... P41212 (92)
+ UNIT CELL ........   57.615   57.615  150.808   90.000   90.000   90.000 
+ INPUT SOURCES
+ ___ SOL-1        ___ file heavy-1_format.pdb   (249 sites)
+ ___ SOL-2        ___ file 5t3g_13SE.pdb        (249 sites)
+
+ for details, see log output
+
+ +------------------------------------------------------------------------------+
+ |                                                                              |
+ |                              SitCom vers. 0.17.5                             |
+ |              (C) 2005-06 Instituto FIRC di Oncologia Moleculare              |
+ |           (C) 2007-10 European Molecular Biology Laboratory (EMBL)           |
+ |                                                                              |
+ |              Authors:  Fabio Dall'Antonia & Thomas R. Schneider              |
+ |                Contact:     fabio.dallantonia@embl-hamburg.de                |
+ |                                                                              |
+ | SitCom has been/is funded by the European Commission as part of the projects |
+ |   -- AutoStruct -- http://www.autostruct.org - Contract QLRI-CT-2000-00398   |
+ |     -- BioXHit -- http://www.bioxhit.org - Contract LHSG-CT-2003-503420      |
+ |                                                                              |
+ |                                 Please cite:                                 |
+ | Dall'Antonia, F. & Schneider, T. R. (2006).  SITCOM: a program for comparing |
+ |   sites in macromolecular substructures. J. Appl. Crystallogr. 39, 618-619   |
+ |                                                                              |
+ |          SitCom's internal symmetry library was created using CCTBX          |
+ |     Grosse-Kunstleve, R. W. & Adams, P. D. (2003). Newsletter of the IUCr    |
+ |              Commission on Crystallographic Computing, 1, 28-38              |
+ |                                                                              |
+ |                        v0.17.5 is a beta-test version                        |
+ |                                                                              |
+ +------------------------------------------------------------------------------+
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                Comparison of multi-Solution vs. Consensus Sites                
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+
+
+ The following tables summarise the results of inter-solution comparison used for
+ unique site determination and collection of consensus sites. They do not yet refer
+ to the final consensus model.
+
+
+ ________________________________________________________________________________
+
+                             SITE CONNECTION TABLE                             
+ ________________________________________________________________________________
+
+
+ The columns contain the unique site positions as collected from the input solutions.
+ The rows list the solutions in the order of reading, single pdb files before shelxd
+ sets, solutions of sets are sorted by fom (cc). Thus, the table cells contain single
+ site numbers, as read from the respective solution (row), put to the column of the
+ unique position they are equivalent to.
+
+                        UNIQUE SITE #  >  ||   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |  11 |  12 |  13 |  14 |  15 |  16 |  17 |  18 |  19 |
+    SOLUTION         FOM    SET  ADD.HITS ||     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+    ======================================||=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|
+    SOL-1           50.00    0    15 / 15 ||   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |  11 |  12 |  13 |  14 |  15 |     |     |     |     |
+    --------------------------------------||-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+    SOL-2           49.00    3     9 / 13 ||   1 |   2 |   4 |   3 |     |   6 |   5 |   7 |  13 |     |  11 |     |     |     |     |   8 |   9 |  10 |  12 |
+    --------------------------------------||-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+    ======================================||=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|
+        PRESENCE IN [N] OF   2 TRIALS     ||   2 |   2 |   2 |   2 |   1 |   2 |   2 |   2 |   2 |   1 |   2 |   1 |   1 |   1 |   1 |   1 |   1 |   1 |   1 |
+
+
+
+ ________________________________________________________________________________
+
+                                DISTANCES TABLE                                
+ ________________________________________________________________________________
+
+
+ The columns contain the unique site positions as collected from the input solutions.
+ The rows list the solutions in the order of reading, single pdb files before shelxd
+ sets, solutions of sets are sorted by fom (cc). The table cells contain the distances
+ of the sites to the unique positions (columns), which were seeded by the top solution.
+ Therefore, the first solution has zero distances for all its sites, every following
+ solution has zero distances for those sites not agreeing to previous ones (and
+ consequently defining new unique positions.
+
+                      UNIQUE SITE #  >  ||   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |  11 |  12 |  13 |  14 |  15 |  16 |  17 |  18 |  19 |
+    SOLUTION         FOM   SET  D(MEAN) ||     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+    ====================================||=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|
+    SOL-1           50.00    0   0.000  ||0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|     |     |     |     |
+    ------------------------------------||-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+    SOL-2           49.00    3   0.500  ||0.064|0.113|0.274|0.234|     |0.210|0.258|0.294|0.422|     |0.380|     |     |     |     |0.000|0.000|0.000|0.000|
+    ------------------------------------||-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+    ====================================||=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|=====|
+      AVG. DIST. FOR UNIQUE LOCATION    ||0.064|0.113|0.274|0.234|0.000|0.210|0.258|0.294|0.422|0.000|0.380|0.000|0.000|0.000|0.000|0.000|0.000|0.000|0.000|
+
+    OVERALL AVERAGE DISTANCE:  0.250 
+
+
+
+
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+                        Consensus model of unique sites                        
+ ________________________________________________________________________________
+ ________________________________________________________________________________
+
+The final result of site comparison, after the consensus sites at unique positions
+  have been scored, sorted and marked for NCS compliance.
+
+ ________________________________________________________________________________
+
+                            Consensus model scoring                            
+ ________________________________________________________________________________
+
+
+ Site scoring, i.e. the calculation of SFOM values, is based on three contributions:
+ Consensus rate, mean consensus distance and site occupancy. The SFOM value is then
+ taken to judge the reliability of the site.
+ Fundamentally, all consensus sites are written to the output files. The reliability
+ classification is (only) a decision help for the manual truncation of the output.
+ SFOM values calculated by following model:
+
+ criterion             | weight |                         FOM defined as        
+ ------------------------------------------------------------------------------------------------
+ consensus rate        |  1.00  | group-weighted mean of n(agreements,group) / n(solutions,group)
+ overall mean distance |  0.50  |                        1 / 1 + d(mean)        
+ source-site occupancy |  0.00  |                 occupancy (peak height) value 
+ ------------------------------------------------------------------------------------------------
+
+ Site reliability color scheme:
+
+ predicted reliablity   |  indicator                  
+ ------------------------------------                 
+ high   (SFOM  >  0.65) |   ##  ##                    
+ medium (SFOM  >  0.35) |   ++  ++                    
+ low    (SFOM  <= 0.35) |   --  --   		 
+ ------------------------------------
+
+ ________________________________________________________________________________
+
+                             Consensus model table                             
+ ________________________________________________________________________________
+
+
+ Here, the consensus sites are shown, sorted by score, with columns for each SFOM
+ contribution and resulting SFOM value. If NCS-analysis was requested, there is an
+ extra column. For completeness, also the unique position (in fractional and
+ cartesian coordinates) and its source site are displayed.
+  ===========================================================================================================================================================
+    #  |consensus rate,weight=1.00| d(mean) | occupancy |    SFOM    | source site of   |         fractionals         |         cartesians          
+       |    SOL-1    |   SOL-2    |  w=0.50 |   w=0.00  |            | uniq. position   |     x        y        z     |      x        y        z    
+       |     1.00    |    1.00    |         |           |            |                  |                             |                             
+  ===========================================================================================================================================================
+    2  |     1.00    |    1.00    |  0.064  |    1.00   | ## 0.98 ## | SOL-1.1          |  0.28845 -0.08560 -0.06012  |   16.619   -4.932   -9.066 
+    3  |     1.00    |    1.00    |  0.113  |    0.99   | ## 0.97 ## | SOL-1.2          | -0.01711 -0.15027  0.07468  |   -0.986   -8.658   11.263 
+    4  |     1.00    |    1.00    |  0.210  |    0.31   | ## 0.94 ## | SOL-1.6          | -0.08960 -0.01586  0.17365  |   -5.162   -0.913   26.188 
+    5  |     1.00    |    1.00    |  0.234  |    0.41   | ## 0.94 ## | SOL-1.4          |  0.45101 -0.12512 -0.00370  |   25.985   -7.209   -0.558 
+    6  |     1.00    |    1.00    |  0.258  |    0.29   | ## 0.93 ## | SOL-1.7          | -0.39471  0.44624 -0.00537  |  -22.741   25.710   -0.810 
+    7  |     1.00    |    1.00    |  0.274  |    0.40   | ## 0.93 ## | SOL-1.3          | -0.01214 -0.32326  0.15862  |   -0.699  -18.624   23.921 
+    8  |     1.00    |    1.00    |  0.294  |    0.28   | ## 0.92 ## | SOL-1.8          | -0.11395  0.01796  0.14121  |   -6.565    1.035   21.295 
+    9  |     1.00    |    1.00    |  0.380  |    0.22   | ## 0.91 ## | SOL-1.11         |  0.02923 -0.13411  0.01089  |    1.684   -7.727    1.643 
+   10  |     1.00    |    1.00    |  0.422  |    0.24   | ## 0.90 ## | SOL-1.9          |  0.46635 -0.11136 -0.06864  |   26.869   -6.416  -10.352 
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------
+   11  |     1.00    |    0.00    |  0.000  |    0.00   | ++ 0.50 ++ | SOL-1.5          | -0.00000 -0.14953  0.07458  |   -0.000   -8.615   11.247 
+   12  |     1.00    |    0.00    |  0.000  |    0.14   | ++ 0.50 ++ | SOL-1.10         | -0.05247 -0.13193  0.07233  |   -3.023   -7.601   10.908 
+   13  |     1.00    |    0.00    |  0.000  |    0.09   | ++ 0.50 ++ | SOL-1.12         |  0.27186 -0.04943 -0.05622  |   15.663   -2.848   -8.478 
+   14  |     1.00    |    0.00    |  0.000  |    0.12   | ++ 0.50 ++ | SOL-1.13         |  0.32707 -0.07292 -0.05708  |   18.844   -4.201   -8.608 
+   15  |     1.00    |    0.00    |  0.000  |    0.04   | ++ 0.50 ++ | SOL-1.14         |  0.21890 -0.11881 -0.05076  |   12.612   -6.845   -7.655 
+   16  |     1.00    |    0.00    |  0.000  |    0.15   | ++ 0.50 ++ | SOL-1.15         |  0.00290 -0.11780  0.07192  |    0.167   -6.787   10.846 
+   17  |     0.00    |    1.00    |  0.000  |    0.58   | ++ 0.50 ++ | SOL-2.8          |  0.36861  0.55254  0.60752  |   21.238   31.835   91.619 
+   18  |     0.00    |    1.00    |  0.000  |    0.49   | ++ 0.50 ++ | SOL-2.9          |  0.46550  0.25431  0.53493  |   26.820   14.652   80.671 
+   19  |     0.00    |    1.00    |  0.000  |    0.62   | ++ 0.50 ++ | SOL-2.10         |  0.44766  0.02175  0.61388  |   25.792    1.253   92.578 
+   20  |     0.00    |    1.00    |  0.000  |    0.49   | ++ 0.50 ++ | SOL-2.12         |  0.11058  0.62249  0.57590  |    6.371   35.865   86.850 
+  ===========================================================================================================================================================
+    #  |consensus rate,weight=1.00| d(mean) | occupancy |    SFOM    | source site of   |         fractionals         |         cartesians          
+       |    SOL-1    |   SOL-2    |  w=0.50 |   w=0.00  |            | uniq. position   |     x        y        z     |      x        y        z    
+       |     1.00    |    1.00    |         |           |            |                  |                             |                             
+  ===========================================================================================================================================================
+

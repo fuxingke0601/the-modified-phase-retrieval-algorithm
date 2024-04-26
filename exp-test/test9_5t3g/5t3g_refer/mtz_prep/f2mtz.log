@@ -1,0 +1,179 @@
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 8.0.012: f2mtz            version 8.0.012 :         ##
+ ###############################################################
+ User: fuxingke  Run date: 10/10/2023 Run time: 20:00:49 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Maximum number of columns in this version:          80
+ Data line--- FORM '(3I4,2F8.2,I4)'
+ *** Format contains Ix.  -     Replaced with Fx.0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  Format I replaced with F
+ $$
+<!--SUMMARY_END--></FONT></B>
+ Data line--- SYMM P41212
+ Data line--- CELL    57.6150   57.6150  150.8080   90.0000   90.0000   90.0000 
+ Data line--- NAME crystal crystal
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING: name keyword line incomplete.
+ $$
+<!--SUMMARY_END--></FONT></B>
+ Data line--- LABO H K L FA SIGFA ALPHA
+ Number of columns to be read in:           6
+ Data line--- CTYP H H H F Q P
+
+FORMATTED      OLD     file opened on unit   1
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+Logical name: HKLIN, Filename: SHELX_fa.hkl
+<!--SUMMARY_END--></FONT></B>
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  PROJECTNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  CRYSTALNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  DATASETNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: f2mtz.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown101023
+             57.6150   57.6150  150.8080   90.0000   90.0000   90.0000
+             0.00000
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 23543
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ From f2mtz 10/10/2023 20:00:49 
+
+ * Column Labels, Types, Ranges [and Dataset IDs] :
+
+ H                               H              1.0000             24.0000        0 
+ K                               H              2.0000             35.0000        0 
+ L                               H              1.0000             92.0000        0 
+ FA                              F             12.1800           9999.0000        1 
+ SIGFA                           Q            276.6300           4242.9502        1 
+ ALPHA                           P             90.0000            270.0000        1 
+
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   57.6150   57.6150  150.8080   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00155    0.41386     (     25.398 -      1.554 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Number of Symmetry Operations = 8 
+ * Number of Primitive Operations = 8 
+ * Space Group = 92 'P 41 21 2' 
+ * Lattice Type = P 
+ * Point Group Name = PG422 
+
+ * Symmetry Operations : 
+
+ Symmetry 1 X,  Y,  Z                                                   
+  1.00  0.00  0.00  0.00 
+  0.00  1.00  0.00  0.00 
+  0.00  0.00  1.00  0.00 
+  0.00  0.00  0.00  1.00 
+ Symmetry 2 -Y+1/2,  X+1/2,  Z+1/4                                      
+  0.00 -1.00  0.00  0.50 
+  1.00  0.00  0.00  0.50 
+  0.00  0.00  1.00  0.25 
+  0.00  0.00  0.00  1.00 
+ Symmetry 3 -X,  -Y,  Z+1/2                                             
+ -1.00  0.00  0.00  0.00 
+  0.00 -1.00  0.00  0.00 
+  0.00  0.00  1.00  0.50 
+  0.00  0.00  0.00  1.00 
+ Symmetry 4 Y+1/2,  -X+1/2,  Z+3/4                                      
+  0.00  1.00  0.00  0.50 
+ -1.00  0.00  0.00  0.50 
+  0.00  0.00  1.00  0.75 
+  0.00  0.00  0.00  1.00 
+ Symmetry 5 X+1/2,  -Y+1/2,  -Z+3/4                                     
+  1.00  0.00  0.00  0.50 
+  0.00 -1.00  0.00  0.50 
+  0.00  0.00 -1.00  0.75 
+  0.00  0.00  0.00  1.00 
+ Symmetry 6 Y,  X,  -Z                                                  
+  0.00  1.00  0.00  0.00 
+  1.00  0.00  0.00  0.00 
+  0.00  0.00 -1.00  0.00 
+  0.00  0.00  0.00  1.00 
+ Symmetry 7 -X+1/2,  Y+1/2,  -Z+1/4                                     
+ -1.00  0.00  0.00  0.50 
+  0.00  1.00  0.00  0.50 
+  0.00  0.00 -1.00  0.25 
+  0.00  0.00  0.00  1.00 
+ Symmetry 8 -Y,  -X,  -Z+1/2                                            
+  0.00 -1.00  0.00  0.00 
+ -1.00  0.00  0.00  0.00 
+  0.00  0.00 -1.00  0.50 
+  0.00  0.00  0.00  1.00 
+
+  23543 input reflections processed
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ f2mtz:  Normal termination
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
